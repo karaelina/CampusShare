@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provider Login — CampusShare</title>
+
+  <link rel="stylesheet" href="css/provider-login.css">
+</head>
+
+<body>
+
+  <main class="provider-page">
+
+    <!-- LEFT BRAND PANEL -->
+    <section class="brand-panel">
+
+      <div class="brand">
+        <div class="brand-mark">CS</div>
+        <div class="brand-name">CampusShare</div>
+      </div>
+
+      <div class="brand-content">
+
+        <p class="eyebrow">PARTNER PORTAL</p>
+
+        <h1>
+          Manage your equipment,
+          <em>your way.</em>
+        </h1>
+
+        <p class="intro">
+          Access your CampusShare provider account to manage
+          equipment, rental requests, returns, and your campus
+          partnership.
+        </p>
+
+        <div class="feature-list">
+
+          <div class="feature">
+            <span>▣</span>
+            <div>
+              <strong>Manage Equipment</strong>
+              <small>Add and manage equipment available for students.</small>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span>□</span>
+            <div>
+              <strong>Rental Requests</strong>
+              <small>Review and manage student rental requests.</small>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span>↻</span>
+            <div>
+              <strong>Track Returns</strong>
+              <small>Keep track of active rentals and returned equipment.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="brand-footer">
+        <span>CampusShare Partner Network</span>
+        <span>Puerto Princesa City</span>
+      </div>
+
+    </section>
+
+
+    <!-- RIGHT LOGIN PANEL -->
+    <section class="login-panel">
+
+      <div class="login-card">
+
+        <!-- LOGIN VIEW -->
+        <div id="loginView">
+
+          <p class="form-eyebrow">PROVIDER ACCESS</p>
+
+          <h2>Provider Login</h2>
+
+          <p class="subtitle">
+            Sign in to manage your CampusShare partnership.
+          </p>
+
+          <div id="loginMessage" class="message"></div>
+
+          <form id="loginForm">
+
+            <div class="field">
+
+              <label for="loginEmail">
+                Official Email
+              </label>
+
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="e.g. office@institution.edu.ph"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="loginPassword">
+                Password
+              </label>
+
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter your password"
+                required
+              >
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-dark"
+            >
+              Log In
+            </button>
+
+          </form>
+
+
+          <div class="divider">
+            <span>New approved partner?</span>
+          </div>
+
+
+          <button
+            type="button"
+            class="btn btn-outline"
+            id="activateBtn"
+          >
+            Activate Provider Account
+          </button>
+
+
+          <p class="security-note">
+            Provider accounts are available only to approved
+            CampusShare partners.
+          </p>
+
+        </div>
+
+
+        <!-- ACTIVATION VIEW -->
+        <div id="activationView" class="hidden">
+
+          <button
+            type="button"
+            class="back-button"
+            id="backToLogin"
+          >
+            ← Back to Provider Login
+          </button>
+
+          <p class="form-eyebrow">ACCOUNT ACTIVATION</p>
+
+          <h2>Activate Your Account</h2>
+
+          <p class="subtitle">
+            Enter the official email used in your approved
+            partnership request.
+          </p>
+
+          <div id="activationMessage" class="message"></div>
+
+          <form id="activationForm">
+
+            <div class="field">
+
+              <label for="activationEmail">
+                Official Email
+              </label>
+
+              <input
+                type="email"
+                id="activationEmail"
+                placeholder="e.g. office@institution.edu.ph"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="activationPassword">
+                Create Password
+              </label>
+
+              <input
+                type="password"
+                id="activationPassword"
+                placeholder="Create a password"
+                minlength="6"
+                required
+              >
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="activationConfirm">
+                Confirm Password
+              </label>
+
+              <input
+                type="password"
+                id="activationConfirm"
+                placeholder="Re-enter your password"
+                minlength="6"
+                required
+              >
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-dark"
+            >
+              Activate Provider Account
+            </button>
+
+          </form>
+
+
+          <div class="verification-box">
+
+            <strong>Before you continue</strong>
+
+            <p>
+              Your partnership must already be approved by
+              CampusShare administration before an account can
+              be activated.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a
+        href="index.html"
+        class="back-site"
+      >
+        ← Back to CampusShare
+      </a>
+
+    </section>
+
+  </main>
+
+  <script src="js/provider-login.js"></script>
+
+</body>
+</html>

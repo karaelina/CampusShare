@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provider Dashboard — CampusShare</title>
+
+  <link rel="stylesheet" href="css/provider-dashboard.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-mark">CS</div>
+      <div class="brand-name">CampusShare</div>
+    </div>
+
+    <div class="provider-card">
+      <div class="provider-avatar">P</div>
+
+      <div>
+        <strong id="providerName">Provider</strong>
+        <small id="campusName">Campus</small>
+      </div>
+    </div>
+
+
+    <nav>
+
+      <button class="nav-item active" data-section="dashboard">
+        ▣
+        <span>Dashboard</span>
+      </button>
+
+      <button class="nav-item" data-section="equipment">
+        □
+        <span>My Equipment</span>
+      </button>
+
+      <button class="nav-item" data-section="requests">
+        ◇
+        <span>Rental Requests</span>
+      </button>
+
+      <button class="nav-item" data-section="active">
+        ↻
+        <span>Active Rentals</span>
+      </button>
+
+      <button class="nav-item" data-section="returns">
+        ✓
+        <span>Returns</span>
+      </button>
+
+      <button class="nav-item" data-section="profile">
+        ○
+        <span>Partnership Profile</span>
+      </button>
+
+    </nav>
+
+
+    <button class="logout-btn" id="logoutBtn">
+      ← Log Out
+    </button>
+
+  </aside>
+
+
+  <main class="main">
+
+    <header class="topbar">
+
+      <div>
+        <p class="eyebrow">PROVIDER PORTAL</p>
+        <h1 id="pageTitle">Dashboard</h1>
+      </div>
+
+      <div class="top-avatar">P</div>
+
+    </header>
+
+
+    <section class="content">
+
+
+      <!-- =========================
+           DASHBOARD
+      ========================== -->
+
+      <section id="dashboardSection" class="portal-section">
+
+        <div class="welcome-box">
+
+          <p class="section-eyebrow">WELCOME BACK</p>
+
+          <h2 id="welcomeName">
+            Provider
+          </h2>
+
+          <p>
+            Manage your CampusShare equipment,
+            rental requests, and active rentals from one place.
+          </p>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <span>My Equipment</span>
+            <strong id="equipmentStat">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Rental Requests</span>
+            <strong id="requestStat">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Active Rentals</span>
+            <strong id="activeStat">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Completed Rentals</span>
+            <strong id="completedStat">0</strong>
+          </div>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div class="panel-heading">
+            <div>
+              <h3>Quick Actions</h3>
+              <p>Manage your provider account and equipment.</p>
+            </div>
+          </div>
+
+
+          <div class="quick-grid">
+
+            <button class="quick-card" data-section="equipment">
+              <span>□</span>
+              <div>
+                <strong>Add Equipment</strong>
+                <small>List equipment for students to rent.</small>
+              </div>
+            </button>
+
+            <button class="quick-card" data-section="requests">
+              <span>◇</span>
+              <div>
+                <strong>Rental Requests</strong>
+                <small>Review student rental requests.</small>
+              </div>
+            </button>
+
+            <button class="quick-card" data-section="active">
+              <span>↻</span>
+              <div>
+                <strong>Active Rentals</strong>
+                <small>Track currently rented equipment.</small>
+              </div>
+            </button>
+
+            <button class="quick-card" data-section="profile">
+              <span>○</span>
+              <div>
+                <strong>Partnership Profile</strong>
+                <small>View your approved partnership details.</small>
+              </div>
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           EQUIPMENT
+      ========================== -->
+
+      <section id="equipmentSection" class="portal-section hidden">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-eyebrow">EQUIPMENT</p>
+
+            <h2>My Equipment</h2>
+
+            <p>
+              Manage the equipment available for students.
+            </p>
+          </div>
+
+          <button class="primary-btn" id="addEquipmentBtn">
+            + Add Equipment
+          </button>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div id="equipmentList"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           RENTAL REQUESTS
+      ========================== -->
+
+      <section id="requestsSection" class="portal-section hidden">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-eyebrow">RENTALS</p>
+
+            <h2>Rental Requests</h2>
+
+            <p>
+              Review rental requests submitted by students.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div id="requestList"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           ACTIVE RENTALS
+      ========================== -->
+
+      <section id="activeSection" class="portal-section hidden">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-eyebrow">CURRENT RENTALS</p>
+
+            <h2>Active Rentals</h2>
+
+            <p>
+              Track equipment currently rented by students.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div id="activeList"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           RETURNS
+      ========================== -->
+
+      <section id="returnsSection" class="portal-section hidden">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-eyebrow">RETURNS</p>
+
+            <h2>Returns</h2>
+
+            <p>
+              Review completed and returned equipment.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="panel">
+
+          <div id="returnList"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           PROFILE
+      ========================== -->
+
+      <section id="profileSection" class="portal-section hidden">
+
+        <div class="section-header">
+
+          <div>
+            <p class="section-eyebrow">PARTNERSHIP</p>
+
+            <h2>Partnership Profile</h2>
+
+            <p>
+              Your approved CampusShare partnership information.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="profile-grid">
+
+          <div class="profile-box">
+            <small>Campus / Institution</small>
+            <strong id="profileCampus">—</strong>
+          </div>
+
+          <div class="profile-box">
+            <small>Provider / Organization</small>
+            <strong id="profileProvider">—</strong>
+          </div>
+
+          <div class="profile-box">
+            <small>Official Email</small>
+            <strong id="profileEmail">—</strong>
+          </div>
+
+          <div class="profile-box">
+            <small>Contact Person</small>
+            <strong id="profileContact">—</strong>
+          </div>
+
+          <div class="profile-box">
+            <small>Contact Number</small>
+            <strong id="profileNumber">—</strong>
+          </div>
+
+          <div class="profile-box">
+            <small>Partnership Status</small>
+            <strong class="approved-text">Approved</strong>
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       ADD EQUIPMENT MODAL
+  ========================== -->
+
+  <div class="modal hidden" id="equipmentModal">
+
+    <div class="modal-card">
+
+      <button class="modal-close" id="closeEquipmentModal">
+        ×
+      </button>
+
+      <p class="section-eyebrow">NEW EQUIPMENT</p>
+
+      <h2>Add Equipment</h2>
+
+      <p class="modal-subtitle">
+        Add equipment that students can rent through CampusShare.
+      </p>
+
+
+      <form id="equipmentForm">
+
+        <div class="field">
+
+          <label for="equipmentName">
+            Equipment Name
+          </label>
+
+          <input
+            type="text"
+            id="equipmentName"
+            placeholder="e.g. Canon EOS Camera"
+            required
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="equipmentCategory">
+            Category
+          </label>
+
+          <select id="equipmentCategory" required>
+
+            <option value="">
+              Select category
+            </option>
+
+            <option value="Camera & Photography">
+              Camera & Photography
+            </option>
+
+            <option value="Audio Equipment">
+              Audio Equipment
+            </option>
+
+            <option value="Lighting Equipment">
+              Lighting Equipment
+            </option>
+
+            <option value="Computers & Technology">
+              Computers & Technology
+            </option>
+
+            <option value="Projectors & Presentation">
+              Projectors & Presentation
+            </option>
+
+            <option value="Sports Equipment">
+              Sports Equipment
+            </option>
+
+            <option value="Event Equipment">
+              Event Equipment
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-two">
+
+          <div class="field">
+
+            <label for="equipmentPrice">
+              Rental Price / Day
+            </label>
+
+            <input
+              type="number"
+              id="equipmentPrice"
+              min="1"
+              placeholder="e.g. 500"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="equipmentQuantity">
+              Quantity
+            </label>
+
+            <input
+              type="number"
+              id="equipmentQuantity"
+              min="1"
+              value="1"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="equipmentDetails">
+            Description
+          </label>
+
+          <textarea
+            id="equipmentDetails"
+            placeholder="Describe the equipment..."
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="modal-actions">
+
+          <button
+            type="button"
+            class="secondary-btn"
+            id="cancelEquipmentBtn"
+          >
+            Cancel
+          </button>
+
+          <button
+            type="submit"
+            class="primary-btn"
+          >
+            Add Equipment
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/provider-dashboard.js"></script>
+
+</body>
+</html>

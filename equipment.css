@@ -1,0 +1,912 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f3;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 268px;
+  background: #151515;
+  color: #fff;
+  padding: 22px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font: 700 22px Georgia, serif;
+  padding: 0 8px 22px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  color: #111;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font: 700 13px Georgia;
+}
+
+.student-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #272727;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 16px 2px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #3b4658;
+  font-weight: 700;
+}
+
+.student-card strong {
+  display: block;
+  font-size: 13px;
+}
+
+.student-card small {
+  display: block;
+  color: #aaa;
+  font-size: 11px;
+}
+
+nav {
+  display: grid;
+  gap: 4px;
+}
+
+nav a {
+  padding: 12px;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 9px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+}
+
+nav a.active,
+nav a:hover {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.back-site {
+  margin-top: auto;
+  color: #888;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 12px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  margin-left: 268px;
+  min-height: 100vh;
+}
+
+.topbar {
+  min-height: 84px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 34px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font: 700 22px Georgia, serif;
+}
+
+.topbar p {
+  margin: 7px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.top-actions input {
+  width: 210px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  background: #fff;
+  padding: 0 12px;
+  outline: none;
+  font-size: 12px;
+}
+
+.top-actions input:focus {
+  border-color: #999;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.icon-btn:hover {
+  background: #eee;
+}
+
+.top-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #151515;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  padding: 28px 34px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-row {
+  margin-bottom: 14px;
+}
+
+.search-row input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #d8d8d7;
+  border-radius: 11px;
+  background: #fff;
+  padding: 0 15px;
+  outline: none;
+  font-size: 13px;
+}
+
+.search-row input:focus {
+  border-color: #999;
+  box-shadow: 0 0 0 3px #00000008;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+  background: #e9e9e8;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 14px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.filter-group button {
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-group button:hover {
+  background: #f7f7f6;
+}
+
+.filter-group button.active {
+  background: #fff;
+  box-shadow: 0 1px 4px #0002;
+  font-weight: 700;
+}
+
+
+/* =========================
+   PROVIDER FILTER
+========================= */
+
+.provider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.muted {
+  color: #777;
+  font-size: 12px;
+}
+
+.provider-row select {
+  border: 1px solid #d7d7d6;
+  background: #fff;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 12px;
+  outline: none;
+}
+
+.found {
+  margin-left: auto;
+  color: #888;
+  font-size: 11px;
+}
+
+
+/* =========================
+   EQUIPMENT GRID
+========================= */
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+
+/* =========================
+   EQUIPMENT CARD
+========================= */
+
+.equipment-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px #0000000b;
+}
+
+
+/* =========================
+   EQUIPMENT IMAGE
+========================= */
+
+.equipment-image {
+  height: 165px;
+  background: #ededeb;
+  display: grid;
+  place-items: center;
+  font-size: 58px;
+  position: relative;
+  overflow: hidden;
+}
+
+.equipment-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.equipment-status {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  padding: 6px 9px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  background: #d9f8ea;
+  color: #087d53;
+}
+
+.equipment-status.unavailable {
+  background: #eee;
+  color: #777;
+}
+
+
+/* =========================
+   EQUIPMENT CARD BODY
+========================= */
+
+.equipment-body {
+  padding: 16px;
+}
+
+.equipment-category {
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+
+.equipment-name {
+  margin-top: 5px;
+  font: 700 17px Georgia, serif;
+}
+
+.equipment-provider {
+  margin-top: 5px;
+  color: #777;
+  font-size: 11px;
+}
+
+.equipment-description {
+  margin-top: 10px;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.equipment-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: end;
+  margin-top: 15px;
+}
+
+.equipment-price {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.equipment-price small {
+  color: #888;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.equipment-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.equipment-actions button {
+  flex: 1;
+  min-height: 38px;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-details {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #222;
+}
+
+.btn-details:hover {
+  background: #f3f3f2;
+}
+
+.btn-rent {
+  border: 1px solid #151515;
+  background: #151515;
+  color: #fff;
+}
+
+.btn-rent:hover {
+  background: #333;
+}
+
+.btn-rent:disabled {
+  background: #ddd;
+  border-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty {
+  grid-column: 1 / -1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  padding: 60px 20px;
+  text-align: center;
+  color: #777;
+}
+
+.empty strong {
+  display: block;
+  color: #222;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: #00000091;
+}
+
+.modal-card {
+  position: relative;
+  z-index: 2;
+  width: min(650px, calc(100% - 30px));
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: 5vh auto 0;
+  background: #fff;
+  border-radius: 17px;
+  padding: 27px;
+  box-shadow: 0 20px 70px #0005;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #f0f0ef;
+  font-size: 23px;
+  line-height: 1;
+  color: #444;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e4e4e3;
+}
+
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.modal-header {
+  padding-right: 40px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-label {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.modal-title {
+  margin: 0;
+  font: 700 24px Georgia, serif;
+}
+
+.modal-provider {
+  margin-top: 6px;
+  color: #777;
+  font-size: 12px;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.modal-info {
+  background: #f6f6f5;
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.modal-info small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+
+.modal-info strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.modal-description {
+  margin-top: 18px;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  flex: 1;
+  min-height: 43px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-secondary {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.modal-primary {
+  border: 1px solid #151515;
+  background: #151515;
+  color: #fff;
+}
+
+.modal-primary:hover {
+  background: #333;
+}
+
+.modal-primary:disabled {
+  background: #ddd;
+  border-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   RENTAL FORM
+========================= */
+
+.rental-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-group label {
+  display: block;
+  color: #555;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #d7d7d6;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0 11px;
+  font-size: 12px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #999;
+}
+
+.rental-summary {
+  margin-top: 17px;
+  padding: 15px;
+  background: #f6f6f5;
+  border-radius: 10px;
+}
+
+.rental-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.rental-summary-row:last-child {
+  margin-bottom: 0;
+  padding-top: 9px;
+  border-top: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 1200;
+  max-width: 330px;
+  background: #151515;
+  color: #fff;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: 12px;
+  box-shadow: 0 10px 35px #0004;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: .2s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+
+  .equipment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .main {
+    margin-left: 220px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-actions {
+    width: 100%;
+  }
+
+  .top-actions input {
+    flex: 1;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .equipment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .provider-row {
+    flex-wrap: wrap;
+  }
+
+  .found {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .modal-card {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    max-height: calc(100vh - 40px);
+    padding: 21px;
+  }
+
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+}
+
+/* =========================================================
+   CAMPUSSHARE SIDEBAR CONSISTENCY PATCH
+   Matches the My Rentals / Payments sidebar treatment
+========================================================= */
+
+.sidebar {
+  width: 268px;
+  min-height: 100vh;
+  padding: 22px 14px;
+  background: #151515;
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+}
+
+.sidebar .brand {
+  min-height: 60px;
+  padding: 0 8px 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar .brand-mark {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+}
+
+.sidebar .student-card {
+  width: calc(100% - 4px);
+  min-height: 58px;
+  margin: 16px 2px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar nav {
+  width: 100%;
+  display: grid;
+  gap: 4px;
+}
+
+.sidebar nav a {
+  width: 100%;
+  min-height: 42px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1;
+  transition:
+    background-color .18s ease,
+    color .18s ease,
+    transform .18s ease;
+}
+
+.sidebar nav a span {
+  display: inline-block;
+}
+
+.sidebar nav a:hover {
+  background: #303030;
+  color: #fff;
+}
+
+.sidebar nav a.active {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.sidebar nav a:active {
+  transform: scale(.985);
+}
+
+.sidebar .back-site {
+  margin-top: auto;
+  padding: 12px;
+  color: #888;
+  font-size: 12px;
+  transition: color .18s ease;
+}
+
+.sidebar .back-site:hover {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+}

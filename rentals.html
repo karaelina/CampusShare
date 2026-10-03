@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Rentals — CampusShare</title>
+<link rel="stylesheet" href="css/rentals.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <span class="brand-mark">CS</span>
+    <span>CampusShare</span>
+  </div>
+
+  <div class="student-card">
+    <div class="avatar">J</div>
+    <div>
+      <strong>Juan dela Cruz</strong>
+      <small>2024-00123 · PSAU</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="dashboard.html">⌂ <span>Home</span></a>
+    <a href="equipment.html">▣ <span>Browse Equipment</span></a>
+    <a class="active" href="rentals.html">▢ <span>My Rentals</span></a>
+    <a href="payments.html">▤ <span>Payments</span></a>
+    <a href="notifications.html">♧ <span>Notifications</span></a>
+    <a href="dashboard.html#profile">♙ <span>Profile</span></a>
+  </nav>
+
+  <a class="back-site" href="index.html">‹ Back to main site</a>
+
+</aside>
+
+
+<main class="main">
+
+  <header class="topbar">
+    <div>
+      <h1>My Rentals</h1>
+      <p>Student Portal · Puerto Princesa City</p>
+    </div>
+
+    <div class="top-avatar">J</div>
+  </header>
+
+
+  <section class="content">
+
+    <!-- RENTAL STATS -->
+    <div class="stats">
+
+      <div>
+        <span>Pending Requests</span>
+        <strong id="pending">0</strong>
+      </div>
+
+      <div>
+        <span>Approved Rentals</span>
+        <strong id="approved">0</strong>
+      </div>
+
+      <div>
+        <span>Active Rentals</span>
+        <strong id="active">0</strong>
+      </div>
+
+      <div>
+        <span>Completed / Returned</span>
+        <strong id="completed">0</strong>
+      </div>
+
+    </div>
+
+
+    <!-- FILTER TABS -->
+    <div class="tabs">
+
+      <button class="tab active" data-filter="all">
+        All
+      </button>
+
+      <button class="tab" data-filter="Pending">
+        Pending Requests
+      </button>
+
+      <button class="tab" data-filter="Approved">
+        Approved
+      </button>
+
+      <button class="tab" data-filter="Active">
+        Active
+      </button>
+
+      <button class="tab" data-filter="Completed">
+        Completed / Returned
+      </button>
+
+    </div>
+
+
+    <!-- RENTAL LIST -->
+    <div id="rentalList"></div>
+
+  </section>
+
+</main>
+
+
+<!-- =========================
+     RENTAL DETAILS MODAL
+========================= -->
+
+<div id="rentalModal" class="modal">
+
+  <div class="modal-box">
+
+    <button class="modal-close" id="closeModal">
+      ×
+    </button>
+
+
+    <div class="modal-header">
+
+      <div>
+        <span class="modal-label">
+          RENTAL DETAILS
+        </span>
+
+        <h2 id="modalEquipment">
+          Equipment
+        </h2>
+
+        <p id="modalProvider">
+          Provider
+        </p>
+      </div>
+
+      <span id="modalStatus" class="badge">
+        Pending
+      </span>
+
+    </div>
+
+
+    <!-- DETAILS GRID -->
+
+    <div class="modal-details">
+
+      <div class="modal-detail">
+        <small>Rental Period</small>
+        <strong id="modalPeriod">—</strong>
+      </div>
+
+      <div class="modal-detail">
+        <small>Rental Duration</small>
+        <strong id="modalDuration">—</strong>
+      </div>
+
+      <div class="modal-detail">
+        <small>Pickup Location</small>
+        <strong id="modalPickup">—</strong>
+      </div>
+
+      <div class="modal-detail">
+        <small>Payment Method</small>
+        <strong id="modalPayment">—</strong>
+      </div>
+
+      <div class="modal-detail">
+        <small>Total Amount</small>
+        <strong id="modalTotal">—</strong>
+      </div>
+
+      <div class="modal-detail">
+        <small>Reference Number</small>
+        <strong id="modalReference">—</strong>
+      </div>
+
+    </div>
+
+
+    <!-- RENTAL TIMELINE -->
+
+    <div class="timeline-section">
+
+      <h3>Rental Timeline</h3>
+
+      <div id="rentalTimeline"></div>
+
+    </div>
+
+
+    <!-- STATUS NOTICE -->
+
+    <div id="modalNotice" class="modal-notice">
+      Rental information.
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="js/rentals.js"></script>
+
+</body>
+</html>

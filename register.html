@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Create Student Account - CampusShare</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+  <main class="login-page">
+
+    <section class="login-shell">
+
+      <a class="back-link" href="login.html">
+        ‹ <span>Back to Login</span>
+      </a>
+
+      <div class="login-brand">
+
+        <div class="brand-mark">CS</div>
+
+        <div class="brand-name">
+          CampusShare
+        </div>
+
+      </div>
+
+
+      <div class="login-card">
+
+        <h1>Create Account</h1>
+
+        <p class="login-subtitle">
+          Create your student account to access CampusShare equipment rentals.
+        </p>
+
+
+        <div id="formMessage" class="form-message"></div>
+
+
+        <form id="registerForm" novalidate>
+
+          <!-- FIRST NAME -->
+
+          <div class="form-group">
+
+            <label for="firstName">
+              First Name
+            </label>
+
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              placeholder="Juan"
+              autocomplete="given-name"
+              required
+            >
+
+          </div>
+
+
+          <!-- LAST NAME -->
+
+          <div class="form-group">
+
+            <label for="lastName">
+              Last Name
+            </label>
+
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              placeholder="dela Cruz"
+              autocomplete="family-name"
+              required
+            >
+
+          </div>
+
+
+          <!-- STUDENT ID -->
+
+          <div class="form-group">
+
+            <label for="studentId">
+              Student ID
+            </label>
+
+            <input
+              id="studentId"
+              name="studentId"
+              type="text"
+              placeholder="2024-00123"
+              autocomplete="username"
+              required
+            >
+
+          </div>
+
+
+          <!-- EMAIL -->
+
+          <div class="form-group">
+
+            <label for="email">
+              Student Email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="student@institution.edu.ph"
+              autocomplete="email"
+              required
+            >
+
+          </div>
+
+
+          <!-- SCHOOL -->
+
+          <div class="form-group">
+
+            <label for="school">
+              School / Campus
+            </label>
+
+            <input
+              id="school"
+              name="school"
+              type="text"
+              placeholder="Holy Trinity University"
+              required
+            >
+
+          </div>
+
+
+          <!-- PASSWORD -->
+
+          <div class="form-group">
+
+            <label for="password">
+              Password
+            </label>
+
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Create a password"
+              autocomplete="new-password"
+              minlength="6"
+              required
+            >
+
+          </div>
+
+
+          <!-- CONFIRM PASSWORD -->
+
+          <div class="form-group">
+
+            <label for="confirmPassword">
+              Confirm Password
+            </label>
+
+            <input
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
+              minlength="6"
+              required
+            >
+
+          </div>
+
+
+          <button
+            class="btn btn-dark login-submit"
+            type="submit"
+          >
+            Create Student Account
+          </button>
+
+        </form>
+
+
+        <div class="login-divider">
+          <span>Already have an account?</span>
+        </div>
+
+
+        <a
+          href="login.html"
+          class="btn create-account"
+          style="display:flex;align-items:center;justify-content:center;text-decoration:none;"
+        >
+          Back to Student Login
+        </a>
+
+      </div>
+
+
+      <p class="terms">
+
+        By creating an account you agree to CampusShare's
+        <a href="#">Terms of Service</a>
+        and
+        <a href="#">Privacy Policy</a>.
+
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <script src="js/register.js"></script>
+
+</body>
+</html>

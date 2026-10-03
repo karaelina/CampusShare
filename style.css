@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,600&display=swap');
+
+:root {
+  --black: #111111;
+  --dark: #1a1a1a;
+  --muted-dark: #a8a8a8;
+  --white: #ffffff;
+  --page: #f4f4f3;
+  --line: #dededc;
+  --text: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "DM Sans", Arial, sans-serif;
+  background: var(--page);
+  color: var(--text);
+}
+
+button {
+  font: inherit;
+}
+
+.welcome-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+
+.brand-panel {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 48px 44px;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.045);
+  pointer-events: none;
+}
+
+.circle-top {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  top: -190px;
+}
+
+.circle-right {
+  width: 210px;
+  height: 210px;
+  right: -105px;
+  top: 38%;
+}
+
+.circle-bottom {
+  width: 340px;
+  height: 340px;
+  right: -110px;
+  bottom: -205px;
+}
+
+.brand {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #fff;
+  color: #111;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.brand-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin-top: 115px;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #bdbdbd;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(43px, 4vw, 59px);
+  line-height: 1.06;
+  letter-spacing: -1.5px;
+}
+
+h1 em {
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+.intro {
+  max-width: 590px;
+  margin: 29px 0 31px;
+  color: #bdbdbd;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.benefits {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  color: #dedede;
+  font-size: 14px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.benefits li span {
+  width: 18px;
+  color: #aaa;
+  text-align: center;
+  font-size: 18px;
+}
+
+.brand-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 700px;
+}
+
+.brand-footer > div {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.footer-icon {
+  color: #aaa;
+  font-size: 21px;
+}
+
+.brand-footer p {
+  margin: 0;
+  color: #d2d2d2;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.welcome-panel {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 45px;
+  background: #f5f5f4;
+}
+
+.welcome-card {
+  width: min(100%, 520px);
+  text-align: center;
+}
+
+.welcome-card h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 37px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 12px 0 40px;
+  color: #777;
+  font-size: 14px;
+}
+
+.actions {
+  display: grid;
+  gap: 12px;
+}
+
+.btn {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 17px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #222;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.btn-light {
+  background: transparent;
+  color: #222;
+  border-color: #dededc;
+}
+
+.btn-light:hover {
+  background: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #161616;
+  border-color: #222;
+}
+
+.btn-outline:hover {
+  background: #fff;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 28px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after,
+.partner-label span {
+  content: "";
+  height: 1px;
+  background: #dededc;
+  flex: 1;
+}
+
+.partner-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 29px 0 11px;
+}
+
+.partner-label p {
+  margin: 0;
+  color: #999;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.trust-list {
+  margin-top: 42px;
+  padding-top: 27px;
+  border-top: 1px solid #dededc;
+  text-align: left;
+  color: #707070;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.trust-list p {
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .welcome-page {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-panel {
+    min-height: auto;
+    padding: 35px 28px;
+  }
+
+  .brand-content {
+    margin-top: 70px;
+  }
+
+  .brand-footer {
+    margin-top: 80px;
+  }
+
+  .welcome-panel {
+    min-height: 620px;
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-footer {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .brand-content {
+    margin-top: 55px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}

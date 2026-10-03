@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Become a CampusShare Partner</title>
+
+  <link rel="stylesheet" href="css/provider.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       TOP NAVIGATION
+  ========================== -->
+  <header class="topbar">
+
+    <div class="brand">
+      <span class="brand-mark">CS</span>
+      <span class="brand-name">CampusShare</span>
+    </div>
+
+    <a href="index.html" class="back-link">
+      ← Back to CampusShare
+    </a>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+  <main class="page">
+
+    <!-- INTRO -->
+    <section class="intro">
+
+      <span class="eyebrow">FOR PROVIDERS</span>
+
+      <h1>Become a CampusShare Partner</h1>
+
+      <p>
+        Partner with CampusShare to make your equipment available
+        for students through a trusted campus rental network.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         PARTNERSHIP FORM CARD
+    ========================== -->
+    <section class="form-card">
+
+      <div class="form-heading">
+
+        <h2>Partnership Request</h2>
+
+        <p>
+          Tell us about your organization and the equipment
+          you would like to offer through CampusShare.
+        </p>
+
+      </div>
+
+
+      <form id="partnershipForm">
+
+
+        <!-- =========================
+             ORGANIZATION INFORMATION
+        ========================== -->
+
+        <div class="section-title">
+          <span>01</span>
+          <div>
+            <h3>Organization Information</h3>
+            <p>Basic information about your campus or organization.</p>
+          </div>
+        </div>
+
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="campusName">
+              Campus / Institution Name
+            </label>
+
+            <input
+              type="text"
+              id="campusName"
+              name="campusName"
+              placeholder="e.g. Holy Trinity University"
+              required
+            >
+          </div>
+
+
+          <div class="field">
+            <label for="providerName">
+              Provider / Organization Name
+            </label>
+
+            <input
+              type="text"
+              id="providerName"
+              name="providerName"
+              placeholder="e.g. HTU Media Services"
+              required
+            >
+          </div>
+
+
+          <div class="field full">
+            <label for="campusAddress">
+              Campus / Organization Address
+            </label>
+
+            <input
+              type="text"
+              id="campusAddress"
+              name="campusAddress"
+              placeholder="Enter the complete address"
+              required
+            >
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             CONTACT INFORMATION
+        ========================== -->
+
+        <div class="section-title">
+
+          <span>02</span>
+
+          <div>
+            <h3>Contact Information</h3>
+            <p>
+              Provide a person CampusShare can contact for verification.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="contactPerson">
+              Contact Person
+            </label>
+
+            <input
+              type="text"
+              id="contactPerson"
+              name="contactPerson"
+              placeholder="Full name"
+              required
+            >
+          </div>
+
+
+          <div class="field">
+            <label for="contactNumber">
+              Contact Number
+            </label>
+
+            <input
+              type="tel"
+              id="contactNumber"
+              name="contactNumber"
+              placeholder="e.g. 0917 123 4567"
+              required
+            >
+          </div>
+
+
+          <div class="field full">
+            <label for="officialEmail">
+              Official Email Address
+            </label>
+
+            <input
+              type="email"
+              id="officialEmail"
+              name="officialEmail"
+              placeholder="e.g. office@institution.edu.ph"
+              required
+            >
+
+            <small>
+              Use an official organizational or institutional email
+              whenever possible.
+            </small>
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             EQUIPMENT INFORMATION
+        ========================== -->
+
+        <div class="section-title">
+
+          <span>03</span>
+
+          <div>
+            <h3>Equipment Information</h3>
+            <p>
+              Tell us what type of equipment you plan to offer.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="form-grid">
+
+          <div class="field">
+
+            <label for="equipmentCategory">
+              Equipment Category
+            </label>
+
+            <select
+              id="equipmentCategory"
+              name="equipmentCategory"
+              required
+            >
+
+              <option value="">
+                Select a category
+              </option>
+
+              <option value="Camera & Photography">
+                Camera & Photography
+              </option>
+
+              <option value="Audio Equipment">
+                Audio Equipment
+              </option>
+
+              <option value="Lighting Equipment">
+                Lighting Equipment
+              </option>
+
+              <option value="Computers & Technology">
+                Computers & Technology
+              </option>
+
+              <option value="Projectors & Presentation">
+                Projectors & Presentation
+              </option>
+
+              <option value="Sports Equipment">
+                Sports Equipment
+              </option>
+
+              <option value="Event Equipment">
+                Event Equipment
+              </option>
+
+              <option value="Other">
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="equipmentCount">
+              Approximate Number of Items
+            </label>
+
+            <input
+              type="number"
+              id="equipmentCount"
+              name="equipmentCount"
+              min="1"
+              placeholder="e.g. 10"
+              required
+            >
+
+          </div>
+
+
+          <div class="field full">
+
+            <label for="equipmentDescription">
+              Equipment Description
+            </label>
+
+            <textarea
+              id="equipmentDescription"
+              name="equipmentDescription"
+              rows="5"
+              placeholder="Briefly describe the equipment you would like to make available..."
+              required
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             PARTNERSHIP INFORMATION
+        ========================== -->
+
+        <div class="section-title">
+
+          <span>04</span>
+
+          <div>
+            <h3>Partnership Details</h3>
+            <p>
+              Help us understand why your organization wants to partner
+              with CampusShare.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="form-grid">
+
+          <div class="field full">
+
+            <label for="partnershipReason">
+              Why would you like to become a CampusShare Partner?
+            </label>
+
+            <textarea
+              id="partnershipReason"
+              name="partnershipReason"
+              rows="5"
+              placeholder="Tell us briefly about your partnership request..."
+              required
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             VERIFICATION NOTICE
+        ========================== -->
+
+        <div class="verification-box">
+
+          <div class="verification-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>Partnership verification</strong>
+
+            <p>
+              Submitting this form does not automatically create a
+              provider account or publish your organization on CampusShare.
+              Our administration team will review the request and may
+              contact you to verify the information provided.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             AGREEMENT
+        ========================== -->
+
+        <label class="agreement">
+
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+          >
+
+          <span>
+            I confirm that the information provided is accurate and
+            that CampusShare may contact the organization for
+            partnership verification.
+          </span>
+
+        </label>
+
+
+        <!-- =========================
+             FORM ACTIONS
+        ========================== -->
+
+        <div class="form-actions">
+
+          <a href="index.html" class="cancel-btn">
+            Cancel
+          </a>
+
+          <button
+            type="submit"
+            class="submit-btn"
+          >
+            Submit Partnership Request
+          </button>
+
+        </div>
+
+
+      </form>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER NOTE
+    ========================== -->
+
+    <div class="page-note">
+
+      <strong>What happens next?</strong>
+
+      <span>
+        Your request will be reviewed by the CampusShare administration
+        team before any provider account or partnership access is created.
+      </span>
+
+    </div>
+
+  </main>
+
+
+  <script src="js/provider.js"></script>
+
+</body>
+</html>

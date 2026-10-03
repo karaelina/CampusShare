@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusShare — Home</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        CampusShare
+      </div>
+
+      <div class="user-card">
+
+        <div class="avatar" id="sidebarAvatar">
+          J
+        </div>
+
+        <div>
+          <strong id="sidebarName">
+            Juan dela Cruz
+          </strong>
+
+          <span id="sidebarStudentId">
+            2024-00123 · PSAU
+          </span>
+        </div>
+
+      </div>
+
+
+      <nav class="side-nav">
+
+        <a href="dashboard.html" class="nav-item active">
+          <span class="nav-icon">⌂</span>
+          <span>Home</span>
+        </a>
+
+        <a href="equipment.html" class="nav-item">
+          <span class="nav-icon">▣</span>
+          <span>Browse Equipment</span>
+        </a>
+
+        <a href="rentals.html" class="nav-item">
+          <span class="nav-icon">▢</span>
+          <span>My Rentals</span>
+        </a>
+
+        <a href="payments.html" class="nav-item">
+          <span class="nav-icon">▤</span>
+          <span>Payments</span>
+        </a>
+
+        <a href="notifications.html" class="nav-item">
+          <span class="nav-icon">♧</span>
+          <span>Notifications</span>
+          <span class="nav-badge" id="notificationBadge">0</span>
+        </a>
+
+        <a href="profile.html" class="nav-item">
+          <span class="nav-icon">♙</span>
+          <span>Profile</span>
+        </a>
+
+      </nav>
+
+
+      <a href="index.html" class="back-site">
+        ‹ &nbsp; Back to main site
+      </a>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+      <header class="topbar">
+
+        <h1>Home</h1>
+
+        <div class="top-actions">
+
+          <label class="search-box">
+            <span>⌕</span>
+
+            <input
+              id="globalSearch"
+              type="search"
+              placeholder="Search..."
+            >
+          </label>
+
+
+          <button
+            class="icon-button"
+            id="notificationButton"
+            title="Notifications"
+          >
+            ♧
+            <span id="notificationButtonBadge">0</span>
+          </button>
+
+
+          <button
+            class="profile-button"
+            id="profileButton"
+            title="Profile"
+          >
+            J
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <!-- =========================
+           CONTENT
+      ========================== -->
+
+      <section class="content">
+
+
+        <!-- =========================
+             WELCOME
+        ========================== -->
+
+        <section class="welcome-banner">
+
+          <div>
+
+            <div class="eyebrow">
+              WELCOME BACK
+            </div>
+
+            <h2>
+              Good day,
+              <span id="welcomeName">Juan</span>!
+            </h2>
+
+            <p id="welcomeMessage">
+              Here's an overview of your CampusShare activity.
+            </p>
+
+
+            <div class="banner-actions">
+
+              <a
+                href="equipment.html"
+                class="btn btn-light"
+              >
+                Browse Equipment
+              </a>
+
+              <a
+                href="rentals.html"
+                class="btn btn-dark-outline"
+              >
+                My Rentals
+              </a>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- =========================
+             LIVE STATS
+        ========================== -->
+
+        <section class="stats-grid">
+
+
+          <article class="stat-card">
+
+            <div class="stat-label">
+              Total Rentals
+              <span>▢</span>
+            </div>
+
+            <strong id="totalRentals">
+              0
+            </strong>
+
+            <small>
+              all time
+            </small>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <div class="stat-label">
+              Active
+              <span>⌁</span>
+            </div>
+
+            <strong id="activeRentals">
+              0
+            </strong>
+
+            <small>
+              Currently renting
+            </small>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <div class="stat-label">
+              Pending
+              <span>◷</span>
+            </div>
+
+            <strong id="pendingRentals">
+              0
+            </strong>
+
+            <small>
+              Awaiting approval
+            </small>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <div class="stat-label">
+              Returned
+              <span>✓</span>
+            </div>
+
+            <strong id="completedRentals">
+              0
+            </strong>
+
+            <small>
+              Completed
+            </small>
+
+          </article>
+
+
+        </section>
+
+
+        <!-- =========================
+             CURRENT RENTAL
+        ========================== -->
+
+        <section class="section">
+
+          <div class="section-title">
+            Current Rental
+          </div>
+
+
+          <div id="currentRental">
+
+            <article class="rental-card">
+
+              <div class="equipment-icon">
+                —
+              </div>
+
+              <div class="rental-info">
+
+                <div class="rental-title-row">
+
+                  <strong>
+                    No active rental
+                  </strong>
+
+                  <span class="status-pill">
+                    None
+                  </span>
+
+                </div>
+
+                <div class="muted">
+                  You currently have no active equipment rental.
+                </div>
+
+                <div class="due">
+                  Browse available equipment to start a new rental.
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- =========================
+             RECENT RENTAL
+        ========================== -->
+
+        <section class="section">
+
+          <div class="section-title">
+            Recent Rental
+          </div>
+
+
+          <div id="recentRental">
+
+            <article class="rental-card">
+
+              <div class="equipment-icon">
+                —
+              </div>
+
+              <div class="rental-info">
+
+                <div class="rental-title-row">
+
+                  <strong>
+                    No rental history
+                  </strong>
+
+                </div>
+
+                <div class="muted">
+                  Your recent rental activity will appear here.
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- =========================
+             RECENT NOTIFICATIONS
+        ========================== -->
+
+        <section class="section">
+
+          <div class="section-title">
+            Recent Notifications
+          </div>
+
+
+          <div
+            class="notification-list"
+            id="recentNotifications"
+          >
+
+            <article class="notification-row">
+
+              <div class="notice-icon">
+                ✓
+              </div>
+
+              <div>
+
+                <strong>
+                  No recent notifications
+                </strong>
+
+                <p>
+                  Your latest CampusShare updates will appear here.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="js/dashboard.js"></script>
+  <script src="js/student-session.js"></script>
+
+</body>
+
+</html>

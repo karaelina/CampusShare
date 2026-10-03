@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CampusShare Admin</title>
+
+  <link
+    rel="stylesheet"
+    href="css/admin.css"
+  >
+
+</head>
+
+
+<body>
+
+  <!-- =========================
+       SIDEBAR
+  ========================== -->
+
+  <aside class="sidebar">
+
+    <div class="brand">
+
+      <span class="brand-mark">
+        CS
+      </span>
+
+      <span>
+        CampusShare
+      </span>
+
+    </div>
+
+
+    <div class="admin-card">
+
+      <div class="avatar">
+        A
+      </div>
+
+      <div>
+
+        <strong>
+          Campus Admin
+        </strong>
+
+        <small>
+          CampusShare Administration
+        </small>
+
+      </div>
+
+    </div>
+
+
+    <nav>
+
+      <a href="dashboard.html">
+        <span>⌂</span>
+        <span>Student Home</span>
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link active"
+        data-section="dashboard"
+      >
+        <span>▣</span>
+        <span>Admin Dashboard</span>
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link"
+        data-section="rentals"
+      >
+        <span>▢</span>
+        <span>Rental Requests</span>
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link"
+        data-section="partnerships"
+      >
+        <span>◇</span>
+        <span>Partnership Requests</span>
+
+        <span
+          id="partnershipBadge"
+          class="nav-badge"
+        >
+          0
+        </span>
+
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link"
+        data-section="partners"
+      >
+        <span>♧</span>
+        <span>Partner Campuses</span>
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link"
+        data-section="history"
+      >
+        <span>↻</span>
+        <span>Partner History</span>
+      </a>
+
+    </nav>
+
+
+    <a
+      class="back-site"
+      href="index.html"
+    >
+      ‹ Back to main site
+    </a>
+
+  </aside>
+
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+
+  <main class="main">
+
+
+    <header class="topbar">
+
+      <div>
+
+        <h1 id="pageTitle">
+          Admin Dashboard
+        </h1>
+
+        <p id="pageSubtitle">
+          CampusShare administration portal
+        </p>
+
+      </div>
+
+
+      <div class="top-avatar">
+        A
+      </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTENT
+    ========================== -->
+
+    <section class="content">
+
+
+      <!-- =========================
+           ADMIN DASHBOARD
+      ========================== -->
+
+      <section
+        id="dashboardSection"
+        class="admin-section active-section"
+      >
+
+        <div class="notice">
+
+          <strong>
+            CampusShare Administration
+          </strong>
+
+          <p>
+            Manage student rentals, review partnership applications,
+            verify partner campuses, and maintain the CampusShare
+            provider network.
+          </p>
+
+        </div>
+
+
+        <div class="admin-stats">
+
+          <article class="stat-card">
+
+            <span>
+              Rental Requests
+            </span>
+
+            <strong id="statRentals">
+              0
+            </strong>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span>
+              Pending Partnerships
+            </span>
+
+            <strong id="statPendingPartners">
+              0
+            </strong>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span>
+              Active Partners
+            </span>
+
+            <strong id="statActivePartners">
+              0
+            </strong>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span>
+              Partner History
+            </span>
+
+            <strong id="statPartnerHistory">
+              0
+            </strong>
+
+          </article>
+
+        </div>
+
+
+        <section class="panel">
+
+          <div class="panel-title">
+
+            <strong>
+              Quick Actions
+            </strong>
+
+          </div>
+
+
+          <div class="quick-actions">
+
+            <button
+              class="quick-btn"
+              data-open-section="rentals"
+            >
+              <span>▢</span>
+              <strong>
+                Rental Requests
+              </strong>
+              <small>
+                Manage student rental lifecycle
+              </small>
+            </button>
+
+
+            <button
+              class="quick-btn"
+              data-open-section="partnerships"
+            >
+              <span>◇</span>
+              <strong>
+                Partnership Requests
+              </strong>
+              <small>
+                Review new provider applications
+              </small>
+            </button>
+
+
+            <button
+              class="quick-btn"
+              data-open-section="partners"
+            >
+              <span>♧</span>
+              <strong>
+                Partner Campuses
+              </strong>
+              <small>
+                View verified CampusShare partners
+              </small>
+            </button>
+
+
+            <button
+              class="quick-btn"
+              data-open-section="history"
+            >
+              <span>↻</span>
+              <strong>
+                Partner History
+              </strong>
+              <small>
+                View previous partner records
+              </small>
+            </button>
+
+          </div>
+
+        </section>
+
+      </section>
+
+
+
+      <!-- =========================
+           RENTAL REQUESTS
+      ========================== -->
+
+      <section
+        id="rentalsSection"
+        class="admin-section"
+      >
+
+        <div class="notice">
+
+          <strong>
+            Student Rental Requests
+          </strong>
+
+          <p>
+            Use these controls to move a student's rental through
+            the complete CampusShare lifecycle.
+          </p>
+
+        </div>
+
+
+        <section class="panel">
+
+          <div class="panel-title">
+
+            <strong>
+              Rental Requests
+            </strong>
+
+            <span id="count">
+              0 requests
+            </span>
+
+          </div>
+
+
+          <div id="requests"></div>
+
+        </section>
+
+      </section>
+
+
+
+      <!-- =========================
+           PARTNERSHIP REQUESTS
+      ========================== -->
+
+      <section
+        id="partnershipsSection"
+        class="admin-section"
+      >
+
+        <div class="notice">
+
+          <strong>
+            Partnership Requests
+          </strong>
+
+          <p>
+            Review institutions that want to become verified
+            CampusShare partners. A submitted request is not
+            automatically approved.
+          </p>
+
+        </div>
+
+
+        <div class="section-toolbar">
+
+          <div
+            id="partnershipFilters"
+            class="status-filters"
+          >
+
+            <button
+              class="status-filter active"
+              data-partner-filter="All"
+            >
+              All
+            </button>
+
+            <button
+              class="status-filter"
+              data-partner-filter="Pending"
+            >
+              Pending
+            </button>
+
+            <button
+              class="status-filter"
+              data-partner-filter="Verification"
+            >
+              Verification
+            </button>
+
+            <button
+              class="status-filter"
+              data-partner-filter="Approved"
+            >
+              Approved
+            </button>
+
+            <button
+              class="status-filter"
+              data-partner-filter="Rejected"
+            >
+              Rejected
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <section class="panel">
+
+          <div class="panel-title">
+
+            <strong>
+              Partnership Applications
+            </strong>
+
+            <span id="partnershipCount">
+              0 requests
+            </span>
+
+          </div>
+
+
+          <div id="partnershipRequests"></div>
+
+        </section>
+
+      </section>
+
+
+
+      <!-- =========================
+           PARTNER CAMPUSES
+      ========================== -->
+
+      <section
+        id="partnersSection"
+        class="admin-section"
+      >
+
+        <div class="notice">
+
+          <strong>
+            Verified Partner Campuses
+          </strong>
+
+          <p>
+            Institutions that have completed verification and
+            have been approved by CampusShare administration.
+          </p>
+
+        </div>
+
+
+        <section class="panel">
+
+          <div class="panel-title">
+
+            <strong>
+              Active CampusShare Partners
+            </strong>
+
+            <span id="partnerCount">
+              0 partners
+            </span>
+
+          </div>
+
+
+          <div id="partnerList"></div>
+
+        </section>
+
+      </section>
+
+
+
+      <!-- =========================
+           PARTNER HISTORY
+      ========================== -->
+
+      <section
+        id="historySection"
+        class="admin-section"
+      >
+
+        <div class="notice">
+
+          <strong>
+            Partner History
+          </strong>
+
+          <p>
+            Previous CampusShare partner records remain available
+            for administrative reference even when a partnership
+            is no longer active.
+          </p>
+
+        </div>
+
+
+        <section class="panel">
+
+          <div class="panel-title">
+
+            <strong>
+              Partnership History
+            </strong>
+
+            <span id="historyCount">
+              0 records
+            </span>
+
+          </div>
+
+
+          <div id="historyList"></div>
+
+        </section>
+
+      </section>
+
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       PARTNERSHIP DETAILS MODAL
+  ========================== -->
+
+  <div
+    id="partnerModal"
+    class="modal hidden"
+  >
+
+    <div
+      class="modal-backdrop"
+      data-close-modal
+    ></div>
+
+
+    <section class="modal-card">
+
+      <button
+        class="modal-close"
+        data-close-modal
+      >
+        ×
+      </button>
+
+
+      <div id="partnerModalContent"></div>
+
+    </section>
+
+  </div>
+
+
+
+  <script src="js/admin.js"></script>
+
+</body>
+
+</html>

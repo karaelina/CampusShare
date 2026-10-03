@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Browse Equipment — CampusShare</title> 
+  <link rel="stylesheet" href="css/equipment.css"> 
+</head> 
+
+<body> 
+
+  <aside class="sidebar"> 
+
+    <div class="brand"> 
+      <span class="brand-mark">CS</span> 
+      <span>CampusShare</span> 
+    </div> 
+
+    <div class="student-card"> 
+      <div class="avatar" id="sidebarAvatar">J</div> 
+      <div> 
+        <strong id="sidebarName">Juan dela Cruz</strong> 
+        <small id="sidebarStudentId">2024-00123 · PSAU</small> 
+      </div> 
+    </div> 
+
+    <nav> 
+      <a href="dashboard.html"> 
+        ⌂ 
+        <span>Home</span> 
+      </a> 
+
+      <a class="active" href="equipment.html"> 
+        ▣ 
+        <span>Browse Equipment</span> 
+      </a> 
+
+      <a href="rentals.html"> 
+        ▢ 
+        <span>My Rentals</span> 
+      </a> 
+
+      <a href="payments.html"> 
+        ▤ 
+        <span>Payments</span> 
+      </a> 
+
+      <a href="notifications.html"> 
+        ♧ 
+        <span>Notifications</span> 
+      </a> 
+
+      <a href="profile.html"> 
+        ♙ 
+        <span>Profile</span> 
+      </a> 
+    </nav> 
+
+    <a class="back-site" href="index.html"> 
+      ‹ Back to main site 
+    </a> 
+
+  </aside> 
+
+  <main class="main"> 
+
+    <header class="topbar"> 
+
+      <div> 
+        <h1>Browse Equipment</h1> 
+        <p> 
+          Find equipment available from partner campuses across Puerto Princesa City. 
+        </p> 
+      </div> 
+
+      <div class="top-actions"> 
+
+        <input 
+          id="globalSearch" 
+          type="search" 
+          placeholder="Search equipment..." 
+        > 
+
+        <button 
+          class="icon-btn" 
+          id="notificationButton" 
+          title="Notifications" 
+        > 
+          ♧ 
+        </button> 
+
+        <a 
+          href="profile.html" 
+          class="top-avatar" 
+          id="profileButton"
+          title="Profile" 
+        > 
+          J 
+        </a> 
+
+      </div> 
+
+    </header> 
+
+    <section class="content"> 
+
+      <div class="search-row"> 
+        <input 
+          id="equipmentSearch" 
+          type="search" 
+          placeholder="Search by name or provider..." 
+          autocomplete="off" 
+        > 
+      </div> 
+
+      <div class="filters"> 
+        <div id="categoryFilters" class="filter-group"></div> 
+      </div> 
+
+      <div class="provider-row"> 
+
+        <span class="muted">Campus / Provider</span> 
+
+        <select id="providerFilter"> 
+          <option value="All">All</option> 
+          <option value="PSAU Main Campus">PSAU Main Campus</option> 
+          <option value="WCC Campus">WCC Campus</option> 
+          <option value="NORSU Campus">NORSU Campus</option> 
+          <option value="PNU Main Campus">PNU Main Campus</option> 
+        </select> 
+
+        <span id="itemsFound" class="found"></span> 
+
+      </div> 
+
+      <div id="equipmentGrid" class="equipment-grid"></div> 
+
+    </section> 
+
+  </main> 
+
+  <div id="rentalModal" class="modal hidden"> 
+
+    <div class="modal-backdrop" data-close></div> 
+
+    <section 
+      class="modal-card" 
+      role="dialog" 
+      aria-modal="true" 
+      aria-labelledby="modalTitle" 
+    > 
+
+      <button 
+        class="modal-close" 
+        data-close 
+        aria-label="Close" 
+      > 
+        × 
+      </button> 
+
+      <div id="modalContent"></div> 
+
+    </section> 
+
+  </div> 
+
+  <div 
+    id="toast" 
+    class="toast" 
+    role="status" 
+    aria-live="polite" 
+  ></div> 
+
+  <script src="js/equipment.js"></script> 
+  <script src="js/student-session.js"></script> 
+
+</body> 
+
+</html>

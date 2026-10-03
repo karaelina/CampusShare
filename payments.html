@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payments — CampusShare</title>
+<link rel="stylesheet" href="css/payments.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">CS</span><span>CampusShare</span></div>
+  <div class="student-card"><div class="avatar">J</div><div><strong>Juan dela Cruz</strong><small>2024-00123 · PSAU</small></div></div>
+  <nav>
+    <a href="dashboard.html">⌂ <span>Home</span></a>
+    <a href="equipment.html">▣ <span>Browse Equipment</span></a>
+    <a href="rentals.html">▢ <span>My Rentals</span></a>
+    <a class="active" href="payments.html">▤ <span>Payments</span></a>
+    <a href="notifications.html">♧ <span>Notifications</span></a>
+    <a href="profile.html">♙ <span>Profile</span></a>
+  </nav>
+  <a class="back-site" href="index.html">‹ Back to main site</a>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <div><h1>Payments</h1><p>Student Portal · Puerto Princesa City</p></div>
+  <div class="top-actions"><div class="top-avatar">J</div></div>
+</header>
+
+<section class="content">
+  <div class="stats">
+    <div><span>Total Spent</span><strong id="totalSpent">₱0</strong><small id="transactionCount">0 transactions</small></div>
+    <div><span>Payment Verified</span><strong id="verified">₱0</strong><small id="verifiedCount">0 transactions</small></div>
+    <div><span>Pending Verification</span><strong id="pending">₱0</strong><small id="pendingCount">0 transactions</small></div>
+  </div>
+
+  <section class="panel">
+    <div class="panel-title"><strong>Payment Records &amp; Transaction Details</strong><span>Click a record to expand</span></div>
+    <div id="records"></div>
+  </section>
+
+  <section class="panel methods">
+    <div class="panel-title"><strong>Accepted Payment Methods</strong></div>
+    <div class="method-grid">
+      <div><b>▤ GCash</b><small>0917-123-4567</small></div>
+      <div><b>▤ Maya</b><small>0912-345-6789</small></div>
+      <div><b>▤ Cash on Pickup</b><small>At equipment location</small></div>
+    </div>
+  </section>
+</section>
+</main>
+<script src="js/payments.js"></script>
+<script src="js/student-session.js"></script>
+</body>
+</html>

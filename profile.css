@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f3;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 268px;
+  background: #151515;
+  color: #fff;
+  padding: 22px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font: 700 22px Georgia, serif;
+  padding: 0 8px 22px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  color: #111;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font: 700 13px Georgia;
+}
+
+.student-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #272727;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 16px 2px;
+}
+
+.avatar,
+.top-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #3b4658;
+  font-weight: 700;
+}
+
+.student-card strong {
+  display: block;
+  font-size: 13px;
+}
+
+.student-card small {
+  color: #aaa;
+  font-size: 11px;
+}
+
+nav {
+  display: grid;
+  gap: 4px;
+}
+
+nav a {
+  padding: 12px;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 9px;
+  display: flex;
+  gap: 12px;
+}
+
+nav a.active,
+nav a:hover {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.back-site {
+  margin-top: auto;
+  color: #888;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 12px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  margin-left: 268px;
+  min-height: 100vh;
+}
+
+.topbar {
+  height: 84px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 34px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font: 700 22px Georgia, serif;
+}
+
+.topbar p {
+  color: #777;
+  font-size: 13px;
+}
+
+.top-avatar {
+  background: #151515;
+  color: #fff;
+}
+
+.content {
+  padding: 28px 34px;
+}
+
+
+/* =========================
+   PROFILE HERO
+========================= */
+
+.profile-hero {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #151515;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font: 700 25px Georgia, serif;
+  flex: 0 0 68px;
+}
+
+.profile-main-info {
+  min-width: 0;
+}
+
+.profile-label,
+.section-label {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.profile-main-info h2 {
+  margin: 5px 0 5px;
+  font: 700 24px Georgia, serif;
+}
+
+.profile-main-info p {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.account-status {
+  margin-left: auto;
+  background: #d9f8ea;
+  color: #087d53;
+  border-radius: 20px;
+  padding: 7px 11px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   PROFILE GRID
+========================= */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.profile-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 22px;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.card-heading h3 {
+  margin: 5px 0 0;
+  font: 700 17px Georgia, serif;
+}
+
+
+/* =========================
+   INFORMATION GRID
+========================= */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+}
+
+.info-item {
+  background: #f6f6f5;
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.info-item small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.status-text {
+  color: #087d53;
+}
+
+
+/* =========================
+   RENTAL SUMMARY
+========================= */
+
+.rental-summary-card {
+  grid-column: 1 / -1;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
+}
+
+.summary-item {
+  background: #f6f6f5;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.summary-item span {
+  display: block;
+  color: #777;
+  font-size: 11px;
+}
+
+.summary-item strong {
+  display: block;
+  margin-top: 6px;
+  font: 700 25px Georgia, serif;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions {
+  display: grid;
+  gap: 9px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  background: #f6f6f5;
+  border-radius: 10px;
+  color: #171717;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.action:hover {
+  background: #ececea;
+  transform: translateX(2px);
+}
+
+.action-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  background: #151515;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.action div {
+  flex: 1;
+}
+
+.action strong {
+  display: block;
+  font-size: 12px;
+}
+
+.action small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.arrow {
+  color: #777;
+  font-size: 17px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .main {
+    margin-left: 220px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-summary-card {
+    grid-column: auto;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .topbar {
+    padding: 0 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .profile-hero {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .account-status {
+    margin-left: 0;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

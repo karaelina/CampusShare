@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile — CampusShare</title>
+<link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <span class="brand-mark">CS</span>
+    <span>CampusShare</span>
+  </div>
+
+  <div class="student-card">
+    <div class="avatar" id="sidebarAvatar">J</div>
+
+    <div>
+      <strong id="sidebarName">Juan dela Cruz</strong>
+      <small id="sidebarStudentId">2024-00123 · PSAU</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="dashboard.html">⌂ <span>Home</span></a>
+    <a href="equipment.html">▣ <span>Browse Equipment</span></a>
+    <a href="rentals.html">▢ <span>My Rentals</span></a>
+    <a href="payments.html">▤ <span>Payments</span></a>
+    <a href="notifications.html">♧ <span>Notifications</span></a>
+    <a class="active" href="profile.html">♙ <span>Profile</span></a>
+  </nav>
+
+  <a class="back-site" href="index.html">‹ Back to main site</a>
+
+</aside>
+
+<main class="main">
+
+  <header class="topbar">
+    <div>
+      <h1>My Profile</h1>
+      <p>Student Portal · Puerto Princesa City</p>
+    </div>
+
+    <div class="top-avatar" id="topAvatar">J</div>
+  </header>
+
+  <section class="content">
+
+    <section class="profile-hero">
+
+      <div class="profile-avatar" id="profileAvatar">J</div>
+
+      <div class="profile-main-info">
+        <span class="profile-label">STUDENT ACCOUNT</span>
+
+        <h2 id="profileName">Juan dela Cruz</h2>
+
+        <p>
+          Student ID: <span id="profileStudentId">2024-00123</span>
+        </p>
+      </div>
+
+      <span class="account-status">Active Account</span>
+
+    </section>
+
+    <div class="profile-grid">
+
+      <section class="profile-card">
+
+        <div class="card-heading">
+          <div>
+            <span class="section-label">PERSONAL INFORMATION</span>
+            <h3>Student Details</h3>
+          </div>
+        </div>
+
+        <div class="info-grid">
+
+          <div class="info-item">
+            <small>Full Name</small>
+            <strong id="profileFullName">Juan dela Cruz</strong>
+          </div>
+
+          <div class="info-item">
+            <small>Student ID</small>
+            <strong id="profileStudentIdInfo">2024-00123</strong>
+          </div>
+
+          <div class="info-item">
+            <small>University</small>
+            <strong id="profileSchool">PSAU</strong>
+          </div>
+
+          <div class="info-item">
+            <small>Campus</small>
+            <strong>Puerto Princesa City</strong>
+          </div>
+
+          <div class="info-item">
+            <small>Account Type</small>
+            <strong>Student</strong>
+          </div>
+
+          <div class="info-item">
+            <small>Account Status</small>
+            <strong class="status-text">Active</strong>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="profile-card">
+
+        <div class="card-heading">
+          <div>
+            <span class="section-label">CONTACT INFORMATION</span>
+            <h3>Contact Details</h3>
+          </div>
+        </div>
+
+        <div class="info-grid">
+
+          <div class="info-item">
+            <small>Email Address</small>
+            <strong id="profileEmail">juan.delacruz@psau.edu.ph</strong>
+          </div>
+
+          <div class="info-item">
+            <small>Mobile Number</small>
+            <strong>09XX XXX XXXX</strong>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="profile-card rental-summary-card">
+
+        <div class="card-heading">
+          <div>
+            <span class="section-label">RENTAL ACTIVITY</span>
+            <h3>My Rental Summary</h3>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+
+          <div class="summary-item">
+            <span>Total Rentals</span>
+            <strong id="totalRentals">0</strong>
+          </div>
+
+          <div class="summary-item">
+            <span>Pending</span>
+            <strong id="pendingRentals">0</strong>
+          </div>
+
+          <div class="summary-item">
+            <span>Active</span>
+            <strong id="activeRentals">0</strong>
+          </div>
+
+          <div class="summary-item">
+            <span>Completed</span>
+            <strong id="completedRentals">0</strong>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="profile-card">
+
+        <div class="card-heading">
+          <div>
+            <span class="section-label">QUICK ACTIONS</span>
+            <h3>CampusShare</h3>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+
+          <a href="equipment.html" class="action">
+            <span class="action-icon">▣</span>
+            <div>
+              <strong>Browse Equipment</strong>
+              <small>Find equipment available for rent</small>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="rentals.html" class="action">
+            <span class="action-icon">▢</span>
+            <div>
+              <strong>My Rentals</strong>
+              <small>View your rental requests and history</small>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="payments.html" class="action">
+            <span class="action-icon">₱</span>
+            <div>
+              <strong>Payment History</strong>
+              <small>Review your rental payments</small>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
