@@ -1,0 +1,11 @@
+CampusShare Provider Portal Fix
+
+Changes in this pass:
+- Locked the CampusShare CS logo mark to a fixed square so global styles cannot stretch it into an oblong.
+- Locked provider avatars to a true circle.
+- Removed repeated section titles in provider pages; the top bar remains the single page title while descriptions remain visible.
+- Expanded provider content to use the available width.
+- Improved provider partnership lookup: first by partnership ID, then email, then matching provider/campus names.
+- Partnership profile fields now fall back to the provider session if some stored partnership fields are unavailable.
+
+This remains a localStorage prototype; data is not synced across different browsers/devices. Please test the provider login, profile, equipment, rental requests, active rentals and returns.

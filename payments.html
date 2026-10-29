@@ -28,10 +28,14 @@
 </header>
 
 <section class="content">
+  <div class="payment-demo-notice">
+    <strong>Prototype payment simulation</strong>
+    <p>These records are stored in this browser only. CampusShare is not connected to a payment gateway, and no real charge, refund, commission collection, or provider payout occurs.</p>
+  </div>
   <div class="stats">
-    <div><span>Total Spent</span><strong id="totalSpent">₱0</strong><small id="transactionCount">0 transactions</small></div>
-    <div><span>Payment Verified</span><strong id="verified">₱0</strong><small id="verifiedCount">0 transactions</small></div>
-    <div><span>Pending Verification</span><strong id="pending">₱0</strong><small id="pendingCount">0 transactions</small></div>
+    <div><span>Total Rental Value (demo)</span><strong id="totalSpent">₱0</strong><small id="transactionCount">0 transactions</small></div>
+    <div><span>Completed Rental Value</span><strong id="verified">₱0</strong><small id="verifiedCount">0 transactions</small></div>
+    <div><span>Pending Rental Requests</span><strong id="pending">₱0</strong><small id="pendingCount">0 transactions</small></div>
   </div>
 
   <section class="panel">
@@ -42,14 +46,15 @@
   <section class="panel methods">
     <div class="panel-title"><strong>Accepted Payment Methods</strong></div>
     <div class="method-grid">
-      <div><b>▤ GCash</b><small>0917-123-4567</small></div>
-      <div><b>▤ Maya</b><small>0912-345-6789</small></div>
-      <div><b>▤ Cash on Pickup</b><small>At equipment location</small></div>
+      <div><b>GCash (Demo)</b><small>Simulated only — no real charge</small></div>
+      <div><b>Maya (Demo)</b><small>Simulated only — no real charge</small></div>
+      <div><b>Cash on Pickup (Demo)</b><small>Display/simulation only — no real cash collected</small></div>
     </div>
   </section>
 </section>
 </main>
 <script src="js/payments.js"></script>
 <script src="js/student-session.js"></script>
+  <script src="js/student-identity-sync.js"></script>
 </body>
 </html>

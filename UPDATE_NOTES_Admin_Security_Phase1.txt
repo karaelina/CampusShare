@@ -1,0 +1,6 @@
+CampusShare Admin Security Phase 1 foundation added.
+
+New files: server.js, package.json, admin-login.html, ADMIN_SECURITY_SETUP.md.
+Admin dashboard route requires a server-side session; admin API routes require role=admin. Passwords are bcrypt-hashed. Sessions and partnership metadata use SQLite. Admin activity is audited.
+
+Not yet complete: existing legacy pages still use localStorage. Existing partnership form and admin dashboard are not yet connected to the new APIs, so cross-device partnership workflow is not complete. File upload persistence is not implemented. See ADMIN_SECURITY_SETUP.md before running.

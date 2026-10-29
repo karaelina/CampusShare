@@ -7,6 +7,19 @@
   <title>Become a CampusShare Partner</title>
 
   <link rel="stylesheet" href="css/provider.css">
+<style>
+/* Post-submission status-first flow */
+.partnership-confirmation{border:1px solid #b9e2c9;background:#effaf3;border-radius:14px;padding:24px;margin:0 0 22px;color:#153d29}
+.partnership-confirmation h2{margin:0 0 8px;font-family:Georgia,serif;font-size:26px}
+.partnership-confirmation p{line-height:1.55;margin:8px 0;color:#315642}
+.partnership-confirmation .application-ref{display:inline-block;background:#fff;border:1px solid #cce5d5;border-radius:8px;padding:9px 12px;font-weight:800;letter-spacing:.3px}
+.partnership-confirmation .next-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:18px}
+.partnership-confirmation .next-actions a,.partnership-confirmation .next-actions button{display:block;width:100%;box-sizing:border-box;text-align:center;padding:13px 16px;border-radius:9px;font:inherit;font-weight:700;text-decoration:none}
+.partnership-confirmation .track-now{background:#111;color:#fff;border:1px solid #111}
+.partnership-confirmation .locked-action{background:#e8e8e8;color:#777;border:1px solid #ddd;cursor:not-allowed}
+.partnership-confirmation .locked-help{font-size:12px;color:#666;margin:0}
+.partnership-form-complete{display:none!important}
+</style>
 </head>
 
 <body>
@@ -351,6 +364,41 @@
 
         </div>
 
+
+        <!-- =========================
+             VERIFICATION DOCUMENTS
+        ========================== -->
+
+        <div class="section-title">
+          <span>05</span>
+          <div>
+            <h3>Verification Documents</h3>
+            <p>For this prototype, use sample or dummy files only. Do not upload real government IDs.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field full">
+            <label for="representativeId">Authorized Representative ID (image)</label>
+            <input type="file" id="representativeId" name="representativeId" accept="image/jpeg,image/png,image/webp" required>
+            <small>JPG, PNG, or WEBP. Maximum 5 MB. Prototype storage only.</small>
+            <div id="representativeIdPreview" class="document-preview" hidden></div>
+          </div>
+          <div class="field full">
+            <label for="authorizationDocument">Organization Authorization Document</label>
+            <input type="file" id="authorizationDocument" name="authorizationDocument" accept="image/jpeg,image/png,image/webp,application/pdf" required>
+            <small>Upload an authorization letter or other proof of authority. PDF or image, maximum 5 MB.</small>
+            <div id="authorizationDocumentPreview" class="document-preview" hidden></div>
+          </div>
+        </div>
+
+        <div class="verification-box" role="note">
+          <div class="verification-icon">!</div>
+          <div>
+            <strong>Privacy notice — prototype only</strong>
+            <p>Files are stored in this browser's localStorage and are not securely protected or shared across devices. Use dummy/sample documents only. A real deployment needs private file storage, access controls, retention rules, and explicit consent.</p>
+          </div>
+        </div>
 
         <!-- =========================
              VERIFICATION NOTICE

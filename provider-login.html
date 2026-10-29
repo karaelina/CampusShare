@@ -7,6 +7,38 @@
   <title>Provider Login — CampusShare</title>
 
   <link rel="stylesheet" href="css/provider-login.css">
+<style>
+.tracking-entry{margin:18px 0 4px;padding:18px;border:1px solid #e1e1e1;border-radius:12px;text-align:center}
+.tracking-title{font-weight:700;margin:0 0 6px;color:#171717}
+.tracking-copy{font-size:13px;color:#777;line-height:1.5;margin:0 0 12px}
+.tracking-entry .btn{cursor:pointer;width:100%;padding:12px;border:1px solid #cfcfcf;border-radius:9px;background:#fff;font-weight:700}
+.tracking-panel{position:fixed;z-index:1000;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:min(92vw,480px);max-height:85vh;overflow:auto;background:#fff;border:1px solid #ddd;border-radius:18px;box-shadow:0 24px 80px #0004;padding:28px}
+.tracking-panel[hidden]{display:none}
+.tracking-panel h2{font-family:Georgia,serif;font-size:28px;margin:0 32px 10px 0}
+.tracking-panel p{color:#666;line-height:1.5;font-size:14px}
+.tracking-panel label{display:block;font-weight:700;font-size:13px;margin:14px 0 6px}
+.tracking-panel input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #ccc;border-radius:9px;font:inherit}
+.tracking-panel form .btn{width:100%;margin-top:16px;padding:13px;border:0;border-radius:9px;background:#111;color:#fff;font-weight:700;cursor:pointer}
+.tracking-close{position:absolute;right:16px;top:12px;border:0;border-radius:50%;width:34px;height:34px;background:#f1f1f1;font-size:22px;cursor:pointer}
+.tracking-result{margin-top:16px}
+.tracking-status-card{background:#f6f6f4;border-radius:12px;padding:16px;margin-top:12px}
+.tracking-status-card strong{display:block;font-size:18px;margin-bottom:8px}
+.tracking-status-card p{margin:6px 0}
+.tracking-status-card .status-pill{display:inline-block;padding:5px 10px;border-radius:99px;background:#fff0c8;color:#775000;font-size:12px;font-weight:700}
+.tracking-status-card .status-approved{background:#dff7e9;color:#11683c}
+.tracking-status-card .status-rejected{background:#ffe6e6;color:#a52323}
+.tracking-help{font-size:12px;color:#777}
+@media(max-width:600px){.tracking-panel{padding:22px}}
+
+.application-gate-notice{margin:0 0 16px;padding:13px 14px;border-radius:10px;background:#fff2d2;border:1px solid #f0dba6;color:#6f4a00;font-size:13px;line-height:1.5}
+.application-gate-notice[hidden]{display:none}
+.tracking-result .gate-actions{display:grid;gap:8px;margin-top:14px}
+.tracking-result .gate-actions a{display:block;text-align:center;padding:11px 12px;border-radius:9px;font-weight:700;text-decoration:none;border:1px solid #111;background:#111;color:#fff}
+.tracking-result .gate-actions a.secondary{background:#fff;color:#111;border-color:#ccc}
+#loginForm.gated input,#loginForm.gated button,#activateBtn.gated{opacity:.48;cursor:not-allowed}
+
+</style>
+
 </head>
 
 <body>
@@ -90,6 +122,7 @@
             Sign in to manage your CampusShare partnership.
           </p>
 
+          <div id="applicationGateNotice" class="application-gate-notice" hidden role="status"></div>
           <div id="loginMessage" class="message"></div>
 
           <form id="loginForm">
@@ -145,6 +178,7 @@
             type="button"
             class="btn btn-outline"
             id="activateBtn"
+            disabled
           >
             Activate Provider Account
           </button>
@@ -257,6 +291,32 @@
         </div>
 
       </div>
+
+
+      <div class="tracking-entry">
+        <p class="tracking-title">Already submitted a partnership request?</p>
+        <p class="tracking-copy">Check your application status using your reference number and official email.</p>
+        <button type="button" class="btn btn-light" id="openTrackingBtn">Track Partnership Request</button>
+      </div>
+
+      <section id="trackingPanel" class="tracking-panel" hidden aria-live="polite">
+        <button type="button" class="tracking-close" id="closeTrackingBtn" aria-label="Close tracking">×</button>
+        <h2>Track Partnership Request</h2>
+        <p>Enter the reference number shown after you submitted your form and the official email used in that application.</p>
+        <form id="trackingForm">
+          <label for="trackingReference">Application Reference Number</label>
+          <input id="trackingReference" name="trackingReference" placeholder="e.g. PART-123456" required>
+          <label for="trackingEmail">Official Email</label>
+          <input id="trackingEmail" name="trackingEmail" type="email" placeholder="you@institution.edu.ph" required>
+          <button type="submit" class="btn btn-dark">Check Status</button>
+        </form>
+        <div id="trackingResult" class="tracking-result" role="status" aria-live="polite"></div>
+      </section>
+
+      <p class="new-partner-link">
+        Not a CampusShare partner yet?
+        <a href="partner.html">Submit a partnership request</a>
+      </p>
 
       <a
         href="index.html"

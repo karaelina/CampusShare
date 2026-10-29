@@ -64,12 +64,6 @@
 
     <nav>
 
-      <a href="dashboard.html">
-        <span>⌂</span>
-        <span>Student Home</span>
-      </a>
-
-
       <a
         href="#"
         class="nav-link active"
@@ -80,14 +74,7 @@
       </a>
 
 
-      <a
-        href="#"
-        class="nav-link"
-        data-section="rentals"
-      >
-        <span>▢</span>
-        <span>Rental Requests</span>
-      </a>
+
 
 
       <a
@@ -105,6 +92,16 @@
           0
         </span>
 
+      </a>
+
+
+      <a
+        href="#"
+        class="nav-link"
+        data-section="disputes"
+      >
+        <span>⚑</span>
+        <span>Disputes &amp; Holds</span>
       </a>
 
 
@@ -346,7 +343,7 @@
         <div class="notice">
 
           <strong>
-            Student Rental Requests
+            Rental Requests — Admin Approval
           </strong>
 
           <p>
@@ -518,6 +515,24 @@
 
       </section>
 
+
+
+      <!-- =========================
+           DISPUTES & SETTLEMENT HOLDS
+      ========================== -->
+      <section id="disputesSection" class="admin-section">
+        <div class="notice">
+          <strong>Disputes &amp; Settlement Holds — Demo</strong>
+          <p>Review reported rental/payment issues. Resolving a case only updates local demo records; it does not issue a real refund or move money.</p>
+        </div>
+        <section class="panel">
+          <div class="panel-title">
+            <strong>Reported Issues</strong>
+            <span id="disputeCount">0 cases</span>
+          </div>
+          <div id="disputeList"></div>
+        </section>
+      </section>
 
 
       <!-- =========================

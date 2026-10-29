@@ -1,0 +1,17 @@
+CampusShare Phase 4.3 — Partnership Form Safety & Verification Uploads
+
+Changes:
+- Added required Authorized Representative ID image upload (JPG/PNG/WEBP).
+- Added required Organization Authorization Document upload (PDF or image).
+- Added file type validation, 700 KB per-file size cap, previews, and visible validation errors.
+- Added case-insensitive duplicate-email checks against existing partnership applications, including a second check after files are read.
+- Added privacy notice explaining that this is localStorage prototype storage and real IDs must not be used.
+- Submission confirmation directs applicants to Provider Login / Track Partnership Request.
+- Admin partnership details can display uploaded image previews and open prototype PDFs.
+- Existing index.html/welcome page was not modified.
+
+Important limitations:
+- Data and files remain in localStorage in the current browser origin only. Uploaded files are NOT securely protected. Use dummy/sample documents only.
+- This is not real identity verification. No actual email is sent.
+- Production needs server-side uniqueness constraints, secure private file storage, access controls, consent, retention/deletion policy, malware scanning, rate limiting, and a backend.
+- Rejected/previous applications also block the same email in this prototype; contact admin for a controlled appeal/resubmission.

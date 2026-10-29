@@ -1,111 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusShare</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusShare — School Equipment Rental</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f5f5f3;color:#111;font-family:Arial,Helvetica,sans-serif}.top{height:90px;background:#111;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,84px)}.brand{display:flex;align-items:center;gap:12px;font:700 30px Georgia,serif}.mark{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:white;color:#111;font:700 15px Georgia,serif}.top a{color:white;text-decoration:none;font-weight:700}.hero{max-width:1250px;margin:auto;min-height:calc(100vh - 90px);padding:90px 30px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px}.eyebrow{font-size:11px;letter-spacing:2.5px;color:#777;font-weight:700}.hero h1{font:700 clamp(48px,5.5vw,78px)/1.02 Georgia,serif;letter-spacing:-2px;margin:22px 0}.hero h1 em{color:#777}.lead{max-width:650px;color:#666;font-size:17px;line-height:1.9}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:16px 24px;border-radius:10px;background:#111;color:white;text-decoration:none;font-weight:700}.btn.alt{background:white;color:#111;border:1px solid #ddd}.sub{color:#777;font-size:14px;margin-top:20px}.flow{background:#111;color:#fff;padding:38px;border-radius:28px;box-shadow:0 24px 70px #0001}.flow h2{font:700 36px/1.12 Georgia,serif;margin:25px 0}.step{padding:17px 0;border-top:1px solid #333;line-height:1.5}.step span{color:#aaa;margin-right:12px}.flow p{color:#aaa;letter-spacing:2px;font-size:11px;font-weight:700}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:55px;gap:35px}.hero h1{font-size:52px}.flow{padding:28px}.brand{font-size:24px}}
+</style>
 </head>
 <body>
-  <main class="welcome-page">
-
-    <section class="brand-panel">
-      <div class="circle circle-top"></div>
-      <div class="circle circle-right"></div>
-      <div class="circle circle-bottom"></div>
-
-      <header class="brand">
-        <div class="brand-mark">CS</div>
-        <div class="brand-name">CampusShare</div>
-      </header>
-
-      <div class="brand-content">
-        <p class="eyebrow">PUERTO PRINCESA CITY</p>
-
-        <h1>
-          The equipment you need,<br>
-          <em>when you need it.</em>
-        </h1>
-
-        <p class="intro">
-          Rent laptops, cameras, projectors, microphones, and more
-          from trusted campuses — affordable, temporary, and always
-          available for your next school project.
-        </p>
-
-        <ul class="benefits">
-          <li><span>⌕</span> Search equipment from partner campuses</li>
-          <li><span>▢</span> Submit a rental request in minutes</li>
-          <li><span>◉</span> Get approved and pick up your gear</li>
-          <li><span>↻</span> Return when done — no long-term commitment</li>
-        </ul>
-      </div>
-
-      <div class="brand-footer">
-        <div>
-          <span class="footer-icon">⌁</span>
-          <p>Student-focused equipment rental</p>
-        </div>
-
-        <div>
-          <span class="footer-icon">◇</span>
-          <p>Multiple academic equipment options</p>
-        </div>
-
-        <div>
-          <span class="footer-icon">♧</span>
-          <p>Connecting campuses and providers</p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="welcome-panel">
-      <div class="welcome-card">
-
-        <h2>Welcome!</h2>
-
-        <p class="subtitle">
-          Access school equipment rentals across Puerto Princesa City.
-        </p>
-
-
-        <div class="actions">
-
-          <button class="btn btn-dark" id="loginBtn">
-            ⇥ &nbsp; Log In to My Account
-          </button>
-
-          <button class="btn btn-dark" id="registerBtn">
-            ♙ &nbsp; Create a Student Account
-          </button>
-
-        </div>
-
-
-        <div class="partner-label">
-          <span></span>
-          <p>Are you a partner campus or provider?</p>
-          <span></span>
-        </div>
-
-
-        <button class="btn btn-outline" id="partnerBtn">
-          ▣ &nbsp; Partner / Provider Login
-        </button>
-
-
-        <div class="trust-list">
-          <p>▦ &nbsp; Partner campuses across Puerto Princesa City</p>
-          <p>♙ &nbsp; Secure and verified student platform</p>
-          <p>▤ &nbsp; GCash, Maya, and cash payments accepted</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <script src="js/app.js"></script>
-</body>
-</html>
+<header class="top"><div class="brand"><span class="mark">CS</span>CampusShare</div><a href="login.html">Log in</a></header>
+<main class="hero"><section><div class="eyebrow">PUERTO PRINCESA CITY</div><h1>The equipment<br>you need,<br><em>when you need it.</em></h1><p class="lead">Find school equipment offered by participating campuses and providers. Browse available items, submit a rental request, and follow your rental status in one place.</p><div class="actions"><a class="btn" href="register.html">Get Started →</a><a class="btn alt" href="partner.html">Become a Partner</a></div><p class="sub">New student? <a href="register.html" style="color:#111;font-weight:700">Create an account</a></p></section><aside class="flow"><p>CAMPUSSHARE RENTAL FLOW</p><h2>Search.<br>Request.<br>Pick up. Return.</h2><div class="step"><span>01</span>Browse laptops, cameras, projectors, printers and more</div><div class="step"><span>02</span>Submit a rental request for provider review</div><div class="step"><span>03</span>Coordinate pickup and return with the provider</div></aside></main>
+</body></html>

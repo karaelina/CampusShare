@@ -1,0 +1,39 @@
+CampusShare Update Notes
+
+This update adds the following prototype workflow improvements:
+
+1. Provider Add Equipment now requires a Designated Pickup / Use Location.
+2. Student rental request displays the provider-designated location as read-only; the student cannot choose a different location.
+3. Rental requests save student identity, provider identity, dates, pickup/use location, payment method, total, and status in campusShareRentals.
+4. Admin can approve a Pending rental request only. Once approved, the admin sees a note that the provider manages pickup and return tracking.
+5. Provider Rental Requests shows student/rental/payment/location details. Provider can mark an Approved rental as picked up (Active), then mark an Active rental as returned (Completed).
+6. Provider Active Rentals and Returns include the student and designated location details.
+7. Student My Rentals is tracking-only and no longer changes rental status itself.
+
+Prototype limitation: this version still uses browser localStorage. Data is shared only among pages in the same browser/profile on the same device. It is not a shared multi-device database and should be treated as a demonstration, not a production booking/payment system. Older equipment records may not have a designated location; they display a fallback until the provider edits/re-adds the equipment.
+
+
+LATEST UPDATE (Oct 2026)
+- Dedicated public landing page at index.html with Get Started, student registration, partner application and provider portal links.
+- Provider Rental Requests now lists only Admin-approved rentals; provider controls pickup/active/return status after approval.
+- Added shared student identity sync to student navigation pages so the logged-in account name/initial is consistently applied.
+- Standardized minimum content-area height across student page styles.
+- Prototype still uses browser localStorage; data is not shared between separate devices/browsers without a backend/database.
+- No admin phone number or email was invented because verified contact details were not supplied.
+\n\nSTAGE 1 UPDATE (2026-10-25)\n- Restored a root index.html landing page so the project opens at its main page.\n- Removed the Rental Requests item from the Campus Admin sidebar; rental approval belongs to providers.\n- Provider Rental Requests now displays matching Pending student requests with an Approve Request button. Approved requests can then be marked Picked Up.\n- This prototype stores state in browser localStorage; test student and provider in the same browser profile.\n
+
+POLISH PASS (2026-10-27)
+- Added consistent keyboard focus indicators and reduced-motion support across CSS files.
+- Added subtle interaction feedback and small-screen overflow safeguards for forms, media, and tables.
+- No rental/payment/admin/provider business logic intentionally changed in this pass.
+- Reminder: this remains a localStorage prototype; cross-device testing requires a shared backend.
+
+
+PAYMENT FLOW PHASE 1 (2026-10-27)
+- Added demo-only payment lifecycle fields to new rental requests.
+- Commission split is calculated as 10% CampusShare / 90% provider share from rental subtotal, before any gateway fees.
+- Provider can now confirm successful return from Active Rentals; settlement becomes eligible only after return if no dispute exists.
+- Student Payments shows the demo commission, provider share, settlement/payout labels, and a report-issue action.
+- Reported issues set the settlement and payout to hold status; Admin now has a Disputes & Holds section to record a demo decision and decision note.
+- Removed placeholder phone numbers from payment methods and clarified that gateway integration is not connected.
+- IMPORTANT: localStorage simulation only. No real payment, gateway verification, refund, commission collection, or payout occurs. Browser-local records are not secure/shared across devices.

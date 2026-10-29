@@ -1,0 +1,16 @@
+CampusShare Phase 3 — Dispute & Settlement Guards
+=================================================
+
+Changes:
+- Students can open a dispute only after the rental has a successful demo payment.
+- Admin release settlement action is enabled only when a successful demo payment exists and the provider has confirmed a successful return (Completed/Returned plus returnConfirmedAt).
+- Admin refund decision is blocked if no successful demo payment exists.
+- Runtime guards repeat the eligibility checks; button visibility/disabled state is not the only protection.
+- Admin resolution notes and reviewer/timestamp details are retained in a demo audit history array.
+- Refund resolution records a demo decision only. It does not issue a real refund or move money.
+- No backend, real payment gateway, or real payout is connected.
+
+Testing notes:
+- JavaScript syntax check passed for all 18 JavaScript files.
+- Full browser end-to-end testing has not been performed.
+- Existing localStorage records from older tests are preserved. A legacy unpaid dispute may remain visible but its financial resolution actions will be blocked. Test a new case with a successful demo checkout for the complete flow.

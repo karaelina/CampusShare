@@ -1,0 +1,10 @@
+CampusShare Phase 4.4 — Application-gated provider access
+
+- After a successful partnership form submission, the form is hidden and a status-first confirmation appears.
+- The confirmation includes Track Your Partnership plus visibly disabled Provider Login and Activate Account actions.
+- Track Your Partnership opens provider-login.html with the application reference prefilled and the tracking panel opened.
+- For this application-specific tracking flow, login fields/buttons and activation are locked while status is Pending Review, Verification, or Rejected.
+- When Admin changes the application status to Approved in the same browser's localStorage, checking status unlocks provider login and activation for that application.
+- Normal direct visits to Provider Login remain usable for existing approved partners.
+- Prototype limitation: localStorage only; no cross-device sync, email notification, secure identity storage, or production authentication.
+- Use sample documents only.

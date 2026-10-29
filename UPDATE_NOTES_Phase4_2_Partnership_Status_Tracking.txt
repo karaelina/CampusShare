@@ -1,0 +1,17 @@
+CampusShare Phase 4.2 — Partnership Application Status Tracking
+
+Changes:
+- Added Track Partnership Request entry on provider-login.html.
+- Tracking uses the application reference number and the official email submitted with the form.
+- The tracker shows application status, campus/organization, submission date, latest update, and an Admin decision note.
+- Admin rejection now asks for a required decision note.
+- Admin approval asks for an optional applicant-facing note.
+- Status decisions are stored on the partnership record in localStorage.
+- Tracking dialog is responsive and centered.
+
+Prototype limitations:
+- This uses localStorage only. Records are available only in the same browser profile/origin.
+- It does not send real email or push notifications.
+- Reference + email matching is a prototype lookup, not production-grade identity verification.
+- Production deployment requires a backend, secure authorization, rate limiting, and an email service.
+- Existing welcome page/index.html was not intentionally changed.

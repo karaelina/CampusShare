@@ -1,0 +1,52 @@
+CAMPUSHARE ROLE-BY-ROLE TEST CHECKLIST
+=====================================
+
+Before testing
+[ ] Extract the ZIP fully (do not run HTML files from inside the ZIP).
+[ ] Open FINALCAPUSSHAREWEBSITE/index.html through your existing local server.
+[ ] Use the SAME browser profile for student, provider, and admin demo tests because the prototype uses localStorage.
+[ ] Use test/demo accounts only. Do not enter real payment credentials or sensitive data.
+
+STUDENT / USER
+[ ] Register or log in; confirm name and avatar stay consistent across pages.
+[ ] Browse Equipment; search, category filters, provider/campus filter, and Details work.
+[ ] Open an equipment detail and verify photo, hourly rate, and provider-designated pickup/use location.
+[ ] Submit a rental request; confirm date/time, duration, estimated total, payment method, and status.
+[ ] My Rentals shows the request and changes after provider/admin actions.
+[ ] Payments and Notifications reflect the same rental/request where supported by the prototype.
+[ ] Profile displays the correct student identity and rental summary.
+
+PROVIDER / PARTNER
+[ ] Open partner/provider portal and submit or inspect partnership information.
+[ ] Add equipment with image, hourly price, and designated pickup/use location.
+[ ] Confirm new listing appears in student Browse Equipment.
+[ ] Review incoming rental requests and confirm the intended approval workflow.
+[ ] Test pickup/active and return/completed actions; verify student view updates after refresh.
+[ ] Edit or remove a test listing and confirm browse results update.
+
+ADMIN
+[ ] Open Admin Portal and inspect partnership applications.
+[ ] Approve/reject a test partnership application if those controls are present.
+[ ] Confirm Admin sidebar does not assign provider-only pickup/return tracking to admin.
+[ ] Verify counts/statuses update after actions and refresh.
+
+RESPONSIVE / REGRESSION
+[ ] Test desktop width and a narrow/mobile viewport.
+[ ] Keyboard-tab through links and controls; focus outline should be visible.
+[ ] Check for horizontal overflow, missing images, broken links, and console errors.
+[ ] Confirm index.html still exists at the project root.
+
+IMPORTANT LIMITATION
+This is a front-end demonstration backed by browser localStorage, not a production multi-user service. Data is not synchronized between separate devices or browser profiles. Payment labels/records are demo data and do not prove a real transaction occurred.
+
+
+PAYMENT FLOW PHASE 1 (DEMO ONLY)
+[ ] Create a new rental at ₱20/hour for 4 billable hours; confirm total ₱80.
+[ ] Open Payments and confirm CampusShare commission is ₱8 and provider share is ₱72.
+[ ] Confirm payment labels explicitly say demo/not connected; no real payment is made.
+[ ] Provider approves request, marks it picked up, then opens Active Rentals.
+[ ] Click Confirm Successful Return and confirm settlement is eligible (demo only).
+[ ] Before return, report an issue from the student's Payments record; confirm settlement/payout are on hold.
+[ ] Open Admin Portal > Disputes & Holds; resolve with a required decision note.
+[ ] Confirm a refund decision is recorded as demo only and does not claim a real refund occurred.
+[ ] Refresh pages and confirm changes persist in the same browser profile.

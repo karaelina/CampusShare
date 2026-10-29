@@ -55,6 +55,11 @@
         <span>Returns</span>
       </button>
 
+      <button class="nav-item" data-section="messages">
+        ✉
+        <span>Messages</span>
+      </button>
+
       <button class="nav-item" data-section="profile">
         ○
         <span>Partnership Profile</span>
@@ -79,7 +84,7 @@
         <h1 id="pageTitle">Dashboard</h1>
       </div>
 
-      <div class="top-avatar">P</div>
+      <div class="top-avatar" id="providerTopAvatar" aria-label="Provider profile">P</div>
 
     </header>
 
@@ -233,7 +238,7 @@
             <h2>Rental Requests</h2>
 
             <p>
-              Review rental requests submitted by students.
+              View rentals approved by CampusShare Admin, then manage pickup, active use, and returns.
             </p>
           </div>
 
@@ -308,6 +313,22 @@
 
         </div>
 
+      </section>
+
+
+      <!-- =========================
+           MESSAGES
+      ========================== -->
+
+      <section id="messagesSection" class="portal-section hidden">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow">COMMUNICATION</p>
+            <h2>Student Messages</h2>
+            <p>Read inquiries and reply to students. Demo messages are stored in this browser only.</p>
+          </div>
+        </div>
+        <div class="panel"><div id="providerMessagesList" class="provider-messages-list"></div></div>
       </section>
 
 
@@ -416,6 +437,27 @@
 
         <div class="field">
 
+          <label for="equipmentImage">
+            Equipment Photo <span class="required-mark">*</span>
+          </label>
+
+          <input
+            type="file"
+            id="equipmentImage"
+            accept="image/png,image/jpeg,image/webp"
+            required
+          >
+
+          <small class="field-help">Upload a clear photo of the actual item. JPG, PNG, or WebP; maximum 1 MB.</small>
+          <div id="equipmentImagePreview" class="equipment-image-preview hidden">
+            <img id="equipmentPreviewImg" alt="Equipment photo preview">
+          </div>
+
+        </div>
+
+
+        <div class="field">
+
           <label for="equipmentCategory">
             Category
           </label>
@@ -463,19 +505,30 @@
         </div>
 
 
+        <div class="field">
+          <label for="equipmentLocation">Designated Pickup / Use Location</label>
+          <input
+            type="text"
+            id="equipmentLocation"
+            placeholder="e.g. HTU Library, Ground Floor Equipment Office"
+            required
+          >
+          <small class="field-help">Students will see this location when requesting the item. They cannot change it.</small>
+        </div>
+
         <div class="form-two">
 
           <div class="field">
 
             <label for="equipmentPrice">
-              Rental Price / Day
+              Rental Price / Hour
             </label>
 
             <input
               type="number"
               id="equipmentPrice"
               min="1"
-              placeholder="e.g. 500"
+              placeholder="e.g. 30"
               required
             >
 

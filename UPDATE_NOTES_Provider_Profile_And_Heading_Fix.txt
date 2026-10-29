@@ -1,0 +1,10 @@
+CampusShare Provider Portal — Profile & Heading Fix
+
+Changes in this pass:
+- Enforced a square CampusShare CS logo mark and circular provider/profile avatars.
+- Removed repeated section titles beneath the top-bar title on Equipment, Rental Requests, Active Rentals, Returns, and Partnership Profile. Explanatory descriptions remain.
+- Improved Partnership Profile data mapping to support common alternate field names from earlier partnership form versions.
+- Included contact and organization fields in newly created provider sessions when available.
+- Preserved the existing portal workflow and project structure.
+
+Note: This remains a localStorage prototype. Existing records must contain the relevant information for it to display; missing fields show an em dash rather than invented data.

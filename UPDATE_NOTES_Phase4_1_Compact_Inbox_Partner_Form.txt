@@ -1,0 +1,16 @@
+CampusShare Phase 4.1 — Compact Provider Inbox + Partnership Form Routing
+
+Changes:
+- Provider inbox now shows compact conversation rows, each clearly labeled with student, equipment inquiry, provider/campus, latest message, and date.
+- Selecting a conversation opens one detail panel with that thread's history and a reply box for that specific student/equipment thread.
+- Replies remain stored in localStorage for same-browser prototype testing; this is not cross-device or real-time messaging.
+- Welcome page "Become a Partner" now opens partner.html (the existing partnership application form), not provider-login.html.
+- Provider login includes a link for new applicants to submit a partnership request.
+- Partnership form submission displays an inline confirmation and request reference; status remains Pending Review until Admin review.
+- Existing application record structure and admin storage key are preserved.
+
+Test:
+1. Open index.html and click Become a Partner.
+2. Submit a test partnership request and confirm it appears in Admin > Partnership Requests.
+3. Open Provider Dashboard > Messages. Select different conversations and confirm each reply box is attached to the selected student/equipment.
+4. Send a provider reply and verify it appears in the student message history in the same browser.
