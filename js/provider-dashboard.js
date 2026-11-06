@@ -111,6 +111,18 @@ function getRentals(){
 
 }
 
+async function loadProviderRentalsFromServer(){
+  const response = await fetch('/api/provider/rentals', { cache: 'no-store' });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || 'Could not load shared rental requests.');
+  const providerId = String(session?.partnershipId || session?.id || '');
+  const local = getRentals();
+  const otherProviders = local.filter(item => String(item.providerId || '') !== providerId);
+  const shared = Array.isArray(result.rentals) ? result.rentals : [];
+  localStorage.setItem(RENTALS_KEY, JSON.stringify([...shared, ...otherProviders]));
+  render();
+}
+
 
 /* =========================
    BASIC INFO
@@ -660,7 +672,7 @@ function renderRequests(){
   }).join("");
 
   list.querySelectorAll("[data-provider-rental-action]").forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const rentals = getRentals();
       const rental = rentals.find(item => item.ref === button.dataset.rentalRef);
       if (!rental || !matchesProvider(rental)) return;
@@ -671,34 +683,21 @@ function renderRequests(){
         return;
       }
       if (nextStatus === "Active" && rental.status !== "Approved") return;
-      rental.status = nextStatus;
-      rental.statusUpdatedAt = new Date().toISOString();
-      rental.statusUpdatedBy = providerName;
-
-      // Payment/settlement simulation only. No real payment or payout occurs.
-      const rentalTotal = Number(rental.total || 0);
-      rental.commissionRate = 0.10;
-      rental.commissionAmount = Number((rentalTotal * 0.10).toFixed(2));
-      rental.providerShare = Number((rentalTotal * 0.90).toFixed(2));
-      rental.paymentMode = rental.paymentMode || "SIMULATED";
-      rental.paymentProvider = rental.paymentProvider || "Not connected";
-      rental.paymentStatus = rental.paymentStatus || "Demo — awaiting payment";
-
-      if (nextStatus === "Completed") {
-        rental.returnConfirmedAt = new Date().toISOString();
-        if (rental.disputeStatus && rental.disputeStatus !== "None") {
-          rental.settlementStatus = "On hold — admin review";
-          rental.payoutStatus = "On hold — demo only";
-        } else {
-          rental.settlementStatus = "Eligible after return — demo only";
-          rental.payoutStatus = "Eligible — not paid (demo only)";
-        }
-      } else if (nextStatus === "Active") {
-        rental.settlementStatus = "Pending return";
+      button.disabled = true;
+      try {
+        const response = await fetch(`/api/provider/rentals/${encodeURIComponent(rental.ref)}`, {
+          method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: nextStatus })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(result.error || 'Could not update the shared rental request.');
+        Object.assign(rental, result.rental || {});
+        localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
+        render();
+      } catch (error) {
+        button.disabled = false;
+        window.alert(error.message || 'Could not update the rental request.');
       }
-
-      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
-      render();
     });
   });
 }
@@ -773,29 +772,27 @@ function renderActive(){
     }).join("");
 
   list.querySelectorAll("[data-confirm-return]").forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const rentals = getRentals();
       const rental = rentals.find(item => String(item.ref || "") === String(button.dataset.confirmReturn));
       if (!rental || rental.status !== "Active") return;
       const confirmed = window.confirm("Confirm that the equipment was successfully returned? This updates demo settlement status only; no payout will occur.");
       if (!confirmed) return;
-      rental.status = "Completed";
-      rental.statusUpdatedAt = new Date().toISOString();
-      rental.statusUpdatedBy = providerName;
-      rental.returnConfirmedAt = new Date().toISOString();
-      const total = Number(rental.total || 0);
-      rental.commissionRate = 0.10;
-      rental.commissionAmount = Number((total * 0.10).toFixed(2));
-      rental.providerShare = Number((total * 0.90).toFixed(2));
-      if (rental.disputeStatus && rental.disputeStatus !== "None") {
-        rental.settlementStatus = "On hold — admin review";
-        rental.payoutStatus = "On hold — demo only";
-      } else {
-        rental.settlementStatus = "Eligible after return — demo only";
-        rental.payoutStatus = "Eligible — not paid (demo only)";
+      button.disabled = true;
+      try {
+        const response = await fetch(`/api/provider/rentals/${encodeURIComponent(rental.ref)}`, {
+          method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: 'Completed' })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(result.error || 'Could not sync the return status.');
+        Object.assign(rental, result.rental || {});
+        localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
+        render();
+      } catch (error) {
+        button.disabled = false;
+        window.alert(error.message || 'Could not sync the return status.');
       }
-      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
-      render();
     });
   });
 
@@ -943,11 +940,12 @@ function render(){
 render();
 fetch("/api/provider/me", { cache: "no-store" }).then(response => {
   if (!response.ok) throw new Error("Provider session expired.");
-  return loadProviderEquipmentFromServer();
+  return Promise.all([loadProviderEquipmentFromServer(), loadProviderRentalsFromServer()]);
 }).catch(() => {
   localStorage.removeItem(PROVIDER_SESSION_KEY);
   window.location.href = "provider-login.html";
 });
+setInterval(() => loadProviderRentalsFromServer().catch(error => console.warn('Shared rental refresh failed.', error)), 15000);
 
 
 /* =========================

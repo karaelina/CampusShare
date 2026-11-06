@@ -984,7 +984,7 @@ function openRental(id) {
     );
 
 
-  function submitRental(event) {
+  async function submitRental(event) {
 
     event.preventDefault();
 
@@ -1040,6 +1040,8 @@ function openRental(id) {
         Date.now()
           .toString()
           .slice(-6),
+
+      studentAccessToken: crypto.randomUUID() + crypto.randomUUID(),
 
       equipmentId:
         item.id,
@@ -1115,6 +1117,20 @@ function openRental(id) {
     };
 
 
+    try {
+      const response = await fetch('/api/rentals', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ rental: request })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Could not send the rental request to the provider.');
+      Object.assign(request, result.rental || {});
+    } catch (error) {
+      showToast(error.message || 'Could not sync this rental request. Please try again.');
+      return;
+    }
+
     const rentals =
       getRentals();
 
@@ -1166,7 +1182,7 @@ function openDemoCheckout(request) {
     </section>`;
   document.body.appendChild(checkout);
 
-  document.getElementById("csPayDemoPayment").addEventListener("click", () => {
+  document.getElementById("csPayDemoPayment").addEventListener("click", async () => {
     const all = getRentals();
     const target = all.find(r => String(r.ref) === String(request.ref));
     if (!target) {
@@ -1174,21 +1190,37 @@ function openDemoCheckout(request) {
       showToast("Could not find the demo rental request. Please try again.");
       return;
     }
-    target.paymentStatus = "Demo payment successful — not real money";
-    target.paymentMode = "SIMULATED";
-    target.paymentProvider = "CampusShare Demo Checkout";
-    target.demoPaymentStatus = "SUCCESS";
-    target.demoPaymentReference = "DEMO-PAY-" + String(request.ref).replace(/[^a-z0-9]/gi, "");
-    target.demoPaidAt = new Date().toISOString();
-    target.settlementStatus = "Pending successful return";
-    target.payoutStatus = "Not paid — demo only";
+    const payButton = document.getElementById("csPayDemoPayment");
+    payButton.disabled = true;
+    try {
+      const response = await fetch(`/api/rentals/${encodeURIComponent(target.ref)}/payment`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ studentAccessToken: target.studentAccessToken })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Demo checkout could not be synced.');
+      Object.assign(target, result.rental || {});
+    } catch (error) {
+      payButton.disabled = false;
+      showToast(error.message || 'Could not sync demo checkout. Please try again.');
+      return;
+    }
     localStorage.setItem("campusShareRentals", JSON.stringify(all));
     checkout.remove();
     showToast("Demo payment successful! No real money was charged.");
     setTimeout(() => { location.href = "rentals.html"; }, 700);
   });
 
-  document.getElementById("csCancelDemoPayment").addEventListener("click", () => {
+  document.getElementById("csCancelDemoPayment").addEventListener("click", async () => {
+    const target = getRentals().find(r => String(r.ref) === String(request.ref));
+    if (target?.studentAccessToken) {
+      await fetch(`/api/rentals/${encodeURIComponent(target.ref)}`, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ studentAccessToken: target.studentAccessToken })
+      }).catch(() => {});
+    }
     const all = getRentals().filter(r => String(r.ref) !== String(request.ref));
     localStorage.setItem("campusShareRentals", JSON.stringify(all));
     checkout.remove();

@@ -1077,6 +1077,54 @@ function renderMyRentals() {
   }));
 }
 
+async function syncStudentRentalsWithServer() {
+  const rentals = getRentals();
+  let changed = false;
+  for (const rental of rentals) {
+    const hadToken = Boolean(rental.studentAccessToken);
+    if (!hadToken) {
+      rental.studentAccessToken = crypto.randomUUID() + crypto.randomUUID();
+      changed = true;
+      try {
+        const response = await fetch('/api/rentals', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ rental })
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) continue;
+        if (rental.demoPaymentStatus === 'SUCCESS') {
+          await fetch(`/api/rentals/${encodeURIComponent(rental.ref)}/payment`, {
+            method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ studentAccessToken: rental.studentAccessToken })
+          });
+        }
+        Object.assign(rental, result.rental || {});
+      } catch (error) {
+        console.warn('Could not migrate a saved rental request.', error);
+      }
+      continue;
+    }
+    try {
+      const response = await fetch('/api/rentals/mine', {
+        method: 'POST', cache: 'no-store', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ studentAccessToken: rental.studentAccessToken })
+      });
+      if (!response.ok) continue;
+      const result = await response.json();
+      if (result.rental) {
+        Object.assign(rental, result.rental);
+        changed = true;
+      }
+    } catch (error) {
+      console.warn('Could not refresh a saved rental request.', error);
+    }
+  }
+  if (changed) {
+    localStorage.setItem('campusShareRentals', JSON.stringify(rentals));
+    renderMyRentals();
+  }
+}
+
 document.querySelectorAll("[data-filter]").forEach(button => button.addEventListener("click", () => {
   activeRentalFilter = button.dataset.filter || "all";
   document.querySelectorAll("[data-filter]").forEach(tab => tab.classList.toggle("active", tab === button));
@@ -1111,3 +1159,5 @@ renderCurrentRental();
 renderRecentRental();
 renderRecentNotifications();
 updateNotificationBadge();
+syncStudentRentalsWithServer();
+setInterval(syncStudentRentalsWithServer, 15000);

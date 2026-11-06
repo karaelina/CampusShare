@@ -2016,6 +2016,29 @@ async function initializeAdminPortal() {
   } catch (error) {
     console.warn('Showing partnership records cached in this browser.', error);
   }
+  try {
+    const response = await fetch('/api/admin/rentals', { cache: 'no-store' });
+    if (!response.ok) throw new Error('Could not load shared rental requests.');
+    let result = await response.json();
+    const local = getRentals();
+    const remoteIds = new Set((result.rentals || []).map(item => String(item.ref)));
+    const localOnly = local.filter(item => !remoteIds.has(String(item.ref)) && item.providerId);
+    localOnly.forEach(item => { if (!item.studentAccessToken) item.studentAccessToken = crypto.randomUUID() + crypto.randomUUID(); });
+    if (localOnly.length) {
+      localStorage.setItem(RENTAL_KEY, JSON.stringify(local));
+      await fetch('/api/admin/rentals/sync', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ rentals: localOnly })
+      });
+      const refreshed = await fetch('/api/admin/rentals', { cache: 'no-store' });
+      if (refreshed.ok) result = await refreshed.json();
+    }
+    const shared = Array.isArray(result.rentals) ? result.rentals : [];
+    const mergedIds = new Set(shared.map(item => String(item.ref)));
+    localStorage.setItem(RENTAL_KEY, JSON.stringify([...shared, ...local.filter(item => !mergedIds.has(String(item.ref)))]));
+  } catch (error) {
+    console.warn('Showing rental requests cached in this browser.', error);
+  }
   renderRentals();
   renderPartnerships();
   renderPartners();
@@ -2025,3 +2048,19 @@ async function initializeAdminPortal() {
 }
 
 initializeAdminPortal();
+setInterval(async () => {
+  try {
+    const response = await fetch('/api/admin/rentals', { cache: 'no-store' });
+    if (!response.ok) return;
+    const result = await response.json();
+    if (Array.isArray(result.rentals)) {
+      const sharedIds = new Set(result.rentals.map(item => String(item.ref)));
+      const localOnly = getRentals().filter(item => !sharedIds.has(String(item.ref)));
+      localStorage.setItem(RENTAL_KEY, JSON.stringify([...result.rentals, ...localOnly]));
+      renderRentals();
+      updateDashboardStats();
+    }
+  } catch (error) {
+    console.warn('Shared rental refresh failed.', error);
+  }
+}, 15000);

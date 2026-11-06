@@ -57,6 +57,15 @@ CREATE TABLE IF NOT EXISTS provider_equipment (
   PRIMARY KEY (provider_id, item_id)
 );
 CREATE INDEX IF NOT EXISTS idx_provider_equipment_status ON provider_equipment(provider_status, updated_at);
+CREATE TABLE IF NOT EXISTS rental_requests (
+  ref TEXT PRIMARY KEY,
+  provider_id TEXT NOT NULL,
+  student_access_token TEXT NOT NULL,
+  rental_json TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_rental_requests_provider ON rental_requests(provider_id, updated_at);
 `);
 
 // Upgrade databases created by earlier CampusShare builds without resetting data.
@@ -377,6 +386,158 @@ app.post('/api/provider-equipment/sync', equipmentApiLimiter, (req, res) => {
     if (error instanceof Error && error.message.includes('too large')) return res.status(413).json({ error: error.message });
     throw error;
   }
+});
+
+function readRental(row) {
+  if (!row) return null;
+  try { return JSON.parse(row.rental_json || '{}'); } catch { return null; }
+}
+function rentalReply(rental) {
+  if (!rental) return null;
+  const { studentAccessToken, ...safeRental } = rental;
+  return safeRental;
+}
+function rentalByRef(ref) {
+  const row = db.prepare('SELECT * FROM rental_requests WHERE ref = ?').get(String(ref || '').trim().slice(0, 120));
+  if (!row) return null;
+  const rental = readRental(row);
+  return rental ? { ...rental, providerId: row.provider_id } : null;
+}
+
+// Student-submitted rental requests are stored centrally so the provider and admin portals share them.
+app.post('/api/rentals', equipmentApiLimiter, (req, res) => {
+  const source = req.body?.rental;
+  if (!source || typeof source !== 'object') return res.status(400).json({ error: 'Rental details are required.' });
+  const ref = String(source.ref || '').trim().slice(0, 120);
+  const providerId = String(source.providerId || '').trim().slice(0, 120);
+  const equipmentId = String(source.equipmentId || '').trim().slice(0, 120);
+  const accessToken = String(source.studentAccessToken || '').trim().slice(0, 160);
+  if (!ref || !providerId || !equipmentId || accessToken.length < 32) return res.status(400).json({ error: 'A valid rental reference, listing, provider, and student access token are required.' });
+  const existingRow = db.prepare('SELECT * FROM rental_requests WHERE ref = ?').get(ref);
+  if (existingRow) {
+    if (existingRow.student_access_token !== accessToken) return res.status(409).json({ error: 'This rental reference already exists.' });
+    return res.json({ ok: true, rental: rentalReply(rentalByRef(ref)) });
+  }
+  const partner = db.prepare("SELECT id, provider_name, campus_name FROM partnership_applications WHERE id = ? AND status = 'Approved'").get(providerId);
+  const equipmentRow = db.prepare("SELECT item_json FROM provider_equipment WHERE provider_id = ? AND item_id = ? AND provider_status = 'Approved'").get(providerId, equipmentId);
+  if (!partner || !equipmentRow) return res.status(404).json({ error: 'The approved provider listing could not be found.' });
+  let equipment;
+  try { equipment = JSON.parse(equipmentRow.item_json || '{}'); } catch { equipment = null; }
+  if (!equipment || equipment.isListed === false || ['Unlisted', 'Under Review', 'Removed'].includes(String(equipment.listingStatus || equipment.status || ''))) {
+    return res.status(409).json({ error: 'This equipment is no longer available to rent.' });
+  }
+  const hours = Math.max(1, Math.min(720, Number(source.hours) || 1));
+  const hourlyRate = Math.max(0, Number(equipment.pricePerHour ?? equipment.hourlyRate ?? equipment.price ?? source.hourlyRate) || 0);
+  const createdAt = String(source.createdAt || new Date().toISOString()).slice(0, 40);
+  const rental = {
+    ...source, ref, providerId, equipmentId, equipment: String(equipment.name || source.equipment || 'Equipment'),
+    provider: partner.provider_name, campusName: partner.campus_name, hourlyRate, hours,
+    days: Math.ceil(hours / 24), total: hours * hourlyRate, status: 'Pending',
+    paymentStatus: 'Demo — awaiting payment', paymentProvider: 'Not connected', paymentMode: 'SIMULATED',
+    commissionRate: 0.10, commissionAmount: Number((hours * hourlyRate * 0.10).toFixed(2)),
+    providerShare: Number((hours * hourlyRate * 0.90).toFixed(2)), settlementStatus: 'Pending return',
+    disputeStatus: 'None', payoutStatus: 'Not paid — demo only', createdAt
+  };
+  delete rental.studentAccessToken;
+  db.prepare('INSERT INTO rental_requests (ref, provider_id, student_access_token, rental_json) VALUES (?, ?, ?, ?)')
+    .run(ref, providerId, accessToken, JSON.stringify(rental));
+  res.status(201).json({ ok: true, rental: rentalReply(rental) });
+});
+
+app.post('/api/rentals/mine', equipmentApiLimiter, (req, res) => {
+  const token = String(req.body?.studentAccessToken || '').trim().slice(0, 160);
+  if (token.length < 32) return res.status(400).json({ error: 'A valid student rental token is required.' });
+  const row = db.prepare('SELECT * FROM rental_requests WHERE student_access_token = ?').get(token);
+  if (!row) return res.status(404).json({ error: 'Rental request not found.' });
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ rental: rentalReply(rentalByRef(row.ref)) });
+});
+
+app.patch('/api/rentals/:ref/payment', equipmentApiLimiter, (req, res) => {
+  const token = String(req.body?.studentAccessToken || '').trim().slice(0, 160);
+  const row = db.prepare('SELECT * FROM rental_requests WHERE ref = ?').get(String(req.params.ref || '').trim().slice(0, 120));
+  if (!row || token.length < 32 || row.student_access_token !== token) return res.status(404).json({ error: 'Rental request not found.' });
+  const rental = readRental(row);
+  if (!rental || rental.status !== 'Pending') return res.status(409).json({ error: 'Only pending rental requests can update demo checkout.' });
+  Object.assign(rental, {
+    paymentStatus: 'Demo payment successful — not real money', paymentMode: 'SIMULATED',
+    paymentProvider: 'CampusShare Demo Checkout', demoPaymentStatus: 'SUCCESS',
+    demoPaymentReference: 'DEMO-PAY-' + row.ref.replace(/[^a-z0-9]/gi, ''),
+    demoPaidAt: new Date().toISOString(), settlementStatus: 'Pending successful return', payoutStatus: 'Not paid — demo only'
+  });
+  db.prepare('UPDATE rental_requests SET rental_json = ?, updated_at = CURRENT_TIMESTAMP WHERE ref = ?').run(JSON.stringify(rental), row.ref);
+  res.json({ ok: true, rental: rentalReply(rental) });
+});
+
+app.delete('/api/rentals/:ref', equipmentApiLimiter, (req, res) => {
+  const token = String(req.body?.studentAccessToken || '').trim().slice(0, 160);
+  const row = db.prepare('SELECT * FROM rental_requests WHERE ref = ?').get(String(req.params.ref || '').trim().slice(0, 120));
+  if (!row || token.length < 32 || row.student_access_token !== token) return res.status(404).json({ error: 'Rental request not found.' });
+  const rental = readRental(row);
+  if (rental?.status !== 'Pending' || rental?.demoPaymentStatus === 'SUCCESS') return res.status(409).json({ error: 'This rental request can no longer be cancelled.' });
+  db.prepare('DELETE FROM rental_requests WHERE ref = ?').run(row.ref);
+  res.json({ ok: true });
+});
+
+app.get('/api/provider/rentals', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const partner = db.prepare("SELECT status FROM partnership_applications WHERE id = ?").get(providerId);
+  if (!partner || partner.status !== 'Approved') return res.status(403).json({ error: 'Provider access is not approved.' });
+  const rows = db.prepare('SELECT * FROM rental_requests WHERE provider_id = ? ORDER BY created_at DESC').all(providerId);
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ rentals: rows.map(row => rentalReply(rentalByRef(row.ref))).filter(Boolean) });
+});
+
+app.patch('/api/provider/rentals/:ref', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const rental = rentalByRef(req.params.ref);
+  if (!rental || rental.providerId !== providerId) return res.status(404).json({ error: 'Rental request not found for this provider.' });
+  const nextStatus = String(req.body?.status || '');
+  const allowed = { Pending: 'Approved', Approved: 'Active', Active: 'Completed' };
+  if (allowed[rental.status] !== nextStatus) return res.status(409).json({ error: 'This rental status change is not allowed.' });
+  if (nextStatus === 'Approved' && rental.demoPaymentStatus !== 'SUCCESS') return res.status(409).json({ error: 'Student must complete demo checkout before approval.' });
+  rental.status = nextStatus;
+  rental.statusUpdatedAt = new Date().toISOString();
+  rental.statusUpdatedBy = String(req.session.provider.providerName || 'Provider');
+  if (nextStatus === 'Active') rental.settlementStatus = 'Pending return';
+  if (nextStatus === 'Completed') {
+    rental.returnConfirmedAt = rental.statusUpdatedAt;
+    rental.settlementStatus = rental.disputeStatus && rental.disputeStatus !== 'None' ? 'On hold — admin review' : 'Eligible after return — demo only';
+    rental.payoutStatus = rental.disputeStatus && rental.disputeStatus !== 'None' ? 'On hold — demo only' : 'Eligible — not paid (demo only)';
+  }
+  db.prepare('UPDATE rental_requests SET rental_json = ?, updated_at = CURRENT_TIMESTAMP WHERE ref = ?').run(JSON.stringify(rental), String(req.params.ref));
+  res.json({ ok: true, rental: rentalReply(rental) });
+});
+
+app.get('/api/admin/rentals', requireAdmin, (_req, res) => {
+  const rows = db.prepare('SELECT * FROM rental_requests ORDER BY created_at DESC').all();
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ rentals: rows.map(row => rentalReply(rentalByRef(row.ref))).filter(Boolean) });
+});
+
+app.post('/api/admin/rentals/sync', requireAdmin, (req, res) => {
+  const sourceRentals = req.body?.rentals;
+  if (!Array.isArray(sourceRentals) || sourceRentals.length > 500) return res.status(400).json({ error: 'A valid rental list is required.' });
+  const insert = db.prepare('INSERT OR IGNORE INTO rental_requests (ref, provider_id, student_access_token, rental_json) VALUES (?, ?, ?, ?)');
+  let saved = 0;
+  const sync = db.transaction(rows => {
+    for (const source of rows) {
+      if (!source || typeof source !== 'object') continue;
+      const ref = String(source.ref || '').trim().slice(0, 120);
+      const providerId = String(source.providerId || '').trim().slice(0, 120);
+      if (!ref || !providerId) continue;
+      const partner = db.prepare("SELECT id, provider_name, campus_name FROM partnership_applications WHERE id = ? AND status = 'Approved'").get(providerId);
+      if (!partner) continue;
+      const rental = { ...source, ref, providerId, provider: partner.provider_name, campusName: partner.campus_name };
+      delete rental.studentAccessToken;
+      const accessToken = String(source.studentAccessToken || require('crypto').randomBytes(32).toString('hex'));
+      saved += insert.run(ref, providerId, accessToken, JSON.stringify(rental)).changes;
+    }
+  });
+  sync(sourceRentals);
+  res.json({ ok: true, saved });
 });
 
 // Do not expose admin.html as a normal static asset. Other legacy frontend pages remain available.
