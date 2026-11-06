@@ -597,3 +597,38 @@ img, video, canvas { max-width: 100%; }
   :where(table) { display: block; max-width: 100%; overflow-x: auto; }
   :where(button, .btn, input[type="submit"]) { min-height: 40px; }
 }
+
+
+/* ===== Mobile layout refinement v1 (Oct 2026) ===== */
+@media (max-width: 700px) {
+  .app-shell { min-width: 0; }
+  .sidebar { width: 64px; min-width: 64px; flex: 0 0 64px; }
+  .main-content { width: calc(100% - 64px); min-width: 0; }
+  .topbar { min-height: 74px; padding: 12px 14px; gap: 10px; }
+  .topbar h1 { font-size: clamp(20px, 5vw, 26px); margin: 0; }
+  .top-actions { gap: 8px; }
+  .content { padding: 0 12px 28px; min-width: 0; }
+  .welcome-banner { padding: 22px 18px; min-height: 0; border-radius: 14px; }
+  .welcome-banner h2 { font-size: clamp(22px, 5.5vw, 28px); line-height: 1.15; overflow-wrap: anywhere; }
+  .welcome-banner p { font-size: 13px; line-height: 1.5; }
+  .welcome-banner .btn, .welcome-banner button { max-width: 100%; white-space: normal; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px; }
+  .stat-card { min-width: 0; min-height: 100px; padding: 13px 12px; }
+  .stat-card h3, .stat-card strong, .stat-card .stat-value { overflow-wrap: anywhere; }
+  .section { margin-top: 22px; }
+  .rental-card { min-width: 0; padding: 12px; gap: 10px; }
+  .rental-info { min-width: 0; overflow-wrap: anywhere; }
+  .rental-title-row { flex-wrap: wrap; align-items: flex-start; }
+  .notification-row { min-width: 0; padding: 12px; }
+  .notification-row > div { min-width: 0; }
+  .nav-item { min-height: 54px; }
+}
+@media (max-width: 380px) {
+  .sidebar { width: 54px; min-width: 54px; flex-basis: 54px; }
+  .main-content { width: calc(100% - 54px); }
+  .content { padding-left: 9px; padding-right: 9px; }
+  .topbar { padding-left: 10px; padding-right: 10px; }
+  .stats-grid { gap: 8px; }
+  .stat-card { padding: 10px; }
+  .welcome-banner { padding: 18px 14px; }
+}

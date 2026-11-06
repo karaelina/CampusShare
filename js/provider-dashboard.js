@@ -1,973 +1,79 @@
-const PROVIDER_SESSION_KEY = "campusShareProviderSession";
-const EQUIPMENT_KEY = "campusShareProviderEquipment";
-const RENTALS_KEY = "campusShareRentals";
-
-
-/* =========================
-   SESSION
-========================= */
-
-function getSession(){
-  return JSON.parse(
-    localStorage.getItem(PROVIDER_SESSION_KEY) || "null"
-  );
-}
-
-const session = getSession();
-
-
-if(!session){
-
-  window.location.href = "provider-login.html";
-
-}
-
-
-/* =========================
-   PARTNERSHIP DATA
-========================= */
-
-function getPartnership(){
-  let partnerships = [];
-  try {
-    const parsed = JSON.parse(localStorage.getItem("campusSharePartnerships") || "[]");
-    partnerships = Array.isArray(parsed) ? parsed : [];
-  } catch (error) {
-    console.warn("Could not read CampusShare partnership records.", error);
-  }
-
-  const sessionId = String(session?.partnershipId || session?.id || "");
-  const sessionEmail = String(session?.officialEmail || session?.email || "").trim().toLowerCase();
-  return partnerships.find(item => sessionId && String(item.id || "") === sessionId)
-    || partnerships.find(item => sessionEmail && String(item.officialEmail || "").trim().toLowerCase() === sessionEmail)
-    || partnerships.find(item => item.status === "Approved"
-      && String(item.providerName || "").trim().toLowerCase() === String(session?.providerName || "").trim().toLowerCase()
-      && String(item.campusName || "").trim().toLowerCase() === String(session?.campusName || "").trim().toLowerCase())
-    || null;
-}
-
-const partnership = getPartnership();
-
-
-/* =========================
-   EQUIPMENT
-========================= */
-
-function getEquipment(){
-
-  return JSON.parse(
-    localStorage.getItem(EQUIPMENT_KEY) || "[]"
-  );
-
-}
-
-function saveEquipment(data){
-
-  localStorage.setItem(
-    EQUIPMENT_KEY,
-    JSON.stringify(data)
-  );
-
-}
-
-
-/* =========================
-   RENTALS
-========================= */
-
-function getRentals(){
-
-  return JSON.parse(
-    localStorage.getItem(RENTALS_KEY) || "[]"
-  );
-
-}
-
-
-/* =========================
-   BASIC INFO
-========================= */
-
-const providerName =
-  partnership?.providerName || session?.providerName || "Provider";
-
-const campusName =
-  partnership?.campusName || session?.campusName || "Campus";
-
-
-document.getElementById("providerName").textContent =
-  providerName;
-
-document.getElementById("campusName").textContent =
-  campusName;
-
-document.getElementById("welcomeName").textContent =
-  providerName;
-
-
-/* =========================
-   PROFILE
-========================= */
-
-// Read approved partnership details first, then provider session; support earlier form field names.
-function firstAvailable(source, keys) {
-  for (const key of keys) {
-    const value = source && source[key];
-    if (value !== undefined && value !== null && String(value).trim() !== "") return String(value).trim();
-  }
-  return "";
-}
-
-const profileValues = {
-  profileCampus: firstAvailable(partnership, ["campusName", "campus", "institutionName", "institution", "schoolName"]) || firstAvailable(session, ["campusName", "campus", "institutionName", "institution", "schoolName"]) || "â€”",
-  profileProvider: firstAvailable(partnership, ["providerName", "organizationName", "providerOrganization", "organization", "businessName"]) || firstAvailable(session, ["providerName", "organizationName", "providerOrganization", "organization", "businessName"]) || "â€”",
-  profileEmail: firstAvailable(partnership, ["officialEmail", "email", "contactEmail", "providerEmail"]) || firstAvailable(session, ["officialEmail", "email", "contactEmail", "providerEmail"]) || "â€”",
-  profileContact: firstAvailable(partnership, ["contactPerson", "contactName", "representativeName", "authorizedPerson", "fullName", "applicantName"]) || firstAvailable(session, ["contactPerson", "contactName", "representativeName", "authorizedPerson", "fullName", "applicantName"]) || "â€”",
-  profileNumber: firstAvailable(partnership, ["contactNumber", "phoneNumber", "mobileNumber", "contactPhone", "phone"]) || firstAvailable(session, ["contactNumber", "phoneNumber", "mobileNumber", "contactPhone", "phone"]) || "â€”"
-};
-Object.entries(profileValues).forEach(([id, value]) => {
-  const element = document.getElementById(id);
-  if (element) element.textContent = value;
-});
-
-const providerTopAvatar = document.getElementById("providerTopAvatar");
-if (providerTopAvatar) {
-  const avatarSource = String(providerName || campusName || "P").trim();
-  providerTopAvatar.textContent = avatarSource.charAt(0).toUpperCase() || "P";
-  providerTopAvatar.title = avatarSource;
-}
-
-const equipmentImageInput = document.getElementById("equipmentImage");
-const equipmentImagePreview = document.getElementById("equipmentImagePreview");
-const equipmentPreviewImg = document.getElementById("equipmentPreviewImg");
-let selectedEquipmentImage = "";
-
-if (equipmentImageInput) {
-  equipmentImageInput.addEventListener("change", () => {
-    const file = equipmentImageInput.files && equipmentImageInput.files[0];
-    selectedEquipmentImage = "";
-    if (!file) {
-      equipmentImagePreview?.classList.add("hidden");
-      if (equipmentPreviewImg) equipmentPreviewImg.removeAttribute("src");
-      return;
-    }
-    if (!file.type.startsWith("image/")) {
-      alert("Please choose an image file.");
-      equipmentImageInput.value = "";
-      equipmentImagePreview?.classList.add("hidden");
-      return;
-    }
-
-    // Crop to the same landscape ratio used by Browse Equipment cards,
-    // then compress so the image fits the localStorage-based prototype.
-    const reader = new FileReader();
-    reader.onload = () => {
-      const sourceImage = new Image();
-      sourceImage.onload = () => {
-        const targetWidth = 1200;
-        const targetHeight = 720;
-        const canvas = document.createElement("canvas");
-        canvas.width = targetWidth;
-        canvas.height = targetHeight;
-        const context = canvas.getContext("2d");
-        if (!context) {
-          alert("Could not process this image. Please try another photo.");
-          return;
-        }
-        const scale = Math.max(targetWidth / sourceImage.width, targetHeight / sourceImage.height);
-        const cropWidth = targetWidth / scale;
-        const cropHeight = targetHeight / scale;
-        const sourceX = (sourceImage.width - cropWidth) / 2;
-        const sourceY = (sourceImage.height - cropHeight) / 2;
-        context.drawImage(sourceImage, sourceX, sourceY, cropWidth, cropHeight, 0, 0, targetWidth, targetHeight);
-        selectedEquipmentImage = canvas.toDataURL("image/jpeg", 0.82);
-        if (equipmentPreviewImg) equipmentPreviewImg.src = selectedEquipmentImage;
-        equipmentImagePreview?.classList.remove("hidden");
-      };
-      sourceImage.onerror = () => alert("Could not read that image. Please try another file.");
-      sourceImage.src = String(reader.result || "");
-    };
-    reader.onerror = () => alert("Could not read that image. Please try another file.");
-    reader.readAsDataURL(file);
-  });
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-const sections = {
-  dashboard: "dashboardSection",
-  equipment: "equipmentSection",
-  requests: "requestsSection",
-  active: "activeSection",
-  returns: "returnsSection",
-  messages: "messagesSection",
-  profile: "profileSection"
-};
-
-const titles = {
-  dashboard: "Dashboard",
-  equipment: "My Equipment",
-  requests: "Rental Requests",
-  active: "Active Rentals",
-  returns: "Returns",
-  messages: "Messages",
-  profile: "Partnership Profile"
-};
-
-
-function showSection(section){
-
-  Object.values(sections).forEach(id => {
-
-    document
-      .getElementById(id)
-      .classList.add("hidden");
-
-  });
-
-
-  document
-    .getElementById(sections[section])
-    .classList.remove("hidden");
-
-
-  document.getElementById("pageTitle").textContent =
-    titles[section];
-
-  if (section === "messages") renderProviderMessages();
-
-  document.querySelectorAll(".nav-item").forEach(btn => {
-
-    btn.classList.toggle(
-      "active",
-      btn.dataset.section === section
-    );
-
-  });
-
-}
-
-
-document.querySelectorAll(".nav-item").forEach(btn => {
-
-  btn.addEventListener("click", () => {
-
-    showSection(btn.dataset.section);
-
-  });
-
-});
-
-
-document.querySelectorAll(".quick-card").forEach(btn => {
-
-  btn.addEventListener("click", () => {
-
-    showSection(btn.dataset.section);
-
-  });
-
-});
-
-
-/* =========================
-   EQUIPMENT MODAL
-========================= */
-
-const equipmentModal =
-  document.getElementById("equipmentModal");
-
-const addEquipmentBtn =
-  document.getElementById("addEquipmentBtn");
-
-const closeEquipmentModal =
-  document.getElementById("closeEquipmentModal");
-
-const cancelEquipmentBtn =
-  document.getElementById("cancelEquipmentBtn");
-
-
-function openEquipmentModal(){
-
-  equipmentModal.classList.remove("hidden");
-
-}
-
-
-function closeEquipment(){
-
-  equipmentModal.classList.add("hidden");
-
-}
-
-
-addEquipmentBtn.addEventListener(
-  "click",
-  openEquipmentModal
-);
-
-closeEquipmentModal.addEventListener(
-  "click",
-  closeEquipment
-);
-
-cancelEquipmentBtn.addEventListener(
-  "click",
-  closeEquipment
-);
-
-
-/* =========================
-   ADD EQUIPMENT
-========================= */
-
-document
-  .getElementById("equipmentForm")
-  .addEventListener("submit", event => {
-
-    event.preventDefault();
-
-    if (!selectedEquipmentImage) {
-      alert("Please upload a photo of the equipment before adding it.");
-      return;
-    }
-
-    const equipment = {
-
-      id:
-        "EQ-" +
-        Date.now().toString().slice(-6),
-
-      providerId:
-        session.partnershipId,
-
-      providerName:
-        providerName,
-
-      campusName:
-        campusName,
-
-      pickupLocation:
-        document.getElementById("equipmentLocation").value.trim(),
-
-      name:
-        document
-          .getElementById("equipmentName")
-          .value
-          .trim(),
-
-      category:
-        document
-          .getElementById("equipmentCategory")
-          .value,
-
-      pricePerHour:
-        Number(document.getElementById("equipmentPrice").value),
-
-      // Keep price as a compatibility alias for older equipment records.
-      price:
-        Number(document.getElementById("equipmentPrice").value),
-
-      quantity:
-        Number(
-          document
-            .getElementById("equipmentQuantity")
-            .value
-        ),
-
-      description:
-        document
-          .getElementById("equipmentDetails")
-          .value
-          .trim(),
-
-      image: selectedEquipmentImage,
-
-      status:
-        "Available",
-
-      createdAt:
-        new Date().toISOString()
-
-    };
-
-
-    const equipmentList =
-      getEquipment();
-
-    equipmentList.push(equipment);
-
-    saveEquipment(equipmentList);
-
-
-    event.target.reset();
-    selectedEquipmentImage = "";
-    equipmentImagePreview?.classList.add("hidden");
-    if (equipmentPreviewImg) equipmentPreviewImg.removeAttribute("src");
-
-    closeEquipment();
-
-
-    render();
-
-
-    alert(
-      "Equipment added successfully!"
-    );
-
-  });
-
-
-/* =========================
-   RENDER EQUIPMENT
-========================= */
-
-function renderEquipment(){
-
-  const list =
-    document.getElementById("equipmentList");
-
-
-  const equipment =
-    getEquipment().filter(
-      item =>
-        item.providerId === session.partnershipId
-    );
-
-
-  if(!equipment.length){
-
-    list.innerHTML = `
-      <div class="empty">
-
-        <strong>No equipment listed yet.</strong>
-
-        Add your first equipment item so students
-        can eventually discover it through CampusShare.
-
-      </div>
-    `;
-
-    return;
-
-  }
-
-
-  list.innerHTML =
-    equipment.map(item => {
-
-      return `
-        <div class="equipment-item">
-
-          ${item.image ? `<img class="provider-equipment-thumb" src="${item.image}" alt="${item.name}" loading="lazy">` : ""}
-
-          <div class="equipment-item-main">
-
-            <div class="item-title">
-              ${item.name}
-            </div>
-
-            <div class="item-meta">
-              ${item.category}
-              Â· ${item.quantity} item(s)
-              <br>
-              ${item.description}
-            </div>
-
-          </div>
-
-          <div>
-
-            <div class="item-price">
-              â‚±${Number(item.pricePerHour ?? item.price ?? 0).toLocaleString()}/hour
-            </div>
-
-            <span class="status available">
-              ${item.status}
-            </span>
-
-          </div>
-
-        </div>
-      `;
-
-    }).join("");
-
-}
-
-
-/* =========================
-   RENTAL REQUESTS
-========================= */
-
-function renderRequests(){
-  const list = document.getElementById("requestList");
-  const matchesProvider = rental => {
-    const providerId = String(rental.providerId || "");
-    const sessionId = String(session?.partnershipId || "");
-    const provider = String(rental.provider || "").trim().toLowerCase();
-    const campus = String(rental.campusName || "").trim().toLowerCase();
-    return (providerId && sessionId && providerId === sessionId) ||
-      (provider && [providerName, campusName].some(name => provider === String(name || "").trim().toLowerCase())) ||
-      (campus && campus === String(campusName || "").trim().toLowerCase());
-  };
-  const requests = getRentals().filter(rental =>
-    ["Pending", "Approved"].includes(rental.status) && matchesProvider(rental)
-  );
-
-  if (!requests.length) {
-    list.innerHTML = `<div class="empty"><strong>No rental requests yet.</strong><br>New student requests for your equipment will appear here.</div>`;
-    return;
-  }
-
-  list.innerHTML = requests.map(item => {
-    const status = item.status || "Pending";
-    let action = "";
-    const paymentComplete = item.demoPaymentStatus === "SUCCESS";
-    if (status === "Pending" && paymentComplete) action = `<button class="primary-btn" data-provider-rental-action="Approved" data-rental-ref="${item.ref}">Approve Request</button>`;
-    if (status === "Pending" && !paymentComplete) action = `<button class="primary-btn" disabled title="Student must complete demo checkout first" style="opacity:.55;cursor:not-allowed">Awaiting demo payment</button>`;
-    if (status === "Approved") action = `<button class="primary-btn" data-provider-rental-action="Active" data-rental-ref="${item.ref}">Mark Picked Up</button>`;
-    return `<div class="rental-item">
-      <div class="item-title">${item.equipment || "Equipment"} <small>#${item.ref || "â€”"}</small></div>
-      <div class="item-meta">Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}<br>Rental: ${item.start || "â€”"} â†’ ${item.end || "â€”"}<br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}<br>Payment: ${item.payment || "â€”"} Â· Estimated total: â‚±${Number(item.total || 0).toLocaleString()}<br>Demo payment status: ${item.paymentStatus || "Demo â€” awaiting payment"}<br>Request submitted: ${item.createdAt ? new Date(item.createdAt).toLocaleString() : "â€”"}</div>
-      <div class="provider-rental-actions"><span class="status ${status.toLowerCase()}">${status}</span>${action}</div>
-    </div>`;
-  }).join("");
-
-  list.querySelectorAll("[data-provider-rental-action]").forEach(button => {
-    button.addEventListener("click", () => {
-      const rentals = getRentals();
-      const rental = rentals.find(item => item.ref === button.dataset.rentalRef);
-      if (!rental || !matchesProvider(rental)) return;
-      const nextStatus = button.dataset.providerRentalAction;
-      if (nextStatus === "Approved" && rental.status !== "Pending") return;
-      if (nextStatus === "Approved" && rental.demoPaymentStatus !== "SUCCESS") {
-        window.alert("Student must complete the CampusShare demo checkout before the provider can approve this request.");
-        return;
-      }
-      if (nextStatus === "Active" && rental.status !== "Approved") return;
-      rental.status = nextStatus;
-      rental.statusUpdatedAt = new Date().toISOString();
-      rental.statusUpdatedBy = providerName;
-
-      // Payment/settlement simulation only. No real payment or payout occurs.
-      const rentalTotal = Number(rental.total || 0);
-      rental.commissionRate = 0.10;
-      rental.commissionAmount = Number((rentalTotal * 0.10).toFixed(2));
-      rental.providerShare = Number((rentalTotal * 0.90).toFixed(2));
-      rental.paymentMode = rental.paymentMode || "SIMULATED";
-      rental.paymentProvider = rental.paymentProvider || "Not connected";
-      rental.paymentStatus = rental.paymentStatus || "Demo â€” awaiting payment";
-
-      if (nextStatus === "Completed") {
-        rental.returnConfirmedAt = new Date().toISOString();
-        if (rental.disputeStatus && rental.disputeStatus !== "None") {
-          rental.settlementStatus = "On hold â€” admin review";
-          rental.payoutStatus = "On hold â€” demo only";
-        } else {
-          rental.settlementStatus = "Eligible after return â€” demo only";
-          rental.payoutStatus = "Eligible â€” not paid (demo only)";
-        }
-      } else if (nextStatus === "Active") {
-        rental.settlementStatus = "Pending return";
-      }
-
-      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
-      render();
-    });
-  });
-}
-
-/* =========================
-   ACTIVE RENTALS
-========================= */
-
-function renderActive(){
-
-  const list =
-    document.getElementById("activeList");
-
-
-  const active =
-    getRentals().filter(
-      rental =>
-        ((rental.providerId && rental.providerId === session.partnershipId) || rental.provider === providerName || rental.provider === campusName) &&
-        rental.status === "Active"
-    );
-
-
-  if(!active.length){
-
-    list.innerHTML = `
-      <div class="empty">
-
-        <strong>No active rentals.</strong>
-
-        Currently rented equipment will appear here.
-
-      </div>
-    `;
-
-    return;
-
-  }
-
-
-  list.innerHTML =
-    active.map(item => {
-
-      return `
-        <div class="rental-item">
-
-          <div>
-
-            <div class="item-title">
-              ${item.equipment}
-            </div>
-
-            <div class="item-meta">
-              ${item.start}
-              â†’
-              ${item.end}
-              <br>
-              <br>Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}
-              <br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}
-              <br>Reference: ${item.ref}
-            </div>
-
-          </div>
-
-          <div class="provider-rental-actions">
-            <span class="status active">Active</span>
-            <button type="button" class="primary-btn" data-confirm-return="${String(item.ref || "").replace(/"/g, "&quot;")}">Confirm Successful Return</button>
-          </div>
-
-        </div>
-      `;
-
-    }).join("");
-
-  list.querySelectorAll("[data-confirm-return]").forEach(button => {
-    button.addEventListener("click", () => {
-      const rentals = getRentals();
-      const rental = rentals.find(item => String(item.ref || "") === String(button.dataset.confirmReturn));
-      if (!rental || rental.status !== "Active") return;
-      const confirmed = window.confirm("Confirm that the equipment was successfully returned? This updates demo settlement status only; no payout will occur.");
-      if (!confirmed) return;
-      rental.status = "Completed";
-      rental.statusUpdatedAt = new Date().toISOString();
-      rental.statusUpdatedBy = providerName;
-      rental.returnConfirmedAt = new Date().toISOString();
-      const total = Number(rental.total || 0);
-      rental.commissionRate = 0.10;
-      rental.commissionAmount = Number((total * 0.10).toFixed(2));
-      rental.providerShare = Number((total * 0.90).toFixed(2));
-      if (rental.disputeStatus && rental.disputeStatus !== "None") {
-        rental.settlementStatus = "On hold â€” admin review";
-        rental.payoutStatus = "On hold â€” demo only";
-      } else {
-        rental.settlementStatus = "Eligible after return â€” demo only";
-        rental.payoutStatus = "Eligible â€” not paid (demo only)";
-      }
-      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
-      render();
-    });
-  });
-
-}
-
-
-/* =========================
-   RETURNS
-========================= */
-
-function renderReturns(){
-
-  const list =
-    document.getElementById("returnList");
-
-
-  const completed =
-    getRentals().filter(
-      rental =>
-        ((rental.providerId && rental.providerId === session.partnershipId) || rental.provider === providerName || rental.provider === campusName) &&
-        rental.status === "Completed"
-    );
-
-
-  if(!completed.length){
-
-    list.innerHTML = `
-      <div class="empty">
-
-        <strong>No completed returns yet.</strong>
-
-        Returned equipment will appear here.
-
-      </div>
-    `;
-
-    return;
-
-  }
-
-
-  list.innerHTML =
-    completed.map(item => {
-
-      return `
-        <div class="rental-item">
-
-          <div>
-
-            <div class="item-title">
-              ${item.equipment}
-            </div>
-
-            <div class="item-meta">
-              ${item.start}
-              â†’
-              ${item.end}
-              <br>
-              <br>Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}
-              <br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}
-              <br>Reference: ${item.ref}
-            </div>
-
-          </div>
-
-          <div class="provider-rental-actions" style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
-            <span class="status completed">Completed</span>
-            <small>Rental total: â‚±${Number(item.total || 0).toLocaleString()}</small>
-            <small>CampusShare commission (10%): â‚±${Number(item.commissionAmount ?? (Number(item.total || 0) * .10)).toLocaleString()}</small>
-            <small>Provider share (90%): â‚±${Number(item.providerShare ?? (Number(item.total || 0) * .90)).toLocaleString()}</small>
-            <small><strong>Settlement:</strong> ${item.settlementStatus || "Pending return"}</small>
-            <small><strong>Payout:</strong> ${item.payoutStatus || "Not paid â€” demo only"}</small>
-          </div>
-
-        </div>
-      `;
-
-    }).join("");
-
-}
-
-
-/* =========================
-   STATS
-========================= */
-
-function renderStats(){
-
-  const equipment =
-    getEquipment().filter(
-      item =>
-        item.providerId === session.partnershipId
-    );
-
-
-  const rentals =
-    getRentals().filter(
-      item =>
-        item.provider === providerName
-    );
-
-
-  document.getElementById("equipmentStat")
-    .textContent = equipment.length;
-
-
-  document.getElementById("requestStat")
-    .textContent =
-      rentals.filter(
-        item => item.status === "Pending" || item.status === "Approved"
-      ).length;
-
-
-  document.getElementById("activeStat")
-    .textContent =
-      rentals.filter(
-        item => item.status === "Active"
-      ).length;
-
-
-  document.getElementById("completedStat")
-    .textContent =
-      rentals.filter(
-        item => item.status === "Completed"
-      ).length;
-
-}
-
-
-/* =========================
-   RENDER EVERYTHING
-========================= */
-
-function render(){
-
-  renderEquipment();
-  renderRequests();
-  renderActive();
-  renderReturns();
-  renderStats();
-
-}
-
-
-render();
-
-
-/* =========================
-   PROVIDER INBOX â€” LOCAL DEMO
-========================= */
-const PROVIDER_MESSAGES_KEY = "campusShareMessages";
-function readProviderMessages() {
-  try { const rows = JSON.parse(localStorage.getItem(PROVIDER_MESSAGES_KEY) || "[]"); return Array.isArray(rows) ? rows : []; }
-  catch { return []; }
-}
-function escapeProviderMessage(value) {
-  return String(value ?? "").replace(/[&<>"']/g, char => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]));
-}
-let selectedProviderThreadKey = "";
-
-function providerThreadKey(message) {
-  return [message.studentId || message.studentEmail || message.studentName,
-    message.provider, message.equipment || "General inquiry"].join("::");
-}
-
-function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
-  const container = document.getElementById("providerMessagesList");
-  if (!container) return;
-
-  const all = readProviderMessages();
-  const providerLabels = [providerName, campusName, partnership?.providerName, partnership?.campusName]
-    .filter(Boolean).map(value => String(value).trim().toLowerCase());
-  const messages = all.filter(message =>
-    providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
-    (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))
-  );
-
-  if (!messages.length) {
-    selectedProviderThreadKey = "";
-    container.innerHTML = `<div class="empty-state"><strong>No student messages yet</strong><p>Messages sent from Browse Equipment will appear here when the provider matches this account.</p></div>`;
-    return;
-  }
-
-  const threads = new Map();
-  messages.forEach(message => {
-    const key = providerThreadKey(message);
-    if (!threads.has(key)) threads.set(key, []);
-    threads.get(key).push(message);
-  });
-
-  const threadRows = [...threads.entries()].map(([key, rows]) => {
-    rows.sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
-    const latest = rows[rows.length - 1];
-    const lastProviderIndex = rows.reduce((last, row, index) => row.senderRole === "provider" ? index : last, -1);
-    const unread = rows.slice(lastProviderIndex + 1).some(row => row.senderRole !== "provider");
-    return { key, rows, latest, unread };
-  }).sort((a, b) => new Date(b.latest.createdAt || 0) - new Date(a.latest.createdAt || 0));
-
-  const selected = threadRows.find(thread => thread.key === preferredKey) || threadRows[0];
-  selectedProviderThreadKey = selected.key;
-
-  container.innerHTML = `
-    <div class="provider-inbox-layout">
-      <aside class="provider-inbox-list" aria-label="Student conversations">
-        <div class="provider-inbox-list-head"><strong>Inquiries</strong><span>${threadRows.length}</span></div>
-        ${threadRows.map(thread => {
-          const latest = thread.latest;
-          const preview = `${latest.senderRole === "provider" ? "You: " : ""}${latest.message || ""}`;
-          return `<button type="button" class="provider-inbox-item ${thread.key === selected.key ? "is-selected" : ""}" data-provider-thread="${encodeURIComponent(thread.key)}" aria-pressed="${thread.key === selected.key}">
-            <span class="provider-inbox-avatar">${escapeProviderMessage(String(latest.studentName || "S").trim().charAt(0).toUpperCase())}</span>
-            <span class="provider-inbox-item-main">
-              <span class="provider-inbox-item-top"><strong>${escapeProviderMessage(latest.studentName || "Student")}</strong>${thread.unread ? '<i class="provider-inbox-unread" title="New student message"></i>' : ""}</span>
-              <span class="provider-inbox-equipment">${escapeProviderMessage(latest.equipment || "General inquiry")} Â· ${escapeProviderMessage(latest.provider || campusName)}</span>
-              <span class="provider-inbox-preview">${escapeProviderMessage(preview)}</span>
-            </span>
-            <time>${escapeProviderMessage(new Date(latest.createdAt || Date.now()).toLocaleDateString([], {month:"short",day:"numeric"}))}</time>
-          </button>`;
-        }).join("")}
-      </aside>
-      <section class="provider-inbox-detail" aria-label="Selected conversation">
-        <header class="provider-inbox-detail-head">
-          <div><strong>${escapeProviderMessage(selected.latest.studentName || "Student")}</strong><p>${escapeProviderMessage(selected.latest.equipment || "General inquiry")} Â· ${escapeProviderMessage(selected.latest.provider || campusName)}</p></div>
-          <span class="provider-inbox-demo-label">DEMO INBOX</span>
-        </header>
-        <div class="provider-message-conversation provider-message-conversation-selected">
-          ${selected.rows.map(row => `<div class="provider-message-bubble ${row.senderRole === "provider" ? "provider-own-message" : ""}">
-            <small>${row.senderRole === "provider" ? "You Â· Provider" : "Student"} Â· ${escapeProviderMessage(new Date(row.createdAt || Date.now()).toLocaleString())}</small>
-            <p>${escapeProviderMessage(row.message)}</p>
-          </div>`).join("")}
-        </div>
-        <form class="provider-message-reply" data-thread-key="${escapeProviderMessage(selected.key)}">
-          <textarea rows="2" name="reply" placeholder="Reply to ${escapeProviderMessage(selected.latest.studentName || "the student")} about ${escapeProviderMessage(selected.latest.equipment || "this inquiry")}..." aria-label="Reply to selected conversation" required></textarea>
-          <button type="submit" class="primary-btn">Send Reply</button>
-        </form>
-      </section>
-    </div>`;
-
-  container.querySelectorAll("[data-provider-thread]").forEach(button => {
-    button.addEventListener("click", () => {
-      selectedProviderThreadKey = decodeURIComponent(button.dataset.providerThread || "");
-      renderProviderMessages(selectedProviderThreadKey);
-    });
-  });
-
-  const form = container.querySelector(".provider-message-reply");
-  form?.addEventListener("submit", event => {
-    event.preventDefault();
-    const text = String(form.elements.reply.value || "").trim();
-    if (!text) return;
-
-    const key = form.dataset.threadKey;
-    const rows = readProviderMessages();
-    const matching = rows.filter(message => providerThreadKey(message) === key &&
-      (providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
-       (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))));
-    const latestStudentMessage = [...matching].reverse().find(message => message.senderRole !== "provider");
-    if (!latestStudentMessage) {
-      window.alert("This conversation has no student message to reply to yet.");
-      return;
-    }
-
-    rows.push({
-      id: "MSG-" + Date.now(),
-      provider: latestStudentMessage.provider,
-      providerId: latestStudentMessage.providerId || partnership?.id || "",
-      equipment: latestStudentMessage.equipment || "",
-      studentName: latestStudentMessage.studentName || "Student",
-      studentId: latestStudentMessage.studentId || "",
-      studentEmail: latestStudentMessage.studentEmail || "",
-      message: text,
-      createdAt: new Date().toISOString(),
-      senderRole: "provider",
-      senderName: providerName,
-      status: "Unread"
-    });
-    localStorage.setItem(PROVIDER_MESSAGES_KEY, JSON.stringify(rows));
-    selectedProviderThreadKey = key;
-    renderProviderMessages(key);
-  });
-}
-
-/* =========================
-   LOGOUT
-========================= */
-
-document
-  .getElementById("logoutBtn")
-  .addEventListener("click", () => {
-
-    localStorage.removeItem(
-      PROVIDER_SESSION_KEY
-    );
-
-    window.location.href =
-      "provider-login.html";
-
-  });
+YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éí×nöí:-jZ.¶›­–)Ş³V6öç7B$õd”DU%õ4U54”ôåô´U’Ò&6×W56†&U&÷f–FW%6W76–öâ#°¦6öç7BUT•ÔTåEô´U’Ò&6×W56†&U&÷f–FW$WV—ÖVçB#°¦6öç7B$TåDÅ5ô´U’Ò&6×W56†&U&VçFÇ2#°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢4U54”ôà£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¦gVæ7F–öâvWE6W76–öâ‚—°¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ…$õd”DU%õ4U54”ôåô´U’’ÇÂ&çVÆÂ ¢“°§Ğ ¦6öç7B6W76–öâÒvWE6W76–öâ‚“°  ¦–b‚6W76–öâ—° ¢v–æF÷ræÆö6F–öâæ‡&VbÒ'&÷f–FW"ÖÆöv–âæ‡FÖÂ#° §Ğ  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢%DäU%4„•DD£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¦gVæ7F–öâvWE'FæW'6†—‚—°¢ÆWB'FæW'6†—2ÒµÓ°¢G'’°¢6öç7B'6VBÒ¥4ôâç'6R†Æö6Å7F÷&vRævWD—FVÒ‚&6×W56†&U'FæW'6†—2"’ÇÂ%µÒ"“°¢'FæW'6†—2Ò'&’æ—4'&’‡'6VB’ò'6VB¢µÓ°¢Ò6F6‚†W'&÷"’°¢6öç6öÆRçv&â‚$6÷VÆBæ÷B&VB6×W56†&R'FæW'6†—&V6÷&G2â"ÂW'&÷"“°¢Ğ ¢6öç7B6W76–öä–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ6W76–öãòæ–BÇÂ""“°¢6öç7B6W76–öäVÖ–ÂÒ7G&–ær‡6W76–öãòæöff–6–ÄVÖ–ÂÇÂ6W76–öãòæVÖ–ÂÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚“°¢&WGW&â'FæW'6†—2æf–æB†—FVÒÓâ6W76–öä–Bbb7G&–ær†—FVÒæ–BÇÂ""’ÓÓÒ6W76–öä–B¢ÇÂ'FæW'6†—2æf–æB†—FVÒÓâ6W76–öäVÖ–Âbb7G&–ær†—FVÒæöff–6–ÄVÖ–ÂÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ6W76–öäVÖ–Â¢ÇÂ'FæW'6†—2æf–æB†—FVÒÓâ—FVÒç7FGW2ÓÓÒ$&÷fVB ¢bb7G&–ær†—FVÒç&÷f–FW$æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ7G&–ær‡6W76–öãòç&÷f–FW$æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚¢bb7G&–ær†—FVÒæ6×W4æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ7G&–ær‡6W76–öãòæ6×W4æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’¢ÇÂçVÆÃ°§Ğ ¦6öç7B'FæW'6†—ÒvWE'FæW'6†—‚“°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢UT•ÔTå@£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¦gVæ7F–öâvWDWV—ÖVçB‚—° ¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ„UT•ÔTåEô´U’’ÇÂ%µÒ ¢“° §Ğ ¦7–æ2gVæ7F–öâ6fTWV—ÖVçB†FF—°¢Æö6Å7F÷&vRç6WD—FVÒ€¢UT•ÔTåEô´U’À¢¥4ôâç7G&–æv–g’†FF¢“°¢6öç7B&÷f–FW$–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ""“°¢–b‚&÷f–FW$–B’F‡&÷ræWrW'&÷"‚%&÷f–FW"6–vâÖ–â—2&WV—&VBFò7–æ2WV—ÖVçBâ"“°¢6öç7B—FV×2ÒFFæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÓÒ&÷f–FW$–B“°¢6öç7B&W7öç6RÒv—BfWF6‚‚"ö’÷&÷f–FW"ÖWV—ÖVçB÷7–æ2"Â°¢ÖWF†öC¢%õ5B"Â†VFW'3¢²$6öçFVçBÕG—R#¢&Æ–6F–öâö§6öâ"ÒÀ¢&öG“¢¥4ôâç7G&–æv–g’‡²—FV×2Ò¢Ò“°¢6öç7B&W7VÇBÒv—B&W7öç6Ræ§6öâ‚’æ6F6‚‚‚’Óâ‡·Ò’“°¢–b‚&W7öç6Ræö²’F‡&÷ræWrW'&÷"‡&W7VÇBæW'&÷"ÇÂ$WV—ÖVçB6÷VÆBæ÷B&R7–æ6VBFòF†R6†&VB6FÆörâ"“°§Ğ ¦7–æ2gVæ7F–öâÆöE&÷f–FW$WV—ÖVçDg&öÕ6W'fW"‚—°¢6öç7B&÷f–FW$–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ""“°¢–b‚&÷f–FW$–B’&WGW&ã°¢G'’°¢6öç7B&W7öç6RÒv—BfWF6‚†ö’÷&÷f–FW"ÖWV—ÖVçBòG¶Væ6öFUU$”6ö×öæVçB‡&÷f–FW$–B—ÖÂ²66†S¢&æò×7F÷&R"Ò“°¢6öç7B&W7VÇBÒv—B&W7öç6Ræ§6öâ‚’æ6F6‚‚‚’Óâ‡·Ò’“°¢–b‚&W7öç6Ræö²’F‡&÷ræWrW'&÷"‡&W7VÇBæW'&÷"ÇÂ$6÷VÆBæ÷BÆöB6†&VBWV—ÖVçBâ"“°¢6öç7B6†&VBÒ'&’æ—4'&’‡&W7VÇBæ—FV×2’ò&W7VÇBæ—FV×2¢µÓ°¢6öç7BÆö6ÂÒvWDWV—ÖVçB‚“°¢6öç7B&VÖ÷FT–G2ÒæWr6WB‡6†&VBæÖ†—FVÒÓâ7G&–ær†—FVÒæ–B’’“°¢6öç7BÆö6ÄöæÇ’ÒÆö6Âæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÓÒ&÷f–FW$–Bbb&VÖ÷FT–G2æ†2…7G&–ær†—FVÒæ–B’’“°¢6öç7B÷F†W%&÷f–FW'2ÒÆö6Âæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÒ&÷f–FW$–B“°¢6öç7BÖW&vVBÒ²ââæ÷F†W%&÷f–FW'2Âââç6†&VBÂââæÆö6ÄöæÇ•Ó°¢Æö6Å7F÷&vRç6WD—FVÒ„UT•ÔTåEô´U’Â¥4ôâç7G&–æv–g’†ÖW&vVB’“°¢–b†Æö6ÄöæÇ’æÆVæwF‚’v—B6fTWV—ÖVçB†ÖW&vVB“°¢&VæFW"‚“°¢Ò6F6‚†W'&÷"’°¢6öç6öÆRçv&â‚%6†&VBWV—ÖVçB7–æ2—2Væf–Æ&ÆRâ"ÂW'&÷"“°¢Ğ§Ğ  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢$TåDÅ0£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¦gVæ7F–öâvWE&VçFÇ2‚—° ¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ…$TåDÅ5ô´U’’ÇÂ%µÒ ¢“° §Ğ  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢$4”2”ädğ£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¦6öç7B&÷f–FW$æÖRĞ¢'FæW'6†—òç&÷f–FW$æÖRÇÂ6W76–öãòç&÷f–FW$æÖRÇÂ%&÷f–FW"#° ¦6öç7B6×W4æÖRĞ¢'FæW'6†—òæ6×W4æÖRÇÂ6W76–öãòæ6×W4æÖRÇÂ$6×W2#°  ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚'&÷f–FW$æÖR"’çFW‡D6öçFVçBĞ¢&÷f–FW$æÖS° ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚&6×W4æÖR"’çFW‡D6öçFVçBĞ¢6×W4æÖS° ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚'vVÆ6öÖTæÖR"’çFW‡D6öçFVçBĞ¢&÷f–FW$æÖS°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢$ôd”ÄP£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ ¢òò&VB&÷fVB'FæW'6†—FWF–Ç2f—'7BÂF†Vâ&÷f–FW"6W76–öã²7W÷'BV&Æ–W"f÷&Òf–VÆBæÖW2à¦gVæ7F–öâf—'7Df–Æ&ÆR‡6÷W&6RÂ¶W—2’°¢f÷"†6öç7B¶W’öb¶W—2’°¢6öç7BfÇVRÒ6÷W&6Rbb6÷W&6U¶¶W•Ó°¢–b‡fÇVRÓÒVæFVf–æVBbbfÇVRÓÒçVÆÂbb7G&–ær‡fÇVR’çG&–Ò‚’ÓÒ""’&WGW&â7G&–ær‡fÇVR’çG&–Ò‚“°¢Ğ¢&WGW&â"#°§Ğ ¦6öç7B&öf–ÆUfÇVW2Ò°¢&öf–ÆT6×W3¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6×W4æÖR"Â&6×W2"Â&–ç7F—GWF–öäæÖR"Â&–ç7F—GWF–öâ"Â'66†ööÄæÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6×W4æÖR"Â&6×W2"Â&–ç7F—GWF–öäæÖR"Â&–ç7F—GWF–öâ"Â'66†ööÄæÖR%Ò’ÇÂ.(	B"À¢&öf–ÆU&÷f–FW#¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²'&÷f–FW$æÖR"Â&÷&væ—¦F–öäæÖR"Â'&÷f–FW$÷&væ—¦F–öâ"Â&÷&væ—¦F–öâ"Â&'W6–æW74æÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²'&÷f–FW$æÖR"Â&÷&væ—¦F–öäæÖR"Â'&÷f–FW$÷&væ—¦F–öâ"Â&÷&væ—¦F–öâ"Â&'W6–æW74æÖR%Ò’ÇÂ.(	B"À¢&öf–ÆTVÖ–Ã¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&öff–6–ÄVÖ–Â"Â&VÖ–Â"Â&6öçF7DVÖ–Â"Â'&÷f–FW$VÖ–Â%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&öff–6–ÄVÖ–Â"Â&VÖ–Â"Â&6öçF7DVÖ–Â"Â'&÷f–FW$VÖ–Â%Ò’ÇÂ.(	B"À¢&öf–ÆT6öçF7C¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6öçF7EW'6öâ"Â&6öçF7DæÖR"Â'&W&W6VçFF—fTæÖR"Â&WF†÷&—¦VEW'6öâ"Â&gVÆÄæÖR"Â&Æ–6çDæÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6öçF7EW'6öâ"Â&6öçF7DæÖR"Â'&W&W6VçFF—fTæÖR"Â&WF†÷&—¦VEW'6öâ"Â&gVÆÄæÖR"Â&Æ–6çDæÖR%Ò’ÇÂ.(	B"À¢&öf–ÆTçVÖ&W#¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6öçF7DçVÖ&W""Â'†öæTçVÖ&W""Â&Öö&–ÆTçVÖ&W""Â&6öçF7E†öæR"Â'†öæR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6öçF7DçVÖ&W""Â'†öæTçVÖ&W""Â&Öö&–ÆTçVÖ&W""Â&6öçF7E†öæR"Â'†öæR%Ò’ÇÂ.(	B §Ó°¤ö&¦V7BæVçG&–W2‡&öf–ÆUfÇVW2’æf÷$V6‚‚…¶–BÂfÇVUÒ’Óâ°¢6öç7BVÆVÖVçBÒFö7VÖVçBævWDVÆVÖVçD'”–B†–B“°¢–b†VÆVÖVçB’VÆVÖVçBçFW‡D6öçFVçBÒfÇVS°§Ò“° ¦6öç7B&÷f–FW%F÷fF"ÒFö7VÖVçBævWDVÆVÖVçD'”–B‚'&÷f–FW%F÷fF""“°¦–b‡&÷f–FW%F÷fF"’°¢6öç7BfF%6÷W&6RÒ7G&–ær‡&÷f–FW$æÖRÇÂ6×W4æÖRÇÂ%"’çG&–Ò‚“°¢&÷f–FW%F÷fF"çFW‡D6öçFVçBÒfF%6÷W&6Ræ6†$Bƒ’çFõWW$66R‚’ÇÂ%#°¢&÷f–FW%F÷fF"çF—FÆRÒfF%6÷W&6S°§Ğ ¦6öç7BWV—ÖVçD–ÖvT–çWBÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçD–ÖvR"“°¦6öç7BWV—ÖVçD–ÖvU&Wf–WrÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçD–ÖvU&Wf–Wr"“°¦6öç7BWV—ÖVçE&Wf–Wt–ÖrÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçE&Wf–Wt–Ör"“°¦ÆWB6VÆV7FVDWV—ÖVçD–ÖvRÒ"#°¦ÆWBVF—F–ætWV—ÖVçD–BÒçVÆÃ° ¦–b†WV—ÖVçD–ÖvT–çWB’°¢WV—ÖVçD–ÖvT–çWBæFDWfVçDÆ—7FVæW"‚&6†ævR"Â‚’Óâ°¢6öç7Bf–ÆRÒWV—ÖVçD–ÖvT–çWBæf–ÆW2bbWV—ÖVçD–ÖvT–çWBæf–ÆW5³Ó°¢6VÆV7FVDWV—ÖVçD–ÖvRÒ"#°¢–b‚f–ÆR’°¢WV—ÖVçD–ÖvU&Wf–Wsòæ6Æ74Æ—7BæFB‚&†–FFVâ"“°¢–b†WV—ÖVçE&Wf–Wt–Ör’WV—ÖVçE&Wf–Wt–Örç&VÖ÷fTGG&–'WFR‚'7&2"“°¢&WGW&ã°¢Ğ¢–b‚f–ÆRçG—Rç7F'G5v—F‚‚&–ÖvRò"’’°¢ÆW'B‚%ÆV6R6†ö÷6Râ–ÖvRf–ÆRâ"“°¢WV—ÖVçD–ÖvT–çWBçfÇVRÒ"#°¢WV—ÖVçD–ÖvU&Wf–Wsòæ6Æ74Æ—7BæFB‚&†–FFVâ"“°¢&WGW&ã°¢Ğ ¢òò7&÷FòF†R6ÖRÆæG66R&F–òW6VB'’'&÷w6RWV—ÖVçB6&G2À¢òòF†Vâ6ö×&W726òF†R–ÖvRf—G2F†RÆö6Å7F÷&vRÖ&6VB&÷F÷G—Rà¢6öç7B&VFW"ÒæWrf–ÆU&VFW"‚“°¢&VFW"æöæÆöBÒ‚’Óâ°¢6öç7B6÷W&6T–ÖvRÒæWr–ÖvR‚“°¢6÷W&6T–ÖvRæöæÆöBÒ‚’Óâ°¢6öç7BF&vWEv–GF‚Ò#°¢6öç7BF&vWD†V–v‡BÒs#°¢6öç7B6çf2ÒFö7VÖVçBæ7&VFTVÆVÖVçBûÛ»h‘éì¶»§q«^t˜^J›İÜÊHÈ›İÜÈˆ×NÈBˆØ]ÚÈ™]\›ˆ×NÈBŸB™[˜İ[Ûˆ\ØØ\T›İšY\“Y\ÜØYÙJ˜[YJHÂˆ™]\›ˆİš[™Ê˜[YHÏÈˆŠKœ™\XÙJÖÉˆ‰×KÙËÚ\ˆOˆ
+È‰ˆˆ‰˜[\È‹ˆ‰›È‹ˆˆ‰™İÈ‹	È‰Îˆ‰œ][İÈ‹‰Èˆ‰ˆÌÎNÈˆVØÚ\—JJNÂŸB›]Ù[XİY›İšY\•™XYÙ^HHˆÂ‚™[˜İ[Ûˆ›İšY\•™XYÙ^JY\ÜØYÙJHÂˆ™]\›ˆÛY\ÜØYÙKœİY[YY\ÜØYÙKœİY[[XZ[Y\ÜØYÙKœİY[˜[YKˆY\ÜØYÙKœ›İšY\‹Y\ÜØYÙK™\]Z\Y[‘Ù[™\˜[[œ]Z\H—Kš›Ú[ŠˆŠNÂŸB‚™[˜İ[Ûˆ™[™\”›İšY\“Y\ÜØYÙ\Ê™Y™\œ™YÙ^HHÙ[XİY›İšY\•™XYÙ^JHÂˆÛÛœİÛÛZ[™\ˆHØİ[Y[™Ù][[Y[RY
+œ›İšY\“Y\ÜØYÙ\Ó\İŠNÂˆYˆ
+XÛÛZ[™\ŠH™]\›Â‚ˆÛÛœİ[H™XY›İšY\“Y\ÜØYÙ\Ê
+NÂˆÛÛœİ›İšY\“X™[ÈHÜ›İšY\“˜[YKØ[\\Ó˜[YK\™\œÚ\Ëœ›İšY\“˜[YK\™\œÚ\Ë˜Ø[\\Ó˜[YWBˆ™š[\Š›ÛÛX[ŠK›X\
+˜[YHOˆİš[™Ê˜[YJKš[J
+KÓİÙ\Ø\ÙJ
+JNÂˆÛÛœİY\ÜØYÙ\ÈH[™š[\ŠY\ÜØYÙHO‚ˆ›İšY\“X™[Ëš[˜ÛY\Êİš[™ÊY\ÜØYÙKœ›İšY\ˆˆŠKš[J
+KÓİÙ\Ø\ÙJ
+JHˆ
+Y\ÜØYÙKœ›İšY\’Y	‰ˆİš[™ÊY\ÜØYÙKœ›İšY\’Y
+HOOHİš[™Ê\™\œÚ\ËšYÙ\ÜÚ[ÛËœ\™\œÚ\YˆŠJBˆ
+NÂ‚ˆYˆ
+[Y\ÜØYÙ\Ë›[™İ
+HÂˆÙ[XİY›İšY\•™XYÙ^HHˆÂˆÛÛZ[™\‹š[›™\’SH]ˆÛ\ÜÏH™[\K\İ]Hİ›Û™Ï“›ÈİY[Y\ÜØYÙ\ÈY]Üİ›Û™Ï“Y\ÜØYÙ\ÈÙ[œ›ÛHœ›İÜÙH\]Z\Y[Ú[\X\ˆ\™HÚ[ˆH›İšY\ˆX]Ú\È\ÈXØÛİ[ÜÙ]˜Âˆ™]\›ÂˆB‚ˆÛÛœİ™XYÈH™]ÈX\
+
+NÂˆY\ÜØYÙ\Ë™›Ü‘XXÚ
+Y\ÜØYÙHOˆÂˆÛÛœİÙ^HH›İšY\•™XYÙ^JY\ÜØYÙJNÂˆYˆ
+]™XYËš\ÊÙ^JJH™XYËœÙ]
+Ù^K×JNÂˆ™XYË™Ù]
+Ù^JKœ\Ú
+Y\ÜØYÙJNÂˆJNÂ‚ˆÛÛœİ™XY›İÜÈHË‹‹™XYË™[šY\Ê
+WK›X\
+
+ÚÙ^K›İÜ×JHOˆÂˆ›İÜËœÛÜ
+
+KŠHOˆ™]È]JK˜Ü™X]Y]
+HH™]È]J‹˜Ü™X]Y]
+JNÂˆÛÛœİ]\İH›İÜÖÜ›İÜË›[™İHWNÂˆÛÛœİ\İ›İšY\’[™^H›İÜËœ™YXÙJ
+\İ›İË[™^
+HOˆ›İËœÙ[™\”›ÛHOOHœ›İšY\ˆˆÈ[™^ˆ\İLJNÂˆÛÛœİ[œ™XYH›İÜËœÛXÙJ\İ›İšY\’[™^
+ÈJKœÛÛYJ›İÈOˆ›İËœÙ[™\”›ÛHOOHœ›İšY\ˆŠNÂˆ™]\›ˆÈÙ^K›İÜË]\İ[œ™XYNÂˆJKœÛÜ
+
+KŠHOˆ™]È]J‹›]\İ˜Ü™X]Y]
+HH™]È]JK›]\İ˜Ü™X]Y]
+JNÂ‚ˆÛÛœİÙ[XİYH™XY›İÜË™š[™
+™XYOˆ™XYšÙ^HOOH™Y™\œ™YÙ^JH™XY›İÜÖÌNÂˆÙ[XİY›İšY\•™XYÙ^HHÙ[XİYšÙ^NÂ‚ˆÛÛZ[™\‹š[›™\’SHˆ]ˆÛ\ÜÏHœ›İšY\‹Z[˜›Ş[^[İ]‚ˆ\ÚYHÛ\ÜÏHœ›İšY\‹Z[˜›Ş[\İˆ\šXK[X™[H”İY[ÛÛ™\œØ][ÛœÈ‚ˆ]ˆÛ\ÜÏHœ›İšY\‹Z[˜›Ş[\İZXYİ›Û™Ï’[œ]Z\šY\ÏÜİ›Û™ÏÜ[‰İ™XY›İÜË›[™İOÜÜ[Ù]‚ˆ	İ™XY›İÜË›X\
+™XYOˆÂˆÛÛœİ]\İH™XY›]\İÂˆÛÛœİ™]šY]ÈH	Û]\İœÙ[™\”›ÛHOOHœ›İšY\ˆˆÈ–[İNˆˆˆˆŸIÛ]\İ›Y\ÜØYÙHˆŸXÂˆ™]\›ˆ]Ûˆ\OH˜]ÛˆˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞZ][H	İ™XYšÙ^HOOHÙ[XİYšÙ^HÈš\Ë\Ù[XİYˆˆˆŸHˆ]K\›İšY\‹]™XYH‰Ù[˜ÛÙUT’PÛÛ\Û™[
+™XYšÙ^J_Hˆ\šXK\™\ÜÙYH‰İ™XYšÙ^HOOHÙ[XİYšÙ^_H‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞX]˜]\ˆ‰Ù\ØØ\T›İšY\“Y\ÜØYÙJİš[™Ê]\İœİY[˜[YH”ÈŠKš[J
+K˜Ú\]
+
+KÕ\\Ø\ÙJ
+J_OÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞZ][K[XZ[ˆ‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞZ][K]Üİ›Û™Ï‰Ù\ØØ\T›İšY\“Y\ÜØYÙJ]\İœİY[˜[YH”İY[Š_OÜİ›Û™Ï‰İ™XY[œ™XYÈ	ÏHÛ\ÜÏHœ›İšY\‹Z[˜›Ş][œ™XYˆ]OH“™]ÈİY[Y\ÜØYÙHÚO‰ÈˆˆŸOÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞY\]Z\Y[‰Ù\ØØ\T›İšY\“Y\ÜØYÙJ]\İ™\]Z\Y[‘Ù[™\˜[[œ]Z\HŠ_H0­È	Ù\ØØ\T›İšY\“Y\ÜØYÙJ]\İœ›İšY\ˆØ[\\Ó˜[YJ_OÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›Ş\™]šY]È‰Ù\ØØ\T›İšY\“Y\ÜØYÙJ™]šY]Ê_OÜÜ[‚ˆÜÜ[‚ˆ[YO‰Ù\ØØ\T›İšY\“Y\ÜØYÙJ™]È]J]\İ˜Ü™X]Y]]K››İÊ
+JKÓØØ[Q]Tİš[™Ê×KÛ[ÛˆœÚÜ‹^Nˆ›[Y\šXÈŸJJ_Oİ[YO‚ˆØ]Û˜ÂˆJKš›Ú[ŠˆŠ_BˆØ\ÚYO‚ˆÙXİ[ÛˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞY]Z[ˆ\šXK[X™[H”Ù[XİYÛÛ™\œØ][Ûˆ‚ˆXY\ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞY]Z[ZXY‚ˆ]İ›Û™Ï‰Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİY›]\İœİY[˜[YH”İY[Š_OÜİ›Û™Ï‰Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİY›]\İ™\]Z\Y[‘Ù[™\˜[[œ]Z\HŠ_H0­È	Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİY›]\İœ›İšY\ˆØ[\\Ó˜[YJ_OÜÙ]‚ˆÜ[ˆÛ\ÜÏHœ›İšY\‹Z[˜›ŞY[[Ë[X™[‘SSÈS“ÖÜÜ[‚ˆÚXY\‚ˆ]ˆÛ\ÜÏHœ›İšY\‹[Y\ÜØYÙKXÛÛ™\œØ][Ûˆ›İšY\‹[Y\ÜØYÙKXÛÛ™\œØ][Û‹\Ù[XİY‚ˆ	ÜÙ[XİYœ›İÜË›X\
+›İÈOˆ]ˆÛ\ÜÏHœ›İšY\‹[Y\ÜØYÙKXX˜›H	Ü›İËœÙ[™\”›ÛHOOHœ›İšY\ˆˆÈœ›İšY\‹[İÛ‹[Y\ÜØYÙHˆˆˆŸH‚ˆÛX[‰Ü›İËœÙ[™\”›ÛHOOHœ›İšY\ˆˆÈ–[İH0­È›İšY\ˆˆˆ”İY[ŸH0­È	Ù\ØØ\T›İšY\“Y\ÜØYÙJ™]È]J›İË˜Ü™X]Y]]K››İÊ
+JKÓØØ[Tİš[™Ê
+J_OÜÛX[‚ˆ‰Ù\ØØ\T›İšY\“Y\ÜØYÙJ›İË›Y\ÜØYÙJ_OÜ‚ˆÙ]˜
+Kš›Ú[ŠˆŠ_BˆÙ]‚ˆ›Ü›HÛ\ÜÏHœ›İšY\‹[Y\ÜØYÙK\™\Hˆ]K]™XYZÙ^OH‰Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİYšÙ^J_H‚ˆ^\™XH›İÜÏHŒˆˆ˜[YOHœ™\HˆXÙZÛ\H”™\HÈ	Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİY›]\İœİY[˜[YHHİY[Š_HX›İ]	Ù\ØØ\T›İšY\“Y\ÜØYÙJÙ[XİY›]\İ™\]Z\Y[\È[œ]Z\HŠ_K‹‹ˆˆ\šXK[X™[H”™\HÈÙ[XİYÛÛ™\œØ][Ûˆˆ™\]Z\™Yİ^\™XO‚ˆ]Ûˆ\OHœİX›Z]ˆÛ\ÜÏHœš[X\KXˆ”Ù[™™\OØ]Û‚ˆÙ›Ü›O‚ˆÜÙXİ[Û‚ˆÙ]˜Â‚ˆÛÛZ[™\‹œ]Y\TÙ[XİÜ[
+–Ù]K\›İšY\‹]™XYHŠK™›Ü‘XXÚ
+]ÛˆOˆÂˆ]Û‹˜Y]™[\İ[™\Š˜ÛXÚÈ‹
+
+HOˆÂˆÙ[XİY›İšY\•™XYÙ^HHXÛÙUT’PÛÛ\Û™[
+]Û‹™]\Ù]œ›İšY\•™XYˆŠNÂˆ™[™\”›İšY\“Y\ÜØYÙ\ÊÙ[XİY›İšY\•™XYÙ^JNÂˆJNÂˆJNÂ‚ˆÛÛœİ›Ü›HHÛÛZ[™\‹œ]Y\TÙ[XİÜŠ‹œ›İšY\‹[Y\ÜØYÙK\™\HŠNÂˆ›Ü›OË˜Y]™[\İ[™\ŠœİX›Z]‹]™[OˆÂˆ]™[œ™]™[Y˜][
+
+NÂˆÛÛœİ^Hİš[™Ê›Ü›K™[[Y[Ëœ™\K˜[YHˆŠKš[J
+NÂˆYˆ
+]^
+H™]\›Â‚ˆÛÛœİÙ^HH›Ü›K™]\Ù]™XYÙ^NÂˆÛÛœİ›İÜÈH™XY›İšY\“Y\ÜØYÙ\Ê
+NÂˆÛÛœİX]Ú[™ÈH›İÜË™š[\ŠY\ÜØYÙHOˆ›İšY\•™XYÙ^JY\ÜØYÙJHOOHÙ^H	‰‚ˆ
+›İšY\“X™[Ëš[˜ÛY\Êİš[™ÊY\ÜØYÙKœ›İšY\ˆˆŠKš[J
+KÓİÙ\Ø\ÙJ
+JHˆ
+Y\ÜØYÙKœ›İšY\’Y	‰ˆİš[™ÊY\ÜØYÙKœ›İšY\’Y
+HOOHİš[™Ê\™\œÚ\ËšYÙ\ÜÚ[ÛËœ\™\œÚ\YˆŠJJJNÂˆÛÛœİ]\İİY[Y\ÜØYÙHHË‹‹›X]Ú[™×Kœ™]™\œÙJ
+K™š[™
+Y\ÜØYÙHOˆY\ÜØYÙKœÙ[™\”›ÛHOOHœ›İšY\ˆŠNÂˆYˆ
+[]\İİY[Y\ÜØYÙJHÂˆÚ[™İË˜[\
+•\ÈÛÛ™\œØ][Ûˆ\È›ÈİY[Y\ÜØYÙHÈ™\HÈY]ˆŠNÂˆ™]\›ÂˆB‚ˆ›İÜËœ\Ú
+ÂˆYˆ“TÑËHˆ
+È]K››İÊ
+Kˆ›İšY\ˆ]\İİY[Y\ÜØYÙKœ›İšY\‹ˆ›İšY\’Yˆ]\İİY[Y\ÜØYÙKœ›İšY\’Y\™\œÚ\ËšYˆ‹ˆ\]Z\Y[ˆ]\İİY[Y\ÜØYÙK™\]Z\Y[ˆ‹ˆİY[˜[YNˆ]\İİY[Y\ÜØYÙKœİY[˜[YH”İY[‹ˆİY[Yˆ]\İİY[Y\ÜØYÙKœİY[Yˆ‹ˆİY[[XZ[ˆ]\İİY[Y\ÜØYÙKœİY[[XZ[ˆ‹ˆY\ÜØYÙNˆ^ˆÜ™X]Y]ˆ™]È]J
+KÒTÓÔİš[™Ê
+KˆÙ[™\”›ÛNˆœ›İšY\ˆ‹ˆÙ[™\“˜[YNˆ›İšY\“˜[YKˆİ]\Îˆ•[œ™XY‚ˆJNÂˆØØ[İÜ˜YÙKœÙ]][J“Õ’QT—ÓQTÔĞQÑT×ÒÑVK”ÓÓ‹œİš[™ÚYJ›İÜÊJNÂˆÙ[XİY›İšY\•™XYÙ^HHÙ^NÂˆ™[™\”›İšY\“Y\ÜØYÙ\ÊÙ^JNÂˆJNÂŸB‚‹ÊˆOOOOOOOOOOOOOOOOOOOOOOOOBˆÑÓÕUOOOOOOOOOOOOOOOOOOOOOOOOH
+‹Â‚™Øİ[Y[ˆ™Ù][[Y[RY
+›ÙÛİ]ˆŠBˆ˜Y]™[\İ[™\Š˜ÛXÚÈ‹\Ş[˜È
+
+HOˆÂ‚ˆHÈ]ØZ]™]Ú
+‹Ø\KÜ›İšY\‹ÛÙÛİ]‹ÈY]Ùˆ”ÔÕˆJNÈHØ]ÚßB‚ˆØØ[İÜ˜YÙKœ™[[İ™R][Jˆ“Õ’QT—ÔÑTÔÒSÓ—ÒÑVBˆ
+NÂ‚ˆÚ[™İË›ØØ][Û‹š™YˆBˆœ›İšY\‹[ÙÚ[‹š[Â‚ˆJNÂ

@@ -1,0 +1,23 @@
+CAMPUSHARE UPDATE — EQUIPMENT & REVIEWS UI PHASE 1
+===================================================
+
+Included:
+- Provider category choices now match the needs questionnaire:
+  Laptop, Tablet, Camera, Projector, Microphone, Speaker,
+  Extension Cord / Power Strip, Printer, PC / Desktop Computer, Other.
+- Legacy/demo category names are normalized for the student catalog.
+- Provider inventory has Unlist / Relist controls. Unlisting hides an item from the public equipment catalog while retaining the provider record and existing rental history.
+- Equipment View Details now has a designed ratings/reviews section, review cards, average rating, and Report this listing action.
+- Student review form styling improved; existing optional comment textarea is retained.
+- Rental details modal fields are populated from rental data with understandable fallback labels, and a clearer timeline fallback is shown.
+
+IMPORTANT ARCHITECTURE LIMITATION:
+Equipment, rental records, ratings, reports, and provider sessions still rely on browser localStorage in this codebase. This phase's reviews/reports/unlist actions are prototype-local and are NOT shared between different users/devices. The Render SQLite database currently backs admin authentication and partnership applications, not the full equipment/rental system. Do not treat this prototype as production-ready for real transactions.
+
+Next required backend phase:
+- Implement server-side provider authentication/authorization before allowing provider listing changes through APIs.
+- Move equipment listings, reviews, and reports to SQLite.
+- Add admin-only equipment/report moderation endpoints and audit records.
+- Connect student/provider/admin UIs to those APIs and test migration without losing existing demo records.
+
+No production deployment was performed by this update.

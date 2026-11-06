@@ -124,6 +124,15 @@ form.addEventListener("submit", async function(event) {
       verificationStatus: "Not Started", status: "Pending Review", statusNote: "",
       createdAt: now, updatedAt: now, statusUpdatedAt: now
     };
+    const response = await fetch('/api/partnerships', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(partnership)
+    });
+    const saved = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(saved.error || 'Unable to submit this partnership request.');
+    partnership.id = saved.id;
+    partnership.reference = saved.reference;
     partnerships.push(partnership);
     savePartnerships(partnerships);
 
@@ -143,10 +152,10 @@ form.addEventListener("submit", async function(event) {
     heading.textContent = "Partnership request submitted!";
     const status = document.createElement("p"); status.textContent = "Your application is now Pending Review. Track your application first. Provider Login and Activate Account stay locked for this application until CampusShare administration approves it.";
     const refWrap = document.createElement("p"); refWrap.textContent = "Application reference number";
-    const applicationRefBadge = document.createElement("span"); applicationRefBadge.className = "application-ref"; applicationRefBadge.textContent = partnership.id; refWrap.appendChild(applicationRefBadge);
+    const applicationRefBadge = document.createElement("span"); applicationRefBadge.className = "application-ref"; applicationRefBadge.textContent = partnership.reference; refWrap.appendChild(applicationRefBadge);
     const privacy = document.createElement("p"); privacy.textContent = "Prototype only: uploaded files are stored in this browser and are not securely protected. Use sample documents only.";
     const actions = document.createElement("div"); actions.className = "next-actions";
-    const track = document.createElement("a"); track.className = "track-now"; track.href = "provider-login.html?track=" + encodeURIComponent(partnership.id); track.textContent = "Track Your Partnership";
+    const track = document.createElement("a"); track.className = "track-now"; track.href = "provider-login.html?track=" + encodeURIComponent(partnership.reference); track.textContent = "Track Your Partnership";
     const loginLocked = document.createElement("button"); loginLocked.type = "button"; loginLocked.className = "locked-action"; loginLocked.disabled = true; loginLocked.textContent = "Provider Login — Locked until approval";
     const activateLocked = document.createElement("button"); activateLocked.type = "button"; activateLocked.className = "locked-action"; activateLocked.disabled = true; activateLocked.textContent = "Activate Account — Locked until approval";
     const lockNote = document.createElement("p"); lockNote.className = "locked-help"; lockNote.textContent = "These actions become available after the Admin approves this application. You can always return here to track its status.";

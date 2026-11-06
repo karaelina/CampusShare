@@ -408,9 +408,9 @@
         ×
       </button>
 
-      <p class="section-eyebrow">NEW EQUIPMENT</p>
+      <p class="section-eyebrow" id="equipmentModalEyebrow">NEW EQUIPMENT</p>
 
-      <h2>Add Equipment</h2>
+      <h2 id="equipmentModalTitle">Add Equipment</h2>
 
       <p class="modal-subtitle">
         Add equipment that students can rent through CampusShare.
@@ -445,10 +445,9 @@
             type="file"
             id="equipmentImage"
             accept="image/png,image/jpeg,image/webp"
-            required
           >
 
-          <small class="field-help">Upload a clear photo of the actual item. JPG, PNG, or WebP; maximum 1 MB.</small>
+          <small class="field-help" id="equipmentImageHelp">Upload a clear photo of the actual item. JPG, PNG, or WebP; maximum 1 MB.</small>
           <div id="equipmentImagePreview" class="equipment-image-preview hidden">
             <img id="equipmentPreviewImg" alt="Equipment photo preview">
           </div>
@@ -463,44 +462,19 @@
           </label>
 
           <select id="equipmentCategory" required>
-
-            <option value="">
-              Select category
-            </option>
-
-            <option value="Camera & Photography">
-              Camera & Photography
-            </option>
-
-            <option value="Audio Equipment">
-              Audio Equipment
-            </option>
-
-            <option value="Lighting Equipment">
-              Lighting Equipment
-            </option>
-
-            <option value="Computers & Technology">
-              Computers & Technology
-            </option>
-
-            <option value="Projectors & Presentation">
-              Projectors & Presentation
-            </option>
-
-            <option value="Sports Equipment">
-              Sports Equipment
-            </option>
-
-            <option value="Event Equipment">
-              Event Equipment
-            </option>
-
-            <option value="Other">
-              Other
-            </option>
-
-          </select>
+              <option value="">Select category</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Tablet">Tablet</option>
+              <option value="Camera">Camera</option>
+              <option value="Projector">Projector</option>
+              <option value="Microphone">Microphone</option>
+              <option value="Speaker">Speaker</option>
+              <option value="Extension Cord / Power Strip">Extension Cord / Power Strip</option>
+              <option value="Printer">Printer</option>
+              <option value="PC / Desktop Computer">PC / Desktop Computer</option>
+              <option value="Other">Other</option>
+            </select>
+            <small class="field-hint">Choose Other if your equipment does not fit the listed categories. Enter its exact name above.</small>
 
         </div>
 
@@ -583,7 +557,7 @@
             type="submit"
             class="primary-btn"
           >
-            Add Equipment
+            <span id="equipmentSubmitLabel">Add Equipment</span>
           </button>
 
         </div>

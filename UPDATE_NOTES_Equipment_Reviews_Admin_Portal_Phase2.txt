@@ -1,0 +1,22 @@
+CampusShare Equipment Reviews + Admin Equipment Portal — Phase 2
+
+Implemented in this update:
+- Replaced the visible Partner History admin navigation/quick action/stat with Equipment Portal / Equipment Listings.
+- Added filters for All, Available, Unlisted, Under Review, Removed, and Reported provider equipment.
+- Added admin actions to unlist, relist, mark under review, and remove listings from the public catalog. These actions preserve rental and review records.
+- Added a student report review area with Under Review, Dismiss, and Unlist Item actions.
+- Added a local moderation activity log.
+- Fixed review matching to prioritize exact equipment IDs and resolve legacy review records through their rental reference before using exact name/provider fallback.
+- Ensured provider equipment with Unlisted, Under Review, or Removed status is excluded from the public catalog.
+
+Important prototype limitation:
+- Equipment, ratings, and reports currently use browser localStorage. The admin portal therefore sees only records in the same browser profile/device. It is not yet a cross-device shared system. Production-ready cross-device moderation requires authenticated server-side equipment/review/report APIs and database-backed provider identity.
+- Removed means hidden from the public catalog; records are not physically deleted.
+- Existing legacy ratings with no equipment ID and no rental reference can only be associated by exact equipment name and provider. Such ambiguous records should be manually reviewed if duplicate listings share the same name/provider.
+
+Before deploying:
+1. Test locally with at least two provider items and separate completed rentals/reviews.
+2. Confirm a review for item A does not appear on item B.
+3. Test admin moderation actions and provider relisting.
+4. Confirm all existing admin login and partnership flows still work.
+5. Keep production secrets out of screenshots and source control.

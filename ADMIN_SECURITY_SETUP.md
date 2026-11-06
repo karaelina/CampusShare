@@ -1,12 +1,13 @@
-# CampusShare Admin Security — Phase 1 foundation
+# CampusShare Server and Render Setup
 
 ## What is included
 - Express server with an admin-only route for `/admin` and `/admin.html`.
 - Admin login uses bcrypt password hashes and server-side sessions stored in SQLite.
 - HttpOnly/SameSite session cookie, secure cookie in production, login rate limiting, Helmet headers.
 - Admin-only API routes for listing and changing partnership application status.
-- Shared SQLite tables for partnership metadata and admin audit events.
-- Public partnership submission and status tracking API endpoints (metadata only).
+- Shared SQLite tables for partnership applications, approved provider equipment, admin audit events, and sessions.
+- Partnership submissions and admin decisions are shared through the server API.
+- Provider activation and sign-in are checked against server-side approval; provider equipment is stored in the shared database and shown to students from the public equipment API.
 
 ## Run locally
 1. Install Node.js 20 or newer.
@@ -27,13 +28,15 @@ $env:SESSION_SECRET="replace-with-a-long-random-secret"
 npm.cmd start
 ```
 
-## Important integration status
-This is a security/backend foundation, not a completed production integration. The legacy student/provider/admin frontend currently uses `localStorage`. The partnership form and existing admin dashboard still need to be wired to these APIs before submissions sync across devices. Uploaded ID/authorization documents are NOT stored by these APIs; secure object storage, server-side file validation, private access rules, and retention policy must be implemented before handling real documents. Do not upload real IDs or payment data in this prototype.
+## Render deployment
+The included `render.yaml` creates a Node web service and mounts `/var/data` as persistent storage for the SQLite database and login sessions. The service uses Render's Starter plan because persistent disks are not available to Free web services. Set a private `ADMIN_USERNAME` and `ADMIN_PASSWORD` during setup; Render generates `SESSION_SECRET`.
+
+## Remaining prototype storage
+Equipment listings and partnership approval are shared through the server. Student accounts, rental records, payment demo data, reviews, reports, and inbox messages still use browser `localStorage`; those features do not yet sync across different browsers or devices. Partnership verification files are stored with the database for this prototype. Use sample files only until private file storage, retention controls, and operational backups are added.
 
 ## Before production
-- Configure a persistent disk/volume for `DATA_DIR` (SQLite data must persist across deploys).
-- Set all required environment variables in the hosting provider's secret settings.
+- Keep the Render disk mounted at `/var/data` and keep `DATA_DIR=/var/data`.
 - Use HTTPS; production session cookies require it.
-- Do not expose admin bootstrap credentials in source control.
-- Integrate the existing forms/dashboard with APIs and test all authorization cases.
-- Add CSRF protection and a deliberate backup/restore strategy before handling real user data.
+- Never put admin credentials or session secrets in source control.
+- Keep the Render service at one instance while using its SQLite disk.
+- Add private object storage for verification uploads, CSRF protection, and a backup/restore routine before using real personal documents or payment data.

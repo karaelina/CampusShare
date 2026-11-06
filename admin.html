@@ -98,16 +98,6 @@
       <a
         href="#"
         class="nav-link"
-        data-section="disputes"
-      >
-        <span>⚑</span>
-        <span>Disputes &amp; Holds</span>
-      </a>
-
-
-      <a
-        href="#"
-        class="nav-link"
         data-section="partners"
       >
         <span>♧</span>
@@ -118,10 +108,10 @@
       <a
         href="#"
         class="nav-link"
-        data-section="history"
+        data-section="equipment"
       >
-        <span>↻</span>
-        <span>Partner History</span>
+        <span>▣</span>
+        <span>Equipment Portal</span>
       </a>
 
     </nav>
@@ -243,10 +233,10 @@
           <article class="stat-card">
 
             <span>
-              Partner History
+              Equipment Listings
             </span>
 
-            <strong id="statPartnerHistory">
+            <strong id="statEquipmentCount">
               0
             </strong>
 
@@ -312,14 +302,14 @@
 
             <button
               class="quick-btn"
-              data-open-section="history"
+              data-open-section="equipment"
             >
-              <span>↻</span>
+              <span>▣</span>
               <strong>
-                Partner History
+                Equipment Portal
               </strong>
               <small>
-                View previous partner records
+                Review provider listings and student reports
               </small>
             </button>
 
@@ -518,68 +508,44 @@
 
 
       <!-- =========================
-           DISPUTES & SETTLEMENT HOLDS
+           EQUIPMENT PORTAL
       ========================== -->
-      <section id="disputesSection" class="admin-section">
+      <section id="equipmentSection" class="admin-section">
         <div class="notice">
-          <strong>Disputes &amp; Settlement Holds — Demo</strong>
-          <p>Review reported rental/payment issues. Resolving a case only updates local demo records; it does not issue a real refund or move money.</p>
+          <strong>Equipment Portal</strong>
+          <p>Review provider-listed equipment, inspect student reports, and hide unsafe or misleading listings. Unlisting preserves rental history and reviews.</p>
+          <p class="cs-admin-storage-note">Prototype note: equipment and reports are currently stored in this browser's local storage. They are not yet shared across different devices.</p>
         </div>
         <section class="panel">
           <div class="panel-title">
-            <strong>Reported Issues</strong>
-            <span id="disputeCount">0 cases</span>
+            <strong>Provider Equipment</strong>
+            <span id="equipmentPortalCount">0 listings</span>
           </div>
-          <div id="disputeList"></div>
+          <div class="cs-admin-equipment-filters" role="group" aria-label="Filter equipment listings">
+            <button type="button" class="active" data-equipment-filter="All">All</button>
+            <button type="button" data-equipment-filter="Available">Available</button>
+            <button type="button" data-equipment-filter="Unlisted">Unlisted</button>
+            <button type="button" data-equipment-filter="Under Review">Under Review</button>
+            <button type="button" data-equipment-filter="Removed">Removed</button>
+            <button type="button" data-equipment-filter="Reported">Reported</button>
+          </div>
+          <div id="adminEquipmentList"></div>
         </section>
-      </section>
-
-
-      <!-- =========================
-           PARTNER HISTORY
-      ========================== -->
-
-      <section
-        id="historySection"
-        class="admin-section"
-      >
-
-        <div class="notice">
-
-          <strong>
-            Partner History
-          </strong>
-
-          <p>
-            Previous CampusShare partner records remain available
-            for administrative reference even when a partnership
-            is no longer active.
-          </p>
-
-        </div>
-
-
-        <section class="panel">
-
+        <section class="panel" style="margin-top:18px">
           <div class="panel-title">
-
-            <strong>
-              Partnership History
-            </strong>
-
-            <span id="historyCount">
-              0 records
-            </span>
-
+            <strong>Student Listing Reports</strong>
+            <span id="equipmentReportCount">0 reports</span>
           </div>
-
-
-          <div id="historyList"></div>
-
+          <div id="adminEquipmentReports"></div>
         </section>
-
+        <section class="panel" style="margin-top:18px">
+          <div class="panel-title"><strong>Moderation Activity</strong></div>
+          <div id="adminEquipmentAudit"></div>
+        </section>
       </section>
 
+      <!-- Legacy history section is no longer exposed in navigation. -->
+      <section id="historySection" class="admin-section" hidden></section>
 
     </section>
 

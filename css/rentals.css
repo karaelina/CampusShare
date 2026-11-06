@@ -733,3 +733,23 @@ img, video, canvas { max-width: 100%; }
   :where(table) { display: block; max-width: 100%; overflow-x: auto; }
   :where(button, .btn, input[type="submit"]) { min-height: 40px; }
 }
+
+/* Student rental review form */
+.cs-rating-editor{margin-top:18px;padding:18px;border:1px solid #dedede;border-radius:14px;background:#fafafa;display:grid;gap:10px;max-width:560px}
+.cs-rating-editor>label{font-weight:800;font-size:1rem;color:#171717}
+.cs-rating-editor select,.cs-rating-editor textarea{width:100%;min-width:0;box-sizing:border-box;border:1px solid #d7d7d7;border-radius:10px;background:#fff;padding:12px;font:inherit;color:#222}
+.cs-rating-editor textarea{resize:vertical;line-height:1.5;min-height:86px}
+.cs-rating-editor button{justify-self:start;border:0;border-radius:10px;background:#111;color:#fff;padding:11px 17px;font-weight:800;cursor:pointer}
+.cs-rating-saved{margin-top:16px;padding:14px;border:1px solid #cfe5d6;border-radius:12px;background:#f1fff5;display:grid;gap:6px}
+.cs-rating-saved>span{color:#c58a00;letter-spacing:1px;font-size:1.05rem}
+.cs-rating-saved small{color:#555;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:640px){.cs-rating-editor{padding:14px}.cs-rating-editor button{width:100%}}
+
+/* Rental details modal: readable fields and timeline */
+.modal-details .modal-detail{min-width:0;overflow-wrap:anywhere}
+.modal-detail strong{display:block;line-height:1.45;overflow-wrap:anywhere}
+.timeline-item{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid #e6e6e6}
+.timeline-item:last-child{border-bottom:0}
+.timeline-item small{color:#777;text-align:right}
+.timeline-empty{padding:12px 14px;border-radius:10px;background:#f6f6f6;color:#666;line-height:1.5}
+@media(max-width:640px){.timeline-item{flex-direction:column;gap:4px}.timeline-item small{text-align:left}}
