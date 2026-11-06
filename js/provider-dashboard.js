@@ -1,79 +1,1104 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éí×nöí:-jZ.¶›­–)Þ³V6öç7B$õd”DU%õ4U54”ôåô´U’Ò&6×W56†&U&÷f–FW%6W76–öâ#°¦6öç7BUT•ÔTåEô´U’Ò&6×W56†&U&÷f–FW$WV—ÖVçB#°¦6öç7B$TåDÅ5ô´U’Ò&6×W56†&U&VçFÇ2#°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢4U54”ôà£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¦gVæ7F–öâvWE6W76–öâ‚—°¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ…$õd”DU%õ4U54”ôåô´U’’ÇÂ&çVÆÂ ¢“°§Ð ¦6öç7B6W76–öâÒvWE6W76–öâ‚“°  ¦–b‚6W76–öâ—° ¢v–æF÷ræÆö6F–öâæ‡&VbÒ'&÷f–FW"ÖÆöv–âæ‡FÖÂ#° §Ð  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢%DäU%4„•DD£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¦gVæ7F–öâvWE'FæW'6†—‚—°¢ÆWB'FæW'6†—2ÒµÓ°¢G'’°¢6öç7B'6VBÒ¥4ôâç'6R†Æö6Å7F÷&vRævWD—FVÒ‚&6×W56†&U'FæW'6†—2"’ÇÂ%µÒ"“°¢'FæW'6†—2Ò'&’æ—4'&’‡'6VB’ò'6VB¢µÓ°¢Ò6F6‚†W'&÷"’°¢6öç6öÆRçv&â‚$6÷VÆBæ÷B&VB6×W56†&R'FæW'6†—&V6÷&G2â"ÂW'&÷"“°¢Ð ¢6öç7B6W76–öä–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ6W76–öãòæ–BÇÂ""“°¢6öç7B6W76–öäVÖ–ÂÒ7G&–ær‡6W76–öãòæöff–6–ÄVÖ–ÂÇÂ6W76–öãòæVÖ–ÂÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚“°¢&WGW&â'FæW'6†—2æf–æB†—FVÒÓâ6W76–öä–Bbb7G&–ær†—FVÒæ–BÇÂ""’ÓÓÒ6W76–öä–B¢ÇÂ'FæW'6†—2æf–æB†—FVÒÓâ6W76–öäVÖ–Âbb7G&–ær†—FVÒæöff–6–ÄVÖ–ÂÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ6W76–öäVÖ–Â¢ÇÂ'FæW'6†—2æf–æB†—FVÒÓâ—FVÒç7FGW2ÓÓÒ$&÷fVB ¢bb7G&–ær†—FVÒç&÷f–FW$æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ7G&–ær‡6W76–öãòç&÷f–FW$æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚¢bb7G&–ær†—FVÒæ6×W4æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’ÓÓÒ7G&–ær‡6W76–öãòæ6×W4æÖRÇÂ""’çG&–Ò‚’çFôÆ÷vW$66R‚’¢ÇÂçVÆÃ°§Ð ¦6öç7B'FæW'6†—ÒvWE'FæW'6†—‚“°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢UT•ÔTå@£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¦gVæ7F–öâvWDWV—ÖVçB‚—° ¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ„UT•ÔTåEô´U’’ÇÂ%µÒ ¢“° §Ð ¦7–æ2gVæ7F–öâ6fTWV—ÖVçB†FF—°¢Æö6Å7F÷&vRç6WD—FVÒ€¢UT•ÔTåEô´U’À¢¥4ôâç7G&–æv–g’†FF¢“°¢6öç7B&÷f–FW$–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ""“°¢–b‚&÷f–FW$–B’F‡&÷ræWrW'&÷"‚%&÷f–FW"6–vâÖ–â—2&WV—&VBFò7–æ2WV—ÖVçBâ"“°¢6öç7B—FV×2ÒFFæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÓÒ&÷f–FW$–B“°¢6öç7B&W7öç6RÒv—BfWF6‚‚"ö’÷&÷f–FW"ÖWV—ÖVçB÷7–æ2"Â°¢ÖWF†öC¢%õ5B"Â†VFW'3¢²$6öçFVçBÕG—R#¢&Æ–6F–öâö§6öâ"ÒÀ¢&öG“¢¥4ôâç7G&–æv–g’‡²—FV×2Ò¢Ò“°¢6öç7B&W7VÇBÒv—B&W7öç6Ræ§6öâ‚’æ6F6‚‚‚’Óâ‡·Ò’“°¢–b‚&W7öç6Ræö²’F‡&÷ræWrW'&÷"‡&W7VÇBæW'&÷"ÇÂ$WV—ÖVçB6÷VÆBæ÷B&R7–æ6VBFòF†R6†&VB6FÆörâ"“°§Ð ¦7–æ2gVæ7F–öâÆöE&÷f–FW$WV—ÖVçDg&öÕ6W'fW"‚—°¢6öç7B&÷f–FW$–BÒ7G&–ær‡6W76–öãòç'FæW'6†—–BÇÂ""“°¢–b‚&÷f–FW$–B’&WGW&ã°¢G'’°¢6öç7B&W7öç6RÒv—BfWF6‚†ö’÷&÷f–FW"ÖWV—ÖVçBòG¶Væ6öFUU$”6ö×öæVçB‡&÷f–FW$–B—ÖÂ²66†S¢&æò×7F÷&R"Ò“°¢6öç7B&W7VÇBÒv—B&W7öç6Ræ§6öâ‚’æ6F6‚‚‚’Óâ‡·Ò’“°¢–b‚&W7öç6Ræö²’F‡&÷ræWrW'&÷"‡&W7VÇBæW'&÷"ÇÂ$6÷VÆBæ÷BÆöB6†&VBWV—ÖVçBâ"“°¢6öç7B6†&VBÒ'&’æ—4'&’‡&W7VÇBæ—FV×2’ò&W7VÇBæ—FV×2¢µÓ°¢6öç7BÆö6ÂÒvWDWV—ÖVçB‚“°¢6öç7B&VÖ÷FT–G2ÒæWr6WB‡6†&VBæÖ†—FVÒÓâ7G&–ær†—FVÒæ–B’’“°¢6öç7BÆö6ÄöæÇ’ÒÆö6Âæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÓÒ&÷f–FW$–Bbb&VÖ÷FT–G2æ†2…7G&–ær†—FVÒæ–B’’“°¢6öç7B÷F†W%&÷f–FW'2ÒÆö6Âæf–ÇFW"†—FVÒÓâ7G&–ær†—FVÒç&÷f–FW$–BÇÂ""’ÓÒ&÷f–FW$–B“°¢6öç7BÖW&vVBÒ²ââæ÷F†W%&÷f–FW'2Âââç6†&VBÂââæÆö6ÄöæÇ•Ó°¢Æö6Å7F÷&vRç6WD—FVÒ„UT•ÔTåEô´U’Â¥4ôâç7G&–æv–g’†ÖW&vVB’“°¢–b†Æö6ÄöæÇ’æÆVæwF‚’v—B6fTWV—ÖVçB†ÖW&vVB“°¢&VæFW"‚“°¢Ò6F6‚†W'&÷"’°¢6öç6öÆRçv&â‚%6†&VBWV—ÖVçB7–æ2—2Væf–Æ&ÆRâ"ÂW'&÷"“°¢Ð§Ð  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢$TåDÅ0£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¦gVæ7F–öâvWE&VçFÇ2‚—° ¢&WGW&â¥4ôâç'6R€¢Æö6Å7F÷&vRævWD—FVÒ…$TåDÅ5ô´U’’ÇÂ%µÒ ¢“° §Ð  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢$4”2”ädð£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¦6öç7B&÷f–FW$æÖRÐ¢'FæW'6†—òç&÷f–FW$æÖRÇÂ6W76–öãòç&÷f–FW$æÖRÇÂ%&÷f–FW"#° ¦6öç7B6×W4æÖRÐ¢'FæW'6†—òæ6×W4æÖRÇÂ6W76–öãòæ6×W4æÖRÇÂ$6×W2#°  ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚'&÷f–FW$æÖR"’çFW‡D6öçFVçBÐ¢&÷f–FW$æÖS° ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚&6×W4æÖR"’çFW‡D6öçFVçBÐ¢6×W4æÖS° ¦Fö7VÖVçBævWDVÆVÖVçD'”–B‚'vVÆ6öÖTæÖR"’çFW‡D6öçFVçBÐ¢&÷f–FW$æÖS°  ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÐ¢$ôd”ÄP£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ð ¢òò&VB&÷fVB'FæW'6†—FWF–Ç2f—'7BÂF†Vâ&÷f–FW"6W76–öã²7W÷'BV&Æ–W"f÷&Òf–VÆBæÖW2à¦gVæ7F–öâf—'7Df–Æ&ÆR‡6÷W&6RÂ¶W—2’°¢f÷"†6öç7B¶W’öb¶W—2’°¢6öç7BfÇVRÒ6÷W&6Rbb6÷W&6U¶¶W•Ó°¢–b‡fÇVRÓÒVæFVf–æVBbbfÇVRÓÒçVÆÂbb7G&–ær‡fÇVR’çG&–Ò‚’ÓÒ""’&WGW&â7G&–ær‡fÇVR’çG&–Ò‚“°¢Ð¢&WGW&â"#°§Ð ¦6öç7B&öf–ÆUfÇVW2Ò°¢&öf–ÆT6×W3¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6×W4æÖR"Â&6×W2"Â&–ç7F—GWF–öäæÖR"Â&–ç7F—GWF–öâ"Â'66†ööÄæÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6×W4æÖR"Â&6×W2"Â&–ç7F—GWF–öäæÖR"Â&–ç7F—GWF–öâ"Â'66†ööÄæÖR%Ò’ÇÂ.(	B"À¢&öf–ÆU&÷f–FW#¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²'&÷f–FW$æÖR"Â&÷&væ—¦F–öäæÖR"Â'&÷f–FW$÷&væ—¦F–öâ"Â&÷&væ—¦F–öâ"Â&'W6–æW74æÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²'&÷f–FW$æÖR"Â&÷&væ—¦F–öäæÖR"Â'&÷f–FW$÷&væ—¦F–öâ"Â&÷&væ—¦F–öâ"Â&'W6–æW74æÖR%Ò’ÇÂ.(	B"À¢&öf–ÆTVÖ–Ã¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&öff–6–ÄVÖ–Â"Â&VÖ–Â"Â&6öçF7DVÖ–Â"Â'&÷f–FW$VÖ–Â%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&öff–6–ÄVÖ–Â"Â&VÖ–Â"Â&6öçF7DVÖ–Â"Â'&÷f–FW$VÖ–Â%Ò’ÇÂ.(	B"À¢&öf–ÆT6öçF7C¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6öçF7EW'6öâ"Â&6öçF7DæÖR"Â'&W&W6VçFF—fTæÖR"Â&WF†÷&—¦VEW'6öâ"Â&gVÆÄæÖR"Â&Æ–6çDæÖR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6öçF7EW'6öâ"Â&6öçF7DæÖR"Â'&W&W6VçFF—fTæÖR"Â&WF†÷&—¦VEW'6öâ"Â&gVÆÄæÖR"Â&Æ–6çDæÖR%Ò’ÇÂ.(	B"À¢&öf–ÆTçVÖ&W#¢f—'7Df–Æ&ÆR‡'FæW'6†—Â²&6öçF7DçVÖ&W""Â'†öæTçVÖ&W""Â&Öö&–ÆTçVÖ&W""Â&6öçF7E†öæR"Â'†öæR%Ò’ÇÂf—'7Df–Æ&ÆR‡6W76–öâÂ²&6öçF7DçVÖ&W""Â'†öæTçVÖ&W""Â&Öö&–ÆTçVÖ&W""Â&6öçF7E†öæR"Â'†öæR%Ò’ÇÂ.(	B §Ó°¤ö&¦V7BæVçG&–W2‡&öf–ÆUfÇVW2’æf÷$V6‚‚…¶–BÂfÇVUÒ’Óâ°¢6öç7BVÆVÖVçBÒFö7VÖVçBævWDVÆVÖVçD'”–B†–B“°¢–b†VÆVÖVçB’VÆVÖVçBçFW‡D6öçFVçBÒfÇVS°§Ò“° ¦6öç7B&÷f–FW%F÷fF"ÒFö7VÖVçBævWDVÆVÖVçD'”–B‚'&÷f–FW%F÷fF""“°¦–b‡&÷f–FW%F÷fF"’°¢6öç7BfF%6÷W&6RÒ7G&–ær‡&÷f–FW$æÖRÇÂ6×W4æÖRÇÂ%"’çG&–Ò‚“°¢&÷f–FW%F÷fF"çFW‡D6öçFVçBÒfF%6÷W&6Ræ6†$Bƒ’çFõWW$66R‚’ÇÂ%#°¢&÷f–FW%F÷fF"çF—FÆRÒfF%6÷W&6S°§Ð ¦6öç7BWV—ÖVçD–ÖvT–çWBÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçD–ÖvR"“°¦6öç7BWV—ÖVçD–ÖvU&Wf–WrÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçD–ÖvU&Wf–Wr"“°¦6öç7BWV—ÖVçE&Wf–Wt–ÖrÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&WV—ÖVçE&Wf–Wt–Ör"“°¦ÆWB6VÆV7FVDWV—ÖVçD–ÖvRÒ"#°¦ÆWBVF—F–ætWV—ÖVçD–BÒçVÆÃ° ¦–b†WV—ÖVçD–ÖvT–çWB’°¢WV—ÖVçD–ÖvT–çWBæFDWfVçDÆ—7FVæW"‚&6†ævR"Â‚’Óâ°¢6öç7Bf–ÆRÒWV—ÖVçD–ÖvT–çWBæf–ÆW2bbWV—ÖVçD–ÖvT–çWBæf–ÆW5³Ó°¢6VÆV7FVDWV—ÖVçD–ÖvRÒ"#°¢–b‚f–ÆR’°¢WV—ÖVçD–ÖvU&Wf–Wsòæ6Æ74Æ—7BæFB‚&†–FFVâ"“°¢–b†WV—ÖVçE&Wf–Wt–Ör’WV—ÖVçE&Wf–Wt–Örç&VÖ÷fTGG&–'WFR‚'7&2"“°¢&WGW&ã°¢Ð¢–b‚f–ÆRçG—Rç7F'G5v—F‚‚&–ÖvRò"’’°¢ÆW'B‚%ÆV6R6†ö÷6Râ–ÖvRf–ÆRâ"“°¢WV—ÖVçD–ÖvT–çWBçfÇVRÒ"#°¢WV—ÖVçD–ÖvU&Wf–Wsòæ6Æ74Æ—7BæFB‚&†–FFVâ"“°¢&WGW&ã°¢Ð ¢òò7&÷FòF†R6ÖRÆæG66R&F–òW6VB'’'&÷w6RWV—ÖVçB6&G2À¢òòF†Vâ6ö×&W726òF†R–ÖvRf—G2F†RÆö6Å7F÷&vRÖ&6VB&÷F÷G—Rà¢6öç7B&VFW"ÒæWrf–ÆU&VFW"‚“°¢&VFW"æöæÆöBÒ‚’Óâ°¢6öç7B6÷W&6T–ÖvRÒæWr–ÖvR‚“°¢6÷W&6T–ÖvRæöæÆöBÒ‚’Óâ°¢6öç7BF&vWEv–GF‚Ò#°¢6öç7BF&vWD†V–v‡BÒs#°¢6öç7B6çf2ÒFö7VÖVçBæ7&VFTVÆVÖVçBŽûÛ»h‘éì¶»§q«^t˜^J›ÝÜÊHÈ›ÝÜÈˆ×NÈBˆØ]ÚÈ™]\›ˆ×NÈBŸB™[˜Ý[Ûˆ\ØØ\T›ÝšY\“Y\ÜØYÙJ˜[YJHÂˆ™]\›ˆÝš[™Ê˜[YHÏÈˆŠKœ™\XÙJÖÉˆ‰×KÙËÚ\ˆOˆ
-È‰ˆŽˆ‰˜[\È‹Žˆ‰›È‹ˆŽˆ‰™ÝÈ‹	È‰Îˆ‰œ][ÝÈ‹‰ÈŽˆ‰ˆÌÎNÈˆVØÚ\—JJNÂŸB›]Ù[XÝY›ÝšY\•™XYÙ^HHˆŽÂ‚™[˜Ý[Ûˆ›ÝšY\•™XYÙ^JY\ÜØYÙJHÂˆ™]\›ˆÛY\ÜØYÙKœÝY[YY\ÜØYÙKœÝY[[XZ[Y\ÜØYÙKœÝY[˜[YKˆY\ÜØYÙKœ›ÝšY\‹Y\ÜØYÙK™\]Z\Y[‘Ù[™\˜[[œ]Z\žH—Kš›Ú[ŠŽŽˆŠNÂŸB‚™[˜Ý[Ûˆ™[™\”›ÝšY\“Y\ÜØYÙ\Ê™Y™\œ™YÙ^HHÙ[XÝY›ÝšY\•™XYÙ^JHÂˆÛÛœÝÛÛZ[™\ˆHØÝ[Y[™Ù][[Y[žRY
-œ›ÝšY\“Y\ÜØYÙ\Ó\ÝŠNÂˆYˆ
-XÛÛZ[™\ŠH™]\›ŽÂ‚ˆÛÛœÝ[H™XY›ÝšY\“Y\ÜØYÙ\Ê
-NÂˆÛÛœÝ›ÝšY\“X™[ÈHÜ›ÝšY\“˜[YKØ[\\Ó˜[YK\™\œÚ\Ëœ›ÝšY\“˜[YK\™\œÚ\Ë˜Ø[\\Ó˜[YWBˆ™š[\Š›ÛÛX[ŠK›X\
-˜[YHOˆÝš[™Ê˜[YJKš[J
-KÓÝÙ\Ø\ÙJ
-JNÂˆÛÛœÝY\ÜØYÙ\ÈH[™š[\ŠY\ÜØYÙHO‚ˆ›ÝšY\“X™[Ëš[˜ÛY\ÊÝš[™ÊY\ÜØYÙKœ›ÝšY\ˆˆŠKš[J
-KÓÝÙ\Ø\ÙJ
-JHˆ
-Y\ÜØYÙKœ›ÝšY\’Y	‰ˆÝš[™ÊY\ÜØYÙKœ›ÝšY\’Y
-HOOHÝš[™Ê\™\œÚ\ËšYÙ\ÜÚ[ÛËœ\™\œÚ\YˆŠJBˆ
-NÂ‚ˆYˆ
-[Y\ÜØYÙ\Ë›[™Ý
-HÂˆÙ[XÝY›ÝšY\•™XYÙ^HHˆŽÂˆÛÛZ[™\‹š[›™\’SH]ˆÛ\ÜÏH™[\K\Ý]HÝ›Û™Ï“›ÈÝY[Y\ÜØYÙ\ÈY]ÜÝ›Û™Ï“Y\ÜØYÙ\ÈÙ[œ›ÛHœ›ÝÜÙH\]Z\Y[Ú[\X\ˆ\™HÚ[ˆH›ÝšY\ˆX]Ú\È\ÈXØÛÝ[ÜÙ]˜Âˆ™]\›ŽÂˆB‚ˆÛÛœÝ™XYÈH™]ÈX\
+const PROVIDER_SESSION_KEY = "campusShareProviderSession";
+const EQUIPMENT_KEY = "campusShareProviderEquipment";
+const RENTALS_KEY = "campusShareRentals";
 
-NÂˆY\ÜØYÙ\Ë™›Ü‘XXÚ
-Y\ÜØYÙHOˆÂˆÛÛœÝÙ^HH›ÝšY\•™XYÙ^JY\ÜØYÙJNÂˆYˆ
-]™XYËš\ÊÙ^JJH™XYËœÙ]
-Ù^K×JNÂˆ™XYË™Ù]
-Ù^JKœ\Ú
-Y\ÜØYÙJNÂˆJNÂ‚ˆÛÛœÝ™XY›ÝÜÈHË‹‹™XYË™[šY\Ê
-WK›X\
 
-ÚÙ^K›ÝÜ×JHOˆÂˆ›ÝÜËœÛÜ
+/* =========================
+   SESSION
+========================= */
 
-KŠHOˆ™]È]JK˜Ü™X]Y]
-HH™]È]J‹˜Ü™X]Y]
-JNÂˆÛÛœÝ]\ÝH›ÝÜÖÜ›ÝÜË›[™ÝHWNÂˆÛÛœÝ\Ý›ÝšY\’[™^H›ÝÜËœ™YXÙJ
-\Ý›ÝË[™^
-HOˆ›ÝËœÙ[™\”›ÛHOOHœ›ÝšY\ˆˆÈ[™^ˆ\ÝLJNÂˆÛÛœÝ[œ™XYH›ÝÜËœÛXÙJ\Ý›ÝšY\’[™^
-ÈJKœÛÛYJ›ÝÈOˆ›ÝËœÙ[™\”›ÛHOOHœ›ÝšY\ˆŠNÂˆ™]\›ˆÈÙ^K›ÝÜË]\Ý[œ™XYNÂˆJKœÛÜ
+function getSession(){
+  return JSON.parse(
+    localStorage.getItem(PROVIDER_SESSION_KEY) || "null"
+  );
+}
 
-KŠHOˆ™]È]J‹›]\Ý˜Ü™X]Y]
-HH™]È]JK›]\Ý˜Ü™X]Y]
-JNÂ‚ˆÛÛœÝÙ[XÝYH™XY›ÝÜË™š[™
-™XYOˆ™XYšÙ^HOOH™Y™\œ™YÙ^JH™XY›ÝÜÖÌNÂˆÙ[XÝY›ÝšY\•™XYÙ^HHÙ[XÝYšÙ^NÂ‚ˆÛÛZ[™\‹š[›™\’SHˆ]ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›Þ[^[Ý]‚ˆ\ÚYHÛ\ÜÏHœ›ÝšY\‹Z[˜›Þ[\Ýˆ\šXK[X™[H”ÝY[ÛÛ™\œØ][ÛœÈ‚ˆ]ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›Þ[\ÝZXYÝ›Û™Ï’[œ]Z\šY\ÏÜÝ›Û™ÏÜ[‰Ý™XY›ÝÜË›[™ÝOÜÜ[Ù]‚ˆ	Ý™XY›ÝÜË›X\
-™XYOˆÂˆÛÛœÝ]\ÝH™XY›]\ÝÂˆÛÛœÝ™]šY]ÈH	Û]\ÝœÙ[™\”›ÛHOOHœ›ÝšY\ˆˆÈ–[ÝNˆˆˆˆŸIÛ]\Ý›Y\ÜØYÙHˆŸXÂˆ™]\›ˆ]Ûˆ\OH˜]ÛˆˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞZ][H	Ý™XYšÙ^HOOHÙ[XÝYšÙ^HÈš\Ë\Ù[XÝYˆˆˆŸHˆ]K\›ÝšY\‹]™XYH‰Ù[˜ÛÙUT’PÛÛ\Û™[
-™XYšÙ^J_Hˆ\šXK\™\ÜÙYH‰Ý™XYšÙ^HOOHÙ[XÝYšÙ^_H‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞX]˜]\ˆ‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÝš[™Ê]\ÝœÝY[˜[YH”ÈŠKš[J
-K˜Ú\]
-
-KÕ\\Ø\ÙJ
-J_OÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞZ][K[XZ[ˆ‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞZ][K]ÜÝ›Û™Ï‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ]\ÝœÝY[˜[YH”ÝY[Š_OÜÝ›Û™Ï‰Ý™XY[œ™XYÈ	ÏHÛ\ÜÏHœ›ÝšY\‹Z[˜›Þ][œ™XYˆ]OH“™]ÈÝY[Y\ÜØYÙHÚO‰ÈˆˆŸOÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞY\]Z\Y[‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ]\Ý™\]Z\Y[‘Ù[™\˜[[œ]Z\žHŠ_H0­È	Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ]\Ýœ›ÝšY\ˆØ[\\Ó˜[YJ_OÜÜ[‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›Þ\™]šY]È‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ™]šY]Ê_OÜÜ[‚ˆÜÜ[‚ˆ[YO‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ™]È]J]\Ý˜Ü™X]Y]]K››ÝÊ
-JKÓØØ[Q]TÝš[™Ê×KÛ[ÛˆœÚÜ‹^Nˆ›[Y\šXÈŸJJ_OÝ[YO‚ˆØ]Û˜ÂˆJKš›Ú[ŠˆŠ_BˆØ\ÚYO‚ˆÙXÝ[ÛˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞY]Z[ˆ\šXK[X™[H”Ù[XÝYÛÛ™\œØ][Ûˆ‚ˆXY\ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞY]Z[ZXY‚ˆ]Ý›Û™Ï‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝY›]\ÝœÝY[˜[YH”ÝY[Š_OÜÝ›Û™Ï‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝY›]\Ý™\]Z\Y[‘Ù[™\˜[[œ]Z\žHŠ_H0­È	Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝY›]\Ýœ›ÝšY\ˆØ[\\Ó˜[YJ_OÜÙ]‚ˆÜ[ˆÛ\ÜÏHœ›ÝšY\‹Z[˜›ÞY[[Ë[X™[‘SSÈS“ÖÜÜ[‚ˆÚXY\‚ˆ]ˆÛ\ÜÏHœ›ÝšY\‹[Y\ÜØYÙKXÛÛ™\œØ][Ûˆ›ÝšY\‹[Y\ÜØYÙKXÛÛ™\œØ][Û‹\Ù[XÝY‚ˆ	ÜÙ[XÝYœ›ÝÜË›X\
-›ÝÈOˆ]ˆÛ\ÜÏHœ›ÝšY\‹[Y\ÜØYÙKXX˜›H	Ü›ÝËœÙ[™\”›ÛHOOHœ›ÝšY\ˆˆÈœ›ÝšY\‹[ÝÛ‹[Y\ÜØYÙHˆˆˆŸH‚ˆÛX[‰Ü›ÝËœÙ[™\”›ÛHOOHœ›ÝšY\ˆˆÈ–[ÝH0­È›ÝšY\ˆˆˆ”ÝY[ŸH0­È	Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ™]È]J›ÝË˜Ü™X]Y]]K››ÝÊ
-JKÓØØ[TÝš[™Ê
-J_OÜÛX[‚ˆ‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJ›ÝË›Y\ÜØYÙJ_OÜ‚ˆÙ]˜
-Kš›Ú[ŠˆŠ_BˆÙ]‚ˆ›Ü›HÛ\ÜÏHœ›ÝšY\‹[Y\ÜØYÙK\™\Hˆ]K]™XYZÙ^OH‰Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝYšÙ^J_H‚ˆ^\™XH›ÝÜÏHŒˆˆ˜[YOHœ™\HˆXÙZÛ\H”™\HÈ	Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝY›]\ÝœÝY[˜[YHHÝY[Š_HX›Ý]	Ù\ØØ\T›ÝšY\“Y\ÜØYÙJÙ[XÝY›]\Ý™\]Z\Y[\È[œ]Z\žHŠ_K‹‹ˆˆ\šXK[X™[H”™\HÈÙ[XÝYÛÛ™\œØ][Ûˆˆ™\]Z\™YÝ^\™XO‚ˆ]Ûˆ\OHœÝX›Z]ˆÛ\ÜÏHœš[X\žKXˆ”Ù[™™\OØ]Û‚ˆÙ›Ü›O‚ˆÜÙXÝ[Û‚ˆÙ]˜Â‚ˆÛÛZ[™\‹œ]Y\žTÙ[XÝÜ[
-–Ù]K\›ÝšY\‹]™XYHŠK™›Ü‘XXÚ
-]ÛˆOˆÂˆ]Û‹˜Y]™[\Ý[™\Š˜ÛXÚÈ‹
+const session = getSession();
 
-HOˆÂˆÙ[XÝY›ÝšY\•™XYÙ^HHXÛÙUT’PÛÛ\Û™[
-]Û‹™]\Ù]œ›ÝšY\•™XYˆŠNÂˆ™[™\”›ÝšY\“Y\ÜØYÙ\ÊÙ[XÝY›ÝšY\•™XYÙ^JNÂˆJNÂˆJNÂ‚ˆÛÛœÝ›Ü›HHÛÛZ[™\‹œ]Y\žTÙ[XÝÜŠ‹œ›ÝšY\‹[Y\ÜØYÙK\™\HŠNÂˆ›Ü›OË˜Y]™[\Ý[™\ŠœÝX›Z]‹]™[OˆÂˆ]™[œ™]™[Y˜][
 
-NÂˆÛÛœÝ^HÝš[™Ê›Ü›K™[[Y[Ëœ™\K˜[YHˆŠKš[J
-NÂˆYˆ
-]^
-H™]\›ŽÂ‚ˆÛÛœÝÙ^HH›Ü›K™]\Ù]™XYÙ^NÂˆÛÛœÝ›ÝÜÈH™XY›ÝšY\“Y\ÜØYÙ\Ê
-NÂˆÛÛœÝX]Ú[™ÈH›ÝÜË™š[\ŠY\ÜØYÙHOˆ›ÝšY\•™XYÙ^JY\ÜØYÙJHOOHÙ^H	‰‚ˆ
-›ÝšY\“X™[Ëš[˜ÛY\ÊÝš[™ÊY\ÜØYÙKœ›ÝšY\ˆˆŠKš[J
-KÓÝÙ\Ø\ÙJ
-JHˆ
-Y\ÜØYÙKœ›ÝšY\’Y	‰ˆÝš[™ÊY\ÜØYÙKœ›ÝšY\’Y
-HOOHÝš[™Ê\™\œÚ\ËšYÙ\ÜÚ[ÛËœ\™\œÚ\YˆŠJJJNÂˆÛÛœÝ]\ÝÝY[Y\ÜØYÙHHË‹‹›X]Ú[™×Kœ™]™\œÙJ
-K™š[™
-Y\ÜØYÙHOˆY\ÜØYÙKœÙ[™\”›ÛHOOHœ›ÝšY\ˆŠNÂˆYˆ
-[]\ÝÝY[Y\ÜØYÙJHÂˆÚ[™ÝË˜[\
-•\ÈÛÛ™\œØ][Ûˆ\È›ÈÝY[Y\ÜØYÙHÈ™\HÈY]ˆŠNÂˆ™]\›ŽÂˆB‚ˆ›ÝÜËœ\Ú
-ÂˆYˆ“TÑËHˆ
-È]K››ÝÊ
-Kˆ›ÝšY\Žˆ]\ÝÝY[Y\ÜØYÙKœ›ÝšY\‹ˆ›ÝšY\’Yˆ]\ÝÝY[Y\ÜØYÙKœ›ÝšY\’Y\™\œÚ\ËšYˆ‹ˆ\]Z\Y[ˆ]\ÝÝY[Y\ÜØYÙK™\]Z\Y[ˆ‹ˆÝY[˜[YNˆ]\ÝÝY[Y\ÜØYÙKœÝY[˜[YH”ÝY[‹ˆÝY[Yˆ]\ÝÝY[Y\ÜØYÙKœÝY[Yˆ‹ˆÝY[[XZ[ˆ]\ÝÝY[Y\ÜØYÙKœÝY[[XZ[ˆ‹ˆY\ÜØYÙNˆ^ˆÜ™X]Y]ˆ™]È]J
-KÒTÓÔÝš[™Ê
-KˆÙ[™\”›ÛNˆœ›ÝšY\ˆ‹ˆÙ[™\“˜[YNˆ›ÝšY\“˜[YKˆÝ]\Îˆ•[œ™XY‚ˆJNÂˆØØ[ÝÜ˜YÙKœÙ]][J“Õ’QT—ÓQTÔÐQÑT×ÒÑVK”ÓÓ‹œÝš[™ÚYžJ›ÝÜÊJNÂˆÙ[XÝY›ÝšY\•™XYÙ^HHÙ^NÂˆ™[™\”›ÝšY\“Y\ÜØYÙ\ÊÙ^JNÂˆJNÂŸB‚‹ÊˆOOOOOOOOOOOOOOOOOOOOOOOOBˆÑÓÕUOOOOOOOOOOOOOOOOOOOOOOOOH
-‹Â‚™ØÝ[Y[ˆ™Ù][[Y[žRY
-›ÙÛÝ]ˆŠBˆ˜Y]™[\Ý[™\Š˜ÛXÚÈ‹\Þ[˜È
+if(!session){
 
-HOˆÂ‚ˆžHÈ]ØZ]™]Ú
-‹Ø\KÜ›ÝšY\‹ÛÙÛÝ]‹ÈY]Ùˆ”ÔÕˆJNÈHØ]ÚßB‚ˆØØ[ÝÜ˜YÙKœ™[[Ý™R][Jˆ“Õ’QT—ÔÑTÔÒSÓ—ÒÑVBˆ
-NÂ‚ˆÚ[™ÝË›ØØ][Û‹š™YˆBˆœ›ÝšY\‹[ÙÚ[‹š[ŽÂ‚ˆJNÂ
+  window.location.href = "provider-login.html";
+
+}
+
+
+/* =========================
+   PARTNERSHIP DATA
+========================= */
+
+function getPartnership(){
+  let partnerships = [];
+  try {
+    const parsed = JSON.parse(localStorage.getItem("campusSharePartnerships") || "[]");
+    partnerships = Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.warn("Could not read CampusShare partnership records.", error);
+  }
+
+  const sessionId = String(session?.partnershipId || session?.id || "");
+  const sessionEmail = String(session?.officialEmail || session?.email || "").trim().toLowerCase();
+  return partnerships.find(item => sessionId && String(item.id || "") === sessionId)
+    || partnerships.find(item => sessionEmail && String(item.officialEmail || "").trim().toLowerCase() === sessionEmail)
+    || partnerships.find(item => item.status === "Approved"
+      && String(item.providerName || "").trim().toLowerCase() === String(session?.providerName || "").trim().toLowerCase()
+      && String(item.campusName || "").trim().toLowerCase() === String(session?.campusName || "").trim().toLowerCase())
+    || null;
+}
+
+const partnership = getPartnership();
+
+
+/* =========================
+   EQUIPMENT
+========================= */
+
+function getEquipment(){
+
+  return JSON.parse(
+    localStorage.getItem(EQUIPMENT_KEY) || "[]"
+  );
+
+}
+
+async function saveEquipment(data){
+  localStorage.setItem(
+    EQUIPMENT_KEY,
+    JSON.stringify(data)
+  );
+  const providerId = String(session?.partnershipId || "");
+  if (!providerId) throw new Error("Provider sign-in is required to sync equipment.");
+  const items = data.filter(item => String(item.providerId || "") === providerId);
+  const response = await fetch("/api/provider-equipment/sync", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ items })
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || "Equipment could not be synced to the shared catalog.");
+}
+
+async function loadProviderEquipmentFromServer(){
+  const providerId = String(session?.partnershipId || "");
+  if (!providerId) return;
+  try {
+    const response = await fetch(`/api/provider-equipment/${encodeURIComponent(providerId)}`, { cache: "no-store" });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || "Could not load shared equipment.");
+    const shared = Array.isArray(result.items) ? result.items : [];
+    const local = getEquipment();
+    const remoteIds = new Set(shared.map(item => String(item.id)));
+    const localOnly = local.filter(item => String(item.providerId || "") === providerId && !remoteIds.has(String(item.id)));
+    const otherProviders = local.filter(item => String(item.providerId || "") !== providerId);
+    const merged = [...otherProviders, ...shared, ...localOnly];
+    localStorage.setItem(EQUIPMENT_KEY, JSON.stringify(merged));
+    if (localOnly.length) await saveEquipment(merged);
+    render();
+  } catch (error) {
+    console.warn("Shared equipment sync is unavailable.", error);
+  }
+}
+
+
+/* =========================
+   RENTALS
+========================= */
+
+function getRentals(){
+
+  return JSON.parse(
+    localStorage.getItem(RENTALS_KEY) || "[]"
+  );
+
+}
+
+
+/* =========================
+   BASIC INFO
+========================= */
+
+const providerName =
+  partnership?.providerName || session?.providerName || "Provider";
+
+const campusName =
+  partnership?.campusName || session?.campusName || "Campus";
+
+
+document.getElementById("providerName").textContent =
+  providerName;
+
+document.getElementById("campusName").textContent =
+  campusName;
+
+document.getElementById("welcomeName").textContent =
+  providerName;
+
+
+/* =========================
+   PROFILE
+========================= */
+
+// Read approved partnership details first, then provider session; support earlier form field names.
+function firstAvailable(source, keys) {
+  for (const key of keys) {
+    const value = source && source[key];
+    if (value !== undefined && value !== null && String(value).trim() !== "") return String(value).trim();
+  }
+  return "";
+}
+
+const profileValues = {
+  profileCampus: firstAvailable(partnership, ["campusName", "campus", "institutionName", "institution", "schoolName"]) || firstAvailable(session, ["campusName", "campus", "institutionName", "institution", "schoolName"]) || "â€”",
+  profileProvider: firstAvailable(partnership, ["providerName", "organizationName", "providerOrganization", "organization", "businessName"]) || firstAvailable(session, ["providerName", "organizationName", "providerOrganization", "organization", "businessName"]) || "â€”",
+  profileEmail: firstAvailable(partnership, ["officialEmail", "email", "contactEmail", "providerEmail"]) || firstAvailable(session, ["officialEmail", "email", "contactEmail", "providerEmail"]) || "â€”",
+  profileContact: firstAvailable(partnership, ["contactPerson", "contactName", "representativeName", "authorizedPerson", "fullName", "applicantName"]) || firstAvailable(session, ["contactPerson", "contactName", "representativeName", "authorizedPerson", "fullName", "applicantName"]) || "â€”",
+  profileNumber: firstAvailable(partnership, ["contactNumber", "phoneNumber", "mobileNumber", "contactPhone", "phone"]) || firstAvailable(session, ["contactNumber", "phoneNumber", "mobileNumber", "contactPhone", "phone"]) || "â€”"
+};
+Object.entries(profileValues).forEach(([id, value]) => {
+  const element = document.getElementById(id);
+  if (element) element.textContent = value;
+});
+
+const providerTopAvatar = document.getElementById("providerTopAvatar");
+if (providerTopAvatar) {
+  const avatarSource = String(providerName || campusName || "P").trim();
+  providerTopAvatar.textContent = avatarSource.charAt(0).toUpperCase() || "P";
+  providerTopAvatar.title = avatarSource;
+}
+
+const equipmentImageInput = document.getElementById("equipmentImage");
+const equipmentImagePreview = document.getElementById("equipmentImagePreview");
+const equipmentPreviewImg = document.getElementById("equipmentPreviewImg");
+let selectedEquipmentImage = "";
+let editingEquipmentId = null;
+
+if (equipmentImageInput) {
+  equipmentImageInput.addEventListener("change", () => {
+    const file = equipmentImageInput.files && equipmentImageInput.files[0];
+    selectedEquipmentImage = "";
+    if (!file) {
+      equipmentImagePreview?.classList.add("hidden");
+      if (equipmentPreviewImg) equipmentPreviewImg.removeAttribute("src");
+      return;
+    }
+    if (!file.type.startsWith("image/")) {
+      alert("Please choose an image file.");
+      equipmentImageInput.value = "";
+      equipmentImagePreview?.classList.add("hidden");
+      return;
+    }
+
+    // Crop to the same landscape ratio used by Browse Equipment cards,
+    // then compress so the image fits the localStorage-based prototype.
+    const reader = new FileReader();
+    reader.onload = () => {
+      const sourceImage = new Image();
+      sourceImage.onload = () => {
+        const targetWidth = 1200;
+        const targetHeight = 720;
+        const canvas = document.createElement("canvas");
+        canvas.width = targetWidth;
+        canvas.height = targetHeight;
+        const context = canvas.getContext("2d");
+        if (!context) {
+          alert("Could not process this image. Please try another photo.");
+          return;
+        }
+        const scale = Math.max(targetWidth / sourceImage.width, targetHeight / sourceImage.height);
+        const cropWidth = targetWidth / scale;
+        const cropHeight = targetHeight / scale;
+        const sourceX = (sourceImage.width - cropWidth) / 2;
+        const sourceY = (sourceImage.height - cropHeight) / 2;
+        context.drawImage(sourceImage, sourceX, sourceY, cropWidth, cropHeight, 0, 0, targetWidth, targetHeight);
+        selectedEquipmentImage = canvas.toDataURL("image/jpeg", 0.82);
+        if (equipmentPreviewImg) equipmentPreviewImg.src = selectedEquipmentImage;
+        equipmentImagePreview?.classList.remove("hidden");
+      };
+      sourceImage.onerror = () => alert("Could not read that image. Please try another file.");
+      sourceImage.src = String(reader.result || "");
+    };
+    reader.onerror = () => alert("Could not read that image. Please try another file.");
+    reader.readAsDataURL(file);
+  });
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+const sections = {
+  dashboard: "dashboardSection",
+  equipment: "equipmentSection",
+  requests: "requestsSection",
+  active: "activeSection",
+  returns: "returnsSection",
+  messages: "messagesSection",
+  profile: "profileSection"
+};
+
+const titles = {
+  dashboard: "Dashboard",
+  equipment: "My Equipment",
+  requests: "Rental Requests",
+  active: "Active Rentals",
+  returns: "Returns",
+  messages: "Messages",
+  profile: "Partnership Profile"
+};
+
+
+function showSection(section){
+
+  Object.values(sections).forEach(id => {
+
+    document
+      .getElementById(id)
+      .classList.add("hidden");
+
+  });
+
+
+  document
+    .getElementById(sections[section])
+    .classList.remove("hidden");
+
+
+  document.getElementById("pageTitle").textContent =
+    titles[section];
+
+  if (section === "messages") renderProviderMessages();
+
+  document.querySelectorAll(".nav-item").forEach(btn => {
+
+    btn.classList.toggle(
+      "active",
+      btn.dataset.section === section
+    );
+
+  });
+
+}
+
+
+document.querySelectorAll(".nav-item").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    showSection(btn.dataset.section);
+
+  });
+
+});
+
+
+document.querySelectorAll(".quick-card").forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    showSection(btn.dataset.section);
+
+  });
+
+});
+
+
+/* =========================
+   EQUIPMENT MODAL
+========================= */
+
+const equipmentModal =
+  document.getElementById("equipmentModal");
+
+const addEquipmentBtn =
+  document.getElementById("addEquipmentBtn");
+
+const closeEquipmentModal =
+  document.getElementById("closeEquipmentModal");
+
+const cancelEquipmentBtn =
+  document.getElementById("cancelEquipmentBtn");
+
+
+function openEquipmentModal(){
+  resetEquipmentForm();
+  equipmentModal.classList.remove("hidden");
+
+}
+
+function resetEquipmentForm(){
+  const form = document.getElementById("equipmentForm");
+  form.reset();
+  editingEquipmentId = null;
+  selectedEquipmentImage = "";
+  equipmentImagePreview?.classList.add("hidden");
+  if (equipmentPreviewImg) equipmentPreviewImg.removeAttribute("src");
+  document.getElementById("equipmentModalEyebrow").textContent = "NEW EQUIPMENT";
+  document.getElementById("equipmentModalTitle").textContent = "Add Equipment";
+  document.getElementById("equipmentSubmitLabel").textContent = "Add Equipment";
+  document.getElementById("equipmentImageHelp").textContent = "Upload a clear photo of the actual item. JPG, PNG, or WebP; maximum 1 MB.";
+}
+
+function openEquipmentForEdit(equipmentId){
+  const item = getEquipment().find(row => String(row.id) === String(equipmentId));
+  if (!item || String(item.providerId || "") !== String(session?.partnershipId || "")) {
+    alert("You can only edit equipment listed by your provider account.");
+    return;
+  }
+  resetEquipmentForm();
+  editingEquipmentId = item.id;
+  document.getElementById("equipmentName").value = item.name || "";
+  document.getElementById("equipmentCategory").value = item.category || "";
+  document.getElementById("equipmentLocation").value = item.pickupLocation || "";
+  document.getElementById("equipmentPrice").value = item.pricePerHour ?? item.price ?? "";
+  document.getElementById("equipmentQuantity").value = item.quantity ?? 1;
+  document.getElementById("equipmentDetails").value = item.description || "";
+  selectedEquipmentImage = item.image || "";
+  if (item.image && equipmentPreviewImg) {
+    equipmentPreviewImg.src = item.image;
+    equipmentImagePreview?.classList.remove("hidden");
+  }
+  document.getElementById("equipmentModalEyebrow").textContent = "EDIT EQUIPMENT";
+  document.getElementById("equipmentModalTitle").textContent = "Edit Equipment";
+  document.getElementById("equipmentSubmitLabel").textContent = "Save Changes";
+  document.getElementById("equipmentImageHelp").textContent = "Choose a new photo to replace the current one. Leave this blank to keep the existing photo.";
+  equipmentModal.classList.remove("hidden");
+}
+
+
+function closeEquipment(){
+
+  equipmentModal.classList.add("hidden");
+  resetEquipmentForm();
+
+}
+
+
+addEquipmentBtn.addEventListener(
+  "click",
+  openEquipmentModal
+);
+
+closeEquipmentModal.addEventListener(
+  "click",
+  closeEquipment
+);
+
+cancelEquipmentBtn.addEventListener(
+  "click",
+  closeEquipment
+);
+
+
+/* =========================
+   ADD EQUIPMENT
+========================= */
+
+document
+  .getElementById("equipmentForm")
+  .addEventListener("submit", async event => {
+
+    event.preventDefault();
+
+    if (!selectedEquipmentImage) {
+      alert("Please upload a photo of the equipment before adding it.");
+      return;
+    }
+
+    const equipmentList = getEquipment();
+    const existing = editingEquipmentId
+      ? equipmentList.find(item => String(item.id) === String(editingEquipmentId)
+        && String(item.providerId || "") === String(session?.partnershipId || ""))
+      : null;
+    if (editingEquipmentId && !existing) {
+      alert("This equipment could not be found under your provider account.");
+      closeEquipment();
+      return;
+    }
+
+    const equipment = {
+      ...(existing || {}),
+
+      id: existing ? existing.id : "EQ-" + Date.now().toString().slice(-6),
+
+      providerId:
+        session.partnershipId,
+
+      providerName:
+        providerName,
+
+      campusName:
+        campusName,
+
+      pickupLocation:
+        document.getElementById("equipmentLocation").value.trim(),
+
+      name:
+        document
+          .getElementById("equipmentName")
+          .value
+          .trim(),
+
+      category:
+        document
+          .getElementById("equipmentCategory")
+          .value,
+
+      pricePerHour:
+        Number(document.getElementById("equipmentPrice").value),
+
+      // Keep price as a compatibility alias for older equipment records.
+      price:
+        Number(document.getElementById("equipmentPrice").value),
+
+      quantity:
+        Number(
+          document
+            .getElementById("equipmentQuantity")
+            .value
+        ),
+
+      description:
+        document
+          .getElementById("equipmentDetails")
+          .value
+          .trim(),
+
+      image: selectedEquipmentImage,
+
+      status: existing ? (existing.status || "Available") : "Available",
+
+      createdAt: existing?.createdAt || new Date().toISOString()
+
+    };
+
+
+    if (existing) {
+      equipmentList[equipmentList.indexOf(existing)] = equipment;
+    } else {
+      equipmentList.push(equipment);
+    }
+
+    try {
+      await saveEquipment(equipmentList);
+    } catch (error) {
+      alert(error.message);
+      return;
+    }
+
+
+    event.target.reset();
+    selectedEquipmentImage = "";
+    equipmentImagePreview?.classList.add("hidden");
+    if (equipmentPreviewImg) equipmentPreviewImg.removeAttribute("src");
+
+    closeEquipment();
+
+
+    render();
+
+
+    alert(
+      existing ? "Equipment details updated successfully!" : "Equipment added successfully!"
+    );
+
+  });
+
+
+/* =========================
+   RENDER EQUIPMENT
+========================= */
+
+function renderEquipment(){
+
+  const list =
+    document.getElementById("equipmentList");
+
+
+  const equipment =
+    getEquipment().filter(
+      item =>
+        item.providerId === session.partnershipId
+    );
+
+
+  if(!equipment.length){
+
+    list.innerHTML = `
+      <div class="empty">
+
+        <strong>No equipment listed yet.</strong>
+
+        Add your first equipment item so students
+        can eventually discover it through CampusShare.
+
+      </div>
+    `;
+
+    return;
+
+  }
+
+
+  list.innerHTML =
+    equipment.map(item => {
+
+      return `
+        <div class="equipment-item">
+
+          ${item.image ? `<img class="provider-equipment-thumb" src="${item.image}" alt="${item.name}" loading="lazy">` : ""}
+
+          <div class="equipment-item-main">
+
+            <div class="item-title">
+              ${item.name}
+            </div>
+
+            <div class="item-meta">
+              ${item.category}
+              Â· ${item.quantity} item(s)
+              <br>
+              ${item.description}
+            </div>
+
+          </div>
+
+          <div>
+
+            <div class="item-price">
+              â‚±${Number(item.pricePerHour ?? item.price ?? 0).toLocaleString()}/hour
+            </div>
+
+            <span class="status ${item.status === "Unlisted" ? "unlisted" : "available"}">
+              ${item.status === "Unlisted" ? "Unlisted" : item.status || "Available"}
+            </span>
+            <div class="provider-equipment-actions">
+              <button type="button" class="btn-edit-equipment" data-edit-equipment="${String(item.id).replace(/"/g, "&quot;")}">Edit</button>
+              ${item.status === "Unlisted"
+                ? `<button type="button" class="btn-relist-equipment" data-relist-equipment="${String(item.id).replace(/"/g, "&quot;")}">Relist</button>`
+                : `<button type="button" class="btn-unlist-equipment" data-unlist-equipment="${String(item.id).replace(/"/g, "&quot;")}">Unlist</button>`}
+            </div>
+
+          </div>
+
+        </div>
+      `;
+
+    }).join("");
+
+  list.querySelectorAll("[data-unlist-equipment]").forEach(button => {
+    button.addEventListener("click", () => setProviderListingStatus(button.dataset.unlistEquipment, "Unlisted"));
+  });
+  list.querySelectorAll("[data-edit-equipment]").forEach(button => {
+    button.addEventListener("click", () => openEquipmentForEdit(button.dataset.editEquipment));
+  });
+  list.querySelectorAll("[data-relist-equipment]").forEach(button => {
+    button.addEventListener("click", () => setProviderListingStatus(button.dataset.relistEquipment, "Available"));
+  });
+
+}
+
+async function setProviderListingStatus(equipmentId, nextStatus) {
+  const all = getEquipment();
+  const item = all.find(row => String(row.id) === String(equipmentId));
+  if (!item || String(item.providerId || "") !== String(session?.partnershipId || "")) {
+    alert("You can only manage equipment listed by your provider account.");
+    return;
+  }
+  const action = nextStatus === "Unlisted" ? "hide from students" : "show to students again";
+  if (!confirm(`Are you sure you want to ${nextStatus === "Unlisted" ? "unlist" : "relist"} "${item.name}"?\n\n${nextStatus === "Unlisted" ? "It will be hidden from new renters. Existing rental records will remain." : "It will become visible in Browse Equipment again."}`)) return;
+  item.status = nextStatus;
+  item.isListed = nextStatus !== "Unlisted";
+  item.listingStatus = nextStatus;
+  try {
+    await saveEquipment(all);
+  } catch (error) {
+    alert(error.message);
+    return;
+  }
+  renderEquipment();
+  render();
+  alert(`Equipment ${nextStatus === "Unlisted" ? "unlisted" : "relisted"} successfully.`);
+}
+
+
+/* =========================
+   RENTAL REQUESTS
+========================= */
+
+function renderRequests(){
+  const list = document.getElementById("requestList");
+  const matchesProvider = rental => {
+    const providerId = String(rental.providerId || "");
+    const sessionId = String(session?.partnershipId || "");
+    const provider = String(rental.provider || "").trim().toLowerCase();
+    const campus = String(rental.campusName || "").trim().toLowerCase();
+    return (providerId && sessionId && providerId === sessionId) ||
+      (provider && [providerName, campusName].some(name => provider === String(name || "").trim().toLowerCase())) ||
+      (campus && campus === String(campusName || "").trim().toLowerCase());
+  };
+  const requests = getRentals().filter(rental =>
+    ["Pending", "Approved"].includes(rental.status) && matchesProvider(rental)
+  );
+
+  if (!requests.length) {
+    list.innerHTML = `<div class="empty"><strong>No rental requests yet.</strong><br>New student requests for your equipment will appear here.</div>`;
+    return;
+  }
+
+  list.innerHTML = requests.map(item => {
+    const status = item.status || "Pending";
+    let action = "";
+    const paymentComplete = item.demoPaymentStatus === "SUCCESS";
+    if (status === "Pending" && paymentComplete) action = `<button class="primary-btn" data-provider-rental-action="Approved" data-rental-ref="${item.ref}">Approve Request</button>`;
+    if (status === "Pending" && !paymentComplete) action = `<button class="primary-btn" disabled title="Student must complete demo checkout first" style="opacity:.55;cursor:not-allowed">Awaiting demo payment</button>`;
+    if (status === "Approved") action = `<button class="primary-btn" data-provider-rental-action="Active" data-rental-ref="${item.ref}">Mark Picked Up</button>`;
+    return `<div class="rental-item">
+      <div class="item-title">${item.equipment || "Equipment"} <small>#${item.ref || "â€”"}</small></div>
+      <div class="item-meta">Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}<br>Rental: ${item.start || "â€”"} â†’ ${item.end || "â€”"}<br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}<br>Payment: ${item.payment || "â€”"} Â· Estimated total: â‚±${Number(item.total || 0).toLocaleString()}<br>Demo payment status: ${item.paymentStatus || "Demo â€” awaiting payment"}<br>Request submitted: ${item.createdAt ? new Date(item.createdAt).toLocaleString() : "â€”"}</div>
+      <div class="provider-rental-actions"><span class="status ${status.toLowerCase()}">${status}</span>${action}</div>
+    </div>`;
+  }).join("");
+
+  list.querySelectorAll("[data-provider-rental-action]").forEach(button => {
+    button.addEventListener("click", () => {
+      const rentals = getRentals();
+      const rental = rentals.find(item => item.ref === button.dataset.rentalRef);
+      if (!rental || !matchesProvider(rental)) return;
+      const nextStatus = button.dataset.providerRentalAction;
+      if (nextStatus === "Approved" && rental.status !== "Pending") return;
+      if (nextStatus === "Approved" && rental.demoPaymentStatus !== "SUCCESS") {
+        window.alert("Student must complete the CampusShare demo checkout before the provider can approve this request.");
+        return;
+      }
+      if (nextStatus === "Active" && rental.status !== "Approved") return;
+      rental.status = nextStatus;
+      rental.statusUpdatedAt = new Date().toISOString();
+      rental.statusUpdatedBy = providerName;
+
+      // Payment/settlement simulation only. No real payment or payout occurs.
+      const rentalTotal = Number(rental.total || 0);
+      rental.commissionRate = 0.10;
+      rental.commissionAmount = Number((rentalTotal * 0.10).toFixed(2));
+      rental.providerShare = Number((rentalTotal * 0.90).toFixed(2));
+      rental.paymentMode = rental.paymentMode || "SIMULATED";
+      rental.paymentProvider = rental.paymentProvider || "Not connected";
+      rental.paymentStatus = rental.paymentStatus || "Demo â€” awaiting payment";
+
+      if (nextStatus === "Completed") {
+        rental.returnConfirmedAt = new Date().toISOString();
+        if (rental.disputeStatus && rental.disputeStatus !== "None") {
+          rental.settlementStatus = "On hold â€” admin review";
+          rental.payoutStatus = "On hold â€” demo only";
+        } else {
+          rental.settlementStatus = "Eligible after return â€” demo only";
+          rental.payoutStatus = "Eligible â€” not paid (demo only)";
+        }
+      } else if (nextStatus === "Active") {
+        rental.settlementStatus = "Pending return";
+      }
+
+      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
+      render();
+    });
+  });
+}
+
+/* =========================
+   ACTIVE RENTALS
+========================= */
+
+function renderActive(){
+
+  const list =
+    document.getElementById("activeList");
+
+
+  const active =
+    getRentals().filter(
+      rental =>
+        ((rental.providerId && rental.providerId === session.partnershipId) || rental.provider === providerName || rental.provider === campusName) &&
+        rental.status === "Active"
+    );
+
+
+  if(!active.length){
+
+    list.innerHTML = `
+      <div class="empty">
+
+        <strong>No active rentals.</strong>
+
+        Currently rented equipment will appear here.
+
+      </div>
+    `;
+
+    return;
+
+  }
+
+
+  list.innerHTML =
+    active.map(item => {
+
+      return `
+        <div class="rental-item">
+
+          <div>
+
+            <div class="item-title">
+              ${item.equipment}
+            </div>
+
+            <div class="item-meta">
+              ${item.start}
+              â†’
+              ${item.end}
+              <br>
+              <br>Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}
+              <br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}
+              <br>Reference: ${item.ref}
+            </div>
+
+          </div>
+
+          <div class="provider-rental-actions">
+            <span class="status active">Active</span>
+            <button type="button" class="primary-btn" data-confirm-return="${String(item.ref || "").replace(/"/g, "&quot;")}">Confirm Successful Return</button>
+          </div>
+
+        </div>
+      `;
+
+    }).join("");
+
+  list.querySelectorAll("[data-confirm-return]").forEach(button => {
+    button.addEventListener("click", () => {
+      const rentals = getRentals();
+      const rental = rentals.find(item => String(item.ref || "") === String(button.dataset.confirmReturn));
+      if (!rental || rental.status !== "Active") return;
+      const confirmed = window.confirm("Confirm that the equipment was successfully returned? This updates demo settlement status only; no payout will occur.");
+      if (!confirmed) return;
+      rental.status = "Completed";
+      rental.statusUpdatedAt = new Date().toISOString();
+      rental.statusUpdatedBy = providerName;
+      rental.returnConfirmedAt = new Date().toISOString();
+      const total = Number(rental.total || 0);
+      rental.commissionRate = 0.10;
+      rental.commissionAmount = Number((total * 0.10).toFixed(2));
+      rental.providerShare = Number((total * 0.90).toFixed(2));
+      if (rental.disputeStatus && rental.disputeStatus !== "None") {
+        rental.settlementStatus = "On hold â€” admin review";
+        rental.payoutStatus = "On hold â€” demo only";
+      } else {
+        rental.settlementStatus = "Eligible after return â€” demo only";
+        rental.payoutStatus = "Eligible â€” not paid (demo only)";
+      }
+      localStorage.setItem(RENTALS_KEY, JSON.stringify(rentals));
+      render();
+    });
+  });
+
+}
+
+
+/* =========================
+   RETURNS
+========================= */
+
+function renderReturns(){
+
+  const list =
+    document.getElementById("returnList");
+
+
+  const completed =
+    getRentals().filter(
+      rental =>
+        ((rental.providerId && rental.providerId === session.partnershipId) || rental.provider === providerName || rental.provider === campusName) &&
+        rental.status === "Completed"
+    );
+
+
+  if(!completed.length){
+
+    list.innerHTML = `
+      <div class="empty">
+
+        <strong>No completed returns yet.</strong>
+
+        Returned equipment will appear here.
+
+      </div>
+    `;
+
+    return;
+
+  }
+
+
+  list.innerHTML =
+    completed.map(item => {
+
+      return `
+        <div class="rental-item">
+
+          <div>
+
+            <div class="item-title">
+              ${item.equipment}
+            </div>
+
+            <div class="item-meta">
+              ${item.start}
+              â†’
+              ${item.end}
+              <br>
+              <br>Student: ${item.studentName || item.studentId || item.studentEmail || "Student account"}
+              <br>Pickup / use location: ${item.pickup || item.pickupLocation || "Location not specified"}
+              <br>Reference: ${item.ref}
+            </div>
+
+          </div>
+
+          <div class="provider-rental-actions" style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+            <span class="status completed">Completed</span>
+            <small>Rental total: â‚±${Number(item.total || 0).toLocaleString()}</small>
+            <small>CampusShare commission (10%): â‚±${Number(item.commissionAmount ?? (Number(item.total || 0) * .10)).toLocaleString()}</small>
+            <small>Provider share (90%): â‚±${Number(item.providerShare ?? (Number(item.total || 0) * .90)).toLocaleString()}</small>
+            <small><strong>Settlement:</strong> ${item.settlementStatus || "Pending return"}</small>
+            <small><strong>Payout:</strong> ${item.payoutStatus || "Not paid â€” demo only"}</small>
+          </div>
+
+        </div>
+      `;
+
+    }).join("");
+
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+function renderStats(){
+
+  const equipment =
+    getEquipment().filter(
+      item =>
+        item.providerId === session.partnershipId
+    );
+
+
+  const rentals =
+    getRentals().filter(
+      item =>
+        item.provider === providerName
+    );
+
+
+  document.getElementById("equipmentStat")
+    .textContent = equipment.length;
+
+
+  document.getElementById("requestStat")
+    .textContent =
+      rentals.filter(
+        item => item.status === "Pending" || item.status === "Approved"
+      ).length;
+
+
+  document.getElementById("activeStat")
+    .textContent =
+      rentals.filter(
+        item => item.status === "Active"
+      ).length;
+
+
+  document.getElementById("completedStat")
+    .textContent =
+      rentals.filter(
+        item => item.status === "Completed"
+      ).length;
+
+}
+
+
+/* =========================
+   RENDER EVERYTHING
+========================= */
+
+function render(){
+
+  renderEquipment();
+  renderRequests();
+  renderActive();
+  renderReturns();
+  renderStats();
+
+}
+
+
+render();
+fetch("/api/provider/me", { cache: "no-store" }).then(response => {
+  if (!response.ok) throw new Error("Provider session expired.");
+  return loadProviderEquipmentFromServer();
+}).catch(() => {
+  localStorage.removeItem(PROVIDER_SESSION_KEY);
+  window.location.href = "provider-login.html";
+});
+
+
+/* =========================
+   PROVIDER INBOX â€” LOCAL DEMO
+========================= */
+const PROVIDER_MESSAGES_KEY = "campusShareMessages";
+function readProviderMessages() {
+  try { const rows = JSON.parse(localStorage.getItem(PROVIDER_MESSAGES_KEY) || "[]"); return Array.isArray(rows) ? rows : []; }
+  catch { return []; }
+}
+function escapeProviderMessage(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]));
+}
+let selectedProviderThreadKey = "";
+
+function providerThreadKey(message) {
+  return [message.studentId || message.studentEmail || message.studentName,
+    message.provider, message.equipment || "General inquiry"].join("::");
+}
+
+function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
+  const container = document.getElementById("providerMessagesList");
+  if (!container) return;
+
+  const all = readProviderMessages();
+  const providerLabels = [providerName, campusName, partnership?.providerName, partnership?.campusName]
+    .filter(Boolean).map(value => String(value).trim().toLowerCase());
+  const messages = all.filter(message =>
+    providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
+    (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))
+  );
+
+  if (!messages.length) {
+    selectedProviderThreadKey = "";
+    container.innerHTML = `<div class="empty-state"><strong>No student messages yet</strong><p>Messages sent from Browse Equipment will appear here when the provider matches this account.</p></div>`;
+    return;
+  }
+
+  const threads = new Map();
+  messages.forEach(message => {
+    const key = providerThreadKey(message);
+    if (!threads.has(key)) threads.set(key, []);
+    threads.get(key).push(message);
+  });
+
+  const threadRows = [...threads.entries()].map(([key, rows]) => {
+    rows.sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
+    const latest = rows[rows.length - 1];
+    const lastProviderIndex = rows.reduce((last, row, index) => row.senderRole === "provider" ? index : last, -1);
+    const unread = rows.slice(lastProviderIndex + 1).some(row => row.senderRole !== "provider");
+    return { key, rows, latest, unread };
+  }).sort((a, b) => new Date(b.latest.createdAt || 0) - new Date(a.latest.createdAt || 0));
+
+  const selected = threadRows.find(thread => thread.key === preferredKey) || threadRows[0];
+  selectedProviderThreadKey = selected.key;
+
+  container.innerHTML = `
+    <div class="provider-inbox-layout">
+      <aside class="provider-inbox-list" aria-label="Student conversations">
+        <div class="provider-inbox-list-head"><strong>Inquiries</strong><span>${threadRows.length}</span></div>
+        ${threadRows.map(thread => {
+          const latest = thread.latest;
+          const preview = `${latest.senderRole === "provider" ? "You: " : ""}${latest.message || ""}`;
+          return `<button type="button" class="provider-inbox-item ${thread.key === selected.key ? "is-selected" : ""}" data-provider-thread="${encodeURIComponent(thread.key)}" aria-pressed="${thread.key === selected.key}">
+            <span class="provider-inbox-avatar">${escapeProviderMessage(String(latest.studentName || "S").trim().charAt(0).toUpperCase())}</span>
+            <span class="provider-inbox-item-main">
+              <span class="provider-inbox-item-top"><strong>${escapeProviderMessage(latest.studentName || "Student")}</strong>${thread.unread ? '<i class="provider-inbox-unread" title="New student message"></i>' : ""}</span>
+              <span class="provider-inbox-equipment">${escapeProviderMessage(latest.equipment || "General inquiry")} Â· ${escapeProviderMessage(latest.provider || campusName)}</span>
+              <span class="provider-inbox-preview">${escapeProviderMessage(preview)}</span>
+            </span>
+            <time>${escapeProviderMessage(new Date(latest.createdAt || Date.now()).toLocaleDateString([], {month:"short",day:"numeric"}))}</time>
+          </button>`;
+        }).join("")}
+      </aside>
+      <section class="provider-inbox-detail" aria-label="Selected conversation">
+        <header class="provider-inbox-detail-head">
+          <div><strong>${escapeProviderMessage(selected.latest.studentName || "Student")}</strong><p>${escapeProviderMessage(selected.latest.equipment || "General inquiry")} Â· ${escapeProviderMessage(selected.latest.provider || campusName)}</p></div>
+          <span class="provider-inbox-demo-label">DEMO INBOX</span>
+        </header>
+        <div class="provider-message-conversation provider-message-conversation-selected">
+          ${selected.rows.map(row => `<div class="provider-message-bubble ${row.senderRole === "provider" ? "provider-own-message" : ""}">
+            <small>${row.senderRole === "provider" ? "You Â· Provider" : "Student"} Â· ${escapeProviderMessage(new Date(row.createdAt || Date.now()).toLocaleString())}</small>
+            <p>${escapeProviderMessage(row.message)}</p>
+          </div>`).join("")}
+        </div>
+        <form class="provider-message-reply" data-thread-key="${escapeProviderMessage(selected.key)}">
+          <textarea rows="2" name="reply" placeholder="Reply to ${escapeProviderMessage(selected.latest.studentName || "the student")} about ${escapeProviderMessage(selected.latest.equipment || "this inquiry")}..." aria-label="Reply to selected conversation" required></textarea>
+          <button type="submit" class="primary-btn">Send Reply</button>
+        </form>
+      </section>
+    </div>`;
+
+  container.querySelectorAll("[data-provider-thread]").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedProviderThreadKey = decodeURIComponent(button.dataset.providerThread || "");
+      renderProviderMessages(selectedProviderThreadKey);
+    });
+  });
+
+  const form = container.querySelector(".provider-message-reply");
+  form?.addEventListener("submit", event => {
+    event.preventDefault();
+    const text = String(form.elements.reply.value || "").trim();
+    if (!text) return;
+
+    const key = form.dataset.threadKey;
+    const rows = readProviderMessages();
+    const matching = rows.filter(message => providerThreadKey(message) === key &&
+      (providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
+       (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))));
+    const latestStudentMessage = [...matching].reverse().find(message => message.senderRole !== "provider");
+    if (!latestStudentMessage) {
+      window.alert("This conversation has no student message to reply to yet.");
+      return;
+    }
+
+    rows.push({
+      id: "MSG-" + Date.now(),
+      provider: latestStudentMessage.provider,
+      providerId: latestStudentMessage.providerId || partnership?.id || "",
+      equipment: latestStudentMessage.equipment || "",
+      studentName: latestStudentMessage.studentName || "Student",
+      studentId: latestStudentMessage.studentId || "",
+      studentEmail: latestStudentMessage.studentEmail || "",
+      message: text,
+      createdAt: new Date().toISOString(),
+      senderRole: "provider",
+      senderName: providerName,
+      status: "Unread"
+    });
+    localStorage.setItem(PROVIDER_MESSAGES_KEY, JSON.stringify(rows));
+    selectedProviderThreadKey = key;
+    renderProviderMessages(key);
+  });
+}
+
+/* =========================
+   LOGOUT
+========================= */
+
+document
+  .getElementById("logoutBtn")
+  .addEventListener("click", async () => {
+
+    try { await fetch("/api/provider/logout", { method: "POST" }); } catch {}
+
+    localStorage.removeItem(
+      PROVIDER_SESSION_KEY
+    );
+
+    window.location.href =
+      "provider-login.html";
+
+  });

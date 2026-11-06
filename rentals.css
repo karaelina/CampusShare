@@ -1,0 +1,691 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f3;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 268px;
+  background: #151515;
+  color: #fff;
+  padding: 22px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font: 700 22px Georgia, serif;
+  padding: 0 8px 22px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  color: #111;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font: 700 13px Georgia;
+}
+
+.student-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #272727;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 16px 2px;
+}
+
+.avatar,
+.top-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #3b4658;
+  font-weight: 700;
+}
+
+.student-card strong {
+  display: block;
+  font-size: 13px;
+}
+
+.student-card small {
+  color: #aaa;
+  font-size: 11px;
+}
+
+nav {
+  display: grid;
+  gap: 4px;
+}
+
+nav a {
+  padding: 12px;
+  color: #aaa;
+  text-decoration: none;
+  border-radius: 9px;
+  display: flex;
+  gap: 12px;
+}
+
+nav a.active,
+nav a:hover {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.back-site {
+  margin-top: auto;
+  color: #888;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 12px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  margin-left: 268px;
+  min-height: 100vh;
+}
+
+.topbar {
+  height: 84px;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 34px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font: 700 22px Georgia, serif;
+}
+
+.topbar p {
+  color: #777;
+  font-size: 13px;
+}
+
+.top-avatar {
+  background: #151515;
+  color: #fff;
+}
+
+.content {
+  padding: 28px 34px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stats > div {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  padding: 20px;
+}
+
+.stats span {
+  display: block;
+  color: #666;
+  font-size: 12px;
+}
+
+.stats strong {
+  display: block;
+  font: 700 28px Georgia, serif;
+  margin-top: 7px;
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+  display: flex;
+  gap: 7px;
+  background: #e9e9e8;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 18px 0;
+  overflow-x: auto;
+}
+
+.tab {
+  border: 0;
+  background: transparent;
+  padding: 9px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tab.active {
+  background: #fff;
+  box-shadow: 0 1px 4px #0002;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RENTAL CARD
+========================= */
+
+.rental {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  margin-bottom: 13px;
+  padding: 20px;
+}
+
+.rental-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.rental-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.provider {
+  color: #777;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+/* =========================
+   STATUS BADGES
+========================= */
+
+.badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge.pending {
+  background: #fff3c4;
+  color: #9a7200;
+}
+
+.badge.approved,
+.badge.active {
+  background: #d9f8ea;
+  color: #087d53;
+}
+
+.badge.completed {
+  background: #e9eef5;
+  color: #536579;
+}
+
+
+/* =========================
+   RENTAL DETAILS
+========================= */
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 17px;
+}
+
+.detail {
+  background: #f6f6f5;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.detail small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+}
+
+.detail strong {
+  font-size: 12px;
+}
+
+
+/* =========================
+   RENTAL FOOTER
+========================= */
+
+.rental-footer {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.notice {
+  flex: 1;
+  padding: 13px;
+  border-radius: 9px;
+  background: #fffbe7;
+  color: #8a7000;
+  font-size: 12px;
+}
+
+
+/* =========================
+   VIEW DETAILS BUTTON
+========================= */
+
+.view-details {
+  border: 1px solid #151515;
+  background: #151515;
+  color: #fff;
+  border-radius: 9px;
+  padding: 0 17px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.view-details:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.view-details:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  padding: 65px;
+  color: #777;
+}
+
+.empty strong {
+  display: block;
+  color: #222;
+  margin-bottom: 7px;
+}
+
+.empty a {
+  color: #222;
+  font-size: 12px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-box {
+  width: min(680px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 18px;
+  padding: 27px;
+  position: relative;
+  box-shadow: 0 20px 70px #0005;
+  transform: translateY(12px);
+  transition: 0.2s ease;
+}
+
+.modal.show .modal-box {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f1f0;
+  color: #444;
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e5e5e4;
+}
+
+
+/* =========================
+   MODAL HEADER
+========================= */
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-label {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font: 700 23px Georgia, serif;
+}
+
+.modal-header p {
+  margin: 6px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* =========================
+   MODAL DETAILS GRID
+========================= */
+
+.modal-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.modal-detail {
+  background: #f6f6f5;
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.modal-detail small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  margin-bottom: 6px;
+}
+
+.modal-detail strong {
+  display: block;
+  color: #222;
+  font-size: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-section {
+  margin-top: 25px;
+}
+
+.timeline-section h3 {
+  margin: 0 0 16px;
+  font: 700 16px Georgia, serif;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 13px;
+  min-height: 64px;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 28px;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.timeline-dot {
+  position: relative;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: 50%;
+  background: #e5e5e4;
+  color: #888;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.timeline-content {
+  padding: 2px 0 20px;
+}
+
+.timeline-content strong {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+
+.timeline-content span {
+  display: block;
+  margin-top: 4px;
+  color: #aaa;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* COMPLETED TIMELINE STEPS */
+
+.timeline-item.done .timeline-dot {
+  background: #151515;
+  color: #fff;
+}
+
+.timeline-item.done:not(:last-child)::after {
+  background: #151515;
+}
+
+.timeline-item.done .timeline-content strong {
+  color: #222;
+}
+
+.timeline-item.done .timeline-content span {
+  color: #777;
+}
+
+
+/* CURRENT TIMELINE STEP */
+
+.timeline-item.current .timeline-dot {
+  background: #d9f8ea;
+  color: #087d53;
+  border: 2px solid #087d53;
+}
+
+.timeline-item.current .timeline-content strong {
+  color: #087d53;
+}
+
+.timeline-item.current .timeline-content span {
+  color: #666;
+}
+
+
+/* =========================
+   MODAL NOTICE
+========================= */
+
+.modal-notice {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f5f5f4;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .main {
+    margin-left: 220px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .topbar {
+    padding: 0 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  .rental-footer {
+    flex-direction: column;
+  }
+
+  .view-details {
+    min-height: 42px;
+  }
+
+  .modal {
+    padding: 12px;
+  }
+
+  .modal-box {
+    padding: 22px;
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal-details {
+    grid-template-columns: 1fr;
+  }
+
+}

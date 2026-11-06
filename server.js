@@ -1,1 +1,403 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíïŽ8N‹Z–‹­¦ëeŠw¬Õ½¹ÍÐ•áÁÉ•ÍÌ€ôÉ•ÅÕ¥É” •áÁÉ•ÍÌœ¤ì)½¹ÍÐÍ•ÍÍ¥½¸€ôÉ•ÅÕ¥É” •áÁÉ•ÍÌµÍ•ÍÍ¥½¸œ¤ì)½¹ÍÐME1¥Ñ•MÑ½É•…Ñ½Éä€ôÉ•ÅÕ¥É” ½¹¹•ÐµÍÅ±¥Ñ”Ìœ¤¡Í•ÍÍ¥½¸¤ì)½¹ÍÐ…Ñ…‰…Í”€ôÉ•ÅÕ¥É” ‰•ÑÑ•ÈµÍÅ±¥Ñ”Ìœ¤ì)½¹ÍÐ‰ÉåÁÐ€ôÉ•ÅÕ¥É” ‰ÉåÁÑ©Ìœ¤ì)½¹ÍÐ¡•±µ•Ð€ôÉ•ÅÕ¥É” ¡•±µ•Ðœ¤ì)½¹ÍÐÉ…Ñ•1¥µ¥Ð€ôÉ•ÅÕ¥É” •áÁÉ•ÍÌµÉ…Ñ”µ±¥µ¥Ðœ¤ì)½¹ÍÐÁ…Ñ €ôÉ•ÅÕ¥É” Á…Ñ œ¤ì)½¹ÍÐ™Ì€ôÉ•ÅÕ¥É” ™Ìœ¤ì()½¹ÍÐ…ÁÀ€ô•áÁÉ•ÍÌ ¤ì)½¹ÍÐA=IP€ô9Õµ‰•È¡ÁÉ½•ÍÌ¹•¹Ø¹A=IPñð€ÌÀÀÀ¤ì)½¹ÍÐ%M}AI=UQ%=8€ôÁÉ½•ÍÌ¹•¹Ø¹9=}9X€ôôô€ÁÉ½‘ÕÑ¥½¸œì)½¹ÍÐQ}%H€ôÁÉ½•ÍÌ¹•¹Ø¹Q}%HñðÁ…Ñ ¹©½¥¸¡}}‘¥É¹…µ”°€‘…Ñ„œ¤ì)™Ì¹µ­‘¥ÉMå¹Œ¡Q}%H°ìÉ•ÕÉÍ¥Ù”èÑÉÕ”ô¤ì)½¹ÍÐ‘ˆ€ô¹•Ü…Ñ…‰…Í”¡Á…Ñ ¹©½¥¸¡Q}%H°€…µÁÕÍÍ¡…É”¹ÍÅ±¥Ñ”œ¤¤ì)‘ˆ¹ÁÉ…µ„ ©½ÕÉ¹…±}µ½‘”€ô]0œ¤ì)‘ˆ¹ÁÉ…µ„ ™½É•¥¹}­•åÌ€ô=8œ¤ì)‘ˆ¹•á•Œ¡€)IQQ	1%9=Pa%MQL…‘µ¥¹Ì€ (€¥%9QHAI%5Id-dUQ=%9I59P°(€ÕÍ•É¹…µ”QaP9=P9U10U9%EU°(€Á…ÍÍÝ½É‘}¡…Í QaP9=P9U10°(€É•…Ñ•‘}…ÐQaP9=P9U10U1PUII9Q}Q%5MQ5@(¤ì)IQQ	1%9=Pa%MQLÁ…ÉÑ¹•ÉÍ¡¥Á}…ÁÁ±¥…Ñ¥½¹Ì€ (€¥QaPAI%5Id-d°(€É•™•É•¹”QaP9=P9U10U9%EU°(€½™™¥¥…±}•µ…¥°QaP9=P9U10°(€…µÁÕÍ}¹…µ”QaP9=P9U10°(€ÁÉ½Ù¥‘•É}¹…µ”QaP9=P9U10°(€ÍÑ…ÑÕÌQaP9=P9U10U1P€A•¹‘¥¹œI•Ù¥•Üœ!,¡ÍÑ…ÑÕÌ%8€ A•¹‘¥¹œI•Ù¥•Üœ°Y•É¥™¥…Ñ¥½¸œ°ÁÁÉ½Ù•œ°I•©•Ñ•œ¤¤°(€‘•¥Í¥½¹}¹½Ñ”QaP9=P9U10U1P€œœ°(€…ÁÁ±¥…Ñ¥½¹}©Í½¸QaP9=P9U10U1P€íôœ°(€ÁÉ½Ù¥‘•É}Á…ÍÍÝ½É‘}¡…Í QaP°(€ÁÉ½Ù¥‘•É}…Ñ¥Ù…Ñ•‘}…ÐQaP°(€É•…Ñ•‘}…ÐQaP9=P9U10U1PUII9Q}Q%5MQ5@°(€ÕÁ‘…Ñ•‘}…ÐQaP9=P9U10U1PUII9Q}Q%5MQ5@(¤ì)IQQ	1%9=Pa%MQL…‘µ¥¹}…Õ‘¥Ñ}±½œ€ (€¥%9QHAI%5Id-dUQ=%9I59P°(€…‘µ¥¹}¥%9QH°(€…Ñ¥½¸QaP9=P9U10°(€Ñ…É•Ñ}¥QaP°(€É•…Ñ•‘}…ÐQaP9=P9U10U1PUII9Q}Q%5MQ5@(¤ì)IQQ	1%9=Pa%MQLÁÉ½Ù¥‘•É}•ÅÕ¥Áµ•¹Ð€ (€ÁÉ½Ù¥‘•É}¥QaP9=P9U10°(€¥Ñ•µ}¥QaP9=P9U10°(€ÁÉ½Ù¥‘•É}ÍÑ…ÑÕÌQaP9=P9U10U1P€A•¹‘¥¹œœ°(€ÁÉ½Ù¥‘•É}¹…µ”QaP9=P9U10°(€…µÁÕÍ}¹…µ”QaP9=P9U10°(€¥Ñ•µ}©Í½¸QaP9=P9U10°(€ÕÁ‘…Ñ•‘}…ÐQaP9=P9U10U1PUII9Q}Q%5MQ5@°(€AI%5Id-d€¡ÁÉ½Ù¥‘•É}¥°¥Ñ•µ}¥¤(¤ì)IQ%9`%9=Pa%MQL¥‘á}ÁÉ½Ù¥‘•É}•ÅÕ¥Áµ•¹Ñ}ÍÑ…ÑÕÌ=8ÁÉ½Ù¥‘•É}•ÅÕ¥Áµ•¹Ð¡ÁÉ½Ù¥‘•É}ÍÑ…ÑÕÌ°ÕÁ‘…Ñ•‘}…Ð¤ì)€¤ì((¼¼UÁÉ…‘”‘…Ñ…‰…Í•ÌÉ•…Ñ•‰ä•…É±¥•È…µÁÕÍM¡…É”‰Õ¥±‘ÌÝ¥Ñ¡½ÕÐÉ•Í•ÑÑ¥¹œ‘…Ñ„¸)™½È€¡½¹ÍÐm¹…µ”°‘•™¥¹¥Ñ¥½¹t½˜l(€l…ÁÁ±¥…Ñ¥½¹}©Í½¸œ°€‰QaP9=P9U10U1P€íôœ‰t°(€lÁÉ½Ù¥‘•É}Á…ÍÍÝ½É‘}¡…Í œ°€QaPt°(€lÁÉ½Ù¥‘•É}…Ñ¥Ù…Ñ•‘}…Ðœ°€QaPt°)t¤ì(€½¹ÍÐ½±Õµ¹Ì€ô‘ˆ¹ÁÉ•Á…É” AI5Ñ…‰±•}¥¹™¼¡Á…ÉÑ¹•ÉÍ¡¥Á}…ÁÁ±¥…Ñ¥½¹Ì¤œ¤¹…±° ¤ì(€¥˜€ …½±Õµ¹Ì¹Í½µ”¡½±Õµ¸€ôø½±Õµ¸¹¹…µ”€ôôô¹…µ”¤¤ì(€€€‘ˆ¹•á•Œ¡1QHQ	1Á…ÉÑ¹•ÉÍ¡¥Á}…ÁÁ±¥…Ñ¥½¹Ì=1U58€‘í¹…µ•ô€‘í‘•™¥¹¥Ñ¥½¹õ€¤ì(€ô)ô((¼¼	½½ÑÍÑÉ…À…¸…‘µ¥¸½¹±ä™É½´•¹Ù¥É½¹µ•¹ÐÙ…É¥…‰±•Ì¸9•Ù•ÈÍ¡¥À‘•™…Õ±ÐÉ•‘•¹Ñ¥…±Ì¸)½¹ÍÐ‰½½ÑÍÑÉ…ÁUÍ•È€ôÁÉ½•ÍÌ¹•¹Ø¹5%9}UMI95ì)½¹ÍÐ‰½½ÑÍÑÉ…ÁA…ÍÍÝ½É€ôÁÉ½•ÍÌ¹•¹Ø¹5%9}AMM]=Iì)¥˜€¡‰½½ÑÍÑÉ…ÁUÍ•È€˜˜‰½½ÑÍÑÉ…ÁA…ÍÍÝ½É¤ì(€¥˜€¡‰½½ÑÍÑÉ…ÁA…ÍÍÝ½É¹±•¹Ñ €ð€ÄÈ¤ì(€€€½¹Í½±”¹•ÉÉ½È 5%9}AMM]=IµÕÍÐ‰”…Ð±•…ÍÐ€ÄÈ¡…É…Ñ•ÉÌ¸‘µ¥¸‰½½ÑÍÑÉ…ÀÍ­¥ÁÁ•¸œ¤ì(€ô•±Í”ì(€€€½¹ÍÐ•á¥ÍÑ¥¹œ€ô‘ˆ¹ÁÉ•Á…É” M1P¥I=4…‘µ¥¹Ì]!IÕÍ•É¹…µ”€ô€üœ¤¹•Ð¡‰½½ÑÍÑÉ…ÁUÍ•È¤ì(€€€¥˜€ …•á¥ÍÑ¥¹œ¤ì(€€€€€‘ˆ¹ÁÉ•Á…É” %9MIP%9Q<…‘µ¥¹Ì€¡ÕÍ•É¹…µ”°Á…ÍÍÝ½É‘}¡…Í ¤Y1UL€ ü°€ü¤œ¤(€€€€€€€€¹ÉÕ¸¡‰½½ÑÍÑÉ…ÁUÍ•È°‰ÉåÁÐ¹¡…Í¡Må¹Œ¡‰½½ÑÍÑÉ…ÁA…ÍÍÝ½É°€ÄÈ¤¤ì(€€€€€½¹Í½±”¹±½œ¡	½½ÑÍÑÉ…ÁÁ•…‘µ¥¸…½Õ¹Ðè€‘í‰½½ÑÍÑÉ…ÁUÍ•Éõ€¤ì(€€€ô(€ô)ô()…ÁÀ¹‘¥Í…‰±” àµÁ½Ý•É•µ‰äœ¤ì)…ÁÀ¹ÕÍ”¡¡•±µ•Ð¡ì½¹Ñ•¹ÑM•ÕÉ¥ÑåA½±¥äè™…±Í”ô¤¤ì)…ÁÀ¹ÕÍ”¡•áÁÉ•ÍÌ¹©Í½¸¡ì±¥µ¥Ðè€œÄÕµˆœô¤¤ì)…ÁÀ¹ÕÍ”¡•áÁÉ•ÍÌ¹ÕÉ±•¹½‘•¡ì•áÑ•¹‘•è™…±Í”°±¥µ¥Ðè€œÈÁ­ˆœô¤¤ì)…ÁÀ¹ÕÍ”¡Í•ÍÍ¥½¸¡ì(€¹…µ”è€…µÁÕÍÍ¡…É”¹…‘µ¥¸¹Í¥œ°(€Í•É•ÐèÁÉ½•ÍÌ¹•¹Ø¹MMM%=9}MIPñð€¡%M}AI=UQ%=8€üÕ¹‘•™¥¹•€è€±½…°µ‘•Ù•±½Áµ•¹Ðµ½¹±äµ¡…¹”µÑ¡¥ÌµÍ•É•Ðœ¤°(€É•Í…Ù”è™…±Í”°(€Í…Ù•U¹¥¹¥Ñ¥…±¥é•è™…±Í”°(€ÍÑ½É”è¹•ÜME1¥Ñ•MÑ½É•…Ñ½Éä¡ì‘ˆè€Í•ÍÍ¥½¹Ì¹ÍÅ±¥Ñ”œ°‘¥ÈèQ}%H°½¹ÕÉÉ•¹ÑèÑÉÕ”ô¤°(€½½­¥”èì¡ÑÑÁ=¹±äèÑÉÕ”°Í…µ•M¥Ñ”è€±…àœ°Í•ÕÉ”è%M}AI=UQ%=8°µ…á”è€ÄÀÀÀ€¨€ØÀ€¨€ØÀ€¨€Ðô°)ô¤¤ì()½¹ÍÐ±½¥¹1¥µ¥Ñ•È€ôÉ…Ñ•1¥µ¥Ð¡ìÝ¥¹‘½Ý5Ìè€ÄÔ€¨€ØÀ€¨€ÄÀÀÀ°±¥µ¥Ðè€à°ÍÑ…¹‘…É‘!•…‘•ÉÌè€‘É…™Ð´Üœ°±•…å!•…‘•ÉÌè™…±Í”°(€µ•ÍÍ…”èì•ÉÉ½Èè€Q½¼µ…¹ä±½¥¸…ÑÑ•µÁÑÌ¸QÉä……¥¸¥¸€ÄÔµ¥¹ÕÑ•Ì¸œôô¤ì)™Õ¹Ñ¥½¸É•ÅÕ¥É•‘µ¥¸¡É•Ä°É•Ì°¹•áÐ¤ì(€¥˜€¡É•Ä¹Í•ÍÍ¥½¸€˜˜É•Ä¹Í•ÍÍ¥½¸¹…‘µ¥¸€˜˜É•Ä¹Í•ÍÍ¥½¸¹…‘µ¥¸¹É½±”€ôôô€…‘µ¥¸œ¤É•ÑÕÉ¸¹•áÐ ¤ì(€¥˜€¡É•Ä¹Á…Ñ ¹ÍÑ…ÉÑÍ]¥Ñ  œ½…Á¤¼œ¤¤É•ÑÕÉ¸É•Ì¹ÍÑ…ÑÕÌ ÐÀÄ¤¹©Í½¸¡ì•ÉÉ½Èè€‘µ¥¸…ÕÑ¡•¹Ñ¥…Ñ¥½¸É•ÅÕ¥É•¸œô¤ì(€É•ÑÕÉ¸É•Ì¹É•‘¥É•Ð œ½…‘µ¥¸µ±½¥¸¹¡Ñµ°œ¤ì)ô)™Õ¹Ñ¥½¸…Õ‘¥Ð¡…‘µ¥¹%°…Ñ¥½¸°Ñ…É•Ñ%€ô¹Õ±°¤ì(€‘ˆ¹ÁÉ•Á…É” %9MIP%9Q<…‘µ¥¹}…Õ‘¥Ñ}±½œ€¡…‘µ¥¹}¥°…Ñ¥½¸°Ñ…É•Ñ}¥¤Y1UL€ ü°€ü°€ü¤œ¤¹ÉÕ¸¡…‘µ¥¹%°…Ñ¥½¸°Ñ…É•Ñ%¤ì)ô()…ÁÀ¹•Ð œ½¡•…±Ñ œ°€¡}É•Ä°É•Ì¤€ôøÉ•Ì¹©Í½¸¡ì½¬èÑÉÕ”°Í•ÉÙ¥”è€…µÁÕÍM¡…É”œ°µ½‘”è€ÁÉ½Ñ½ÑåÁ”œô¤¤ì)…ÁÀ¹•Ð œ½…‘µ¥¸œ°€¡É•Ä°É•Ì¤€ôøÉ•Ä¹Í•ÍÍ¥½¸ü¹…‘µ¥¸ü¹É½±”€ôôô€…‘µ¥¸œ(€€üÉ•Ì¹Í•¹‘¥±”¡Á…Ñ ¹©½¥¸¡}}‘¥É¹…µ”°€…‘µ¥¸¹¡Ñµ°œ¤¤(€€èÉ•Ì¹É•‘¥É•Ð œ½…‘µ¥¸µ±½¥¸¹¡Ñµ°œ¤¤ì)…ÁÀ¹•Ð œ½…‘µ¥¸¹¡Ñµ°œ°€¡É•Ä°É•Ì¤€ôøÉ•Ä¹Í•ÍÍ¥½¸ü¹…‘µ¥¸ü¹É½±”€ôôô€…‘µ¥¸œ(€€üÉ•Ì¹Í•¹‘¥±”¡Á…Ñ ¹©½¥¸¡}}‘¥É¹…µ”°€…‘µ¥¸¹¡Ñµ°œ¤¤(€€èÉ•Ì¹É•‘¥É•Ð œ½…‘µ¥¸µ±½¥¸¹¡Ñµ°œ¤¤ì()…ÁÀ¹Á½ÍÐ œ½…Á¤½…‘µ¥¸½±½¥¸œ°±½¥¹1¥µ¥Ñ•È°€¡É•Ä°É•Ì°¹•áÐ¤€ôøì(€½¹ÍÐÕÍ•É¹…µ”€ôMÑÉ¥¹œ¡É•Ä¹‰½‘ä¹ÕÍ•É¹…µ”ñð€œœ¤¹ÑÉ¥´ ¤ì(€½¹ÍÐÁ…ÍÍÝ½É€ôMÑÉ¥¹œ¡É•Ä¹‰½‘ä¹Á…ÍÍÝ½Éñð€œœ¤ì(€½¹ÍÐ…‘µ¥¸€ô‘ˆ¹ÁÉ•Á…É” M1P¥°ÕÍ•É¹…µ”°Á…ÍÍÝ½É‘}¡…Í I=4…‘µ¥¹Ì]!IÕÍ•É¹…µ”€ô€üœ¤¹•Ð¡ÕÍ•É¹…µ”¤ì(€¥˜€ ……‘µ¥¸ñð€…‰ÉåÁÐ¹½µÁ…É•Må¹Œ¡Á…ÍÍÝ½É°…‘µ¥¸¹Á…ÍÍÝ½É‘}¡…Í ¤¤ì(€€€É•ÑÕÉ¸É•Ì¹ÍÑ…ÑÕÌ ÐÀÄ¤¹©Í½¸¡ì•ÉÉ½Èè€%¹Ù…±¥ÕÍ•É¹…µ”½ÈÁ…ÍÍÝ½É¸œô¤ì(€ô(€É•Ä¹Í•ÍÍ¥½¸¹É••¹•É…Ñ”¡•ÉÈ€ôøì(€€€¥˜€¡•ÉÈ¤É•ÑÕÉ¸¹•áÐ¡•ÉÈ¤ì(€€€É•Ä¹Í•ÍÍ¥½¸¹…‘µ¥¸€ôì¥è…‘µ¥¸¹¥°ÕÍ•É¹…µ”è…‘µ¥¸¹ÕÍ•É¹…µ”°É½±”è€…‘µ¥¸œôì(€€€É•Ä¹Í•ÍÍ¥½¸¹Í…Ù”¡•ÉÈÈ€ôøì(€€€€€¥˜€¡•ÉÈÈ¤É•ÑÕÉ¸¹•áÐ¡•ÉÈÈ¤ì(€€€€€…Õ‘¥Ð¡…‘µ¥¸¹¥°€…‘µ¥¸¹±½¥¸œ¤ì(€€€€€É•Ì¹©Í½¸¡ì½¬èÑÉÕ”°É•‘¥É•Ðè€œ½…‘µ¥¸œô¤ì(€€€ô¤ì(€ô¤ì)ô¤ì)…ÁÀ¹•Ð œ½…Á¤½…‘µ¥¸½µ”œ°É•ÅÕ¥É•‘µ¥¸°€¡É•Ä°É•Ì¤€ôøÉ•Ì¹©Í½¸¡ì…‘µ¥¸èÉ•Ä¹Í•ÍÍ¥½¸¹…‘µ¥¸ô¤¤ì)…ÁÀ¹Á½ÍÐ œ½…Á¤½…‘µ¥¸½±½½ÕÐœ°É•ÅÕ¥É•‘µ¥¸°€¡É•Ä°É•Ì°¹•áÐ¤€ôøì(€…Õ‘¥Ð¡É•Ä¹Í•ÍÍ¥½¸¹…‘µ¥¸¹¥°€…‘µ¥¸¹±½½ÕÐœ¤ì(€É•Ä¹Í•ÍÍ¥½¸¹‘•ÍÑÉ½ä¡•ÉÈ€ôøì(€€€¥˜€¡•ÉÈ¤É•ÑÕÉ¸¹•áÐ¡•ÉÈ¤ì(€€€É•Ì¹±•…É½½­¥” …µÁÕÍÍ¡…É”¹…‘µ¥¸¹Í¥œ¤ì(€€€É•Ì¹©Í½¸¡ì½¬èÑÉÕ”°É•‘¥É•Ðè€œ½…‘µ¥¸µ±½¥¸¹¡Ñµ°œô¤ì(€ô¤ì)ô¤ì((¼¼M¡…É•‘…Ñ…‰…Í”A$¸‘µ¥¸µ½¹±ä±¥ÍÐ½‘•¥Í¥½¸É½ÕÑ•Ì…É”ÁÉ½Ñ•Ñ•Í•ÉÙ•ÈµÍ¥‘”¸)…ÁÀ¹•Ð œ½…Á¤½…‘µ¥¸½Á…ÉÑ¹•ÉÍ¡¥ÁÌœ°É•ÅÕ¥É•‘µ¥¸°€¡}É•Ä°É•Ì¤€ôøì(€½¹ÍÐÉ½ÝÌ€ô‘ˆ¹ÁÉ•Á…É” M1P€¨I=4Á…ÉÑ¹•ÉÍ¡¥Á}…ÁÁ±¥…Ñ¥½¹Ì=IH	dÉ•…Ñ•‘}…ÐMœ¤¹…±° ¤ì(€É•Ì¹©Í½¸¡ì…ÁÁ±¥…Ñ¥½¹ÌèÉ½ÝÌ¹µ…À¡É½Ü€ôøì(€€€±•Ð‘•Ñ…¥°€ôíôì(€€€ÑÉäì‘•Ñ…¥°€ô)M=8¹Á…ÉÍ”¡É½Ü¹…ÁÁ±¥…Ñ¥½¹}©Í½¸ñð€íôœ¤ìô…Ñ íô(€€€É•ÑÕÉ¸ì€¸¸¹‘•Ñ…¥°°¥èÉ½Ü¹¥°É•™•É•¹”èÉ½Ü¹É•™•É•¹”°½™™¥¥…±µ…¥°èÉ½Ü¹½™™¥¥…±}•µ…¥°°(€€€€€…µÁÕÍ9…µ”èÉ½Ü¹…µÁÕÍ}¹…µ”°ÁÉ½Ù¥‘•É9…µ”èÉ½Ü¹ÁÉ½Ù¥‘•É}¹…µ”°ÍÑ…ÑÕÌè‘•Ñ…¥°¹ÍÑ…ÑÕÌñðÉ½Ü¹ÍÑ…ÑÕÌ°(€€€€€ÍÑ…ÑÕÍ9½Ñ”èÉ½Ü¹‘•¥Í¥½¹}¹½Ñ”°É•…Ñ•‘ÐèÉ½Ü¹É•…Ñ•‘}…Ð°ÕÁ‘…Ñ•‘ÐèÉ½Ü¹ÕÁ‘…Ñ•‘}…Ð°(€€€€€ÁÉ½Ù¥‘•É½Õ¹ÑMÑ…ÑÕÌèÉ½Ü¹ÁÉ½Ù¥‘•É}…Ñ¥Ù…Ñ•‘}…Ð€ü€Ñ¥Ù…Ñ•œ€è€9½ÐÑ¥Ù…Ñ•œôì(€ô¤ô¤ì)ô¤ì)…ÁÀ¹Á½ÍÐ œ½…Á¤½…‘µ¥¸½Á…ÉÑ¹•ÉÍ¡¥ÁÌ½Íå¹Œœ°É•ÅÕ¥É•‘µ¥¸°€¡É•Ä°É•Ì¤€ôøì(€½¹ÍÐ…ÁÁ±¥…Ñ¥½¹Ì€ôÉ•Ä¹‰½‘äü¹…ÁÁ±¥…Ñ¥½¹Ìì(€¥˜€ …ÉÉ…ä¹¥ÍÉÉ…ä¡…ÁÁ±¥…Ñ¥½¹Ì¤ñð…ÁÁ±¥…Ñ¥½¹Ì¹±•¹Ñ €ø€ÈÀÀ¤ì(€€€É•ÑÕÉ¸É•Ì¹ÍÑ…ÑÕÌ ÐÀÀ¤¹©Í½¸¡ì•ÉÉ½Èè€Ù…±¥Á…ÉÑ¹•ÉÍ¡¥À±¥ÍÐ¥ÌÉ•ÅÕ¥É•¸œô¤ì(€ô(€½¹ÍÐÕÁÍ•ÉÐ€ô‘ˆ¹ÁÉ•Á…É”¡%9MIP%9Q<Á…ÉÑ¹•ÉÍ¡¥Á}…ÁÁ±¥…Ñ¥½¹Ì(€€€€¡¥°É•™•É•¹”°½™™¥¥…±}•µ…¥°°…µÁÕÍ}¹…µ”°ÁÉ½Ù¥‘•É}¹…µ”°ÍÑ…ÑÕÌ°‘•¥Í¥½¹}¹½Ñ”°…ÁÁ±¥…Ñ¥½¹}©Í½¸°ÕÁ‘…Ñ•‘}…Ð¤(€€€Y1UL€ ü°€ü°€ü°€ü°€ü°€ü°€ü°€ÿn8âÚ$z{-®éÜj×&W&R‚u4TÄT5B–BÂ&÷f–FW%öæÖRÂ6×W5öæÖRÂ7FGW2Â&÷f–FW%÷77v÷&Eö†6‚Â&÷f–FW%ö7F—fFVEöBe$ôÒ'FæW'6†—öÆ–6F–öç2t„U$Röff–6–ÅöVÖ–ÂÒòr’ævWB†VÖ–Â“°¢–b‚'FæW"’&WGW&â&W2ç7FGW2ƒCB’æ§6öâ‡²W'&÷#¢tæò&÷f–FW"Æ–6F–öâv2f÷VæBf÷"F†—2VÖ–ÂârÒ“°¢–b‡'FæW"ç7FGW2ÓÒt&÷fVBr’&WGW&â&W2ç7FGW2ƒC2’æ§6öâ‡²W'&÷#¢uF†—2'FæW'6†—†2æ÷B&VVâ&÷fVBârÒ“°¢–b‡'FæW"ç&÷f–FW%ö7F—fFVEöB’&WGW&â&W2ç7FGW2ƒC’’æ§6öâ‡²W'&÷#¢uF†—2&÷f–FW"66÷VçB—2Ç&VG’7F—fFVBâÆV6RÆör–âârÒ“°¢F"ç&W&R‚uUDDR'FæW'6†—öÆ–6F–öç24UB&÷f–FW%÷77v÷&Eö†6‚ÒòÂ&÷f–FW%ö7F—fFVEöBÒ5U%$TåEõD”ÔU5DÕt„U$R–BÒòr¢ç'Vâ†&7'—Bæ†6…7–æ2‡77v÷&BÂ"’Â'FæW"æ–B“°¢&W2æ§6öâ‡²ö³¢G'VRÒ“°§Ò“°¦ç÷7B‚rö’÷&÷f–FW"öÆöv–ârÂÆöv–äÆ–Ö—FW"Â‡&WÂ&W2ÂæW‡B’Óâ°¢6öç7BVÖ–ÂÒ7G&–ær‡&Wæ&öG“òæVÖ–ÂÇÂrr’çG&–Ò‚’çFôÆ÷vW$66R‚“°¢6öç7B77v÷&BÒ7G&–ær‡&Wæ&öG“òç77v÷&BÇÂrr“°¢6öç7B'FæW"ÒF"ç&W&R‚u4TÄT5B–BÂ&÷f–FW%öæÖRÂ6×W5öæÖRÂ7FGW2Â&÷f–FW%÷77v÷&Eö†6‚Â&÷f–FW%ö7F—fFVEöBe$ôÒ'FæW'6†—öÆ–6F–öç2t„U$Röff–6–ÅöVÖ–ÂÒòr’ævWB†VÖ–Â“°¢–b‚'FæW"ÇÂ'FæW"ç7FGW2ÓÒt&÷fVBrÇÂ'FæW"ç&÷f–FW%ö7F—fFVEöBÇÂ'FæW"ç&÷f–FW%÷77v÷&Eö†6‚ÇÂ&7'—Bæ6ö×&U7–æ2‡77v÷&BÂ'FæW"ç&÷f–FW%÷77v÷&Eö†6‚’’°¢&WGW&â&W2ç7FGW2ƒC’æ§6öâ‡²W'&÷#¢t–çfÆ–B&÷f–FW"VÖ–Â÷"77v÷&BÂ÷"F†R'FæW'6†——2æ÷B&÷fVBârÒ“°¢Ð¢&Wç6W76–öâç&VvVæW&FR†W'"Óâ°¢–b†W'"’&WGW&âæW‡B†W'"“°¢&Wç6W76–öâç&÷f–FW"Ò²–C¢'FæW"æ–BÂ&÷f–FW$æÖS¢'FæW"ç&÷f–FW%öæÖRÂ6×W4æÖS¢'FæW"æ6×W5öæÖRÂöff–6–ÄVÖ–Ã¢VÖ–ÂÓ°¢&Wç6W76–öâç6fR†W'#"Óâ°¢–b†W'#"’&WGW&âæW‡B†W'#"“°¢&W2æ§6öâ‡²ö³¢G'VRÂ&÷f–FW#¢&Wç6W76–öâç&÷f–FW"Ò“°¢Ò“°¢Ò“°§Ò“°¦ævWB‚rö’÷&÷f–FW"öÖRrÂ‡&WÂ&W2’Óâ°¢–b‚&Wç6W76–öãòç&÷f–FW#òæ–B’&WGW&â&W2ç7FGW2ƒC’æ§6öâ‡²W'&÷#¢u&÷f–FW"6–vâÖ–â&WV—&VBârÒ“°¢6öç7B'FæW"ÒF"ç&W&R‚u4TÄT5B7FGW2Â&÷f–FW%öæÖRÂ6×W5öæÖRÂöff–6–ÅöVÖ–Âe$ôÒ'FæW'6†—öÆ–6F–öç2t„U$R–BÒòr’ævWB‡&Wç6W76–öâç&÷f–FW"æ–B“°¢–b‚'FæW"ÇÂ'FæW"ç7FGW2ÓÒt&÷fVBr’&WGW&â&W2ç7FGW2ƒC2’æ§6öâ‡²W'&÷#¢u&÷f–FW"66W72—2æ÷B&÷fVBârÒ“°¢&W2æ§6öâ‡²&÷f–FW#¢²–C¢&Wç6W76–öâç&÷f–FW"æ–BÂ&÷f–FW$æÖS¢'FæW"ç&÷f–FW%öæÖRÂ6×W4æÖS¢'FæW"æ6×W5öæÖRÂöff–6–ÄVÖ–Ã¢'FæW"æöff–6–ÅöVÖ–ÂÒÒ“°§Ò“°¦ç÷7B‚rö’÷&÷f–FW"öÆöv÷WBrÂ‡&WÂ&W2ÂæW‡B’Óâ°¢&Wç6W76–öâæFW7G&÷’†W'"Óâ°¢–b†W'"’&WGW&âæW‡B†W'"“°¢&W2æ6ÆV$6öö¶–R‚v6×W76†&RæFÖ–âç6–Br“°¢&W2æ§6öâ‡²ö³¢G'VRÒ“°¢Ò“°§Ò“° ¦6öç7BWV—ÖVçD”Æ–Ö—FW"Ò&FTÆ–Ö—B‡²v–æF÷t×3¢R¢c¢ÂÆ–Ö—C¢cÂ7FæF&D†VFW'3¢vG&gBÓrrÂÆVv7”†VFW'3¢fÇ6RÒ“°¦ævWB‚rö’öWV—ÖVçBrÂWV—ÖVçD”Æ–Ö—FW"Â…÷&WÂ&W2’Óâ°¢6öç7B&÷w2ÒF"ç&W&R‚%4TÄT5BRæ—FVÕö§6öâe$ôÒ&÷f–FW%öWV—ÖVçBR¤ô”â'FæW'6†—öÆ–6F–öç2ôâæ–BÒRç&÷f–FW%ö–Bt„U$Rç7FGW2Òt&÷fVBräBRç&÷f–FW%÷7FGW2Òt&÷fVBrõ$DU"%’RçWFFVEöBDU42"’æÆÂ‚“°¢6öç7B—FV×2Ò&÷w2æfÆDÖ‡&÷rÓâ°¢G'’°¢6öç7B—FVÒÒ¥4ôâç'6R‡&÷ræ—FVÕö§6öâ“°¢–b†—FVÒæ—4Æ—7FVBÓÓÒfÇ6RÇÂ²%VæÆ—7FVB"Â%VæFW"&Wf–Wr"Â%&VÖ÷fVB%Òæ–æ6ÇVFW2…7G&–ær†—FVÒæÆ—7F–æu7FGW2ÇÂ—FVÒç7FGW2ÇÂ""’’’&WGW&âµÓ°¢&WGW&â·²ââæ—FVÒÂ&÷f–FW$&÷fVC¢G'VRÕÓ°¢Ò6F6‚²&WGW&âµÓ²Ð¢Ò“°¢&W2ç6WD†VFW"‚t66†RÔ6öçG&öÂrÂvæò×7F÷&Rr“°¢&W2æ§6öâ‡²—FV×2Ò“°§Ò“°¦ævWB‚rö’÷&÷f–FW"ÖWV—ÖVçBó§&÷f–FW$–BrÂWV—ÖVçD”Æ–Ö—FW"Â‡&WÂ&W2’Óâ°¢6öç7B&÷f–FW$–BÒ7G&–ær‡&Wç6W76–öãòç&÷f–FW#òæ–BÇÂrr“°¢–b‚&÷f–FW$–BÇÂ&÷f–FW$–BÓÒ7G&–ær‡&Wç&×2ç&÷f–FW$–BÇÂrr’çG&–Ò‚’ç6Æ–6RƒÂ#’’°¢&WGW&â&W2ç7FGW2ƒC’æ§6öâ‡²W'&÷#¢u&÷f–FW"6–vâÖ–â&WV—&VBârÒ“°¢Ð¢6öç7B&÷w2ÒF"ç&W&R‚u4TÄT5B—FVÕö§6öâe$ôÒ&÷f–FW%öWV—ÖVçBt„U$R&÷f–FW%ö–BÒòõ$DU"%’WFFVEöBDU42r’æÆÂ‡&÷f–FW$–B“°¢&W2ç6WD†VFW"‚t66†RÔ6öçG&öÂrÂvæò×7F÷&Rr“°¢&W2æ§6öâ‡²—FV×3¢&÷w2æfÆDÖ‡&÷rÓâ²G'’²&WGW&â´¥4ôâç'6R‡&÷ræ—FVÕö§6öâ•Ó²Ò6F6‚²&WGW&âµÓ²ÒÒ’Ò“°§Ò“°¦ç÷7B‚rö’÷&÷f–FW"ÖWV—ÖVçB÷7–æ2rÂWV—ÖVçD”Æ–Ö—FW"Â‡&WÂ&W2’Óâ°¢6öç7B&÷f–FW$–BÒ7G&–ær‡&Wç6W76–öãòç&÷f–FW#òæ–BÇÂrr“°¢–b‚&÷f–FW$–B’&WGW&â&W2ç7FGW2ƒC’æ§6öâ‡²W'&÷#¢u&÷f–FW"6–vâÖ–â&WV—&VBârÒ“°¢6öç7B'FæW"ÒF"ç&W&R‚u4TÄT5B&÷f–FW%öæÖRÂ6×W5öæÖRÂ7FGW2e$ôÒ'FæW'6†—öÆ–6F–öç2t„U$R–BÒòr’ævWB‡&÷f–FW$–B“°¢–b‚'FæW"ÇÂ'FæW"ç7FGW2ÓÒt&÷fVBr’&WGW&â&W2ç7FGW2ƒC2’æ§6öâ‡²W'&÷#¢töæÇ’7W'&VçFÇ’&÷fVB&÷f–FW'26â7–æ2V&Æ–2WV—ÖVçBârÒ“°¢6öç7B&÷f–FW$æÖRÒ'FæW"ç&÷f–FW%öæÖS°¢6öç7B6×W4æÖRÒ'FæW"æ6×W5öæÖS°¢6öç7B&÷f–FW%7FGW2Ò'FæW"ç7FGW3°¢6öç7B—FV×2Ò&Wæ&öG“òæ—FV×3°¢–b‚'&’æ—4'&’†—FV×2’ÇÂ—FV×2æÆVæwF‚â’°¢&WGW&â&W2ç7FGW2ƒC’æ§6öâ‡²W'&÷#¢tfÆ–BWV—ÖVçBÆ—7B—2&WV—&VBârÒ“°¢Ð¢6öç7BW6W'BÒF"ç&W&R†”å4U%B”åDò&÷f–FW%öWV—ÖVç@¢‡&÷f–FW%ö–BÂ—FVÕö–BÂ&÷f–FW%÷7FGW2Â&÷f–FW%öæÖRÂ6×W5öæÖRÂ—FVÕö§6öâÂWFFVEöB¢dÅTU2ƒòÂòÂòÂòÂòÂòÂ5U%$TåEõD”ÔU5DÕ¢ôâ4ôädÄ”5B‡&÷f–FW%ö–BÂ—FVÕö–B’DòUDDR4U@¢&÷f–FW%÷7FGW2ÒW†6ÇVFVBç&÷f–FW%÷7FGW2À¢&÷f–FW%öæÖRÒW†6ÇVFVBç&÷f–FW%öæÖRÀ¢6×W5öæÖRÒW†6ÇVFVBæ6×W5öæÖRÀ¢—FVÕö§6öâÒW†6ÇVFVBæ—FVÕö§6öâÀ¢WFFVEöBÒ5U%$TåEõD”ÔU5DÕ“°¢6öç7B6fT—FV×2ÒF"çG&ç67F–öâ‡&÷w2Óâ°¢ÆWB6fVBÒ°¢f÷"†6öç7B6÷W&6Röb&÷w2’°¢–b‚6÷W&6RÇÂG—Vöb6÷W&6RÓÒvö&¦V7Br’6öçF–çVS°¢6öç7B—FVÔ–BÒ7G&–ær‡6÷W&6Ræ–BÇÂrr’çG&–Ò‚’ç6Æ–6RƒÂ#“°¢6öç7BæÖRÒ7G&–ær‡6÷W&6RææÖRÇÂrr’çG&–Ò‚’ç6Æ–6RƒÂ#“°¢–b‚—FVÔ–BÇÂæÖR’6öçF–çVS°¢6öç7B—FVÒÒ²ââç6÷W&6RÂ–C¢—FVÔ–BÂ&÷f–FW$–BÂ&÷f–FW$æÖRÂ6×W4æÖRÓ°¢6öç7B6W&–Æ—¦VBÒ¥4ôâç7G&–æv–g’†—FVÒ“°¢–b‡6W&–Æ—¦VBæÆVæwF‚â%óó’F‡&÷ræWrW'&÷"‚tâWV—ÖVçB†÷Fò—2FöòÆ&vRFò7–æ2âÆV6RW6Râ–ÖvRVæFW"ãBÔ"âr“°¢W6W'Bç'Vâ‡&÷f–FW$–BÂ—FVÔ–BÂ&÷f–FW%7FGW2Â&÷f–FW$æÖRÂ6×W4æÖRÂ6W&–Æ—¦VB“°¢6fVB³Ò°¢Ð¢&WGW&â6fVC°¢Ò“°¢G'’°¢6öç7B6fVBÒ6fT—FV×2†—FV×2æf–ÇFW"†—FVÒÓâ7G&–ær†—FVÓòç&÷f–FW$–BÇÂ&÷f–FW$–B’ÓÓÒ&÷f–FW$–B’“°¢&W2æ§6öâ‡²ö³¢G'VRÂ6fVBÒ“°¢Ò6F6‚†W'&÷"’°¢–b†W'&÷"–ç7Fæ6VöbW'&÷"bbW'&÷"æÖW76vRæ–æ6ÇVFW2‚wFöòÆ&vRr’’&WGW&â&W2ç7FGW2ƒC2’æ§6öâ‡²W'&÷#¢W'&÷"æÖW76vRÒ“°¢F‡&÷rW'&÷#°¢Ð§Ò“° ¢òòFòæ÷BW‡÷6RFÖ–âæ‡FÖÂ2æ÷&ÖÂ7FF–276WBâ÷F†W"ÆVv7’g&öçFVæBvW2&VÖ–âf–Æ&ÆRà¦çW6R‚‡&WÂ&W2ÂæW‡B’Óâ°¢–b‡&WçF‚ÓÓÒröFÖ–âæ‡FÖÂr’&WGW&â&WV—&TFÖ–â‡&WÂ&W2ÂæW‡B“°¢æW‡B‚“°§Ò“°¦çW6R‚‡&WÂ&W2ÂæW‡B’Óâ°¢–b‚õåÂòƒó§6W'fW%Âæ§7Ç6¶vRƒó¢ÖÆö6²“õÂæ§6öçÇ&VæFW%Âç–ÖÇÄDÔ”åõ4T5U$•E•õ4UEUÂæÖGÅUDDUôäõDU5µâõÒ§Ä4ÕU4„$UõDU5Eô4„T4´Ä•5EÂçG‡GÆFFƒó¥Â÷ÂB’’ö’çFW7B‡&WçF‚’’°¢&WGW&â&W2ç6VæE7FGW2ƒCB“°¢Ð¢æW‡B‚“°§Ò“°¦çW6R†W‡&W72ç7FF–2…õöF—&æÖRÂ²–æFWƒ¢v–æFW‚æ‡FÖÂrÂF÷Ff–ÆW3¢v–væ÷&RrÂ6WD†VFW'2‡&W2Âf–ÆUF‚’°¢–b†f–ÆUF‚æVæG5v—F‚‚ræ‡FÖÂr’’&W2ç6WD†VFW"‚t66†RÔ6öçG&öÂrÂvæò×7F÷&Rr“°§×Ò’“°¦çW6R‚†W'"Â÷&WÂ&W2ÂöæW‡B’Óâ°¢6öç6öÆRæW'&÷"†W'"“°¢&W2ç7FGW2ƒS’æ§6öâ‡²W'&÷#¢uVæW‡V7FVB6W'fW"W'&÷"ârÒ“°§Ò“° ¦–b„•5õ$ôET5D”ôâbb‚&ö6W72æVçbå4U54”ôåõ4T5$UBÇÂ&ö6W72æVçbäDÔ”åõU4U$äÔRÇÂ&ö6W72æVçbäDÔ”åõ55tõ$B’’°¢6öç6öÆRæW'&÷"‚u&öGV7F–öâ&WV—&W24U54”ôåõ4T5$UBÂDÔ”åõU4U$äÔRÂæBDÔ”åõ55tõ$BVçf—&öæÖVçBf&–&ÆW2âr“°¢&ö6W72æW†—Bƒ“°§Ð¦æÆ—7FVâ…õ%BÂ‚’Óâ6öç6öÆRæÆör†6×W56†&R'Vææ–æröâ÷'BGµõ%GÖ’“° 
+const express = require('express');
+const session = require('express-session');
+const SQLiteStoreFactory = require('connect-sqlite3')(session);
+const Database = require('better-sqlite3');
+const bcrypt = require('bcryptjs');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const path = require('path');
+const fs = require('fs');
+
+const app = express();
+const PORT = Number(process.env.PORT || 3000);
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
+fs.mkdirSync(DATA_DIR, { recursive: true });
+const db = new Database(path.join(DATA_DIR, 'campusshare.sqlite'));
+db.pragma('journal_mode = WAL');
+db.pragma('foreign_keys = ON');
+db.exec(`
+CREATE TABLE IF NOT EXISTS admins (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL UNIQUE,
+  password_hash TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS partnership_applications (
+  id TEXT PRIMARY KEY,
+  reference TEXT NOT NULL UNIQUE,
+  official_email TEXT NOT NULL,
+  campus_name TEXT NOT NULL,
+  provider_name TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'Pending Review' CHECK(status IN ('Pending Review','Verification','Approved','Rejected')),
+  decision_note TEXT NOT NULL DEFAULT '',
+  application_json TEXT NOT NULL DEFAULT '{}',
+  provider_password_hash TEXT,
+  provider_activated_at TEXT,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS admin_audit_log (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  admin_id INTEGER,
+  action TEXT NOT NULL,
+  target_id TEXT,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS provider_equipment (
+  provider_id TEXT NOT NULL,
+  item_id TEXT NOT NULL,
+  provider_status TEXT NOT NULL DEFAULT 'Pending',
+  provider_name TEXT NOT NULL,
+  campus_name TEXT NOT NULL,
+  item_json TEXT NOT NULL,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (provider_id, item_id)
+);
+CREATE INDEX IF NOT EXISTS idx_provider_equipment_status ON provider_equipment(provider_status, updated_at);
+`);
+
+// Upgrade databases created by earlier CampusShare builds without resetting data.
+for (const [name, definition] of [
+  ['application_json', "TEXT NOT NULL DEFAULT '{}'"],
+  ['provider_password_hash', 'TEXT'],
+  ['provider_activated_at', 'TEXT'],
+]) {
+  const columns = db.prepare('PRAGMA table_info(partnership_applications)').all();
+  if (!columns.some(column => column.name === name)) {
+    db.exec(`ALTER TABLE partnership_applications ADD COLUMN ${name} ${definition}`);
+  }
+}
+
+// Bootstrap an admin only from environment variables. Never ship default credentials.
+const bootstrapUser = process.env.ADMIN_USERNAME;
+const bootstrapPassword = process.env.ADMIN_PASSWORD;
+if (bootstrapUser && bootstrapPassword) {
+  if (bootstrapPassword.length < 12) {
+    console.error('ADMIN_PASSWORD must be at least 12 characters. Admin bootstrap skipped.');
+  } else {
+    const existing = db.prepare('SELECT id FROM admins WHERE username = ?').get(bootstrapUser);
+    if (!existing) {
+      db.prepare('INSERT INTO admins (username, password_hash) VALUES (?, ?)')
+        .run(bootstrapUser, bcrypt.hashSync(bootstrapPassword, 12));
+      console.log(`Bootstrapped admin account: ${bootstrapUser}`);
+    }
+  }
+}
+
+app.disable('x-powered-by');
+app.use(helmet({ contentSecurityPolicy: false }));
+app.use(express.json({ limit: '15mb' }));
+app.use(express.urlencoded({ extended: false, limit: '20kb' }));
+app.use(session({
+  name: 'campusshare.admin.sid',
+  secret: process.env.SESSION_SECRET || (IS_PRODUCTION ? undefined : 'local-development-only-change-this-secret'),
+  resave: false,
+  saveUninitialized: false,
+  store: new SQLiteStoreFactory({ db: 'sessions.sqlite', dir: DATA_DIR, concurrentDB: true }),
+  cookie: { httpOnly: true, sameSite: 'lax', secure: IS_PRODUCTION, maxAge: 1000 * 60 * 60 * 4 },
+}));
+
+const loginLimiter = rateLimit({ windowMs: 15 * 60 * 1000, limit: 8, standardHeaders: 'draft-7', legacyHeaders: false,
+  message: { error: 'Too many login attempts. Try again in 15 minutes.' } });
+function requireAdmin(req, res, next) {
+  if (req.session && req.session.admin && req.session.admin.role === 'admin') return next();
+  if (req.path.startsWith('/api/')) return res.status(401).json({ error: 'Admin authentication required.' });
+  return res.redirect('/admin-login.html');
+}
+function audit(adminId, action, targetId = null) {
+  db.prepare('INSERT INTO admin_audit_log (admin_id, action, target_id) VALUES (?, ?, ?)').run(adminId, action, targetId);
+}
+
+app.get('/health', (_req, res) => res.json({ ok: true, service: 'CampusShare', mode: 'prototype' }));
+app.get('/admin', (req, res) => req.session?.admin?.role === 'admin'
+  ? res.sendFile(path.join(__dirname, 'admin.html'))
+  : res.redirect('/admin-login.html'));
+app.get('/admin.html', (req, res) => req.session?.admin?.role === 'admin'
+  ? res.sendFile(path.join(__dirname, 'admin.html'))
+  : res.redirect('/admin-login.html'));
+
+app.post('/api/admin/login', loginLimiter, (req, res, next) => {
+  const username = String(req.body.username || '').trim();
+  const password = String(req.body.password || '');
+  const admin = db.prepare('SELECT id, username, password_hash FROM admins WHERE username = ?').get(username);
+  if (!admin || !bcrypt.compareSync(password, admin.password_hash)) {
+    return res.status(401).json({ error: 'Invalid username or password.' });
+  }
+  req.session.regenerate(err => {
+    if (err) return next(err);
+    req.session.admin = { id: admin.id, username: admin.username, role: 'admin' };
+    req.session.save(err2 => {
+      if (err2) return next(err2);
+      audit(admin.id, 'admin.login');
+      res.json({ ok: true, redirect: '/admin' });
+    });
+  });
+});
+app.get('/api/admin/me', requireAdmin, (req, res) => res.json({ admin: req.session.admin }));
+app.post('/api/admin/logout', requireAdmin, (req, res, next) => {
+  audit(req.session.admin.id, 'admin.logout');
+  req.session.destroy(err => {
+    if (err) return next(err);
+    res.clearCookie('campusshare.admin.sid');
+    res.json({ ok: true, redirect: '/admin-login.html' });
+  });
+});
+
+// Shared database API. Admin-only list/decision routes are protected server-side.
+app.get('/api/admin/partnerships', requireAdmin, (_req, res) => {
+  const rows = db.prepare('SELECT * FROM partnership_applications ORDER BY created_at DESC').all();
+  res.json({ applications: rows.map(row => {
+    let detail = {};
+    try { detail = JSON.parse(row.application_json || '{}'); } catch {}
+    return { ...detail, id: row.id, reference: row.reference, officialEmail: row.official_email,
+      campusName: row.campus_name, providerName: row.provider_name, status: detail.status || row.status,
+      statusNote: row.decision_note, createdAt: row.created_at, updatedAt: row.updated_at,
+      providerAccountStatus: row.provider_activated_at ? 'Activated' : 'Not Activated' };
+  }) });
+});
+app.post('/api/admin/partnerships/sync', requireAdmin, (req, res) => {
+  const applications = req.body?.applications;
+  if (!Array.isArray(applications) || applications.length > 200) {
+    return res.status(400).json({ error: 'A valid partnership list is required.' });
+  }
+  const upsert = db.prepare(`INSERT INTO partnership_applications
+    (id, reference, official_email, campus_name, provider_name, status, decision_note, application_json, updated_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+    ON CONFLICT(id) DO UPDATE SET
+      reference = excluded.reference, official_email = excluded.official_email,
+      campus_name = excluded.campus_name, provider_name = excluded.provider_name,
+      status = excluded.status, decision_note = excluded.decision_note,
+      application_json = excluded.application_json, updated_at = CURRENT_TIMESTAMP`);
+  try {
+    const save = db.transaction(rows => {
+      let saved = 0;
+      for (const row of rows) {
+        const id = String(row?.id || '').trim().slice(0, 120);
+        const reference = String(row?.reference || id).trim().slice(0, 120);
+        const email = String(row?.officialEmail || row?.email || '').trim().toLowerCase().slice(0, 254);
+        const campus = String(row?.campusName || '').trim().slice(0, 200);
+        const provider = String(row?.providerName || '').trim().slice(0, 200);
+        const status = String(row?.status || 'Pending Review');
+        if (!id || !reference || !email || !campus || !provider || !['Pending Review','Verification','Approved','Rejected','Inactive'].includes(status)) continue;
+        const detail = { ...row, id, reference, officialEmail: email, campusName: campus, providerName: provider };
+        delete detail.providerPassword;
+        delete detail.password;
+        const note = String(row?.statusNote || row?.decisionNote || '').slice(0, 1000);
+        upsert.run(id, reference, email, campus, provider, status === 'Inactive' ? 'Rejected' : status, note, JSON.stringify(detail));
+        saved += 1;
+      }
+      return saved;
+    });
+    const saved = save(applications);
+    res.json({ ok: true, saved });
+  } catch (error) {
+    if (String(error.message).includes('UNIQUE')) return res.status(409).json({ error: 'A partnership email or reference is already in use.' });
+    throw error;
+  }
+});
+app.patch('/api/admin/partnerships/:id', requireAdmin, (req, res) => {
+  const status = String(req.body.status || '');
+  const note = String(req.body.decisionNote || '').slice(0, 1000);
+  if (!['Verification', 'Approved', 'Rejected'].includes(status)) return res.status(400).json({ error: 'Invalid status.' });
+  const current = db.prepare('SELECT application_json FROM partnership_applications WHERE id = ?').get(req.params.id);
+  if (!current) return res.status(404).json({ error: 'Application not found.' });
+  let detail = {};
+  try { detail = JSON.parse(current.application_json || '{}'); } catch {}
+  detail.status = status;
+  detail.statusNote = note;
+  detail.statusUpdatedAt = new Date().toISOString();
+  if (status !== 'Approved') {
+    db.prepare('UPDATE partnership_applications SET status = ?, decision_note = ?, application_json = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?')
+      .run(status, note, JSON.stringify(detail), req.params.id);
+  } else {
+    db.prepare('UPDATE partnership_applications SET status = ?, decision_note = ?, application_json = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?')
+      .run(status, note, JSON.stringify(detail), req.params.id);
+  }
+  audit(req.session.admin.id, `partnership.${status.toLowerCase()}`, req.params.id);
+  res.json({ ok: true });
+});
+app.delete('/api/admin/partnerships/:id', requireAdmin, (req, res) => {
+  const result = db.prepare('DELETE FROM partnership_applications WHERE id = ?').run(req.params.id);
+  if (!result.changes) return res.status(404).json({ error: 'Application not found.' });
+  db.prepare('DELETE FROM provider_equipment WHERE provider_id = ?').run(req.params.id);
+  audit(req.session.admin.id, 'partnership.removed', req.params.id);
+  res.json({ ok: true });
+});
+// Partnership records are stored on the server so provider approval and listings are shared across devices.
+app.post('/api/partnerships', rateLimit({ windowMs: 60 * 60 * 1000, limit: 10, standardHeaders: 'draft-7', legacyHeaders: false }), (req, res) => {
+  const campusName = String(req.body.campusName || '').trim().slice(0, 200);
+  const providerName = String(req.body.providerName || '').trim().slice(0, 200);
+  const email = String(req.body.officialEmail || '').trim().toLowerCase().slice(0, 254);
+  if (!campusName || !providerName || !/^\S+@\S+\.\S+$/.test(email)) return res.status(400).json({ error: 'Campus, provider, and valid official email are required.' });
+  const duplicate = db.prepare('SELECT reference FROM partnership_applications WHERE official_email = ?').get(email);
+  if (duplicate) return res.status(409).json({ error: 'An application already exists for this official email. Use the tracking option instead.' });
+  const documents = req.body.verificationDocuments;
+  if (documents && (JSON.stringify(documents).length > 14_000_000
+    || !/^data:image\/(png|jpeg|webp);base64,/i.test(String(documents.representativeId?.dataUrl || ''))
+    || !/^(data:image\/(png|jpeg|webp);base64,|data:application\/pdf;base64,)/i.test(String(documents.authorizationDocument?.dataUrl || '')))) {
+    return res.status(400).json({ error: 'Verification files are missing, unsupported, or too large.' });
+  }
+  const id = require('crypto').randomUUID();
+  const reference = `PART-${require('crypto').randomBytes(3).toString('hex').toUpperCase()}`;
+  const application = { ...req.body, id, reference, officialEmail: email, campusName, providerName,
+    status: 'Pending Review', statusNote: '', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+  delete application.providerPassword;
+  delete application.password;
+  try {
+    db.prepare('INSERT INTO partnership_applications (id, reference, official_email, campus_name, provider_name, application_json) VALUES (?, ?, ?, ?, ?, ?)')
+      .run(id, reference, email, campusName, providerName, JSON.stringify(application));
+    res.status(201).json({ ok: true, id, reference, status: 'Pending Review' });
+  } catch (err) {
+    if (String(err.message).includes('UNIQUE')) return res.status(409).json({ error: 'An application with this reference already exists. Please submit again.' });
+    throw err;
+  }
+});
+app.get('/api/partnerships/track', (req, res) => {
+  const reference = String(req.query.reference || '').trim();
+  const email = String(req.query.email || '').trim().toLowerCase();
+  if (!reference || !email) return res.status(400).json({ error: 'Reference and email are required.' });
+  const row = db.prepare('SELECT * FROM partnership_applications WHERE reference = ? AND official_email = ?').get(reference, email);
+  if (!row) return res.status(404).json({ error: 'No matching application found.' });
+  let detail = {};
+  try { detail = JSON.parse(row.application_json || '{}'); } catch {}
+  delete detail.verificationDocuments;
+  res.json({ application: { ...detail, id: row.id, reference: row.reference, officialEmail: row.official_email,
+    campusName: row.campus_name, providerName: row.provider_name, status: detail.status || row.status,
+    statusNote: row.decision_note, createdAt: row.created_at, updatedAt: row.updated_at,
+    providerAccountStatus: row.provider_activated_at ? 'Activated' : 'Not Activated' } });
+});
+
+app.post('/api/provider/activate', loginLimiter, (req, res) => {
+  const email = String(req.body?.email || '').trim().toLowerCase();
+  const password = String(req.body?.password || '');
+  if (password.length < 12) return res.status(400).json({ error: 'Password must be at least 12 characters.' });
+  const partner = db.prepare('SELECT id, provider_name, campus_name, status, provider_password_hash, provider_activated_at FROM partnership_applications WHERE official_email = ?').get(email);
+  if (!partner) return res.status(404).json({ error: 'No provider application was found for this email.' });
+  if (partner.status !== 'Approved') return res.status(403).json({ error: 'This partnership has not been approved.' });
+  if (partner.provider_activated_at) return res.status(409).json({ error: 'This provider account is already activated. Please log in.' });
+  db.prepare('UPDATE partnership_applications SET provider_password_hash = ?, provider_activated_at = CURRENT_TIMESTAMP WHERE id = ?')
+    .run(bcrypt.hashSync(password, 12), partner.id);
+  res.json({ ok: true });
+});
+app.post('/api/provider/login', loginLimiter, (req, res, next) => {
+  const email = String(req.body?.email || '').trim().toLowerCase();
+  const password = String(req.body?.password || '');
+  const partner = db.prepare('SELECT id, provider_name, campus_name, status, provider_password_hash, provider_activated_at FROM partnership_applications WHERE official_email = ?').get(email);
+  if (!partner || partner.status !== 'Approved' || !partner.provider_activated_at || !partner.provider_password_hash || !bcrypt.compareSync(password, partner.provider_password_hash)) {
+    return res.status(401).json({ error: 'Invalid provider email or password, or the partnership is not approved.' });
+  }
+  req.session.regenerate(err => {
+    if (err) return next(err);
+    req.session.provider = { id: partner.id, providerName: partner.provider_name, campusName: partner.campus_name, officialEmail: email };
+    req.session.save(err2 => {
+      if (err2) return next(err2);
+      res.json({ ok: true, provider: req.session.provider });
+    });
+  });
+});
+app.get('/api/provider/me', (req, res) => {
+  if (!req.session?.provider?.id) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const partner = db.prepare('SELECT status, provider_name, campus_name, official_email FROM partnership_applications WHERE id = ?').get(req.session.provider.id);
+  if (!partner || partner.status !== 'Approved') return res.status(403).json({ error: 'Provider access is not approved.' });
+  res.json({ provider: { id: req.session.provider.id, providerName: partner.provider_name, campusName: partner.campus_name, officialEmail: partner.official_email } });
+});
+app.post('/api/provider/logout', (req, res, next) => {
+  req.session.destroy(err => {
+    if (err) return next(err);
+    res.clearCookie('campusshare.admin.sid');
+    res.json({ ok: true });
+  });
+});
+
+const equipmentApiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, limit: 600, standardHeaders: 'draft-7', legacyHeaders: false });
+app.get('/api/equipment', equipmentApiLimiter, (_req, res) => {
+  const rows = db.prepare("SELECT e.item_json FROM provider_equipment e JOIN partnership_applications p ON p.id = e.provider_id WHERE p.status = 'Approved' AND e.provider_status = 'Approved' ORDER BY e.updated_at DESC").all();
+  const items = rows.flatMap(row => {
+    try {
+      const item = JSON.parse(row.item_json);
+      if (item.isListed === false || ["Unlisted", "Under Review", "Removed"].includes(String(item.listingStatus || item.status || ""))) return [];
+      return [{ ...item, providerApproved: true }];
+    } catch { return []; }
+  });
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ items });
+});
+app.get('/api/provider-equipment/:providerId', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId || providerId !== String(req.params.providerId || '').trim().slice(0, 120)) {
+    return res.status(401).json({ error: 'Provider sign-in required.' });
+  }
+  const rows = db.prepare('SELECT item_json FROM provider_equipment WHERE provider_id = ? ORDER BY updated_at DESC').all(providerId);
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ items: rows.flatMap(row => { try { return [JSON.parse(row.item_json)]; } catch { return []; } }) });
+});
+app.post('/api/provider-equipment/sync', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const partner = db.prepare('SELECT provider_name, campus_name, status FROM partnership_applications WHERE id = ?').get(providerId);
+  if (!partner || partner.status !== 'Approved') return res.status(403).json({ error: 'Only currently approved providers can sync public equipment.' });
+  const providerName = partner.provider_name;
+  const campusName = partner.campus_name;
+  const providerStatus = partner.status;
+  const items = req.body?.items;
+  if (!Array.isArray(items) || items.length > 100) {
+    return res.status(400).json({ error: 'A valid equipment list is required.' });
+  }
+  const upsert = db.prepare(`INSERT INTO provider_equipment
+    (provider_id, item_id, provider_status, provider_name, campus_name, item_json, updated_at)
+    VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+    ON CONFLICT(provider_id, item_id) DO UPDATE SET
+      provider_status = excluded.provider_status,
+      provider_name = excluded.provider_name,
+      campus_name = excluded.campus_name,
+      item_json = excluded.item_json,
+      updated_at = CURRENT_TIMESTAMP`);
+  const saveItems = db.transaction(rows => {
+    let saved = 0;
+    for (const source of rows) {
+      if (!source || typeof source !== 'object') continue;
+      const itemId = String(source.id || '').trim().slice(0, 120);
+      const name = String(source.name || '').trim().slice(0, 200);
+      if (!itemId || !name) continue;
+      const item = { ...source, id: itemId, providerId, providerName, campusName };
+      const serialized = JSON.stringify(item);
+      if (serialized.length > 2_000_000) throw new Error('An equipment photo is too large to sync. Please use an image under 1.4 MB.');
+      upsert.run(providerId, itemId, providerStatus, providerName, campusName, serialized);
+      saved += 1;
+    }
+    return saved;
+  });
+  try {
+    const saved = saveItems(items.filter(item => String(item?.providerId || providerId) === providerId));
+    res.json({ ok: true, saved });
+  } catch (error) {
+    if (error instanceof Error && error.message.includes('too large')) return res.status(413).json({ error: error.message });
+    throw error;
+  }
+});
+
+// Do not expose admin.html as a normal static asset. Other legacy frontend pages remain available.
+app.use((req, res, next) => {
+  if (req.path === '/admin.html') return requireAdmin(req, res, next);
+  next();
+});
+app.use((req, res, next) => {
+  if (/^\/(?:server\.js|package(?:-lock)?\.json|render\.yaml|ADMIN_SECURITY_SETUP\.md|UPDATE_NOTES[^/]*|CAMPUSHARE_TEST_CHECKLIST\.txt|data(?:\/|$))/i.test(req.path)) {
+    return res.sendStatus(404);
+  }
+  next();
+});
+app.use(express.static(__dirname, { index: 'index.html', dotfiles: 'ignore', setHeaders(res, filePath) {
+  if (filePath.endsWith('.html')) res.setHeader('Cache-Control', 'no-store');
+}}));
+app.use((err, _req, res, _next) => {
+  console.error(err);
+  res.status(500).json({ error: 'Unexpected server error.' });
+});
+
+if (IS_PRODUCTION && (!process.env.SESSION_SECRET || !process.env.ADMIN_USERNAME || !process.env.ADMIN_PASSWORD)) {
+  console.error('Production requires SESSION_SECRET, ADMIN_USERNAME, and ADMIN_PASSWORD environment variables.');
+  process.exit(1);
+}
+app.listen(PORT, () => console.log(`CampusShare running on port ${PORT}`));

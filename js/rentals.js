@@ -1,3 +1,1113 @@
-YªçŠx-®éÜj×¢ëiºÚ+Š§j[h‘éÜ¢éíóoyN‹Z–‹­¦ëeŠw¬Ô¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€5AUMM!I5dI9Q1L(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€UII9PMQU9P(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸•ÑÕÉÉ•¹ÑMÑÕ‘•¹Ğ ¤ì((€ÑÉäì((€€€½¹ÍĞÕÉÉ•¹ÑUÍ•È€ô(€€€€€)M=8¹Á…ÉÍ” (€€€€€€€±½…±MÑ½É…”¹•Ñ%Ñ•´ ‰…µÁÕÍM¡…É•ÕÉÉ•¹ÑUÍ•Èˆ¤ñğ€‰¹Õ±°ˆ(€€€€€€¤ì((€€€¥˜€¡ÕÉÉ•¹ÑUÍ•È¤ì(€€€€€É•ÑÕÉ¸ÕÉÉ•¹ÑUÍ•Èì(€€€ô(€€€É•ÑÕÉ¸ÕÉÉ•¹ÑUÍ•Èì()ô…Ñ ì((€€€É•ÑÕÉ¸¹Õ±°ì((€ô()ô(()½¹ÍĞÕÉÉ•¹ÑMÑÕ‘•¹Ğ€ô(€•ÑÕÉÉ•¹ÑMÑÕ‘•¹Ğ ¤ì(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€UQ !,(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()¥˜€ …ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¤ì((€İ¥¹‘½Ü¹±½…Ñ¥½¸¹¡É•˜€ô(€€€€‰±½¥¸¹¡Ñµ°ˆì()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€I9Q0MQ=I(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸•Ñ±±I•¹Ñ…±Ì ¤ì((€ÑÉäì((€€€É•ÑÕÉ¸)M=8¹Á…ÉÍ” (€€€€€±½…±MÑ½É…”¹•Ñ%Ñ•´ ‰…µÁÕÍM¡…É•I•¹Ñ…±Ìˆ¤ñğ€‰mtˆ(€€€€¤ì((€ô…Ñ ì((€€€É•ÑÕÉ¸mtì((€ô()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€MQU9PµMA%%I9Q1L(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸•ÑI•¹Ñ…±Ì ¤ì((€¥˜€ …ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¤ì(€€€É•ÑÕÉ¸mtì(€ô(((€½¹ÍĞÍÑÕ‘•¹Ñ%€ô(€€€MÑÉ¥¹œ (€€€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹ÍÑÕ‘•¹Ñ%ñğ€ˆˆ(€€€€¤(€€€€€€¹ÑÉ¥´ ¤(€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€½¹ÍĞÍÑÕ‘•¹Ñµ…¥°€ô(€€€MÑÉ¥¹œ (€€€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹•µ…¥°ñğ€ˆˆ(€€€€¤(€€€€€€¹ÑÉ¥´ ¤(€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€½¹ÍĞÍÑÕ‘•¹Ñ½Õ¹Ñ%€ô(€€€MÑÉ¥¹œ (€€€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹¥ñğ€ˆˆ(€€€€¤(€€€€€€¹ÑÉ¥´ ¤(€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€É•ÑÕÉ¸•Ñ±±I•¹Ñ…±Ì ¤¹™¥±Ñ•È¡É•¹Ñ…°€ôøì((€€€€¼¨(€€€€€%5A=IQ9Pè(€€€€€=±‘•µ¼É•¹Ñ…±Ìİ¥Ñ¡½ÕĞÍÑÕ‘•¹Ğ½İ¹•ÉÍ¡¥À(€€€€€…É”¥¹Ñ•¹Ñ¥½¹…±±ä•á±Õ‘•¸((€€€€€=¹±äÉ•¹Ñ…±ÌÉ•…Ñ•™½È„ÍÑÕ‘•¹Ğ…½Õ¹Ğ(€€€€€…¸…ÁÁ•…È¥¸5äI•¹Ñ…±Ì¸(€€€€¨¼((€€€½¹ÍĞÉ•¹Ñ…±MÑÕ‘•¹Ñ%€ô(€€€€€MÑÉ¥¹œ (€€€€€€€É•¹Ñ…°¹ÍÑÕ‘•¹Ñ%ñğ€ˆˆ(€€€€€€¤(€€€€€€€€¹ÑÉ¥´ ¤(€€€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€€€½¹ÍĞÉ•¹Ñ…±MÑÕ‘•¹Ñµ…¥°€ô(€€€€€MÑÉ¥¹œ (€€€€€€€É•¹Ñ…°¹ÍÑÕ‘•¹Ñµ…¥°ñğ€ˆˆ(€€€€€€¤(€€€€€€€€¹ÑÉ¥´ ¤(€€€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€€€½¹ÍĞÉ•¹Ñ…±½Õ¹Ñ%€ô(€€€€€MÑÉ¥¹œ (€€€€€€€É•¹Ñ…°¹ÍÑÕ‘•¹Ñ½Õ¹Ñ%ñğ€ˆˆ(€€€€€€¤(€€€€€€€€¹ÑÉ¥´ ¤(€€€€€€€€¹Ñ½1½İ•É…Í” ¤ì(((€€€É•ÑÕÉ¸€ ((€€€€€€ (€€€€€€€ÍÑÕ‘•¹Ñ%€˜˜(€€€€€€€É•¹Ñ…±MÑÕ‘•¹Ñ%€˜˜(€€€€€€€É•¹Ñ…±MÑÕ‘•¹Ñ%€ôôôÍÑÕ‘•¹Ñ%(€€€€€€¤ñğ((€€€€€€ (€€€€€€€ÍÑÕ‘•¹Ñµ…¥°€˜˜(€€€€€€€É•¹Ñ…±MÑÕ‘•¹Ñµ…¥°€˜˜(€€€€€€€É•¹Ñ…±MÑÕ‘•¹Ñµ…¥°€ôôôÍÑÕ‘•¹Ñµ…¥°(€€€€€€¤ñğ((€€€€€€ (€€€€€€€ÍÑÕ‘•¹Ñ½Õ¹Ñ%€˜˜(€€€€€€€É•¹Ñ…±½Õ¹Ñ%€˜˜(€€€€€€€É•¹Ñ…±½Õ¹Ñ%€ôôôÍÑÕ‘•¹Ñ½Õ¹Ñ%(€€€€€€¤((€€€€¤ì((€ô¤ì()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€=I5PQ(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸™½Éµ…Ñ…Ñ”¡‘…Ñ”¤ì((€É•ÑÕÉ¸¹•Ü…Ñ” (€€€‘…Ñ”€¬€‰PÀÀèÀÀèÀÀˆ(€€¤(€€€€¹Ñ½1½…±•…Ñ•MÑÉ¥¹œ (€€€€€€‰•¸µA ˆ°(€€€€€ì(€€€€€€€µ½¹Ñ è€‰Í¡½ÉĞˆ°(€€€€€€€‘…äè€‰¹Õµ•É¥Œˆ°(€€€€€€€å•…Èè€‰¹Õµ•É¥Œˆ(€€€€€ô(€€€€¤ì()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€UAQMQU9P%9<(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸ÕÁ‘…Ñ•MÑÕ‘•¹Ñ%¹™¼ ¤ì((€¥˜€ …ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¤É•ÑÕÉ¸ì(((€½¹ÍĞ¹…µ”€ô(€€€l(€€€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹™¥ÉÍÑ9…µ”°(€€€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹±…ÍÑ9…µ”(€€€t(€€€€€€¹™¥±Ñ•È¡	½½±•…¸¤(€€€€€€¹©½¥¸ ˆ€ˆ¤(€€€€€€¹ÑÉ¥´ ¤ñğ((€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹¹…µ”ñğ((€€€€‰MÑÕ‘•¹Ğˆì(((€½¹ÍĞÍÑÕ‘•¹Ñ%€ô(€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹ÍÑÕ‘•¹Ñ%ñğ((€€€€‰MÑÕ‘•¹Ğˆì(((€½¹ÍĞÍ¡½½°€ô(€€€ÕÉÉ•¹ÑMÑÕ‘•¹Ğ¹Í¡½½°ñğ((€€€€‰…µÁÕÍM¡…É”MÑÕ‘•¹Ğˆì(((€½¹ÍĞ¥¹¥Ñ¥…±Ì€ô(€€€¹…µ”(€€€€€€¹ÍÁ±¥Ğ ˆ€ˆ¤(€€€€€€¹µ…À¡İ½É€ôøİ½É‘lÁt¤(€€€€€€¹©½¥¸ ˆˆ¤(€€€€€€¹ÍÕ‰ÍÑÉ¥¹œ À°€È¤(€€€€€€¹Ñ½UÁÁ•É…Í” ¤ì(((€½¹ÍĞÍ¥‘•‰…É9…µ”€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰Í¥‘•‰…É9…µ”ˆ(€€€€¤ì((€½¹ÍĞÍ¥‘•‰…ÉMÑÕ‘•¹Ñ%€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰Í¥‘•‰…ÉMÑÕ‘•¹Ñ%ˆ(€€€€¤ì((€½¹ÍĞİ•±½µ•9…µ”€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰İ•±½µ•9…µ”ˆ(€€€€¤ì((€½¹ÍĞÍ¥‘•‰…ÉÙ…Ñ…È€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰Í¥‘•‰…ÉÙ…Ñ…Èˆ(€€€€¤ì((€½¹ÍĞÁÉ½™¥±•	ÕÑÑ½¸€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰ÁÉ½™¥±•	ÕÑÑ½¸ˆ(€€€€¤ì(((€¥˜€¡Í¥‘•‰…É9…µ”¤ì((€€€Í¥‘•‰…É9…µ”¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€¹…µ”ì((€ô(((€¥˜€¡Í¥‘•‰…ÉMÑÕ‘•¹Ñ%¤ì((€€€Í¥‘•‰…ÉMÑÕ‘•¹Ñ%¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€€‘íÍÑÕ‘•¹Ñ%‘ôƒ
-Ü€‘íÍ¡½½±õ€ì((€ô(((€¥˜€¡İ•±½µ•9…µ”¤ì((€€€İ•±½µ•9…µ”¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€¹…µ”¹ÍÁ±¥Ğ ˆ€ˆ¥lÁtì((€ô(((€¥˜€¡Í¥‘•‰…ÉÙ…Ñ…È¤ì((€€€Í¥‘•‰…ÉÙ…Ñ…È¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€¥¹¥Ñ¥…±Ì¹¡…ÉĞ À¤ì((€ô(((€¥˜€¡ÁÉ½™¥±•	ÕÑÑ½¸¤ì((€€€ÁÉ½™¥±•	ÕÑÑ½¸¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€¥¹¥Ñ¥…±Ì¹¡…ÉĞ À¤ì((€ô()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€UAQI9Q0MQQL(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸ÕÁ‘…Ñ•MÑ…ÑÌ ¤ì((€½¹ÍĞÉ•¹Ñ…±Ì€ô(€€€•ÑI•¹Ñ…±Ì ¤ì(((€½¹ÍĞÑ½Ñ…°€ô(€€€É•¹Ñ…±Ì¹±•¹Ñ ì(((€½¹ÍĞ…Ñ¥Ù”€ô(€€€É•¹Ñ…±Ì¹™¥±Ñ•È (€€€€€É•¹Ñ…°€ôø(€€€€€€€É•¹Ñ…°¹ÍÑ…ÑÕÌ€ôôô€‰Ñ¥Ù”ˆ(€€€€¤¹±•¹Ñ ì(((€½¹ÍĞÁ•¹‘¥¹œ€ô(€€€É•¹Ñ…±Ì¹™¥±Ñ•È (€€€€€É•¹Ñ…°€ôø(€€€€€€€É•¹Ñ…°¹ÍÑ…ÑÕÌ€ôôô€‰A•¹‘¥¹œˆ(€€€€¤¹±•¹Ñ ì(((€½¹ÍĞ½µÁ±•Ñ•€ô(€€€É•¹Ñ…±Ì¹™¥±Ñ•È (€€€€€É•¹Ñ…°€ôø(€€€€€€€É•¹Ñ…°¹ÍÑ…ÑÕÌ€ôôô€‰½µÁ±•Ñ•ˆñğ(€€€€€€€É•¹Ñ…°¹ÍÑ…ÑÕÌ€ôôô€‰I•ÑÕÉ¹•ˆ(€€€€¤¹±•¹Ñ ì(((€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€‰Ñ½Ñ…±I•¹Ñ…±Ìˆ(€€¤¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€Ñ½Ñ…°ì(((€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€‰…Ñ¥Ù•I•¹Ñ…±Ìˆ(€€¤¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€…Ñ¥Ù”ì(((€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€‰Á•¹‘¥¹I•¹Ñ…±Ìˆ(€€¤¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€Á•¹‘¥¹œì(((€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€‰½µÁ±•Ñ•‘I•¹Ñ…±Ìˆ(€€¤¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€½µÁ±•Ñ•ì(((€ÕÁ‘…Ñ•]•±½µ•5•ÍÍ…” (€€€…Ñ¥Ù”°(€€€Á•¹‘¥¹œ(€€¤ì()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€]1=55MM(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸ÕÁ‘…Ñ•]•±½µ•5•ÍÍ…” (€…Ñ¥Ù”°(€Á•¹‘¥¹œ(¤ì((€½¹ÍĞµ•ÍÍ…”€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰İ•±½µ•5•ÍÍ…”ˆ(€€€€¤ì(((€¥˜€ …µ•ÍÍ…”¤É•ÑÕÉ¸ì(((€¥˜€ (€€€…Ñ¥Ù”€ø€À€˜˜(€€€Á•¹‘¥¹œ€ø€À(€€¤ì((€€€µ•ÍÍ…”¹¥¹¹•É!Q50€ô(€€€€€e½Ô¡…Ù”€ñˆ±…ÍÌô‰É••¸µÑ•áĞˆø‘í…Ñ¥Ù•ô…Ñ¥Ù”É•¹Ñ…°‘í…Ñ¥Ù”€ø€Ä€ü€‰Ìˆ€è€ˆ‰ôğ½ˆø…¹€ñˆ±…ÍÌô‰å•±±½ÜµÑ•áĞˆø‘íÁ•¹‘¥¹ôÁ•¹‘¥¹œ…ÁÁÉ½Ù…°‘íÁ•¹‘¥¹œ€ø€Ä€ü€‰Ìˆ€è€ˆ‰ôğ½ˆø¹€ì((€ô((€•±Í”¥˜€¡…Ñ¥Ù”€ø€À¤ì((€€€µ•ÍÍ…”¹¥¹¹•É!Q50€ô(€€€€€e½ÔÕÉÉ•¹Ñ±ä¡…Ù”€ñˆ±…ÍÌô‰É••¸µÑ•áĞˆø‘í…Ñ¥Ù•ô…Ñ¥Ù”É•¹Ñ…°‘í…Ñ¥Ù”€ø€Ä€ü€‰Ìˆ€è€ˆ‰ôğ½ˆø¹€ì((€ô((€•±Í”¥˜€¡Á•¹‘¥¹œ€ø€À¤ì((€€€µ•ÍÍ…”¹¥¹¹•É!Q50€ô(€€€€€e½Ô¡…Ù”€ñˆ±…ÍÌô‰å•±±½ÜµÑ•áĞˆø‘íÁ•¹‘¥¹ôÉ•¹Ñ…°É•ÅÕ•ÍĞ‘íÁ•¹‘¥¹œ€ø€Ä€ü€‰Ìˆ€è€ˆ‰ôğ½ˆø…İ…¥Ñ¥¹œ…ÁÁÉ½Ù…°¹€ì((€ô((€•±Í”ì((€€€µ•ÍÍ…”¹Ñ•áÑ½¹Ñ•¹Ğ€ô(€€€€€€‰e½ÔÕÉÉ•¹Ñ±ä¡…Ù”¹¼…Ñ¥Ù”½ÈÁ•¹‘¥¹œÉ•¹Ñ…±Ì¸ˆì((€ô()ô(((¼¨€ôôôôôôôôôôôôôôôôôôôôôôôôô(€€UII9PI9Q0(ôôôôôôôôôôôôôôôôôôôôôôôôô€¨¼()™Õ¹Ñ¥½¸É•¹‘•ÉÕÉÉ•¹ÑI•¹Ñ…° ¤ì((€½¹ÍĞ½¹Ñ…¥¹•È€ô(€€€‘½Õµ•¹Ğ¹•Ñ±•µ•¹Ñ	å% (€€€€€€‰ÕÉÉ•¹ÑI•¹Ñ…°ˆ(€€€€¤ì(((€¥˜€ …½¹Ñ…¥¹•È¤É•ÑÕÉ¸ì(((€½¹ÍĞÉ•¹Ñ…±Ì€ô(€€€•ÑI•¹Ñ…±Ì ¤ì(((€½¹ÍĞ…Ñ¥Ù•I•¹Ñ…°€ô(€€€É•¹Ñ…±Ì¹™¥¹ (€€€€€É•¹Ñ…°€ôø(€€€€€€€É•¹Ñ…°¹ÍÑ…ÑÕÌ€ôôô€‰Ñ¥Ù”ˆ(€€€€¤ì(((€¥˜€ ……Ñ¥Ù•I•¹Ñ…°¤ì((€€€½¹Ñ…¥¹•È¹¥¹¹•É!Q50€ô€(€€€€€€ñ…ÉÑ¥±”±…ÍÌô‰É•¹Ñ…°µ…Éˆø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰•ÅÕ¥Áµ•¹Ğµ¥½¸ˆø(€€€€€€€€€ƒŠP(€€€€€€€€ğ½‘¥Øø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•¹Ñ…°µ¥¹™¼ˆø((€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•¹Ñ…°µÑ¥Ñ±”µÉ½Üˆø((€€€€€€€€€€€€ñÍÑÉ½¹œø(€€€€€€€€€€€€€9¼…Ñ¥Ù”É•¹Ñ…°(€€€€€€€€€€€€ğ½ÍÑÉ½¹œø((€€€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰ÍÑ…ÑÕÌµÁ¥±°ˆø(€€€€€€€€€€€€€9½¹”(€€€€€€€€€€€€ğ½ÍÁ…¸ø((€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰µÕÑ•ˆø(€€€€€€€€€€€e½ÔÕÉÉ•¹Ñ±ä¡…Ù”¹¼…Ñ¥Ù”•ÅÕ¥Áµ•¹ĞÉ•¹Ñ…°¸(€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰‘Õ”ˆø(€€€€€€€€€€€	É½İÍ”…Ù…¥±…‰±”•ÅÕ¥Áµ•¹ĞÑ¼ÍÑ…ÉĞ„¹•ÜÉ•¹Ñ…°¸(€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€ğ½‘¥Øø((€€€€€€ğ½…ÉÑ¥±”ø(€€€€ì((€€€É•ÑÕÉ¸ì((€ô(((€½¹Ñ…¥¹•È¹¥¹¹•É!Q50€ô€(€€€€ñ…ÉÑ¥±”±…ÍÌô‰É•¹Ñ…°µ…Éˆø((€€€€€€ñ‘¥Ø±…ÍÌô‰•ÅÕ¥Áµ•¹Ğµ¥½¸ˆø(€€€€€€€ƒŠZŒ(€€€€€€ğ½‘¥Øø((€€€€€€ñ‘¥Ø±…ÍÌô‰É•¹Ñ…°µ¥¹™¼ˆø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•¹Ñ…°µÑ¥Ñ±”µÉ½Üˆø((€€€€€€€€€€ñÍÑÉ½¹œø(€€€€€€€€€€€€‘í…Ñ¥Ù•I•¹Ñ…°¹•ÅÕ¥Áµ•¹Ñô(€€€€€€€€€€ğ½ÍÑÉ½¹œø((€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰ÍÑ…ÑÕÌµÁ¥±°ÍÕ•ÍÌˆø(€€€€€€€€€€€Ñ¥Ù”(€€€€€€€€€€ğ½ÍÁ…¸ø((€€€€€€€€ğ½‘¥Øø((€€€€€€€€ñ‘¥Ø±…ÍÌô‰µÕÑ•ˆø(€€€€€€€€€€‘í…Ñ¥Ù•I•¹Ñ…°¹ÁÉ½Ù¥‘•Éô(€€€€€€€€€ƒ
-Ü(€€€€€€€€€€‘í™½Éµ…Ñ…Ñ”¡…Ñ¥Û}½æÚ$z{-®éÜj×Gƒ¶&6¶w&÷VæC¢6ffc¶F—7Æ“¦fÆWƒ¶v£gƒ¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶Æ–vâÖ—FV×3¦fÆW‚×7F'C¶fÆW‚×w&§w&#à¢ÆF—b6Æ73Ò'&VçFÂÖ–æfò"7G–ÆSÒ&fÆWƒ£¶Ö–â×v–GFƒ£#3‚#à¢ÆF—b6Æ73Ò'&VçFÂ×F—FÆR×&÷r#ãÇ7G&öæsâG·6fR‡"æWV—ÖVçBÇÂ$WV—ÖVçB"—ÓÂ÷7G&öæsãÇ7â6Æ73Ò&&FvR#âG·6fR‡7FGW2—ÓÂ÷7ããÂöF—cà¢Ç6Æ73Ò&×WFVB#âG·6fR‡"ç&÷f–FW"ÇÂ"æ6×W4æÖRÇÂ$6×W56†&R&÷f–FW""—Ò+r&WVW7B2G·6fR‡"ç&VbÇÂ.(	B"—ÓÂ÷à¢Çå&VçFÂW&–öC¢G·6fR†F—7Æ•&VçFÄFFR‡"ç7F'B’—Ò(	2G·6fR†F—7Æ•&VçFÄFFR‡"æVæB’—ÓÂ÷à¢ÇäGW&F–öã¢G·6fR†GW&F–öâ—Ò+r&FS¢(+G´çVÖ&W"‡"æ†÷W&Ç•&FRóò"ç&–6UW$†÷W"óò’çFôÆö6ÆU7G&–ær‚—Òö†÷W#Â÷à¢Çå–6·WòW6RÆö6F–öã¢G·6fR‡"ç–6·WÇÂ"ç–6·WÆö6F–öâÇÂ%&÷f–FW"ÖFW6–væFVBÆö6F–öâ"—ÓÂ÷à¢Ç7G&öæsäW7F–ÖFVBF÷FÃ¢(+G´çVÖ&W"‡"çF÷FÂÇÂ’çFôÆö6ÆU7G&–ær‚—ÓÂ÷7G&öæsà¢Ç6Æ73Ò&×WFVB#å–ÖVçC¢G·6fR‡"ç–ÖVçE7FGW2ÇÂ$æ÷B6–×VÆFVB–WB"—Ò+rG·6fR‡"ç–ÖVçBÇÂ$FVÖòÖWF†öB"—ÓÂ÷à¢G·"ç7FGW5WFFVDBòÇ6Æ73Ò&×WFVB#äÆ7BWFFVC¢G·6fR†F—7Æ•&VçFÄFFR‡"ç7FGW5WFFVDB’—ÓÂ÷æ¢"'Ğ¢G·&F–æt&Æö6·Ğ¢ÂöF—cà¢Æ'WGFöâG—SÒ&'WGFöâ"6Æ73Ò&ÖöFÂ×6V6öæF'’"FF×f–Wr×&VçFÃÒ"G·6fR‡"ç&VbÇÂ""—Ò#åf–WrFWF–Ç3Âö'WGFöãà¢Âö'F–6ÆSæ°¢Ò’æ¦ö–â‚""“° ¢Æ—7BçVW'•6VÆV7F÷$ÆÂ‚%¶FF×f–Wr×&VçFÅÒ"’æf÷$V6‚†'WGFöâÓâ'WGFöâæFDWfVçDÆ—7FVæW"‚&6Æ–6²"Â‚’Óâ°¢6öç7B&VçFÂÒ&VçFÇ2æf–æB‡"Óâ7G&–ær‡"ç&VbÇÂ""’ÓÓÒ'WGFöâæFF6WBçf–Wu&VçFÂ“°¢–b‚&VçFÂ’&WGW&ã°¢6öç7BÖöFÂÒFö7VÖVçBævWDVÆVÖVçD'”–B‚'&VçFÄÖöFÂ"“°¢6öç7BWBÒ†–BÂfÇVR’Óâ²6öç7BVÂÒFö7VÖVçBævWDVÆVÖVçD'”–B†–B“²–b†VÂ’VÂçFW‡D6öçFVçBÒfÇVS²Ó°¢WB‚&ÖöFÄWV—ÖVçB"Â&VçFÂæWV—ÖVçBÇÂ$WV—ÖVçB"“°¢WB‚&ÖöFÅ&÷f–FW""ÂG·&VçFÂç&÷f–FW"ÇÂ&VçFÂæ6×W4æÖRÇÂ%&÷f–FW"'Ò+r(+G´çVÖ&W"‡&VçFÂçF÷FÂÇÂ’çFôÆö6ÆU7G&–ær‚—Ö“°¢WB‚&ÖöFÅ7FGW2"Â&VçFÂç7FGW2ÇÂ%VæF–ær"“°¢6öç7B6fTÖöFÅFW‡BÒfÇVRÓâ7G&–ær‡fÇVRóò""’ç&WÆ6R‚õ²cÃâ"uÒörÂ6‚Óâ‡²"b#¢"f×²"Â#Â#¢"fÇC²"Â#â#¢"fwC²"Âr"s¢"gV÷C²"Â"r#¢"b33“²'Õ¶6…Ò’“°¢6öç7BW&–öEFW‡BÒG¶F—7Æ•&VçFÄFFR‡&VçFÂç7F'B—Ò(	2G¶F—7Æ•&VçFÄFFR‡&VçFÂæVæB—Ö°¢6öç7BGW&F–öåFW‡BÒ&VçFÂæ†÷W'2òG·&VçFÂæ†÷W'7Ò†÷W"G´çVÖ&W"‡&VçFÂæ†÷W'2’ÓÓÒò""¢'2'Ö¢‡&VçFÂæF—2òG·&VçFÂæF—7ÒF’G´çVÖ&W"‡&VçFÂæF—2’ÓÓÒò""¢'2'Ö¢$æ÷B&÷f–FVB"“°¢6öç7B–6·WFW‡BÒ&VçFÂç–6·WÇÂ&VçFÂç–6·WÆö6F–öâÇÂ%&÷f–FW"ÖFW6–væFVBÆö6F–öâ#°¢6öç7B–ÖVçEFW‡BÒ&VçFÂç–ÖVçBÇÂ&VçFÂç–ÖVçDÖWF†öBÇÂ$æ÷B&÷f–FVB#°¢6öç7BF÷FÅFW‡BÒ(+G´çVÖ&W"‡&VçFÂçF÷FÂÇÂ’çFôÆö6ÆU7G&–ær‚—Ö°¢6öç7B&VfW&Væ6UFW‡BÒ&VçFÂç–ÖVçE&VfW&Væ6RÇÂ&VçFÂæFVÖõ–ÖVçE&VfW&Væ6RÇÂ&VçFÂç&VfW&Væ6TçVÖ&W"ÇÂ$æ÷BvVæW&FVB#°¢WB‚&ÖöFÅW&–öB"ÂW&–öEFW‡BÇÂ$æ÷B&÷f–FVB"“°¢WB‚&ÖöFÄGW&F–öâ"ÂGW&F–öåFW‡B“°¢WB‚&ÖöFÅ–6·W"Â–6·WFW‡B“°¢WB‚&ÖöFÅ–ÖVçB"Â–ÖVçEFW‡B“°¢WB‚&ÖöFÅF÷FÂ"ÂF÷FÅFW‡B“°¢WB‚&ÖöFÅ&VfW&Væ6R"Â&VfW&Væ6UFW‡B“°¢6öç7BFWF–Ç2ÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&ÖöFÄFWF–Ç2"“°¢–b†FWF–Ç2’FWF–Ç2æ–ææW$…DÔÂÒÇãÆ#å&WVW7B”C£Âö#âG·6fTÖöFÅFW‡B‡&VçFÂç&VbÇÂ$æ÷B76–væVB"—ÓÂ÷ãÇãÆ#äÆ7BWFFVC£Âö#âG·6fTÖöFÅFW‡B‡&VçFÂç7FGW5WFFVDBòF—7Æ•&VçFÄFFR‡&VçFÂç7FGW5WFFVDB’¢$æò7FGW2WFFR&V6÷&FVB"—ÓÂ÷æ°¢6öç7BF–ÖVÆ–æRÒFö7VÖVçBævWDVÆVÖVçD'”–B‚'&VçFÅF–ÖVÆ–æR"“°¢–b‡F–ÖVÆ–æR’°¢6öç7B7FW2Ò°¢²%&WVW7B7V&Ö—GFVB"Â&VçFÂæ7&VFVDBÇÂ&VçFÂç&WVW7FVDEÒÀ¢²%&÷f–FW"FV6—6–öâ"Â&VçFÂæ&÷fVDBÇÂ&VçFÂç7FGW5WFFVDEÒÀ¢²%&VçFÂ7F'FVB"Â&VçFÂç7F'FVDEÒÀ¢²%&WGW&æVBò6ö×ÆWFVB"Â&VçFÂæ6ö×ÆWFVDBÇÂ&VçFÂç&WGW&æVDEĞ¢Ó°¢6öç7Bf–Æ&ÆU7FW2Ò7FW2æf–ÇFW"‚…²ÂFFUÒ’ÓâFFR“°¢F–ÖVÆ–æRæ–ææW$…DÔÂÒf–Æ&ÆU7FW2æÆVæwF€¢òf–Æ&ÆU7FW2æÖ‚…¶Æ&VÂÂFFUÒ’ÓâÆF—b6Æ73Ò'F–ÖVÆ–æRÖ—FVÒ#ãÇ7G&öæsâG·6fTÖöFÅFW‡B†Æ&VÂ—ÓÂ÷7G&öæsãÇ6ÖÆÃâG·6fTÖöFÅFW‡B†F—7Æ•&VçFÄFFR†FFR’—ÓÂ÷6ÖÆÃãÂöF—cæ’æ¦ö–â‚""¢¢Ç6Æ73Ò'F–ÖVÆ–æRÖV×G’#äæòF–ÖVÆ–æRWfVçG2†fR&VVâ&V6÷&FVB–WBâ7W'&VçB7FGW3¢G·6fTÖöFÅFW‡B‡&VçFÂç7FGW2ÇÂ%VæF–ær"—ÒãÂ÷æ°¢Ğ¢6öç7Bæ÷F–6RÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&ÖöFÄæ÷F–6R"“°¢–b†æ÷F–6R’æ÷F–6RçFW‡D6öçFVçBÒ7W'&VçB7FGW3¢G·&VçFÂç7FGW2ÇÂ%VæF–ær'ÒâG·&VçFÂç7FGW2ÓÓÒ$6ö×ÆWFVB"ÇÂ&VçFÂç7FGW2ÓÓÒ%&WGW&æVB"ò%–÷R6â7V&Ö—B&F–ærf÷"F†—26ö×ÆWFVB&VçFÂâ"¢%WFFW2v–ÆÂV"†W&Rv†VâF†R&VçFÂ7FGW26†ævW2â'Ö°¢ÖöFÃòæ6Æ74Æ—7BæFB‚'6†÷r"“°¢ÖöFÃòæ6Æ74Æ—7Bç&VÖ÷fR‚&†–FFVâ"“°¢Ò’“° ¢Æ—7BçVW'•6VÆV7F÷$ÆÂ‚%¶FF×7V&Ö—B×&F–æuÒ"’æf÷$V6‚†'WGFöâÓâ'WGFöâæFDWfVçDÆ—7FVæW"‚&6Æ–6²"Â‚’Óâ°¢6öç7B&VbÒ'WGFöâæFF6WBç7V&Ö—E&F–æs°¢6öç7B&VçFÂÒ&VçFÇ2æf–æB‡&÷rÓâ7G&–ær‡&÷rç&VbÇÂ""’ÓÓÒ7G&–ær‡&Vb’“°¢–b‚&VçFÂÇÂ²$6ö×ÆWFVB"Â%&WGW&æVB%Òæ–æ6ÇVFW2‡&VçFÂç7FGW2’ÇÂ÷7V66W76gVÂö’çFW7B…7G&–ær‡&VçFÂç–ÖVçE7FGW2ÇÂ""’’’²ÆW'B‚$öæÇ’6ö×ÆWFVB&VçFÇ2v—F‚7V66W76gVÂFVÖò–ÖVçB6â&R&FVBâ"“²&WGW&ã²Ğ¢ÆWB&F–æw2ÒµÓ°¢G'’²&F–æw2Ò¥4ôâç'6R†Æö6Å7F÷&vRævWD—FVÒ‚&6×W56†&U&F–æw2"’ÇÂ%µÒ"“²–b‚'&’æ—4'&’‡&F–æw2’’&F–æw2ÒµÓ²Ò6F6‚²&F–æw2ÒµÓ²Ğ¢–b‡&F–æw2ç6öÖR‡&÷rÓâ7G&–ær‡&÷rç&VçFÅ&Vb’ÓÓÒ7G&–ær‡&Vb’’’²ÆW'B‚%–÷R†fRÇ&VG’&FVBF†—2&VçFÂâ"“²&VæFW$×•&VçFÇ2‚“²&WGW&ã²Ğ¢6öç7BVF—F÷"Ò'WGFöâæ6Æ÷6W7B‚%¶FF×&F–ærÖVF—F÷%Ò"“°¢6öç7B&F–ærÒçVÖ&W"†VF—F÷#òçVW'•6VÆV7F÷"‚%¶FF×&F–ær×fÇVUÒ"“òçfÇVRÇÂR“°¢6öç7B&Wf–WrÒ7G&–ær†VF—F÷#òçVW'•6VÆV7F÷"‚%¶FF×&F–ær×&Wf–WuÒ"“òçfÇVRÇÂ""’çG&–Ò‚“°¢&F–æw2çW6‚‡²–C¢%$DRÒ"²FFRææ÷r‚’Â&VçFÅ&Vc¢7G&–ær‡&Vb’ÂWV—ÖVçD–C¢7G&–ær‡&VçFÂæWV—ÖVçD–BÇÂ&VçFÂæ—FVÔ–BÇÂ""’ÂWV—ÖVçC¢7G&–ær‡&VçFÂæWV—ÖVçBÇÂ$WV—ÖVçB"’Â&÷f–FW#¢7G&–ær‡&VçFÂç&÷f–FW"ÇÂ&VçFÂæ6×W4æÖRÇÂ$6×W56†&R&÷f–FW""’Â7GVFVçD–C¢7G&–ær†7W'&VçE7GVFVçCòç7GVFVçD–BÇÂ7W'&VçE7GVFVçCòæ–BÇÂ""’Â7GVFVçDæÖS¢¶7W'&VçE7GVFVçCòæf—'7DæÖRÂ7W'&VçE7GVFVçCòæÆ7DæÖUÒæf–ÇFW"„&ööÆVâ’æ¦ö–â‚""’çG&–Ò‚’ÇÂ7W'&VçE7GVFVçCòææÖRÇÂ%7GVFVçB"Â&F–ærÂ&Wf–WrÂ7&VFVDC¢æWrFFR‚’çFô•4õ7G&–ær‚’Ò“°¢Æö6Å7F÷&vRç6WD—FVÒ‚&6×W56†&U&F–æw2"Â¥4ôâç7G&–æv–g’‡&F–æw2’“°¢&VæFW$×•&VçFÇ2‚“°¢ÆW'B‚%F†æ²–÷R–÷W"FVÖò&F–ær†2&VVâ6fVBâ"“°¢Ò’“°§Ğ ¦Fö7VÖVçBçVW'•6VÆV7F÷$ÆÂ‚%¶FFÖf–ÇFW%Ò"’æf÷$V6‚†'WGFöâÓâ'WGFöâæFDWfVçDÆ—7FVæW"‚&6Æ–6²"Â‚’Óâ°¢7F—fU&VçFÄf–ÇFW"Ò'WGFöâæFF6WBæf–ÇFW"ÇÂ&ÆÂ#°¢Fö7VÖVçBçVW'•6VÆV7F÷$ÆÂ‚%¶FFÖf–ÇFW%Ò"’æf÷$V6‚‡F"ÓâF"æ6Æ74Æ—7BçFövvÆR‚&7F—fR"ÂF"ÓÓÒ'WGFöâ’“°¢&VæFW$×•&VçFÇ2‚“°§Ò’“° ¦6öç7B&VçFÄÖöFÄVÆVÖVçBÒFö7VÖVçBævWDVÆVÖVçD'”–B‚'&VçFÄÖöFÂ"“°¦6öç7B6Æ÷6U&VçFÄÖöFÂÒFö7VÖVçBævWDVÆVÖVçD'”–B‚&6Æ÷6TÖöFÂ"“°¦–b†6Æ÷6U&VçFÄÖöFÂ’6Æ÷6U&VçFÄÖöFÂæFDWfVçDÆ—7FVæW"‚&6Æ–6²"Â‚’Óâ°¢&VçFÄÖöFÄVÆVÖVçCòæ6Æ74Æ—7Bç&VÖ÷fR‚'6†÷r"“°¢&VçFÄÖöFÄVÆVÖVçCòæ6Æ74Æ—7BæFB‚&†–FFVâ"“°§Ò“°¦–b‡&VçFÄÖöFÄVÆVÖVçB’&VçFÄÖöFÄVÆVÖVçBæFDWfVçDÆ—7FVæW"‚&6Æ–6²"ÂWfVçBÓâ°¢–b†WfVçBçF&vWBÓÓÒ&VçFÄÖöFÄVÆVÖVçB’°¢&VçFÄÖöFÄVÆVÖVçBæ6Æ74Æ—7Bç&VÖ÷fR‚'6†÷r"“°¢&VçFÄÖöFÄVÆVÖVçBæ6Æ74Æ—7BæFB‚&†–FFVâ"“°¢Ğ§Ò“° ¢òò&Vg&W6‚v†Vâæ÷F†W"vR÷F"6†ævW2F†R6†&VBÆö6Å7F÷&vR&VçFÂ&V6÷&G2à§v–æF÷ræFDWfVçDÆ—7FVæW"‚'7F÷&vR"ÂWfVçBÓâ°¢–b†WfVçBæ¶W’ÓÓÒ&6×W56†&U&VçFÇ2"’&VæFW$×•&VçFÇ2‚“°§Ò“° ¢ò¢ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓĞ¢”ä•D”Ä•¤P£ÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÓÒ¢ğ §WFFU7GVFVçD–æfò‚“°§&VæFW$×•&VçFÇ2‚“°§&VæFW$7W'&VçE&VçFÂ‚“°§&VæFW%&V6VçE&VçFÂ‚“°§&VæFW%&V6VçDæ÷F–f–6F–öç2‚“°§WFFTæ÷F–f–6F–öä&FvR‚“° 
+/* =========================
+   CAMPUSSHARE MY RENTALS
+========================= */
+
+
+/* =========================
+   CURRENT STUDENT
+========================= */
+
+function getCurrentStudent() {
+
+  try {
+
+    const currentUser =
+      JSON.parse(
+        localStorage.getItem("campusShareCurrentUser") || "null"
+      );
+
+    if (currentUser) {
+      return currentUser;
+    }
+    return currentUser;
+
+} catch {
+
+    return null;
+
+  }
+
+}
+
+
+const currentStudent =
+  getCurrentStudent();
+
+
+/* =========================
+   AUTH CHECK
+========================= */
+
+if (!currentStudent) {
+
+  window.location.href =
+    "login.html";
+
+}
+
+
+/* =========================
+   RENTAL STORAGE
+========================= */
+
+function getAllRentals() {
+
+  try {
+
+    return JSON.parse(
+      localStorage.getItem("campusShareRentals") || "[]"
+    );
+
+  } catch {
+
+    return [];
+
+  }
+
+}
+
+
+/* =========================
+   STUDENT-SPECIFIC RENTALS
+========================= */
+
+function getRentals() {
+
+  if (!currentStudent) {
+    return [];
+  }
+
+
+  const studentId =
+    String(
+      currentStudent.studentId || ""
+    )
+      .trim()
+      .toLowerCase();
+
+
+  const studentEmail =
+    String(
+      currentStudent.email || ""
+    )
+      .trim()
+      .toLowerCase();
+
+
+  const studentAccountId =
+    String(
+      currentStudent.id || ""
+    )
+      .trim()
+      .toLowerCase();
+
+
+  return getAllRentals().filter(rental => {
+
+    /*
+      IMPORTANT:
+      Old demo rentals without student ownership
+      are intentionally excluded.
+
+      Only rentals created for a student account
+      can appear in My Rentals.
+    */
+
+    const rentalStudentId =
+      String(
+        rental.studentId || ""
+      )
+        .trim()
+        .toLowerCase();
+
+
+    const rentalStudentEmail =
+      String(
+        rental.studentEmail || ""
+      )
+        .trim()
+        .toLowerCase();
+
+
+    const rentalAccountId =
+      String(
+        rental.studentAccountId || ""
+      )
+        .trim()
+        .toLowerCase();
+
+
+    return (
+
+      (
+        studentId &&
+        rentalStudentId &&
+        rentalStudentId === studentId
+      ) ||
+
+      (
+        studentEmail &&
+        rentalStudentEmail &&
+        rentalStudentEmail === studentEmail
+      ) ||
+
+      (
+        studentAccountId &&
+        rentalAccountId &&
+        rentalAccountId === studentAccountId
+      )
+
+    );
+
+  });
+
+}
+
+
+/* =========================
+   FORMAT DATE
+========================= */
+
+function formatDate(date) {
+
+  return new Date(
+    date + "T00:00:00"
+  )
+    .toLocaleDateString(
+      "en-PH",
+      {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      }
+    );
+
+}
+
+
+/* =========================
+   UPDATE STUDENT INFO
+========================= */
+
+function updateStudentInfo() {
+
+  if (!currentStudent) return;
+
+
+  const name =
+    [
+      currentStudent.firstName,
+      currentStudent.lastName
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .trim() ||
+
+    currentStudent.name ||
+
+    "Student";
+
+
+  const studentId =
+    currentStudent.studentId ||
+
+    "Student";
+
+
+  const school =
+    currentStudent.school ||
+
+    "CampusShare Student";
+
+
+  const initials =
+    name
+      .split(" ")
+      .map(word => word[0])
+      .join("")
+      .substring(0, 2)
+      .toUpperCase();
+
+
+  const sidebarName =
+    document.getElementById(
+      "sidebarName"
+    );
+
+  const sidebarStudentId =
+    document.getElementById(
+      "sidebarStudentId"
+    );
+
+  const welcomeName =
+    document.getElementById(
+      "welcomeName"
+    );
+
+  const sidebarAvatar =
+    document.getElementById(
+      "sidebarAvatar"
+    );
+
+  const profileButton =
+    document.getElementById(
+      "profileButton"
+    );
+
+
+  if (sidebarName) {
+
+    sidebarName.textContent =
+      name;
+
+  }
+
+
+  if (sidebarStudentId) {
+
+    sidebarStudentId.textContent =
+      `${studentId} Â· ${school}`;
+
+  }
+
+
+  if (welcomeName) {
+
+    welcomeName.textContent =
+      name.split(" ")[0];
+
+  }
+
+
+  if (sidebarAvatar) {
+
+    sidebarAvatar.textContent =
+      initials.charAt(0);
+
+  }
+
+
+  if (profileButton) {
+
+    profileButton.textContent =
+      initials.charAt(0);
+
+  }
+
+}
+
+
+/* =========================
+   UPDATE RENTAL STATS
+========================= */
+
+function updateStats() {
+
+  const rentals =
+    getRentals();
+
+
+  const total =
+    rentals.length;
+
+
+  const active =
+    rentals.filter(
+      rental =>
+        rental.status === "Active"
+    ).length;
+
+
+  const pending =
+    rentals.filter(
+      rental =>
+        rental.status === "Pending"
+    ).length;
+
+
+  const completed =
+    rentals.filter(
+      rental =>
+        rental.status === "Completed" ||
+        rental.status === "Returned"
+    ).length;
+
+
+  document.getElementById(
+    "totalRentals"
+  ).textContent =
+    total;
+
+
+  document.getElementById(
+    "activeRentals"
+  ).textContent =
+    active;
+
+
+  document.getElementById(
+    "pendingRentals"
+  ).textContent =
+    pending;
+
+
+  document.getElementById(
+    "completedRentals"
+  ).textContent =
+    completed;
+
+
+  updateWelcomeMessage(
+    active,
+    pending
+  );
+
+}
+
+
+/* =========================
+   WELCOME MESSAGE
+========================= */
+
+function updateWelcomeMessage(
+  active,
+  pending
+) {
+
+  const message =
+    document.getElementById(
+      "welcomeMessage"
+    );
+
+
+  if (!message) return;
+
+
+  if (
+    active > 0 &&
+    pending > 0
+  ) {
+
+    message.innerHTML =
+      `You have <b class="green-text">${active} active rental${active > 1 ? "s" : ""}</b> and <b class="yellow-text">${pending} pending approval${pending > 1 ? "s" : ""}</b>.`;
+
+  }
+
+  else if (active > 0) {
+
+    message.innerHTML =
+      `You currently have <b class="green-text">${active} active rental${active > 1 ? "s" : ""}</b>.`;
+
+  }
+
+  else if (pending > 0) {
+
+    message.innerHTML =
+      `You have <b class="yellow-text">${pending} rental request${pending > 1 ? "s" : ""}</b> awaiting approval.`;
+
+  }
+
+  else {
+
+    message.textContent =
+      "You currently have no active or pending rentals.";
+
+  }
+
+}
+
+
+/* =========================
+   CURRENT RENTAL
+========================= */
+
+function renderCurrentRental() {
+
+  const container =
+    document.getElementById(
+      "currentRental"
+    );
+
+
+  if (!container) return;
+
+
+  const rentals =
+    getRentals();
+
+
+  const activeRental =
+    rentals.find(
+      rental =>
+        rental.status === "Active"
+    );
+
+
+  if (!activeRental) {
+
+    container.innerHTML = `
+      <article class="rental-card">
+
+        <div class="equipment-icon">
+          â€”
+        </div>
+
+        <div class="rental-info">
+
+          <div class="rental-title-row">
+
+            <strong>
+              No active rental
+            </strong>
+
+            <span class="status-pill">
+              None
+            </span>
+
+          </div>
+
+          <div class="muted">
+            You currently have no active equipment rental.
+          </div>
+
+          <div class="due">
+            Browse available equipment to start a new rental.
+          </div>
+
+        </div>
+
+      </article>
+    `;
+
+    return;
+
+  }
+
+
+  container.innerHTML = `
+    <article class="rental-card">
+
+      <div class="equipment-icon">
+        â–£
+      </div>
+
+      <div class="rental-info">
+
+        <div class="rental-title-row">
+
+          <strong>
+            ${activeRental.equipment}
+          </strong>
+
+          <span class="status-pill success">
+            Active
+          </span>
+
+        </div>
+
+        <div class="muted">
+          ${activeRental.provider}
+          Â·
+          ${formatDate(activeRental.start)}
+          â€“
+          ${formatDate(activeRental.end)}
+        </div>
+
+        <div class="due">
+          â—‰ Pickup:
+          ${activeRental.pickup}
+        </div>
+
+      </div>
+
+    </article>
+  `;
+
+}
+
+
+/* =========================
+   RECENT RENTAL
+========================= */
+
+function renderRecentRental() {
+
+  const container =
+    document.getElementById(
+      "recentRental"
+    );
+
+
+  if (!container) return;
+
+
+  const rentals =
+    getRentals();
+
+
+  if (!rentals.length) {
+
+    container.innerHTML = `
+      <article class="rental-card">
+
+        <div class="equipment-icon">
+          â€”
+        </div>
+
+        <div class="rental-info">
+
+          <div class="rental-title-row">
+
+            <strong>
+              No rental history
+            </strong>
+
+          </div>
+
+          <div class="muted">
+            Your recent rental activity will appear here.
+          </div>
+
+        </div>
+
+      </article>
+    `;
+
+    return;
+
+  }
+
+
+  const sorted =
+    [...rentals].sort(
+      (a, b) =>
+        new Date(
+          b.createdAt || b.start
+        ) -
+
+        new Date(
+          a.createdAt || a.start
+        )
+    );
+
+
+  const rental =
+    sorted[0];
+
+
+  const statusClass =
+    String(
+      rental.status || ""
+    ).toLowerCase();
+
+
+  container.innerHTML = `
+    <article class="rental-card">
+
+      <div class="equipment-icon">
+        â–£
+      </div>
+
+      <div class="rental-info">
+
+        <div class="rental-title-row">
+
+          <strong>
+            ${rental.equipment}
+          </strong>
+
+          <span class="status-pill ${statusClass}">
+            ${rental.status}
+          </span>
+
+        </div>
+
+        <div class="muted">
+          ${rental.provider}
+          Â·
+          ${formatDate(rental.start)}
+          â€“
+          ${formatDate(rental.end)}
+        </div>
+
+        <div class="due">
+          â‚±${Number(
+            rental.total
+          ).toLocaleString()}
+          Â·
+          ${rental.payment}
+          Â·
+          ${rental.ref}
+        </div>
+
+      </div>
+
+    </article>
+  `;
+
+}
+
+
+/* =========================
+   RECENT NOTIFICATIONS
+========================= */
+
+function renderRecentNotifications() {
+
+  const container =
+    document.getElementById(
+      "recentNotifications"
+    );
+
+
+  if (!container) return;
+
+
+  const rentals =
+    getRentals();
+
+
+  if (!rentals.length) {
+
+    container.innerHTML = `
+      <article class="notification-row">
+
+        <div class="notice-icon">
+          âœ“
+        </div>
+
+        <div>
+
+          <strong>
+            No recent notifications
+          </strong>
+
+          <p>
+            Your latest CampusShare updates will appear here.
+          </p>
+
+        </div>
+
+      </article>
+    `;
+
+    return;
+
+  }
+
+
+  const sorted =
+    [...rentals].sort(
+      (a, b) =>
+        new Date(
+          b.createdAt || b.start
+        ) -
+
+        new Date(
+          a.createdAt || a.start
+        )
+    );
+
+
+  const latest =
+    sorted.slice(0, 3);
+
+
+  container.innerHTML =
+    latest.map(rental => {
+
+      let title = "";
+      let message = "";
+      let icon = "âœ“";
+      let iconClass = "success-icon";
+
+
+      if (
+        rental.status === "Pending"
+      ) {
+
+        title =
+          "Rental Request Submitted";
+
+        message =
+          `Your request for ${rental.equipment} is waiting for administrator approval.`;
+
+        icon = "â—·";
+        iconClass =
+          "reminder-icon";
+
+      }
+
+      else if (
+        rental.status === "Approved"
+      ) {
+
+        title =
+          "Rental Approved";
+
+        message =
+          `Your rental of ${rental.equipment} has been approved.`;
+
+        icon = "âœ“";
+        iconClass =
+          "success-icon";
+
+      }
+
+      else if (
+        rental.status === "Active"
+      ) {
+
+        title =
+          "Equipment Checked Out";
+
+        message =
+          `${rental.equipment} is currently checked out to you.`;
+
+        icon = "â–£";
+        iconClass =
+          "success-icon";
+
+      }
+
+      else {
+
+        title =
+          "Rental Completed";
+
+        message =
+          `Your rental of ${rental.equipment} has been completed and returned.`;
+
+        icon = "âœ“";
+        iconClass =
+          "success-icon";
+
+      }
+
+
+      return `
+        <article class="notification-row">
+
+          <div class="notice-icon ${iconClass}">
+            ${icon}
+          </div>
+
+          <div>
+
+            <strong>
+              ${title}
+            </strong>
+
+            <p>
+              ${message}
+            </p>
+
+          </div>
+
+        </article>
+      `;
+
+    }).join("");
+
+}
+
+
+/* =========================
+   NOTIFICATION BADGE
+========================= */
+
+function updateNotificationBadge() {
+
+  const rentals =
+    getRentals();
+
+
+  const unread =
+    rentals.filter(
+      rental =>
+        rental.status === "Pending"
+    ).length;
+
+
+  const sidebarBadge =
+    document.getElementById(
+      "notificationBadge"
+    );
+
+  const buttonBadge =
+    document.getElementById(
+      "notificationButtonBadge"
+    );
+
+
+  if (!sidebarBadge || !buttonBadge) {
+    return;
+  }
+
+
+  sidebarBadge.textContent =
+    unread;
+
+  buttonBadge.textContent =
+    unread;
+
+
+  if (unread === 0) {
+
+    sidebarBadge.style.display =
+      "none";
+
+    buttonBadge.style.display =
+      "none";
+
+  }
+
+  else {
+
+    sidebarBadge.style.display =
+      "inline-flex";
+
+    buttonBadge.style.display =
+      "inline-flex";
+
+  }
+
+}
+
+
+/* =========================
+   BUTTON NAVIGATION
+========================= */
+
+const profileButton =
+  document.getElementById(
+    "profileButton"
+  );
+
+if (profileButton) {
+
+  profileButton.addEventListener(
+    "click",
+    () => {
+
+      window.location.href =
+        "profile.html";
+
+    }
+  );
+
+}
+
+
+const notificationButton =
+  document.getElementById(
+    "notificationButton"
+  );
+
+if (notificationButton) {
+
+  notificationButton.addEventListener(
+    "click",
+    () => {
+
+      window.location.href =
+        "notifications.html";
+
+    }
+  );
+
+}
+
+
+/* =========================
+   GLOBAL SEARCH
+========================= */
+
+const globalSearch =
+  document.getElementById(
+    "globalSearch"
+  );
+
+if (globalSearch) {
+
+  globalSearch.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key !== "Enter"
+      ) {
+        return;
+      }
+
+
+      const query =
+        event.target.value.trim();
+
+
+      if (!query) return;
+
+
+      window.location.href =
+        `equipment.html?search=${encodeURIComponent(query)}`;
+
+    }
+  );
+
+}
+
+
+/* =========================
+   MY RENTALS PAGE (LIVE STATUS)
+========================= */
+
+let activeRentalFilter = "all";
+
+function displayRentalDate(value) {
+  if (!value) return "â€”";
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? value : date.toLocaleString("en-PH", {
+    month: "short", day: "numeric", year: "numeric", hour: "numeric", minute: "2-digit"
+  });
+}
+
+function renderMyRentals() {
+  const rentals = getRentals().slice().sort((a, b) =>
+    new Date(b.createdAt || 0) - new Date(a.createdAt || 0)
+  );
+  const count = status => rentals.filter(r => status.includes(r.status)).length;
+  const setCount = (id, value) => { const el = document.getElementById(id); if (el) el.textContent = value; };
+  setCount("pending", count(["Pending"]));
+  setCount("approved", count(["Approved"]));
+  setCount("active", count(["Active"]));
+  setCount("completed", count(["Completed", "Returned"]));
+
+  const list = document.getElementById("rentalList");
+  if (!list) return;
+  const visible = activeRentalFilter === "all" ? rentals : rentals.filter(r =>
+    activeRentalFilter === "Completed" ? ["Completed", "Returned"].includes(r.status) : r.status === activeRentalFilter
+  );
+  if (!visible.length) {
+    list.innerHTML = `<div class="empty"><strong>No ${activeRentalFilter === "all" ? "rental requests" : activeRentalFilter.toLowerCase() + " rentals"} yet.</strong><p>Your rental requests and provider updates will appear here.</p></div>`;
+    return;
+  }
+  list.innerHTML = visible.map(r => {
+    const status = r.status || "Pending";
+    const safe = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;", "'":"&#39;"}[ch]));
+    const duration = r.hours ? `${r.hours} hour${r.hours === 1 ? "" : "s"}` : (r.days ? `${r.days} day${r.days === 1 ? "" : "s"}` : "â€”");
+    const ratingRows = (() => { try { const rows = JSON.parse(localStorage.getItem("campusShareRatings") || "[]"); return Array.isArray(rows) ? rows : []; } catch { return []; } })();
+    const existingRating = ratingRows.find(row => String(row.rentalRef) === String(r.ref || ""));
+    const canRate = ["Completed", "Returned"].includes(status) && /successful/i.test(String(r.paymentStatus || ""));
+    const ratingBlock = canRate ? (existingRating
+      ? `<div class="cs-rating-saved"><strong>Your rating:</strong> <span>${"â˜…".repeat(Number(existingRating.rating || 0))}${"â˜†".repeat(5 - Number(existingRating.rating || 0))}</span> <small>${safe(existingRating.review || "Thanks for your feedback!")}</small></div>`
+      : `<div class="cs-rating-editor" data-rating-editor="${safe(r.ref || "")}"><label>Rate your rental experience</label><select data-rating-value aria-label="Rating from one to five stars"><option value="5">â˜…â˜…â˜…â˜…â˜… â€” Excellent</option><option value="4">â˜…â˜…â˜…â˜…â˜† â€” Good</option><option value="3">â˜…â˜…â˜…â˜†â˜† â€” Okay</option><option value="2">â˜…â˜…â˜†â˜†â˜† â€” Poor</option><option value="1">â˜…â˜†â˜†â˜†â˜† â€” Very poor</option></select><textarea data-rating-review rows="2" placeholder="Optional review about the equipment/provider"></textarea><button type="button" class="modal-secondary" data-submit-rating="${safe(r.ref || "")}">Submit Rating</button></div>`)
+      : "";
+    return `<article class="rental-card" style="margin-top:14px;padding:20px;border:1px solid #dedede;border-radius:14px;background:#fff;display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap">
+      <div class="rental-info" style="flex:1;min-width:230px">
+        <div class="rental-title-row"><strong>${safe(r.equipment || "Equipment")}</strong><span class="badge">${safe(status)}</span></div>
+        <p class="muted">${safe(r.provider || r.campusName || "CampusShare Provider")} Â· Request #${safe(r.ref || "â€”")}</p>
+        <p>Rental period: ${safe(displayRentalDate(r.start))} â€“ ${safe(displayRentalDate(r.end))}</p>
+        <p>Duration: ${safe(duration)} Â· Rate: â‚±${Number(r.hourlyRate ?? r.pricePerHour ?? 0).toLocaleString()}/hour</p>
+        <p>Pickup / use location: ${safe(r.pickup || r.pickupLocation || "Provider-designated location")}</p>
+        <strong>Estimated total: â‚±${Number(r.total || 0).toLocaleString()}</strong>
+        <p class="muted">Payment: ${safe(r.paymentStatus || "Not simulated yet")} Â· ${safe(r.payment || "Demo method")}</p>
+        ${r.statusUpdatedAt ? `<p class="muted">Last updated: ${safe(displayRentalDate(r.statusUpdatedAt))}</p>` : ""}
+        ${ratingBlock}
+      </div>
+      <button type="button" class="modal-secondary" data-view-rental="${safe(r.ref || "")}">View Details</button>
+    </article>`;
+  }).join("");
+
+  list.querySelectorAll("[data-view-rental]").forEach(button => button.addEventListener("click", () => {
+    const rental = rentals.find(r => String(r.ref || "") === button.dataset.viewRental);
+    if (!rental) return;
+    const modal = document.getElementById("rentalModal");
+    const put = (id, value) => { const el = document.getElementById(id); if (el) el.textContent = value; };
+    put("modalEquipment", rental.equipment || "Equipment");
+    put("modalProvider", `${rental.provider || rental.campusName || "Provider"} Â· â‚±${Number(rental.total || 0).toLocaleString()}`);
+    put("modalStatus", rental.status || "Pending");
+    const safeModalText = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+    const periodText = `${displayRentalDate(rental.start)} â€“ ${displayRentalDate(rental.end)}`;
+    const durationText = rental.hours ? `${rental.hours} hour${Number(rental.hours) === 1 ? "" : "s"}` : (rental.days ? `${rental.days} day${Number(rental.days) === 1 ? "" : "s"}` : "Not provided");
+    const pickupText = rental.pickup || rental.pickupLocation || "Provider-designated location";
+    const paymentText = rental.payment || rental.paymentMethod || "Not provided";
+    const totalText = `â‚±${Number(rental.total || 0).toLocaleString()}`;
+    const referenceText = rental.paymentReference || rental.demoPaymentReference || rental.referenceNumber || "Not generated";
+    put("modalPeriod", periodText || "Not provided");
+    put("modalDuration", durationText);
+    put("modalPickup", pickupText);
+    put("modalPayment", paymentText);
+    put("modalTotal", totalText);
+    put("modalReference", referenceText);
+    const details = document.getElementById("modalDetails");
+    if (details) details.innerHTML = `<p><b>Request ID:</b> ${safeModalText(rental.ref || "Not assigned")}</p><p><b>Last updated:</b> ${safeModalText(rental.statusUpdatedAt ? displayRentalDate(rental.statusUpdatedAt) : "No status update recorded")}</p>`;
+    const timeline = document.getElementById("rentalTimeline");
+    if (timeline) {
+      const steps = [
+        ["Request submitted", rental.createdAt || rental.requestedAt],
+        ["Provider decision", rental.approvedAt || rental.statusUpdatedAt],
+        ["Rental started", rental.startedAt],
+        ["Returned / completed", rental.completedAt || rental.returnedAt]
+      ];
+      const availableSteps = steps.filter(([, date]) => date);
+      timeline.innerHTML = availableSteps.length
+        ? availableSteps.map(([label, date]) => `<div class="timeline-item"><strong>${safeModalText(label)}</strong><small>${safeModalText(displayRentalDate(date))}</small></div>`).join("")
+        : `<p class="timeline-empty">No timeline events have been recorded yet. Current status: ${safeModalText(rental.status || "Pending")}.</p>`;
+    }
+    const notice = document.getElementById("modalNotice");
+    if (notice) notice.textContent = `Current status: ${rental.status || "Pending"}. ${rental.status === "Completed" || rental.status === "Returned" ? "You can submit a rating for this completed rental." : "Updates will appear here when the rental status changes."}`;
+    modal?.classList.add("show");
+    modal?.classList.remove("hidden");
+  }));
+
+  list.querySelectorAll("[data-submit-rating]").forEach(button => button.addEventListener("click", () => {
+    const ref = button.dataset.submitRating;
+    const rental = rentals.find(row => String(row.ref || "") === String(ref));
+    if (!rental || !["Completed", "Returned"].includes(rental.status) || !/successful/i.test(String(rental.paymentStatus || ""))) { alert("Only completed rentals with successful demo payment can be rated."); return; }
+    let ratings = [];
+    try { ratings = JSON.parse(localStorage.getItem("campusShareRatings") || "[]"); if (!Array.isArray(ratings)) ratings = []; } catch { ratings = []; }
+    if (ratings.some(row => String(row.rentalRef) === String(ref))) { alert("You have already rated this rental."); renderMyRentals(); return; }
+    const editor = button.closest("[data-rating-editor]");
+    const rating = Number(editor?.querySelector("[data-rating-value]")?.value || 5);
+    const review = String(editor?.querySelector("[data-rating-review]")?.value || "").trim();
+    ratings.push({ id: "RATE-" + Date.now(), rentalRef: String(ref), equipmentId: String(rental.equipmentId || rental.itemId || ""), equipment: String(rental.equipment || "Equipment"), provider: String(rental.provider || rental.campusName || "CampusShare Provider"), studentId: String(currentStudent?.studentId || currentStudent?.id || ""), studentName: [currentStudent?.firstName, currentStudent?.lastName].filter(Boolean).join(" ").trim() || currentStudent?.name || "Student", rating, review, createdAt: new Date().toISOString() });
+    localStorage.setItem("campusShareRatings", JSON.stringify(ratings));
+    renderMyRentals();
+    alert("Thank you! Your demo rating has been saved.");
+  }));
+}
+
+document.querySelectorAll("[data-filter]").forEach(button => button.addEventListener("click", () => {
+  activeRentalFilter = button.dataset.filter || "all";
+  document.querySelectorAll("[data-filter]").forEach(tab => tab.classList.toggle("active", tab === button));
+  renderMyRentals();
+}));
+
+const rentalModalElement = document.getElementById("rentalModal");
+const closeRentalModal = document.getElementById("closeModal");
+if (closeRentalModal) closeRentalModal.addEventListener("click", () => {
+  rentalModalElement?.classList.remove("show");
+  rentalModalElement?.classList.add("hidden");
+});
+if (rentalModalElement) rentalModalElement.addEventListener("click", event => {
+  if (event.target === rentalModalElement) {
+    rentalModalElement.classList.remove("show");
+    rentalModalElement.classList.add("hidden");
+  }
+});
+
+// Refresh when another page/tab changes the shared localStorage rental records.
+window.addEventListener("storage", event => {
+  if (event.key === "campusShareRentals") renderMyRentals();
+});
+
+/* =========================
+   INITIALIZE
+========================= */
+
+updateStudentInfo();
+renderMyRentals();
+renderCurrentRental();
+renderRecentRental();
+renderRecentNotifications();
+updateNotificationBadge();
