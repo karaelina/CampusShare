@@ -9,6 +9,8 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
+// Render terminates TLS in front of the app and forwards the client IP.
+app.set('trust proxy', 1);
 const PORT = Number(process.env.PORT || 3000);
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
