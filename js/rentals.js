@@ -1092,13 +1092,14 @@ async function syncStudentRentalsWithServer() {
         });
         const result = await response.json().catch(() => ({}));
         if (!response.ok) continue;
+        Object.assign(rental, result.rental || {});
         if (rental.demoPaymentStatus === 'SUCCESS') {
-          await fetch(`/api/rentals/${encodeURIComponent(rental.ref)}/payment`, {
+          const paymentResponse = await fetch(`/api/rentals/${encodeURIComponent(rental.ref)}/payment`, {
             method: 'PATCH', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ studentAccessToken: rental.studentAccessToken })
           });
+          if (paymentResponse.ok) Object.assign(rental, await paymentResponse.json().then(data => data.rental || {}));
         }
-        Object.assign(rental, result.rental || {});
       } catch (error) {
         console.warn('Could not migrate a saved rental request.', error);
       }
@@ -1109,6 +1110,24 @@ async function syncStudentRentalsWithServer() {
         method: 'POST', cache: 'no-store', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ studentAccessToken: rental.studentAccessToken })
       });
+      if (response.status === 404 && rental.status === 'Pending') {
+        const restoredResponse = await fetch('/api/rentals', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ rental })
+        });
+        const restored = await restoredResponse.json().catch(() => ({}));
+        if (!restoredResponse.ok) continue;
+        Object.assign(rental, restored.rental || {});
+        if (rental.demoPaymentStatus === 'SUCCESS') {
+          const paymentResponse = await fetch(`/api/rentals/${encodeURIComponent(rental.ref)}/payment`, {
+            method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ studentAccessToken: rental.studentAccessToken })
+          });
+          if (paymentResponse.ok) Object.assign(rental, await paymentResponse.json().then(data => data.rental || {}));
+        }
+        changed = true;
+        continue;
+      }
       if (!response.ok) continue;
       const result = await response.json();
       if (result.rental) {
