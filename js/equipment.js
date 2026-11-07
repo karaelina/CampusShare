@@ -460,6 +460,33 @@ function render() {
 /* =========================
    STUDENT RATINGS — DEMO SUMMARY
 ========================= */
+let sharedEquipmentReviews = [];
+let sharedRatingSummaries = {};
+
+async function loadSharedRatingSummaries() {
+  try {
+    const response = await fetch('/api/reviews/summary', { cache: 'no-store' });
+    if (!response.ok) return;
+    const data = await response.json();
+    sharedRatingSummaries = Object.fromEntries((data.summaries || []).map(row => [String(row.equipmentId), row]));
+    renderEquipmentRatingSummaries();
+  } catch (error) { console.warn('Shared review summaries could not be loaded.', error); }
+}
+
+async function loadSharedReviewsForEquipment(equipmentId) {
+  try {
+    const response = await fetch(`/api/reviews?equipmentId=${encodeURIComponent(equipmentId)}`, { cache: 'no-store' });
+    if (!response.ok) return null;
+    const data = await response.json();
+    const rows = Array.isArray(data.reviews) ? data.reviews : [];
+    sharedEquipmentReviews = [
+      ...sharedEquipmentReviews.filter(row => String(row.equipmentId) !== String(equipmentId)),
+      ...rows
+    ];
+    return rows;
+  } catch (error) { console.warn('Shared equipment reviews could not be loaded.', error); return null; }
+}
+
 function getCampusRatings() {
   try { const rows = JSON.parse(localStorage.getItem(CS_RATINGS_KEY) || "[]"); return Array.isArray(rows) ? rows : []; }
   catch { return []; }
@@ -469,7 +496,9 @@ function getCampusRatings() {
 // for older records, resolve through the rental reference before using a strict
 // name+provider fallback. This prevents a review from leaking onto unrelated items.
 function getRatingsForEquipment(item) {
-  const ratings = getCampusRatings();
+  const localRatings = getCampusRatings();
+  const sharedByRental = new Map(sharedEquipmentReviews.map(row => [String(row.rentalRef || ''), row]));
+  const ratings = [...localRatings.filter(row => !sharedByRental.has(String(row.rentalRef || ''))), ...sharedEquipmentReviews];
   let rentals = [];
   try { const parsed = JSON.parse(localStorage.getItem("campusShareRentals") || "[]"); rentals = Array.isArray(parsed) ? parsed : []; } catch {}
   const itemId = String(item?.id ?? "");
@@ -478,19 +507,16 @@ function getRatingsForEquipment(item) {
   return ratings.filter(row => {
     const storedId = String(row.equipmentId ?? row.itemId ?? "").trim();
     const rentalRef = String(row.rentalRef ?? "");
+    if (storedId) return storedId === itemId;
     if (rentalRef) {
       const rental = rentals.find(r => String(r.ref ?? "") === rentalRef);
-      if (rental) {
-        const rentalItemId = String(rental.equipmentId ?? rental.itemId ?? "").trim();
-        if (rentalItemId) return rentalItemId === itemId;
-        const rentalName = String(rental.equipment ?? "").trim().toLowerCase();
-        const rentalProvider = String(rental.provider ?? rental.campusName ?? "").trim().toLowerCase();
-        return rentalName === itemName && rentalProvider === provider;
-      }
-      // A rental reference that cannot be resolved must not be guessed onto another item.
-      return false;
+      if (!rental) return false;
+      const rentalItemId = String(rental.equipmentId ?? rental.itemId ?? "").trim();
+      if (rentalItemId) return rentalItemId === itemId;
+      const rentalName = String(rental.equipment ?? "").trim().toLowerCase();
+      const rentalProvider = String(rental.provider ?? rental.campusName ?? "").trim().toLowerCase();
+      return rentalName === itemName && rentalProvider === provider;
     }
-    if (storedId) return storedId === itemId;
     // Legacy records without IDs can only match by exact equipment and provider labels.
     return String(row.equipment ?? "").trim().toLowerCase() === itemName &&
       String(row.provider ?? "").trim().toLowerCase() === provider;
@@ -501,7 +527,12 @@ function renderEquipmentRatingSummaries() {
   document.querySelectorAll("[data-rating-equipment]").forEach(node => {
     const item = equipment.find(row => String(row.id) === String(node.dataset.ratingEquipment));
     if (!item) return;
+    const shared = sharedRatingSummaries[String(item.id)];
     const rows = getRatingsForEquipment(item);
+    if (shared && Number(shared.count) > 0) {
+      node.innerHTML = `<span class="cs-rating-stars">★</span> <strong>${Number(shared.average).toFixed(1)}</strong> <span>(${Number(shared.count)} review${Number(shared.count) === 1 ? "" : "s"})</span>`;
+      return;
+    }
     if (!rows.length) { node.innerHTML = `<span class="cs-rating-empty">☆ New · No ratings yet</span>`; return; }
     const average = rows.reduce((sum,row) => sum + Number(row.rating || 0), 0) / rows.length;
     node.innerHTML = `<span class="cs-rating-stars">★</span> <strong>${average.toFixed(1)}</strong> <span>(${rows.length} review${rows.length === 1 ? "" : "s"})</span>`;
@@ -631,9 +662,9 @@ function openDetails(id) {
     <section class="cs-detail-reviews" aria-labelledby="csReviewsHeading">
       <div class="cs-detail-reviews-heading">
         <div><span class="modal-label">STUDENT FEEDBACK</span><h3 id="csReviewsHeading">Ratings &amp; Reviews</h3></div>
-        <div class="cs-detail-average">${avgRating ? `<strong>★ ${avgRating}</strong><small>${itemRatings.length} review${itemRatings.length === 1 ? "" : "s"}</small>` : '<strong>☆ New</strong><small>No ratings yet</small>'}</div>
+      <div class="cs-detail-average" data-detail-rating-summary>${avgRating ? `<strong>★ ${avgRating}</strong><small>${itemRatings.length} review${itemRatings.length === 1 ? "" : "s"}</small>` : '<strong>☆ New</strong><small>No ratings yet</small>'}</div>
       </div>
-      <div class="cs-detail-review-list">${reviewMarkup}</div>
+      <div class="cs-detail-review-list" data-equipment-reviews="${safeDetail(item.id)}">${reviewMarkup}</div>
       <button type="button" class="cs-report-listing-btn" id="csReportListing">⚑ Report this listing</button>
       <p class="cs-report-note">Report concerns such as poor condition, inaccurate photos, or an item that does not work. Reports are saved in this browser prototype for now.</p>
     </section>
@@ -662,6 +693,29 @@ function openDetails(id) {
 
 
   modal.classList.remove("hidden");
+
+  loadSharedReviewsForEquipment(item.id).then(rows => {
+    const list = modalContent.querySelector('[data-equipment-reviews]');
+    if (!rows || !list || String(list.dataset.equipmentReviews) !== String(item.id)) return;
+    const currentItem = equipment.find(row => String(row.id) === String(item.id));
+    if (!currentItem) return;
+    const serverRentalRefs = new Set(rows.map(row => String(row.rentalRef || '')).filter(Boolean));
+    const visibleRows = [
+      ...rows,
+      ...getRatingsForEquipment(currentItem).filter(row => !row.rentalRef || !serverRentalRefs.has(String(row.rentalRef)))
+    ];
+    const summary = modalContent.querySelector('[data-detail-rating-summary]');
+    if (visibleRows.length) {
+      const average = visibleRows.reduce((sum, row) => sum + Number(row.rating || 0), 0) / visibleRows.length;
+      summary.innerHTML = `<strong>★ ${average.toFixed(1)}</strong><small>${visibleRows.length} review${visibleRows.length === 1 ? '' : 's'}</small>`;
+      list.innerHTML = visibleRows.slice().sort((a,b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0)).map(row => `
+        <article class="cs-detail-review"><div class="cs-detail-review-top"><strong>${safeDetail(row.studentName || 'Student')}</strong><span class="cs-detail-review-stars" aria-label="${Number(row.rating || 0)} out of 5 stars">${'★'.repeat(Math.max(0,Math.min(5,Number(row.rating||0))))}${'☆'.repeat(5-Math.max(0,Math.min(5,Number(row.rating||0))))}</span></div><p>${safeDetail(row.review)}</p><small>${row.createdAt ? safeDetail(new Date(row.createdAt).toLocaleDateString()) : ''}</small></article>`).join('');
+    } else {
+      summary.innerHTML = '<strong>☆ New</strong><small>No ratings yet</small>';
+      list.innerHTML = '<p class="cs-detail-no-reviews">No student reviews yet. Be the first to share your experience after a completed rental.</p>';
+    }
+    renderEquipmentRatingSummaries();
+  });
 
   modalContent.querySelector("#csReportListing")?.addEventListener("click", () => {
     const student = typeof getCurrentStudent === "function" ? getCurrentStudent() : null;
@@ -1578,16 +1632,31 @@ function syncStudentIdentity() {
 
 
 /* =========================
-   CAMPUSSHARE MESSENGER — CENTERED DEMO INBOX
-   Browser-local prototype; not cross-device messaging.
+   CAMPUSSHARE SHARED STUDENT INBOX
 ========================= */
-const CS_MESSAGES_KEY = "campusShareMessages";
 const CS_RATINGS_KEY = "campusShareRatings";
-
-function readCampusMessages() {
-  try { const value = JSON.parse(localStorage.getItem(CS_MESSAGES_KEY) || "[]"); return Array.isArray(value) ? value : []; }
-  catch { return []; }
+function studentInboxAccessToken(studentInfo) {
+  const identity = String(studentInfo.id || studentInfo.email || '').trim().toLowerCase();
+  if (!identity) return '';
+  const key = `campusShareInboxToken:${identity}`;
+  let token = localStorage.getItem(key) || '';
+  if (!token) {
+    token = crypto.randomUUID() + crypto.randomUUID();
+    localStorage.setItem(key, token);
+  }
+  return token;
 }
+
+async function fetchStudentThreads(token) {
+  const response = await fetch('/api/messages/mine', {
+    method: 'POST', cache: 'no-store', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ studentInboxToken: token })
+  });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || 'Could not load your messages.');
+  return Array.isArray(result.threads) ? result.threads : [];
+}
+
 function currentStudentIdentity() {
   const student = typeof getCurrentStudent === "function" ? getCurrentStudent() : null;
   return {
@@ -1604,7 +1673,12 @@ function openMessenger(equipmentId = "") {
   const selectedItem = equipmentId ? equipment.find(item => String(item.id) === String(equipmentId)) : null;
   document.getElementById("campusShareMessenger")?.remove();
   const studentInfo = currentStudentIdentity();
-  const providers = [...new Set(equipment.map(item => item.provider).filter(Boolean))];
+  const providerMap = new Map();
+  equipment.filter(item => item.providerId).forEach(item => providerMap.set(String(item.providerId), {
+    id: String(item.providerId), name: String(item.providerName || item.provider || 'Provider'), campus: String(item.campusName || item.provider || '')
+  }));
+  const providers = [...providerMap.values()];
+  const inboxToken = studentInboxAccessToken(studentInfo);
   const modal = document.createElement("div");
   modal.id = "campusShareMessenger";
   modal.className = "cs-messenger-overlay";
@@ -1617,47 +1691,72 @@ function openMessenger(equipmentId = "") {
       <div class="cs-messenger-content">
         <div class="cs-messenger-form">
           <label for="csMessageProvider">Provider / campus</label>
-          <select id="csMessageProvider" required><option value="">Choose provider</option>${providers.map(name => `<option ${selectedItem && selectedItem.provider === name ? "selected" : ""} value="${escapeChatText(name)}">${escapeChatText(name)}</option>`).join("")}</select>
+          <select id="csMessageProvider" required><option value="">Choose provider</option>${providers.map(provider => `<option ${selectedItem && String(selectedItem.providerId) === provider.id ? "selected" : ""} value="${escapeChatText(provider.id)}">${escapeChatText(provider.campus && provider.campus !== provider.name ? `${provider.name} · ${provider.campus}` : provider.name)}</option>`).join("")}</select>
           <label for="csMessageEquipment">Equipment (optional)</label>
           <input id="csMessageEquipment" value="${selectedItem ? escapeChatText(selectedItem.name) : ""}" placeholder="General inquiry">
           <label for="csMessageText">Your message</label>
           <textarea id="csMessageText" rows="3" placeholder="Hi! I'd like to ask about availability, pickup, or rental details..." required></textarea>
           <button type="button" class="cs-messenger-send">Send message</button>
-          <p class="cs-messenger-note">Demo inbox: saved in this browser's localStorage only. It is not real-time or shared across devices.</p>
+          <p class="cs-messenger-note">Your inquiry is sent to the provider’s shared CampusShare inbox, even before you rent. Replies appear here while signed in on this student browser.</p>
         </div>
         <div class="cs-messenger-thread-wrap"><div class="cs-thread-title">Conversation history</div><div class="cs-messenger-history" id="csMessageHistory"></div></div>
       </div>
     </section>`;
   document.body.appendChild(modal);
-  const close = () => modal.remove();
+  let refreshTimer = null;
+  let sharedThreads = [];
+  const close = () => { if (refreshTimer) clearInterval(refreshTimer); modal.remove(); };
   modal.querySelector(".cs-messenger-close").addEventListener("click", close);
   modal.addEventListener("click", event => { if (event.target === modal) close(); });
   document.addEventListener("keydown", function esc(event) { if (event.key === "Escape" && document.getElementById("campusShareMessenger") === modal) { close(); document.removeEventListener("keydown", esc); } });
   const providerSelect = modal.querySelector("#csMessageProvider");
   function renderStudentThread() {
-    const providerName = providerSelect.value;
-    const all = readCampusMessages().filter(message => {
-      const sameStudent = String(message.studentId || "") === studentInfo.id || (studentInfo.email && String(message.studentEmail || "").toLowerCase() === studentInfo.email.toLowerCase()) || (message.studentName === studentInfo.name);
-      return sameStudent && (!providerName || message.provider === providerName);
-    }).sort((a,b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
+    const providerId = providerSelect.value;
+    const threads = sharedThreads.filter(thread => !providerId || String(thread.providerId) === providerId);
     const history = modal.querySelector("#csMessageHistory");
-    history.innerHTML = all.length ? all.map(message => `<article class="cs-chat-message ${message.senderRole === 'provider' ? 'from-provider' : 'from-student'}"><small>${message.senderRole === 'provider' ? 'Provider' : 'You'} · ${escapeChatText(message.equipment || 'General inquiry')} · ${escapeChatText(new Date(message.createdAt).toLocaleString())}</small><p>${escapeChatText(message.message)}</p></article>`).join("") : `<p class="cs-empty-thread">No messages yet. Send your first inquiry to start a conversation.</p>`;
+    const threadMarkup = threads.map(thread => {
+      const messages = (thread.messages || []).slice().sort((a,b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
+      if (!messages.length) return "";
+      return `<section class="cs-chat-thread"><strong class="cs-chat-thread-title">${escapeChatText(thread.equipment || "General inquiry")} · ${escapeChatText(thread.campusName || thread.provider || "Provider")}</strong>${messages.map(message => `<article class="cs-chat-message ${message.senderRole === 'provider' ? 'from-provider' : 'from-student'}"><small>${message.senderRole === 'provider' ? 'Provider' : 'You'} · ${escapeChatText(new Date(message.createdAt).toLocaleString())}</small><p>${escapeChatText(message.message)}</p></article>`).join("")}</section>`;
+    }).join("");
+    const hasThreadMessages = threads.some(thread => (thread.messages || []).length > 0);
+    history.innerHTML = !inboxToken
+      ? `<p class="cs-empty-thread">Sign in to your student account before messaging a provider.</p>`
+      : hasThreadMessages ? threadMarkup
+      : `<p class="cs-empty-thread">${providerId ? 'No messages in this conversation yet. Send an inquiry to start chatting.' : 'Choose a provider to view messages or send an inquiry.'}</p>`;
     history.scrollTop = history.scrollHeight;
   }
-  providerSelect.addEventListener("change", renderStudentThread);
-  modal.querySelector(".cs-messenger-send").addEventListener("click", () => {
-    const providerName = providerSelect.value.trim();
+  async function refreshMessages() {
+    if (!inboxToken) { renderStudentThread(); return; }
+    try { sharedThreads = await fetchStudentThreads(inboxToken); renderStudentThread(); }
+    catch (error) { modal.querySelector('#csMessageHistory').innerHTML = `<p class="cs-empty-thread">${escapeChatText(error.message)}</p>`; }
+  }
+  providerSelect.addEventListener("change", () => { renderStudentThread(); refreshMessages(); });
+  modal.querySelector(".cs-messenger-send").addEventListener("click", async () => {
+    const providerId = providerSelect.value.trim();
     const message = modal.querySelector("#csMessageText").value.trim();
     const equipmentName = modal.querySelector("#csMessageEquipment").value.trim();
-    if (!providerName || !message) { alert("Choose a provider and enter your message first."); return; }
-    const messages = readCampusMessages();
-    messages.push({ id: "MSG-" + Date.now(), provider: providerName, providerId: selectedItem?.providerId || "", equipment: equipmentName, studentName: studentInfo.name, studentId: studentInfo.id, studentEmail: studentInfo.email, message, createdAt: new Date().toISOString(), senderRole: "student", status: "Unread" });
-    localStorage.setItem(CS_MESSAGES_KEY, JSON.stringify(messages));
-    modal.querySelector("#csMessageText").value = "";
-    renderStudentThread();
-    showToast("Message saved to demo inbox.");
+    if (!inboxToken) { showToast("Please sign in before messaging a provider."); return; }
+    if (!providerId || !message) { showToast("Choose a provider and enter your message first."); return; }
+    const matchingItem = equipment.find(item => String(item.providerId) === providerId && String(item.name || '').trim().toLowerCase() === equipmentName.toLowerCase());
+    const sendButton = modal.querySelector(".cs-messenger-send");
+    sendButton.disabled = true; sendButton.textContent = 'Sending…';
+    try {
+      const response = await fetch('/api/messages', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ studentInboxToken: inboxToken, providerId, equipmentId: matchingItem?.id || '', studentName: studentInfo.name, studentId: studentInfo.id, message })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Message could not be sent.');
+      modal.querySelector("#csMessageText").value = "";
+      await refreshMessages();
+      showToast("Message sent to the provider.");
+    } catch (error) { showToast(error.message || 'Message could not be sent. Please try again.'); }
+    finally { sendButton.disabled = false; sendButton.textContent = 'Send message'; }
   });
   renderStudentThread();
+  refreshMessages();
+  refreshTimer = setInterval(refreshMessages, 8000);
   providerSelect.focus();
 }
 
@@ -1674,4 +1773,6 @@ const originalEquipmentRenderForRatings = render;
 render = function() { originalEquipmentRenderForRatings(); renderEquipmentRatingSummaries(); };
 render();
 refreshSharedProviderEquipment();
+loadSharedRatingSummaries();
 setInterval(refreshSharedProviderEquipment, 15000);
+setInterval(loadSharedRatingSummaries, 30000);

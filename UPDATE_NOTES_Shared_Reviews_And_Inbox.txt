@@ -1,0 +1,23 @@
+CampusShare update: shared equipment reviews and inbox
+
+Changes
+- Student equipment details load public reviews and star-rating summaries from the shared server database.
+- Students can edit a previously saved rating and add or change its written comment. New reviews require both a 1–5 star rating and a written comment, and are accepted only for completed rentals with successful demo payment.
+- Student pre-rental inquiries are saved on the server and appear in the approved provider's Messages portal. Provider replies are saved to the same conversation and appear in the student's inbox through refresh polling.
+- Conversations are kept separate by provider and equipment. The provider inbox refreshes every 10 seconds; the student inbox refreshes every 8 seconds.
+
+Files changed
+- server.js
+- js/equipment.js
+- js/provider-dashboard.js
+- js/rentals.js
+- css/equipment.css
+- provider-dashboard.html
+- this update-notes file
+
+Notes and limits
+- Student sign-in and student inbox access remain browser-local in this prototype. A student can continue a conversation in the same browser profile; account-wide or cross-device identity requires server-backed student accounts.
+- Older reviews saved only in local browser storage are not automatically copied to the server. Open My Rentals and use Edit rating and comment to save a review to shared storage. A missing written comment must be added before it can be shared.
+- Inbox messages currently support text. Image attachments are not included in this update.
+- Shared storage depends on deploying the Node server with its persistent SQLite data directory configured (Render uses DATA_DIR=/var/data with its persistent disk configuration). A static-only deployment will not provide shared inbox or review storage.
+- Rental checkout remains a demo flow; no real payments are processed.

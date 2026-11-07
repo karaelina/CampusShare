@@ -999,8 +999,8 @@ function renderMyRentals() {
     const existingRating = ratingRows.find(row => String(row.rentalRef) === String(r.ref || ""));
     const canRate = ["Completed", "Returned"].includes(status) && /successful/i.test(String(r.paymentStatus || ""));
     const ratingBlock = canRate ? (existingRating
-      ? `<div class="cs-rating-saved"><strong>Your rating:</strong> <span>${"★".repeat(Number(existingRating.rating || 0))}${"☆".repeat(5 - Number(existingRating.rating || 0))}</span> <small>${safe(existingRating.review || "Thanks for your feedback!")}</small></div>`
-      : `<div class="cs-rating-editor" data-rating-editor="${safe(r.ref || "")}"><label>Rate your rental experience</label><select data-rating-value aria-label="Rating from one to five stars"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Good</option><option value="3">★★★☆☆ — Okay</option><option value="2">★★☆☆☆ — Poor</option><option value="1">★☆☆☆☆ — Very poor</option></select><textarea data-rating-review rows="2" placeholder="Optional review about the equipment/provider"></textarea><button type="button" class="modal-secondary" data-submit-rating="${safe(r.ref || "")}">Submit Rating</button></div>`)
+      ? `<div class="cs-rating-saved"><strong>Your rating:</strong> <span>${"★".repeat(Number(existingRating.rating || 0))}${"☆".repeat(5 - Number(existingRating.rating || 0))}</span><p>${safe(existingRating.review || "No written comment saved yet.")}</p><button type="button" class="modal-secondary" data-edit-rating="${safe(r.ref || "")}">Edit rating and comment</button></div>`
+      : `<div class="cs-rating-editor" data-rating-editor="${safe(r.ref || "")}"><label>Rate your rental experience</label><select data-rating-value aria-label="Rating from one to five stars"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Good</option><option value="3">★★★☆☆ — Okay</option><option value="2">★★☆☆☆ — Poor</option><option value="1">★☆☆☆☆ — Very poor</option></select><textarea data-rating-review rows="2" placeholder="Write a short comment about the equipment" required minlength="2" maxlength="1000"></textarea><button type="button" class="modal-secondary" data-submit-rating="${safe(r.ref || "")}">Submit Rating and Comment</button></div>`)
       : "";
     return `<article class="rental-card" style="margin-top:14px;padding:20px;border:1px solid #dedede;border-radius:14px;background:#fff;display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap">
       <div class="rental-info" style="flex:1;min-width:230px">
@@ -1060,21 +1060,58 @@ function renderMyRentals() {
     modal?.classList.remove("hidden");
   }));
 
+  list.querySelectorAll("[data-edit-rating]").forEach(button => button.addEventListener("click", () => {
+    const ref = button.dataset.editRating;
+    const rental = rentals.find(row => String(row.ref || "") === String(ref));
+    let ratings = []; try { ratings = JSON.parse(localStorage.getItem("campusShareRatings") || "[]"); } catch {}
+    const existing = ratings.find(row => String(row.rentalRef) === String(ref));
+    const safeValue = value => String(value ?? "").replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+    const card = button.closest(".cs-rating-saved");
+    if (!rental || !card || !existing) return;
+    card.outerHTML = `<div class="cs-rating-editor" data-rating-editor="${safe(ref)}"><label>Edit your rating and comment</label><select data-rating-value aria-label="Rating from one to five stars"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Good</option><option value="3">★★★☆☆ — Okay</option><option value="2">★★☆☆☆ — Poor</option><option value="1">★☆☆☆☆ — Very poor</option></select><textarea data-rating-review rows="2" required minlength="2" maxlength="1000">${safeValue(existing.review || "")}</textarea><button type="button" class="modal-secondary" data-save-rating="${safe(ref)}">Save Changes</button><button type="button" class="modal-secondary" data-cancel-rating>Cancel</button></div>`;
+    const editor = list.querySelector(`[data-rating-editor="${CSS.escape(String(ref))}"]`);
+    if (editor) editor.querySelector('[data-rating-value]').value = String(existing.rating || 5);
+    editor?.querySelector('[data-save-rating]')?.addEventListener('click', () => saveRentalReview(ref, editor));
+    editor?.querySelector('[data-cancel-rating]')?.addEventListener('click', () => renderMyRentals());
+  }));
+
   list.querySelectorAll("[data-submit-rating]").forEach(button => button.addEventListener("click", () => {
     const ref = button.dataset.submitRating;
-    const rental = rentals.find(row => String(row.ref || "") === String(ref));
-    if (!rental || !["Completed", "Returned"].includes(rental.status) || !/successful/i.test(String(rental.paymentStatus || ""))) { alert("Only completed rentals with successful demo payment can be rated."); return; }
-    let ratings = [];
-    try { ratings = JSON.parse(localStorage.getItem("campusShareRatings") || "[]"); if (!Array.isArray(ratings)) ratings = []; } catch { ratings = []; }
-    if (ratings.some(row => String(row.rentalRef) === String(ref))) { alert("You have already rated this rental."); renderMyRentals(); return; }
     const editor = button.closest("[data-rating-editor]");
-    const rating = Number(editor?.querySelector("[data-rating-value]")?.value || 5);
-    const review = String(editor?.querySelector("[data-rating-review]")?.value || "").trim();
-    ratings.push({ id: "RATE-" + Date.now(), rentalRef: String(ref), equipmentId: String(rental.equipmentId || rental.itemId || ""), equipment: String(rental.equipment || "Equipment"), provider: String(rental.provider || rental.campusName || "CampusShare Provider"), studentId: String(currentStudent?.studentId || currentStudent?.id || ""), studentName: [currentStudent?.firstName, currentStudent?.lastName].filter(Boolean).join(" ").trim() || currentStudent?.name || "Student", rating, review, createdAt: new Date().toISOString() });
+    saveRentalReview(ref, editor);
+  }));
+}
+
+async function saveRentalReview(ref, editor) {
+  const rental = rentals.find(row => String(row.ref || "") === String(ref));
+  const rating = Number(editor?.querySelector("[data-rating-value]")?.value || 5);
+  const review = String(editor?.querySelector("[data-rating-review]")?.value || "").trim();
+  if (!rental || !["Completed", "Returned"].includes(rental.status) || !/successful/i.test(String(rental.paymentStatus || ""))) {
+    alert("Only completed rentals with successful demo payment can be reviewed."); return;
+  }
+  if (!rental.studentAccessToken) { alert("This rental has not synced with the server yet. Please wait a moment and try again."); return; }
+  if (review.length < 2) { editor?.querySelector('[data-rating-review]')?.focus(); alert("Please add a short comment with your star rating."); return; }
+  const button = editor?.querySelector('[data-submit-rating], [data-save-rating]');
+  if (button) { button.disabled = true; button.textContent = "Saving…"; }
+  try {
+    const response = await fetch('/api/reviews', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ rentalRef: String(ref), studentAccessToken: rental.studentAccessToken, studentName: [currentStudent?.firstName, currentStudent?.lastName].filter(Boolean).join(" ").trim() || currentStudent?.name || "Student", rating, review })
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || 'Your review could not be synced.');
+    let ratings = [];
+    try { ratings = JSON.parse(localStorage.getItem("campusShareRatings") || "[]"); if (!Array.isArray(ratings)) ratings = []; } catch {}
+    const local = ratings.find(row => String(row.rentalRef) === String(ref));
+    const updated = { ...(local || {}), ...(result.review || {}), id: result.review?.id || local?.id || "RATE-" + Date.now(), rentalRef: String(ref), equipmentId: String(rental.equipmentId || rental.itemId || ""), equipment: String(rental.equipment || "Equipment"), provider: String(rental.provider || rental.campusName || "CampusShare Provider"), studentId: String(currentStudent?.studentId || currentStudent?.id || ""), studentName: [currentStudent?.firstName, currentStudent?.lastName].filter(Boolean).join(" ").trim() || currentStudent?.name || "Student", rating, review };
+    ratings = ratings.filter(row => String(row.rentalRef) !== String(ref)); ratings.push(updated);
     localStorage.setItem("campusShareRatings", JSON.stringify(ratings));
     renderMyRentals();
-    alert("Thank you! Your demo rating has been saved.");
-  }));
+    alert("Your star rating and comment are now saved to the shared equipment reviews.");
+  } catch (error) {
+    if (button) { button.disabled = false; button.textContent = button.dataset.saveRating !== undefined ? "Save Changes" : "Submit Rating and Comment"; }
+    alert(error.message || "Your review could not be synced. Please try again.");
+  }
 }
 
 async function syncStudentRentalsWithServer() {

@@ -940,66 +940,48 @@ function render(){
 render();
 fetch("/api/provider/me", { cache: "no-store" }).then(response => {
   if (!response.ok) throw new Error("Provider session expired.");
-  return Promise.all([loadProviderEquipmentFromServer(), loadProviderRentalsFromServer()]);
+  return Promise.all([loadProviderEquipmentFromServer(), loadProviderRentalsFromServer(), loadProviderMessages()]);
 }).catch(() => {
   localStorage.removeItem(PROVIDER_SESSION_KEY);
   window.location.href = "provider-login.html";
 });
 setInterval(() => loadProviderRentalsFromServer().catch(error => console.warn('Shared rental refresh failed.', error)), 15000);
+setInterval(() => loadProviderMessages().catch(error => console.warn('Shared inbox refresh failed.', error)), 10000);
 
 
 /* =========================
-   PROVIDER INBOX — LOCAL DEMO
+   PROVIDER INBOX — SHARED SERVER INBOX
 ========================= */
-const PROVIDER_MESSAGES_KEY = "campusShareMessages";
-function readProviderMessages() {
-  try { const rows = JSON.parse(localStorage.getItem(PROVIDER_MESSAGES_KEY) || "[]"); return Array.isArray(rows) ? rows : []; }
-  catch { return []; }
-}
 function escapeProviderMessage(value) {
   return String(value ?? "").replace(/[&<>"']/g, char => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[char]));
 }
 let selectedProviderThreadKey = "";
+let sharedProviderThreads = [];
 
-function providerThreadKey(message) {
-  return [message.studentId || message.studentEmail || message.studentName,
-    message.provider, message.equipment || "General inquiry"].join("::");
+async function loadProviderMessages() {
+  const response = await fetch('/api/provider/messages', { cache: 'no-store' });
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(result.error || 'Could not load shared messages.');
+  sharedProviderThreads = Array.isArray(result.threads) ? result.threads : [];
+  renderProviderMessages();
 }
 
 function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
   const container = document.getElementById("providerMessagesList");
   if (!container) return;
-
-  const all = readProviderMessages();
-  const providerLabels = [providerName, campusName, partnership?.providerName, partnership?.campusName]
-    .filter(Boolean).map(value => String(value).trim().toLowerCase());
-  const messages = all.filter(message =>
-    providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
-    (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))
-  );
-
-  if (!messages.length) {
+  if (!sharedProviderThreads.length) {
     selectedProviderThreadKey = "";
-    container.innerHTML = `<div class="empty-state"><strong>No student messages yet</strong><p>Messages sent from Browse Equipment will appear here when the provider matches this account.</p></div>`;
+    container.innerHTML = `<div class="empty-state"><strong>No student messages yet</strong><p>Students can send an inquiry from Browse Equipment before renting. New messages will appear here.</p></div>`;
     return;
   }
-
-  const threads = new Map();
-  messages.forEach(message => {
-    const key = providerThreadKey(message);
-    if (!threads.has(key)) threads.set(key, []);
-    threads.get(key).push(message);
-  });
-
-  const threadRows = [...threads.entries()].map(([key, rows]) => {
-    rows.sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
-    const latest = rows[rows.length - 1];
-    const lastProviderIndex = rows.reduce((last, row, index) => row.senderRole === "provider" ? index : last, -1);
-    const unread = rows.slice(lastProviderIndex + 1).some(row => row.senderRole !== "provider");
-    return { key, rows, latest, unread };
-  }).sort((a, b) => new Date(b.latest.createdAt || 0) - new Date(a.latest.createdAt || 0));
-
-  const selected = threadRows.find(thread => thread.key === preferredKey) || threadRows[0];
+  const threadRows = sharedProviderThreads.map(thread => {
+    const rows = Array.isArray(thread.messages) ? thread.messages : [];
+    const latest = rows[rows.length - 1] || { senderRole: 'student', message: '', createdAt: thread.createdAt };
+    const lastProviderIndex = rows.reduce((last, row, index) => row.senderRole === 'provider' ? index : last, -1);
+    const unread = rows.slice(lastProviderIndex + 1).some(row => row.senderRole === 'student');
+    return { key: String(thread.id), thread, rows, latest, unread };
+  }).sort((a, b) => new Date(b.thread.updatedAt || b.latest.createdAt || 0) - new Date(a.thread.updatedAt || a.latest.createdAt || 0));
+  const selected = threadRows.find(thread => thread.key === String(preferredKey)) || threadRows[0];
   selectedProviderThreadKey = selected.key;
 
   container.innerHTML = `
@@ -1010,10 +992,10 @@ function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
           const latest = thread.latest;
           const preview = `${latest.senderRole === "provider" ? "You: " : ""}${latest.message || ""}`;
           return `<button type="button" class="provider-inbox-item ${thread.key === selected.key ? "is-selected" : ""}" data-provider-thread="${encodeURIComponent(thread.key)}" aria-pressed="${thread.key === selected.key}">
-            <span class="provider-inbox-avatar">${escapeProviderMessage(String(latest.studentName || "S").trim().charAt(0).toUpperCase())}</span>
+            <span class="provider-inbox-avatar">${escapeProviderMessage(String(thread.thread.studentName || "S").trim().charAt(0).toUpperCase())}</span>
             <span class="provider-inbox-item-main">
-              <span class="provider-inbox-item-top"><strong>${escapeProviderMessage(latest.studentName || "Student")}</strong>${thread.unread ? '<i class="provider-inbox-unread" title="New student message"></i>' : ""}</span>
-              <span class="provider-inbox-equipment">${escapeProviderMessage(latest.equipment || "General inquiry")} · ${escapeProviderMessage(latest.provider || campusName)}</span>
+              <span class="provider-inbox-item-top"><strong>${escapeProviderMessage(thread.thread.studentName || "Student")}</strong>${thread.unread ? '<i class="provider-inbox-unread" title="New student message"></i>' : ""}</span>
+              <span class="provider-inbox-equipment">${escapeProviderMessage(thread.thread.equipment || "General inquiry")} · ${escapeProviderMessage(thread.thread.campusName || campusName)}</span>
               <span class="provider-inbox-preview">${escapeProviderMessage(preview)}</span>
             </span>
             <time>${escapeProviderMessage(new Date(latest.createdAt || Date.now()).toLocaleDateString([], {month:"short",day:"numeric"}))}</time>
@@ -1022,8 +1004,8 @@ function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
       </aside>
       <section class="provider-inbox-detail" aria-label="Selected conversation">
         <header class="provider-inbox-detail-head">
-          <div><strong>${escapeProviderMessage(selected.latest.studentName || "Student")}</strong><p>${escapeProviderMessage(selected.latest.equipment || "General inquiry")} · ${escapeProviderMessage(selected.latest.provider || campusName)}</p></div>
-          <span class="provider-inbox-demo-label">DEMO INBOX</span>
+          <div><strong>${escapeProviderMessage(selected.thread.studentName || "Student")}</strong><p>${escapeProviderMessage(selected.thread.equipment || "General inquiry")} · ${escapeProviderMessage(selected.thread.campusName || campusName)}</p></div>
+          <span class="provider-inbox-demo-label">SHARED INBOX</span>
         </header>
         <div class="provider-message-conversation provider-message-conversation-selected">
           ${selected.rows.map(row => `<div class="provider-message-bubble ${row.senderRole === "provider" ? "provider-own-message" : ""}">
@@ -1032,7 +1014,7 @@ function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
           </div>`).join("")}
         </div>
         <form class="provider-message-reply" data-thread-key="${escapeProviderMessage(selected.key)}">
-          <textarea rows="2" name="reply" placeholder="Reply to ${escapeProviderMessage(selected.latest.studentName || "the student")} about ${escapeProviderMessage(selected.latest.equipment || "this inquiry")}..." aria-label="Reply to selected conversation" required></textarea>
+          <textarea rows="2" name="reply" placeholder="Reply to ${escapeProviderMessage(selected.thread.studentName || "the student")} about ${escapeProviderMessage(selected.thread.equipment || "this inquiry")}..." aria-label="Reply to selected conversation" required></textarea>
           <button type="submit" class="primary-btn">Send Reply</button>
         </form>
       </section>
@@ -1052,33 +1034,17 @@ function renderProviderMessages(preferredKey = selectedProviderThreadKey) {
     if (!text) return;
 
     const key = form.dataset.threadKey;
-    const rows = readProviderMessages();
-    const matching = rows.filter(message => providerThreadKey(message) === key &&
-      (providerLabels.includes(String(message.provider || "").trim().toLowerCase()) ||
-       (message.providerId && String(message.providerId) === String(partnership?.id || session?.partnershipId || ""))));
-    const latestStudentMessage = [...matching].reverse().find(message => message.senderRole !== "provider");
-    if (!latestStudentMessage) {
-      window.alert("This conversation has no student message to reply to yet.");
-      return;
-    }
-
-    rows.push({
-      id: "MSG-" + Date.now(),
-      provider: latestStudentMessage.provider,
-      providerId: latestStudentMessage.providerId || partnership?.id || "",
-      equipment: latestStudentMessage.equipment || "",
-      studentName: latestStudentMessage.studentName || "Student",
-      studentId: latestStudentMessage.studentId || "",
-      studentEmail: latestStudentMessage.studentEmail || "",
-      message: text,
-      createdAt: new Date().toISOString(),
-      senderRole: "provider",
-      senderName: providerName,
-      status: "Unread"
-    });
-    localStorage.setItem(PROVIDER_MESSAGES_KEY, JSON.stringify(rows));
-    selectedProviderThreadKey = key;
-    renderProviderMessages(key);
+    const submit = form.querySelector('button[type="submit"]');
+    if (submit) { submit.disabled = true; submit.textContent = 'Sending…'; }
+    fetch(`/api/provider/messages/${encodeURIComponent(key)}`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: text })
+    }).then(async response => {
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Reply could not be sent.');
+      selectedProviderThreadKey = key;
+      await loadProviderMessages();
+    }).catch(error => window.alert(error.message || 'Reply could not be sent.'))
+      .finally(() => { if (submit) { submit.disabled = false; submit.textContent = 'Send Reply'; } });
   });
 }
 

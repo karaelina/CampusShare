@@ -7,6 +7,7 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
+const crypto = require('crypto');
 
 const app = express();
 // Render terminates TLS in front of the app and forwards the client IP.
@@ -66,6 +67,42 @@ CREATE TABLE IF NOT EXISTS rental_requests (
   updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 CREATE INDEX IF NOT EXISTS idx_rental_requests_provider ON rental_requests(provider_id, updated_at);
+CREATE TABLE IF NOT EXISTS equipment_reviews (
+  id TEXT PRIMARY KEY,
+  rental_ref TEXT NOT NULL UNIQUE,
+  equipment_id TEXT NOT NULL,
+  provider_id TEXT NOT NULL,
+  student_name TEXT NOT NULL,
+  rating INTEGER NOT NULL CHECK(rating BETWEEN 1 AND 5),
+  review TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_equipment_reviews_equipment ON equipment_reviews(equipment_id, created_at);
+CREATE TABLE IF NOT EXISTS message_threads (
+  id TEXT PRIMARY KEY,
+  provider_id TEXT NOT NULL,
+  provider_name TEXT NOT NULL,
+  campus_name TEXT NOT NULL,
+  equipment_id TEXT NOT NULL DEFAULT '',
+  equipment_name TEXT NOT NULL DEFAULT 'General inquiry',
+  student_token_hash TEXT NOT NULL,
+  student_id TEXT NOT NULL DEFAULT '',
+  student_name TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(provider_id, equipment_id, student_token_hash)
+);
+CREATE INDEX IF NOT EXISTS idx_message_threads_provider ON message_threads(provider_id, updated_at);
+CREATE TABLE IF NOT EXISTS inbox_messages (
+  id TEXT PRIMARY KEY,
+  thread_id TEXT NOT NULL REFERENCES message_threads(id) ON DELETE CASCADE,
+  sender_role TEXT NOT NULL CHECK(sender_role IN ('student','provider')),
+  sender_name TEXT NOT NULL,
+  message_text TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_inbox_messages_thread ON inbox_messages(thread_id, created_at);
 `);
 
 // Upgrade databases created by earlier CampusShare builds without resetting data.
@@ -386,6 +423,147 @@ app.post('/api/provider-equipment/sync', equipmentApiLimiter, (req, res) => {
     if (error instanceof Error && error.message.includes('too large')) return res.status(413).json({ error: error.message });
     throw error;
   }
+});
+
+// Public review summaries and detail records are shared across browsers.
+app.get('/api/reviews/summary', equipmentApiLimiter, (_req, res) => {
+  const rows = db.prepare(`SELECT equipment_id AS equipmentId, ROUND(AVG(rating), 1) AS average, COUNT(*) AS count
+    FROM equipment_reviews GROUP BY equipment_id`).all();
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ summaries: rows });
+});
+
+app.get('/api/reviews', equipmentApiLimiter, (req, res) => {
+  const equipmentId = String(req.query?.equipmentId || '').trim().slice(0, 120);
+  if (!equipmentId) return res.status(400).json({ error: 'An equipment ID is required.' });
+  const reviews = db.prepare(`SELECT id, rental_ref AS rentalRef, equipment_id AS equipmentId, student_name AS studentName, rating, review, created_at AS createdAt
+    FROM equipment_reviews WHERE equipment_id = ? ORDER BY created_at DESC LIMIT 100`).all(equipmentId);
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ reviews });
+});
+
+app.post('/api/reviews', equipmentApiLimiter, (req, res) => {
+  const rentalRef = String(req.body?.rentalRef || '').trim().slice(0, 120);
+  const accessToken = String(req.body?.studentAccessToken || '').trim().slice(0, 160);
+  const rating = Number(req.body?.rating);
+  const review = String(req.body?.review || '').trim().slice(0, 1000);
+  if (!rentalRef || accessToken.length < 32 || !Number.isInteger(rating) || rating < 1 || rating > 5 || review.length < 2) {
+    return res.status(400).json({ error: 'A completed rental, a 1–5 star rating, and a written comment are required.' });
+  }
+  const row = db.prepare('SELECT * FROM rental_requests WHERE ref = ?').get(rentalRef);
+  if (!row || row.student_access_token !== accessToken) return res.status(404).json({ error: 'Completed rental not found.' });
+  const rental = readRental(row);
+  if (!rental || !['Completed', 'Returned'].includes(String(rental.status || '')) || !/successful/i.test(String(rental.paymentStatus || ''))) {
+    return res.status(409).json({ error: 'Only completed rentals can be reviewed.' });
+  }
+  const equipmentId = String(rental.equipmentId || rental.itemId || '').trim().slice(0, 120);
+  if (!equipmentId) return res.status(409).json({ error: 'This rental is missing its equipment listing.' });
+  const studentName = String(rental.studentName || req.body?.studentName || 'Student').trim().slice(0, 160) || 'Student';
+  const id = 'REV-' + crypto.randomUUID();
+  db.prepare(`INSERT INTO equipment_reviews (id, rental_ref, equipment_id, provider_id, student_name, rating, review)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
+    ON CONFLICT(rental_ref) DO UPDATE SET equipment_id=excluded.equipment_id, provider_id=excluded.provider_id,
+      student_name=excluded.student_name, rating=excluded.rating, review=excluded.review, updated_at=CURRENT_TIMESTAMP`)
+    .run(id, rentalRef, equipmentId, row.provider_id, studentName, rating, review);
+  const saved = db.prepare(`SELECT id, equipment_id AS equipmentId, student_name AS studentName, rating, review, created_at AS createdAt
+    FROM equipment_reviews WHERE rental_ref = ?`).get(rentalRef);
+  res.json({ ok: true, review: saved });
+});
+
+function inboxTokenHash(token) {
+  return crypto.createHash('sha256').update(token).digest('hex');
+}
+
+function serializeMessageThreads(threads) {
+  return threads.map(thread => ({
+    id: thread.id,
+    providerId: thread.provider_id,
+    provider: thread.provider_name,
+    campusName: thread.campus_name,
+    equipmentId: thread.equipment_id,
+    equipment: thread.equipment_name,
+    studentId: thread.student_id,
+    studentName: thread.student_name,
+    createdAt: thread.created_at,
+    updatedAt: thread.updated_at,
+    messages: db.prepare(`SELECT id, sender_role AS senderRole, sender_name AS senderName, message_text AS message, created_at AS createdAt
+      FROM inbox_messages WHERE thread_id = ? ORDER BY created_at, rowid LIMIT 500`).all(thread.id)
+  }));
+}
+
+app.post('/api/messages', equipmentApiLimiter, (req, res) => {
+  const token = String(req.body?.studentInboxToken || '').trim().slice(0, 160);
+  const providerId = String(req.body?.providerId || '').trim().slice(0, 120);
+  const equipmentId = String(req.body?.equipmentId || '').trim().slice(0, 120);
+  const message = String(req.body?.message || '').trim().slice(0, 4000);
+  if (token.length < 40 || !providerId || !message) return res.status(400).json({ error: 'A student inbox token, provider, and message are required.' });
+  const partner = db.prepare(`SELECT id, provider_name, campus_name FROM partnership_applications
+    WHERE id = ? AND status = 'Approved'`).get(providerId);
+  if (!partner) return res.status(404).json({ error: 'Approved provider not found.' });
+  let equipmentName = 'General inquiry';
+  if (equipmentId) {
+    const itemRow = db.prepare(`SELECT item_json FROM provider_equipment WHERE provider_id = ? AND item_id = ? AND provider_status = 'Approved'`).get(providerId, equipmentId);
+    if (!itemRow) return res.status(404).json({ error: 'Equipment listing not found for this provider.' });
+    let item; try { item = JSON.parse(itemRow.item_json || '{}'); } catch { item = null; }
+    if (!item || item.isListed === false || ['Unlisted','Under Review','Removed'].includes(String(item.listingStatus || item.status || ''))) {
+      return res.status(409).json({ error: 'This listing is not accepting inquiries.' });
+    }
+    equipmentName = String(item.name || 'Equipment').slice(0, 200);
+  }
+  const tokenHash = inboxTokenHash(token);
+  let thread = db.prepare(`SELECT * FROM message_threads WHERE provider_id = ? AND equipment_id = ? AND student_token_hash = ?`)
+    .get(providerId, equipmentId, tokenHash);
+  if (!thread) {
+    const id = 'THR-' + crypto.randomUUID();
+    const studentName = String(req.body?.studentName || 'Student').trim().slice(0, 160) || 'Student';
+    const studentId = String(req.body?.studentId || '').trim().slice(0, 120);
+    db.prepare(`INSERT INTO message_threads (id, provider_id, provider_name, campus_name, equipment_id, equipment_name,
+      student_token_hash, student_id, student_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`)
+      .run(id, providerId, partner.provider_name, partner.campus_name, equipmentId, equipmentName, tokenHash, studentId, studentName);
+    thread = db.prepare('SELECT * FROM message_threads WHERE id = ?').get(id);
+  }
+  const senderName = String(thread.student_name || req.body?.studentName || 'Student').slice(0, 160);
+  db.prepare(`INSERT INTO inbox_messages (id, thread_id, sender_role, sender_name, message_text)
+    VALUES (?, ?, 'student', ?, ?)`)
+    .run('MSG-' + crypto.randomUUID(), thread.id, senderName, message);
+  db.prepare('UPDATE message_threads SET updated_at = CURRENT_TIMESTAMP WHERE id = ?').run(thread.id);
+  res.status(201).json({ ok: true, threadId: thread.id });
+});
+
+app.post('/api/messages/mine', equipmentApiLimiter, (req, res) => {
+  const token = String(req.body?.studentInboxToken || '').trim().slice(0, 160);
+  if (token.length < 40) return res.status(400).json({ error: 'A valid student inbox token is required.' });
+  const threads = db.prepare(`SELECT * FROM message_threads WHERE student_token_hash = ? ORDER BY updated_at DESC LIMIT 100`)
+    .all(inboxTokenHash(token));
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ threads: serializeMessageThreads(threads) });
+});
+
+app.get('/api/provider/messages', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const partner = db.prepare(`SELECT status FROM partnership_applications WHERE id = ?`).get(providerId);
+  if (!partner || partner.status !== 'Approved') return res.status(403).json({ error: 'Provider access is not approved.' });
+  const threads = db.prepare(`SELECT * FROM message_threads WHERE provider_id = ? ORDER BY updated_at DESC LIMIT 300`).all(providerId);
+  res.setHeader('Cache-Control', 'no-store');
+  res.json({ threads: serializeMessageThreads(threads) });
+});
+
+app.post('/api/provider/messages/:threadId', equipmentApiLimiter, (req, res) => {
+  const providerId = String(req.session?.provider?.id || '');
+  if (!providerId) return res.status(401).json({ error: 'Provider sign-in required.' });
+  const partner = db.prepare(`SELECT status, provider_name FROM partnership_applications WHERE id = ?`).get(providerId);
+  if (!partner || partner.status !== 'Approved') return res.status(403).json({ error: 'Provider access is not approved.' });
+  const threadId = String(req.params.threadId || '').trim().slice(0, 120);
+  const message = String(req.body?.message || '').trim().slice(0, 4000);
+  const thread = db.prepare('SELECT id FROM message_threads WHERE id = ? AND provider_id = ?').get(threadId, providerId);
+  if (!thread) return res.status(404).json({ error: 'Conversation not found for this provider.' });
+  if (!message) return res.status(400).json({ error: 'Enter a reply first.' });
+  db.prepare(`INSERT INTO inbox_messages (id, thread_id, sender_role, sender_name, message_text)
+    VALUES (?, ?, 'provider', ?, ?)`)
+    .run('MSG-' + crypto.randomUUID(), threadId, partner.provider_name, message);
+  db.prepare('UPDATE message_threads SET updated_at = CURRENT_TIMESTAMP WHERE id = ?').run(threadId);
+  res.json({ ok: true });
 });
 
 function readRental(row) {
